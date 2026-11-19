@@ -489,5 +489,33 @@
     },
     "trial_eliminations": 5,
     "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.\nSix archivists are involved. Determine each archivist's shelf, holding, decade and condition.\n- **Archivist**: Dr Lindqvist, Ms Okafor, Mr Pelletier, Ms Castellano, Ms Bhattacharya and Dr Mwangi.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf, the fifth shelf and the top shelf.\n- **Holding**: a folder of libel writs, a set of tram timetables, the harbour dredging reports, the lost property register, the smallpox ledgers and the workhouse admissions book.\n- **Decade**: the 1950s, the 1860s, the 1940s, the 1970s, the 1830s and the 1890s.\n- **Condition**: mouse-chewed, over-repaired with tape, immaculate, water-damaged, foxed and bound upside down.\nEvery archivist has a different shelf, holding, decade and condition, so within each category every item is used exactly once.",
+    "clues": [
+      "Dr Mwangi does not file on the second shelf.",
+      "The archivist who describes theirs as water-damaged falls somewhere between the archivist who catalogues the lost property register and the bottom shelf in shelf order.",
+      "At least one of the following holds, and possibly more than one: (a) Ms Bhattacharya and the archivist who catalogues the workhouse admissions book are exactly one shelf apart in shelf order, in one direction or the other. (b) The archivist who describes theirs as foxed and the third shelf are exactly two shelves apart in shelf order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The archivist who covers the 1890s is exactly one shelf lower than the archivist who catalogues a folder of libel writs, with no shelf in between. (b) The bottom shelf is exactly one shelf lower than the archivist who covers the 1950s, with no shelf in between.",
+      "The archivist who catalogues the harbour dredging reports falls somewhere between the archivist who covers the 1970s and the second shelf in shelf order.",
+      "The archivist who describes theirs as immaculate is lower than the top shelf in shelf order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) Dr Lindqvist is lower than the archivist who catalogues the harbour dredging reports in shelf order. (b) The archivist who catalogues the workhouse admissions book files on the fifth shelf.",
+      "Ms Castellano and the fifth shelf are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The archivist who covers the 1940s falls somewhere between the archivist who catalogues the lost property register and the bottom shelf in shelf order.",
+      "The archivist who catalogues the smallpox ledgers does not file on the fifth shelf. The archivist who describes theirs as water-damaged does not catalogue the smallpox ledgers.",
+      "The archivist who catalogues the smallpox ledgers does not file on the top shelf.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The archivist who describes theirs as immaculate and the top shelf are exactly one shelf apart in shelf order, in one direction or the other. (b) Mr Pelletier describes theirs as mouse-chewed.",
+      "The archivist who covers the 1950s falls somewhere between Ms Okafor and the archivist who describes theirs as immaculate in shelf order.",
+      "The following is NOT true: The archivist who describes theirs as mouse-chewed and the archivist who covers the 1890s are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) Dr Mwangi is lower than the archivist who covers the 1970s in shelf order. (b) Ms Castellano and the archivist who catalogues a set of tram timetables are exactly two shelves apart in shelf order.",
+      "The archivist who catalogues the workhouse admissions book is lower than the archivist who covers the 1890s in shelf order.",
+      "The archivist who catalogues the harbour dredging reports is exactly one shelf lower than the archivist who covers the 1830s, with no shelf in between.",
+      "At least one of the following holds, and possibly more than one: (a) Ms Bhattacharya and the archivist who describes theirs as bound upside down are exactly five shelves apart in shelf order. (b) Dr Lindqvist covers the 1830s.",
+      "Ms Castellano and the archivist who catalogues a folder of libel writs are exactly two shelves apart in shelf order.",
+      "The archivist who catalogues the workhouse admissions book is exactly one shelf lower than Mr Pelletier, with no shelf in between.",
+      "At least one of the following holds, and possibly more than one: (a) Ms Okafor and the archivist who catalogues a set of tram timetables are exactly one shelf apart in shelf order, in one direction or the other. (b) Ms Castellano is lower than the archivist who describes theirs as immaculate in shelf order.",
+      "The archivist who covers the 1890s falls somewhere between Ms Okafor and the archivist who describes theirs as bound upside down in shelf order.",
+      "The archivist who describes theirs as water-damaged and the archivist who covers the 1890s are exactly three shelves apart in shelf order."
+    ]
   }
 }

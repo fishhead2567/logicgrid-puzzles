@@ -173,5 +173,16 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 8
+  },
+  "text": {
+    "intro": "A case of opinionated cheeses, their equally opinionated makers, and one display that has begun to smell like a political scandal.\nFour cheeses are involved. Determine each cheese's price and rind.\n- **Cheese**: Oakmoss, Saltpans, Old Thrashing and Bellringer.\n- **Price** (listed from cheaper to dearer): $3, $5, $7 and $9.\n- **Rind**: an ash-coated rind, a cloth-bound rind, a washed rind and a waxed rind.\nEvery cheese has a different price and rind, so within each category every item is used exactly once.",
+    "clues": [
+      "Oakmoss sells for $7.",
+      "Old Thrashing sells for $5.",
+      "Saltpans sells for $9.",
+      "The cheese that has a washed rind sells for $9.",
+      "The cheese that has a cloth-bound rind does not sell for $3.",
+      "$3 is exactly one price step cheaper than the cheese that has an ash-coated rind, with no price in between."
+    ]
   }
 }

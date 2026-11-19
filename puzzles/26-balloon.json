@@ -226,5 +226,18 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Thistledown Ascent is less a race than a slow argument conducted at two thousand feet.\nFive pilots are involved. Determine each pilot's start time, envelope and ballast.\n- **Pilot**: Isolde, Montague, Grover, Anneliese and Delphine.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Envelope**: the patchwork envelope, the saffron envelope, the silver envelope, the oxblood envelope and the kingfisher envelope.\n- **Ballast**: lead shot, bottled water, iron filings, pea gravel and sandbags.\nEvery pilot has a different start time, envelope and ballast, so within each category every item is used exactly once.",
+    "clues": [
+      "Montague flies the silver envelope.",
+      "Anneliese falls somewhere between the pilot who carries pea gravel and 8am in start time order.",
+      "Anneliese does not launch at 9am.",
+      "The pilot who flies the saffron envelope falls somewhere between the pilot who carries bottled water and 10am in start time order.",
+      "The pilot who carries pea gravel and Delphine are exactly four hours apart in start time order.",
+      "The pilot who carries iron filings falls somewhere between the pilot who flies the saffron envelope and Grover in start time order.",
+      "The pilot who carries sandbags does not fly the oxblood envelope. The pilot who flies the silver envelope is earlier than the pilot who carries sandbags in start time order.",
+      "The pilot who flies the kingfisher envelope and Anneliese are exactly one hour apart in start time order, in one direction or the other."
+    ]
   }
 }

@@ -4,7 +4,7 @@ Puzzle content for the LogicGrid app. **Generated, not hand-edited** -- rebuilt
 from the generator repo with `scripts/build_content_repo.py`.
 
 50 puzzles, ratings 1-7, 5 with a verified narrative.
-Generated 2026-11-19T03:38:28+00:00 by logicgrid 0.1.0.
+Generated 2026-11-19T03:59:54+00:00 by logicgrid 0.1.0.
 
 ## Fetch contract
 
@@ -50,7 +50,14 @@ on `id` means a regeneration silently marks the wrong puzzles done.
 ## Puzzle format
 
 `puzzles/<id>.json` carries `schema` (the categories and their items), `clues`
-(typed clue atoms) and `solution`. Every puzzle in here has been verified to
+(typed clue atoms), `solution`, and `text` -- the canonical prose, pre-rendered.
+
+**Use `text`.** Rendering a clue from the atoms means re-implementing ~375 lines
+of English morphology (irregular verb stems, do-support negation, article
+insertion, pluralisation, number words, per-spine comparatives). `text.intro`
+and `text.clues` are exactly what the reference terminal player shows, so every
+client reads identically. The atoms are there for anything that needs the
+logic -- a hint engine, a solver -- not for display. Every puzzle in here has been verified to
 have exactly one solution, reachable without guessing unless its profile says
 otherwise.
 

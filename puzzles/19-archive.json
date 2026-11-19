@@ -224,5 +224,18 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.\nFive archivists are involved. Determine each archivist's shelf, decade and condition.\n- **Archivist**: Dr Mwangi, Ms Castellano, Dr Lindqvist, Mr Ravensworth and Ms Okafor.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf and the fifth shelf.\n- **Decade**: the 1890s, the 1970s, the 1910s, the 1950s and the 1830s.\n- **Condition**: immaculate, water-damaged, fire-scorched, over-repaired with tape and foxed.\nEvery archivist has a different shelf, decade and condition, so within each category every item is used exactly once.",
+    "clues": [
+      "Ms Castellano and the bottom shelf are exactly four shelves apart in shelf order. The archivist who covers the 1890s does not file on the bottom shelf.",
+      "The archivist who describes theirs as water-damaged and the bottom shelf are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The archivist who describes theirs as foxed falls somewhere between Dr Lindqvist and Dr Mwangi in shelf order.",
+      "The archivist who covers the 1970s is exactly one shelf lower than the archivist who describes theirs as fire-scorched, with no shelf in between.",
+      "Dr Lindqvist is exactly one shelf lower than the archivist who describes theirs as over-repaired with tape, with no shelf in between.",
+      "Dr Lindqvist is exactly one shelf lower than the archivist who covers the 1910s, with no shelf in between.",
+      "Ms Okafor and the archivist who covers the 1970s are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The archivist who describes theirs as water-damaged is lower than the archivist who covers the 1830s in shelf order."
+    ]
   }
 }

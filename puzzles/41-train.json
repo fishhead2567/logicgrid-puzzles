@@ -257,5 +257,20 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The members of the model railway society share one loft layout and a deep well of resentment.\nFive modellers are involved. Determine each modeller's shelf, scenery and grievance.\n- **Modeller**: Rosamond, Esperanza, Hendrik, Gilbert and Abiodun.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf and the fifth shelf.\n- **Scenery**: a working level crossing, a sheet of static grass, a flocked cutting, a river of resin and a coal staithe.\n- **Grievance**: the timetable, the wiring, somebody else's couplings, a missing screwdriver and the lighting.\nEvery modeller has a different shelf, scenery and grievance, so within each category every item is used exactly once.",
+    "clues": [
+      "Esperanza complains about somebody else's couplings.",
+      "The modeller who builds a coal staithe and the fourth shelf are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The modeller who complains about the timetable and the fifth shelf are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The fourth shelf falls somewhere between the modeller who builds a river of resin and the modeller who builds a sheet of static grass in shelf order.",
+      "Abiodun is exactly one shelf lower than the third shelf, with no shelf in between.",
+      "At least one of the following holds, and possibly more than one: (a) The modeller who builds a river of resin stores on the bottom shelf. (b) One of Gilbert and the modeller who builds a coal staithe sits at an odd-numbered shelf and the other at an even-numbered shelf.",
+      "Rosamond does not build a working level crossing. One of Abiodun and the modeller who builds a working level crossing sits at an odd-numbered shelf and the other at an even-numbered shelf.",
+      "The modeller who complains about a missing screwdriver does not build a sheet of static grass.",
+      "The modeller who complains about somebody else's couplings is lower than the modeller who builds a sheet of static grass in shelf order.",
+      "The modeller who complains about the wiring is exactly one shelf lower than Abiodun, with no shelf in between."
+    ]
   }
 }

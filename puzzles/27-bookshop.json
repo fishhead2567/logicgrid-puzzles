@@ -262,5 +262,20 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Mrs Pell's secondhand bookshop shelves by a system she alone understands, and she has gone to Margate for a fortnight.\nFive volumes are involved. Determine each volume's shelf, keepsake and price.\n- **Volume**: a water-stained atlas, a book of sea shanties, an album of pressed ferns, a beekeeping manual and a guide to fungi.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf and the fifth shelf.\n- **Found inside**: a lock of hair, a laundry list, a postcard from Hull, a recipe for quince jelly and a pressed violet.\n- **Pencilled price**: half a crown; seven and six; two shillings; a guinea; and one and six.\nEvery volume has a different shelf, keepsake and price, so within each category every item is used exactly once.",
+    "clues": [
+      "The volume that contains a pressed violet is higher than the second shelf in shelf order. An album of pressed ferns and the second shelf are exactly three shelves apart in shelf order.",
+      "The volume that contains a recipe for quince jelly is not priced at half a crown. The volume that contains a recipe for quince jelly does not sit on the second shelf.",
+      "The volume that is priced at seven and six and the second shelf are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The second shelf falls somewhere between the volume that contains a postcard from Hull and the volume that is priced at one and six in shelf order.",
+      "The volume that contains a postcard from Hull is not priced at half a crown. A water-stained atlas does not contain a postcard from Hull.",
+      "The volume that is priced at one and six is exactly one shelf lower than a guide to fungi, with no shelf in between.",
+      "The volume that is priced at half a crown is lower than an album of pressed ferns in shelf order.",
+      "The volume that is priced at a guinea falls somewhere between the volume that contains a lock of hair and the volume that contains a postcard from Hull in shelf order.",
+      "A beekeeping manual and the volume that is priced at one and six both sit at odd-numbered shelves or both at even-numbered shelves.",
+      "The volume that is priced at a guinea is exactly one shelf lower than a water-stained atlas, with no shelf in between. A book of sea shanties is not priced at a guinea."
+    ]
   }
 }

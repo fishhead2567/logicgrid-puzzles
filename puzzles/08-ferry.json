@@ -171,5 +171,15 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The Inverlaig ferry runs a full day of crossings in theory, and a variable number in practice.\nFive skippers are involved. Determine each skipper's start time and reason.\n- **Skipper**: Eilidh, Fearghas, Ruaridh, Calla and Murdo.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Delay blamed on**: the tide, a passenger's dog, fog, paperwork and a slipway repair.\nEvery skipper has a different start time and reason, so within each category every item is used exactly once.",
+    "clues": [
+      "Fearghas is earlier than 11am in start time order. The skipper who blames paperwork sails at 11am.",
+      "Ruaridh is earlier than the skipper who blames fog in start time order. Ruaridh sails at 10am.",
+      "Calla blames a slipway repair.",
+      "Eilidh blames paperwork.",
+      "The skipper who blames a passenger's dog is earlier than Calla in start time order."
+    ]
   }
 }

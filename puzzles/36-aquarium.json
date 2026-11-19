@@ -310,5 +310,23 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Coldwater Hall Aquarium keeps a night rota of tanks, and one keeper who is definitely feeding the wrong things.\nFive keepers are involved. Determine each keeper's slot, tank, feed and incident.\n- **Keeper**: Rhiannon, Oskar, Fitzwilliam, Chiamaka and Marisol.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Tank**: the deep reef, the seahorse nursery, the estuary tank, the kelp tank and the touch pool.\n- **Feed**: a gelatine cube of unclear provenance, frozen krill, brine shrimp, nori sheets and mussel meat.\n- **Logged incident**: an algal bloom, a failed chiller, an unexplained pH swing, a cracked viewing pane and a visitor's dropped phone.\nEvery keeper has a different slot, tank, feed and incident, so within each category every item is used exactly once.",
+    "clues": [
+      "The keeper who logs a failed chiller tends the deep reef. The keeper who tends the deep reef is exactly one slot earlier than slot four, with no slot in between.",
+      "At least one of the following holds, and possibly more than one: (a) The keeper who tends the kelp tank and slot three are exactly one slot apart in slot order, in one direction or the other. (b) The keeper who feeds a gelatine cube of unclear provenance logs an algal bloom.",
+      "The keeper who feeds mussel meat and slot five are exactly one slot apart in slot order, in one direction or the other.",
+      "Slot two falls somewhere between the keeper who logs a visitor's dropped phone and Rhiannon in slot order.",
+      "One of the keeper who logs a visitor's dropped phone and slot five sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "The keeper who feeds a gelatine cube of unclear provenance is earlier than slot four in slot order.",
+      "The keeper who logs a cracked viewing pane and slot two are exactly one slot apart in slot order, in one direction or the other.",
+      "Slot two is exactly one slot earlier than the keeper who feeds nori sheets, with no slot in between.",
+      "The keeper who logs an unexplained pH swing and the keeper who tends the deep reef are exactly one slot apart in slot order, in one direction or the other.",
+      "Fitzwilliam is exactly one slot earlier than the keeper who logs a visitor's dropped phone, with no slot in between.",
+      "Chiamaka and the keeper who tends the estuary tank are exactly three slots apart in slot order.",
+      "The keeper who tends the estuary tank falls somewhere between the keeper who feeds frozen krill and Oskar in slot order.",
+      "Oskar is earlier than the keeper who tends the seahorse nursery in slot order."
+    ]
   }
 }

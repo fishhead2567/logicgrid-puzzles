@@ -168,5 +168,15 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 8
+  },
+  "text": {
+    "intro": "Andy races pigeons, and each bird is bred for a different combination of stubbornness and speed.\nFour pigeons are involved. Determine each pigeon's distance and breed.\n- **Pigeon**: Alabaster, Nutmeg, Hieronymus and Cadwallader.\n- **Distance** (listed from shorter to longer): 200 miles, 300 miles, 400 miles and 500 miles.\n- **Breed**: a Delbar, a Janssen, a Stichelbaut and a Sion.\nEvery pigeon has a different distance and breed, so within each category every item is used exactly once.",
+    "clues": [
+      "The pigeon that descends from a Sion and 200 miles are exactly one hundred miles apart in distance order, in one direction or the other. Cadwallader flies 200 miles.",
+      "The pigeon that descends from a Delbar flies 200 miles.",
+      "The pigeon that descends from a Stichelbaut flies 400 miles.",
+      "Alabaster descends from a Sion.",
+      "Nutmeg does not fly 500 miles."
+    ]
   }
 }

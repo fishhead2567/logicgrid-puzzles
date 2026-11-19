@@ -265,5 +265,22 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Dented Bell runs karaoke on Tuesdays. Attendance is loyal; talent is not.\nFive singers are involved. Determine each singer's slot, song and reception.\n- **Singer**: Vikram, Annalise, Mercy, Caitriona and Deshawn.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Song**: a power ballad, a rap performed entirely from memory, a sea shanty, a novelty country number and an eight-minute prog epic.\n- **Reception**: a singalong, the landlord cutting the power, scattered applause, one heckler and a request for an encore nobody wanted.\nEvery singer has a different slot, song and reception, so within each category every item is used exactly once.",
+    "clues": [
+      "Deshawn sings in slot two.",
+      "The singer who gets scattered applause and slot four are exactly three slots apart in slot order.",
+      "The singer who performs an eight-minute prog epic and slot two are exactly one slot apart in slot order, in one direction or the other.",
+      "The singer who performs a rap performed entirely from memory and slot five are exactly two slots apart in slot order.",
+      "The singer who performs a power ballad falls somewhere between the singer who gets a singalong and slot two in slot order.",
+      "Slot four is exactly one slot earlier than Caitriona, with no slot in between.",
+      "One of the singer who gets scattered applause and Annalise sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "Deshawn falls somewhere between the singer who performs a sea shanty and the singer who performs an eight-minute prog epic in slot order.",
+      "The singer who gets a request for an encore nobody wanted does not perform a rap performed entirely from memory.",
+      "The singer who gets one heckler and the singer who performs a rap performed entirely from memory are exactly one slot apart in slot order, in one direction or the other.",
+      "Vikram does not perform a rap performed entirely from memory.",
+      "Deshawn is earlier than the singer who gets one heckler in slot order."
+    ]
   }
 }

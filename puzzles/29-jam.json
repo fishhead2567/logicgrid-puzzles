@@ -243,5 +243,19 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The preserves tent is the most competitive building at the show, and the only one with a locked door.\nFive entrants are involved. Determine each entrant's price, preserve and ingredient.\n- **Entrant**: Ottilie, Emeka, Harriet, Bernadette and Stanislaw.\n- **Price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Preserve**: rosehip syrup; hot pepper jelly; green walnut pickle; quince jelly; and sloe and apple butter.\n- **Secret ingredient**: star anise, orange zest, a splash of gin, black pepper and nothing whatsoever.\nEvery entrant has a different price, preserve and ingredient, so within each category every item is used exactly once.",
+    "clues": [
+      "The entrant who adds nothing whatsoever and $5 are exactly one price step apart in price order, in one direction or the other. Bernadette charges $5.",
+      "The entrant who adds star anise charges $3.",
+      "Stanislaw is exactly one price step cheaper than $9, with no price in between. The entrant who adds black pepper does not charge $9.",
+      "The entrant who adds a splash of gin is dearer than $5 in price order.",
+      "The entrant who enters green walnut pickle is cheaper than $11 in price order.",
+      "Emeka is exactly one price step cheaper than the entrant who enters green walnut pickle, with no price in between.",
+      "Ottilie is cheaper than the entrant who enters hot pepper jelly in price order.",
+      "The entrant who enters rosehip syrup and the entrant who adds a splash of gin are exactly one price step apart in price order, in one direction or the other.",
+      "Bernadette is exactly one price step cheaper than the entrant who enters quince jelly, with no price in between."
+    ]
   }
 }

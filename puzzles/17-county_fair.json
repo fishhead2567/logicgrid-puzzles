@@ -186,5 +186,16 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 12
+  },
+  "text": {
+    "intro": "The Hollow Creek county fair runs its pie judging with more ceremony than the state legislature.\nFour bakers are involved. Determine each baker's placing, county and crust.\n- **Baker**: Winnie, Odette, Loretta and Caspian.\n- **Placing** (listed from better to worse): first, second, third and fourth.\n- **Home county**: Hobbs Bend, Fenwick, Quarry Hill and Ardmore.\n- **Crust**: a fork-crimped edge, a fluted rim, a crumb topping and a double crust.\nEvery baker has a different placing, county and crust, so within each category every item is used exactly once.",
+    "clues": [
+      "The baker who uses a fluted rim places third.",
+      "First is exactly one place better than the baker who comes from Hobbs Bend, with no placing in between.",
+      "The baker who uses a crumb topping and second are exactly one place apart in placing order, in one direction or the other.",
+      "Loretta is better than the baker who comes from Fenwick in placing order.",
+      "Winnie is exactly one place better than the baker who comes from Quarry Hill, with no placing in between.",
+      "The baker who uses a fork-crimped edge is exactly one place better than Odette, with no placing in between."
+    ]
   }
 }

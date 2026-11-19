@@ -302,5 +302,22 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Hollow Creek county fair runs its pie judging with more ceremony than the state legislature.\nFive bakers are involved. Determine each baker's placing, filling, county and crust.\n- **Baker**: Odette, Bramwell, Marigold, Winnie and Thaddeus.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Filling**: pecan, green tomato, rhubarb, mincemeat and sour cherry.\n- **Home county**: Quarry Hill, Little Pell, Fenwick, Dunmore and Hobbs Bend.\n- **Crust**: a cut-out star top, a fork-crimped edge, a fluted rim, a crumb topping and a lattice top.\nEvery baker has a different placing, filling, county and crust, so within each category every item is used exactly once.",
+    "clues": [
+      "The baker who uses a fork-crimped edge is worse than third in placing order.",
+      "Odette and the baker who bakes pecan are exactly four places apart in placing order.",
+      "The baker who uses a cut-out star top does not bake green tomato. Thaddeus is exactly one place better than the baker who uses a cut-out star top, with no placing in between.",
+      "The baker who comes from Fenwick is exactly one place better than the baker who bakes sour cherry, with no placing in between.",
+      "The baker who comes from Quarry Hill falls somewhere between Winnie and the baker who uses a lattice top in placing order.",
+      "Bramwell and the baker who uses a crumb topping are exactly three places apart in placing order.",
+      "Winnie and the baker who bakes rhubarb are exactly one place apart in placing order, in one direction or the other.",
+      "Thaddeus is better than the baker who uses a lattice top in placing order.",
+      "At least one of the following holds, and possibly more than one: (a) Marigold comes from Quarry Hill. (b) The baker who comes from Hobbs Bend and the baker who bakes sour cherry both sit at odd-numbered places or both at even-numbered places.",
+      "The baker who bakes sour cherry is exactly one place better than the baker who comes from Dunmore, with no placing in between.",
+      "Thaddeus and the baker who bakes mincemeat are exactly four places apart in placing order.",
+      "Bramwell is exactly one place better than the baker who comes from Dunmore, with no placing in between."
+    ]
   }
 }

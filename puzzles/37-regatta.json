@@ -255,5 +255,20 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.\nFive crews are involved. Determine each crew's placing, stroke and boat.\n- **Crew**: the Creamery crew, the Brickworks crew, the Customs crew, the Seminary crew and the Tannery crew.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Stroke**: Yusuf, Ondine, Bartholomew, Crispin and Everard.\n- **Boat**: the Gilded Eel, the Wet Hen, the Obstinate, the Peregrine and the Dauntless.\nEvery crew has a different placing, stroke and boat, so within each category every item is used exactly once.",
+    "clues": [
+      "Second falls somewhere between the Creamery crew and the crew who is stroked by Crispin in placing order.",
+      "The crew who rows the Gilded Eel is better than fourth in placing order.",
+      "The Seminary crew is better than the crew who is stroked by Yusuf in placing order. The crew who is stroked by Yusuf is better than fourth in placing order.",
+      "Third and the crew who is stroked by Everard both sit at odd-numbered places or both at even-numbered places.",
+      "One of the crew who rows the Dauntless and fifth sits at an odd-numbered placing and the other at an even-numbered placing.",
+      "The crew who is stroked by Ondine is worse than fourth in placing order.",
+      "The Customs crew falls somewhere between fourth and the crew who is stroked by Everard in placing order.",
+      "The Tannery crew is better than the crew who rows the Obstinate in placing order.",
+      "The Seminary crew is exactly one place better than the crew who rows the Peregrine, with no placing in between.",
+      "At least one of the following holds, and possibly more than one: (a) The Creamery crew is stroked by Bartholomew. (b) One of the crew who rows the Gilded Eel and the Creamery crew sits at an odd-numbered placing and the other at an even-numbered placing."
+    ]
   }
 }

@@ -155,5 +155,15 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Hollow Creek county fair runs its pie judging with more ceremony than the state legislature.\nFour bakers are involved. Determine each baker's placing and crust.\n- **Baker**: Bramwell, Odette, Caspian and Winnie.\n- **Placing** (listed from better to worse): first, second, third and fourth.\n- **Crust**: a cut-out star top, a crumb topping, a double crust and a lattice top.\nEvery baker has a different placing and crust, so within each category every item is used exactly once.",
+    "clues": [
+      "Bramwell places first.",
+      "Odette places third.",
+      "Caspian uses a lattice top.",
+      "Bramwell uses a crumb topping.",
+      "The baker who uses a double crust is exactly one place better than Winnie, with no placing in between."
+    ]
   }
 }

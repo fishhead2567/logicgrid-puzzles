@@ -205,5 +205,17 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 12
+  },
+  "text": {
+    "intro": "The Thistledown Ascent is less a race than a slow argument conducted at two thousand feet.\nFour pilots are involved. Determine each pilot's start time, envelope and landing site.\n- **Pilot**: Horatio, Isolde, Grover and Delphine.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am and 11am.\n- **Envelope**: the saffron envelope, the moss-green envelope, the striped envelope and the kingfisher envelope.\n- **Landed at**: a cricket pitch, a flooded quarry, a caravan park and a railway siding.\nEvery pilot has a different start time, envelope and landing site, so within each category every item is used exactly once.",
+    "clues": [
+      "The pilot who comes down in a railway siding launches at 9am.",
+      "The pilot who flies the kingfisher envelope comes down in a railway siding.",
+      "The pilot who comes down in a flooded quarry falls somewhere between Horatio and 11am in start time order. 9am falls somewhere between Delphine and Horatio in start time order.",
+      "The pilot who comes down in a cricket pitch is exactly one hour earlier than 9am, with no start time in between.",
+      "10am falls somewhere between Delphine and Isolde in start time order.",
+      "The pilot who flies the striped envelope does not come down in a flooded quarry.",
+      "The pilot who flies the saffron envelope and Grover are exactly one hour apart in start time order, in one direction or the other."
+    ]
   }
 }

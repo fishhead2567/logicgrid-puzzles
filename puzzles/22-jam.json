@@ -240,5 +240,19 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The preserves tent is the most competitive building at the show, and the only one with a locked door.\nFive entrants are involved. Determine each entrant's price, preserve and ingredient.\n- **Entrant**: Stanislaw, Rafferty, Harriet, Drusilla and Bernadette.\n- **Price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Preserve**: green walnut pickle; rosehip syrup; medlar jam; sloe and apple butter; and quince jelly.\n- **Secret ingredient**: nothing whatsoever, orange zest, star anise, black pepper and a splash of gin.\nEvery entrant has a different price, preserve and ingredient, so within each category every item is used exactly once.",
+    "clues": [
+      "The entrant who adds a splash of gin charges $3.",
+      "The entrant who enters rosehip syrup does not charge $5. Stanislaw is exactly one price step cheaper than $5, with no price in between.",
+      "The entrant who adds nothing whatsoever is exactly one price step cheaper than $11, with no price in between.",
+      "Drusilla falls somewhere between the entrant who enters sloe and apple butter and $3 in price order.",
+      "Harriet and the entrant who adds orange zest are exactly one price step apart in price order, in one direction or the other.",
+      "Rafferty is exactly one price step cheaper than the entrant who enters medlar jam, with no price in between.",
+      "The entrant who enters medlar jam is exactly one price step cheaper than the entrant who adds orange zest, with no price in between.",
+      "The entrant who enters quince jelly falls somewhere between Drusilla and Harriet in price order.",
+      "The entrant who enters quince jelly and the entrant who adds star anise are exactly one price step apart in price order, in one direction or the other."
+    ]
   }
 }

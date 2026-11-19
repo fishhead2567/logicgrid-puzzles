@@ -444,5 +444,28 @@
     },
     "trial_eliminations": 1,
     "unknown_cells": 24
+  },
+  "text": {
+    "intro": "A case of opinionated cheeses, their equally opinionated makers, and one display that has begun to smell like a political scandal.\nSix cheeses are involved. Determine each cheese's price, maker, rind and ageing.\n- **Cheese**: Oakmoss, Winter Tarn, Fenland Blue, Bellringer, Glebe Farmhouse and Old Thrashing.\n- **Price** (listed from cheaper to dearer): $3, $5, $7, $9, $11 and $13.\n- **Maker**: Perdita, Sigrid, Teodoro, Lachlan, Hepzibah and Ambrose.\n- **Rind**: a waxed rind, a cloth-bound rind, an ash-coated rind, a washed rind, a natural rind and a cider-washed rind.\n- **Aged for**: nine months, five months, three weeks, two years, thirty months and fourteen months.\nEvery cheese has a different price, maker, rind and ageing, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) Glebe Farmhouse and $5 are exactly one price step apart in price order, in one direction or the other. (b) The cheese that has a washed rind and $11 are exactly one price step apart in price order, in one direction or the other.",
+      "The cheese that was made by Ambrose and $5 are exactly one price step apart in price order, in one direction or the other.",
+      "The cheese that has a cider-washed rind falls somewhere between the cheese that was aged for fourteen months and $9 in price order.",
+      "$11 is exactly one price step cheaper than the cheese that has a waxed rind, with no price in between.",
+      "At least one of the following holds, and possibly more than one: (a) Old Thrashing and the cheese that was made by Perdita are exactly one price step apart in price order, in one direction or the other. (b) The cheese that has a washed rind and $3 are exactly one price step apart in price order, in one direction or the other.",
+      "$13 has a price exactly $10 more than the cheese that was made by Sigrid.",
+      "The following is NOT true: The cheese that was aged for three weeks is dearer than $5 in price order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The cheese that has a cider-washed rind is cheaper than $11 in price order. (b) The cheese that was aged for nine months has a waxed rind.",
+      "Winter Tarn and $7 are exactly one price step apart in price order, in one direction or the other. Winter Tarn was not aged for thirty months.",
+      "The cheese that was aged for two years falls somewhere between $13 and the cheese that has an ash-coated rind in price order.",
+      "The cheese that has a cider-washed rind is exactly one price step cheaper than Fenland Blue, with no price in between.",
+      "The cheese that was made by Ambrose falls somewhere between Glebe Farmhouse and Winter Tarn in price order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) Bellringer was not aged for two years. (b) The cheese that was aged for nine months and the cheese that was made by Lachlan are exactly one price step apart in price order, in one direction or the other.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The cheese that was aged for three weeks is cheaper than the cheese that was made by Ambrose in price order. (b) The cheese that was aged for thirty months and Bellringer are exactly one price step apart in price order, in one direction or the other.",
+      "The cheese that was made by Teodoro and the cheese that has an ash-coated rind are exactly one price step apart in price order, in one direction or the other.",
+      "Fenland Blue is cheaper than the cheese that was made by Hepzibah in price order. Old Thrashing has a price exactly $4 more than the cheese that was made by Hepzibah.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The cheese that was made by Teodoro is cheaper than the cheese that has a cloth-bound rind in price order. (b) The cheese that was aged for five months was not made by Lachlan.",
+      "At least one of the following holds, and possibly more than one: (a) Winter Tarn was aged for five months. (b) The cheese that was aged for thirty months has a washed rind."
+    ]
   }
 }

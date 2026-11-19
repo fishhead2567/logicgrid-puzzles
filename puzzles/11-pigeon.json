@@ -206,5 +206,16 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 12
+  },
+  "text": {
+    "intro": "Andy races pigeons, and each bird is bred for a different combination of stubbornness and speed.\nFour pigeons are involved. Determine each pigeon's distance, plumage and breed.\n- **Pigeon**: Grimsby, Cadwallader, Nutmeg and Dot.\n- **Distance** (listed from shorter to longer): 200 miles, 300 miles, 400 miles and 500 miles.\n- **Plumage**: chequered black, bronze, slate blue and mealy red.\n- **Breed**: a Delbar, a Van Loon, a Sion and a Janssen.\nEvery pigeon has a different distance, plumage and breed, so within each category every item is used exactly once.",
+    "clues": [
+      "Grimsby is chequered black.",
+      "Dot does not fly 300 miles. The pigeon that descends from a Janssen is longer than 300 miles in distance order.",
+      "The pigeon that descends from a Sion falls somewhere between 500 miles and the pigeon that is mealy red in distance order.",
+      "The pigeon that descends from a Janssen and the pigeon that is slate blue are exactly one hundred miles apart in distance order, in one direction or the other.",
+      "The pigeon that descends from a Janssen falls somewhere between the pigeon that is bronze and the pigeon that is mealy red in distance order.",
+      "The pigeon that descends from a Delbar is shorter than Dot in distance order. Nutmeg does not descend from a Delbar."
+    ]
   }
 }

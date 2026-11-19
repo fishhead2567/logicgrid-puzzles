@@ -159,5 +159,13 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.\nFour fliers are involved. Determine each flier's entry fee and mishap.\n- **Flier**: Ifeoma, Blaise, Tansy and Kipling.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6 and $8.\n- **Mishap**: a snapped spar, a trespassing dog, a sudden lull and a power line scare.\nEvery flier has a different entry fee and mishap, so within each category every item is used exactly once.",
+    "clues": [
+      "The flier who is undone by a power line scare pays $6. Tansy is undone by a power line scare.",
+      "Kipling is not undone by a snapped spar. The flier who is undone by a snapped spar is exactly one fee step cheaper than $6, with no entry fee in between.",
+      "Blaise is not undone by a trespassing dog. Kipling is cheaper than the flier who is undone by a trespassing dog in entry fee order."
+    ]
   }
 }

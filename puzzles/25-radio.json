@@ -244,5 +244,20 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Nobody at WPKX has met anyone on the overnight schedule, which is how the station likes it.\nFive hosts are involved. Determine each host's slot, show and format.\n- **Host**: Rusty Lamarr, Dustin Crowe, Bea Okonjo, Arlo Finch and Maribel Sosa.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Show**: Owls Calling; The Sleepless Hour; Coffee and Regrets; The Long Haul; and Signal Fade.\n- **Format**: lost surf rock, trucker country, obscure jazz, forgotten soul and radio plays.\nEvery host has a different slot, show and format, so within each category every item is used exactly once.",
+    "clues": [
+      "The host who plays forgotten soul broadcasts in slot three. One of Arlo Finch and slot three sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "Maribel Sosa presents Signal Fade.",
+      "The host who presents Coffee and Regrets and slot five are exactly one slot apart in slot order, in one direction or the other.",
+      "Bea Okonjo and slot four are exactly one slot apart in slot order, in one direction or the other.",
+      "The host who plays radio plays is exactly one slot earlier than slot five, with no slot in between.",
+      "The host who plays radio plays is earlier than the host who presents Owls Calling in slot order.",
+      "The host who plays trucker country and Bea Okonjo are exactly one slot apart in slot order, in one direction or the other.",
+      "The host who plays radio plays falls somewhere between Dustin Crowe and the host who presents The Sleepless Hour in slot order.",
+      "The host who plays lost surf rock is earlier than the host who presents Signal Fade in slot order.",
+      "Bea Okonjo falls somewhere between the host who presents Owls Calling and the host who presents The Sleepless Hour in slot order."
+    ]
   }
 }

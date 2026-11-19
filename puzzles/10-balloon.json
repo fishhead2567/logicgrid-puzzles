@@ -210,5 +210,17 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 12
+  },
+  "text": {
+    "intro": "The Thistledown Ascent is less a race than a slow argument conducted at two thousand feet.\nFour pilots are involved. Determine each pilot's start time, landing site and ballast.\n- **Pilot**: Anneliese, Montague, Rosalind and Delphine.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am and 11am.\n- **Landed at**: a reservoir bank, a golf course bunker, a railway siding and a caravan park.\n- **Ballast**: dried beans, sandbags, iron filings and lead shot.\nEvery pilot has a different start time, landing site and ballast, so within each category every item is used exactly once.",
+    "clues": [
+      "The pilot who carries dried beans is earlier than the pilot who comes down in a golf course bunker in start time order. The pilot who comes down in a golf course bunker launches at 10am.",
+      "Montague carries sandbags.",
+      "The pilot who comes down in a reservoir bank is later than 9am in start time order. The pilot who comes down in a caravan park does not launch at 9am.",
+      "Delphine does not carry iron filings. Delphine is later than 10am in start time order.",
+      "Anneliese does not come down in a caravan park.",
+      "Anneliese does not come down in a golf course bunker.",
+      "The pilot who carries dried beans does not come down in a railway siding."
+    ]
   }
 }

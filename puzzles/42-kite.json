@@ -319,5 +319,23 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.\nFive fliers are involved. Determine each flier's entry fee, kite, mishap and line.\n- **Flier**: Tansy, Blaise, Kipling, Ifeoma and Morwenna.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Kite**: a paper sled kite, a delta wing, a hand-painted dragon, a parafoil and a box kite.\n- **Mishap**: a lost tail, a trespassing dog, a power line scare, a sudden lull and a tangled line.\n- **Line**: kevlar thread, waxed cotton, hemp cord, parcel string and nylon twine.\nEvery flier has a different entry fee, kite, mishap and line, so within each category every item is used exactly once.",
+    "clues": [
+      "The flier who is undone by a trespassing dog falls somewhere between $4 and the flier who uses hemp cord in entry fee order. The flier who is undone by a sudden lull does not pay $4.",
+      "The flier who flies a box kite and $2 are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "Blaise and the flier who is undone by a lost tail are exactly one fee step apart in entry fee order, in one direction or the other. Blaise is dearer than $6 in entry fee order.",
+      "Morwenna is exactly one fee step cheaper than $10, with no entry fee in between.",
+      "Kipling and $8 are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "The flier who uses waxed cotton is cheaper than $6 in entry fee order.",
+      "Tansy falls somewhere between the flier who is undone by a lost tail and the flier who is undone by a power line scare in entry fee order.",
+      "At least one of the following holds, and possibly more than one: (a) Ifeoma is cheaper than the flier who flies a hand-painted dragon in entry fee order. (b) Morwenna flies a paper sled kite.",
+      "The flier who uses nylon twine and the flier who is undone by a trespassing dog are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "The flier who is undone by a trespassing dog falls somewhere between Ifeoma and the flier who flies a delta wing in entry fee order.",
+      "The flier who flies a paper sled kite does not use parcel string.",
+      "The flier who flies a paper sled kite does not use waxed cotton.",
+      "The flier who flies a parafoil and the flier who is undone by a trespassing dog are exactly one fee step apart in entry fee order, in one direction or the other."
+    ]
   }
 }

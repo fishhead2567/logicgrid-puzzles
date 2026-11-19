@@ -265,5 +265,20 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Inverlaig ferry runs a full day of crossings in theory, and a variable number in practice.\nFive skippers are involved. Determine each skipper's start time, cargo and vessel.\n- **Skipper**: Ruaridh, Murdo, Senga, Tormod and Fearghas.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Notable cargo**: a consignment of bees; a church organ; a brass band; a film crew and no permits; and a refrigerated van.\n- **Vessel**: the Tern, the Broch Maid, the Siller Grey, the Three Brothers and the Kelpie.\nEvery skipper has a different start time, cargo and vessel, so within each category every item is used exactly once.",
+    "clues": [
+      "The skipper who carries a film crew and no permits commands the Tern.",
+      "9am is exactly one hour earlier than Fearghas, with no start time in between.",
+      "Tormod is exactly one hour earlier than 9am, with no start time in between.",
+      "The skipper who carries a brass band falls somewhere between 11am and the skipper who commands the Broch Maid in start time order.",
+      "At least one of the following holds, and possibly more than one: (a) Ruaridh is earlier than noon in start time order. (b) The skipper who carries a church organ commands the Kelpie.",
+      "9am is exactly one hour earlier than the skipper who carries a church organ, with no start time in between.",
+      "The skipper who carries a brass band and Senga both sit at odd-numbered hours or both at even-numbered hours.",
+      "At least one of the following holds, and possibly more than one: (a) Fearghas and the skipper who commands the Broch Maid are exactly one hour apart in start time order, in one direction or the other. (b) The skipper who carries a church organ and the skipper who commands the Three Brothers both sit at odd-numbered hours or both at even-numbered hours.",
+      "The skipper who commands the Three Brothers is earlier than Senga in start time order. The skipper who carries a refrigerated van is earlier than Senga in start time order.",
+      "The skipper who carries a church organ is exactly one hour earlier than the skipper who commands the Siller Grey, with no start time in between."
+    ]
   }
 }

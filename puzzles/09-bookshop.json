@@ -181,5 +181,16 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 10
+  },
+  "text": {
+    "intro": "Mrs Pell's secondhand bookshop shelves by a system she alone understands, and she has gone to Margate for a fortnight.\nFive volumes are involved. Determine each volume's shelf and keepsake.\n- **Volume**: a book of sea shanties, a guide to fungi, a water-stained atlas, an album of pressed ferns and a beekeeping manual.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf and the fifth shelf.\n- **Found inside**: a recipe for quince jelly, a tram ticket, a postcard from Hull, a pawn ticket and a pressed violet.\nEvery volume has a different shelf and keepsake, so within each category every item is used exactly once.",
+    "clues": [
+      "A guide to fungi sits on the second shelf.",
+      "The volume that contains a tram ticket falls somewhere between a beekeeping manual and a water-stained atlas in shelf order. A beekeeping manual sits on the fifth shelf.",
+      "The bottom shelf is exactly one shelf lower than the volume that contains a postcard from Hull, with no shelf in between.",
+      "The fourth shelf falls somewhere between a water-stained atlas and the volume that contains a pressed violet in shelf order.",
+      "The volume that contains a tram ticket is lower than a book of sea shanties in shelf order.",
+      "An album of pressed ferns falls somewhere between the volume that contains a pressed violet and the volume that contains a recipe for quince jelly in shelf order."
+    ]
   }
 }

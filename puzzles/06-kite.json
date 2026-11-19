@@ -162,5 +162,15 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.\nFour fliers are involved. Determine each flier's entry fee and mishap.\n- **Flier**: Blaise, Aurelio, Gunnar and Tansy.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6 and $8.\n- **Mishap**: a power line scare, a snapped spar, a tangled line and a trespassing dog.\nEvery flier has a different entry fee and mishap, so within each category every item is used exactly once.",
+    "clues": [
+      "Blaise pays $2.",
+      "Gunnar is undone by a snapped spar.",
+      "Blaise is undone by a tangled line.",
+      "The flier who is undone by a power line scare and $2 are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "Tansy and $8 are exactly one fee step apart in entry fee order, in one direction or the other."
+    ]
   }
 }

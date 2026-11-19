@@ -398,5 +398,26 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.\nSix fliers are involved. Determine each flier's entry fee, kite, mishap and line.\n- **Flier**: Blaise, Morwenna, Ifeoma, Aurelio, Kipling and Gunnar.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8, $10 and $12.\n- **Kite**: a paper sled kite, a box kite, a hand-painted dragon, a delta wing, a seven-metre centipede and a rokkaku fighter.\n- **Mishap**: a lost tail, a snapped spar, a tangled line, a sudden lull, a trespassing dog and a tree.\n- **Line**: fishing monofilament, parcel string, hemp cord, waxed cotton, nylon twine and kevlar thread.\nEvery flier has a different entry fee, kite, mishap and line, so within each category every item is used exactly once.",
+    "clues": [
+      "The flier who uses nylon twine is cheaper than $10 in entry fee order. $10 has an entry fee exactly $4 more than Morwenna. The flier who uses nylon twine does not pay $6.",
+      "At least one of the following holds, and possibly more than one: (a) The flier who is undone by a tree is dearer than $6 in entry fee order. (b) The flier who uses waxed cotton pays $10.",
+      "At least one of the following holds, and possibly more than one: (a) The flier who flies a hand-painted dragon and $12 are exactly one fee step apart in entry fee order, in one direction or the other. (b) The flier who uses waxed cotton is cheaper than the flier who flies a hand-painted dragon in entry fee order.",
+      "$4 is exactly one fee step cheaper than the flier who flies a hand-painted dragon, with no entry fee in between.",
+      "Ifeoma does not pay $2.",
+      "The flier who flies a delta wing is exactly one fee step cheaper than $6, with no entry fee in between.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) Aurelio and the flier who is undone by a lost tail are exactly one fee step apart in entry fee order, in one direction or the other. (b) The flier who uses kevlar thread is dearer than $2 in entry fee order.",
+      "$6 falls somewhere between the flier who flies a rokkaku fighter and the flier who uses fishing monofilament in entry fee order.",
+      "At least one of the following holds, and possibly more than one: (a) Blaise is dearer than $10 in entry fee order. (b) The flier who uses hemp cord is cheaper than Kipling in entry fee order.",
+      "The flier who is undone by a tangled line is exactly one fee step cheaper than Blaise, with no entry fee in between.",
+      "The flier who is undone by a tree has an entry fee exactly 3 times that of the flier who uses fishing monofilament.",
+      "The flier who flies a paper sled kite and the flier who is undone by a trespassing dog are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "Aurelio does not fly a paper sled kite.",
+      "Blaise is exactly one fee step cheaper than the flier who is undone by a sudden lull, with no entry fee in between.",
+      "The flier who flies a seven-metre centipede has an entry fee exactly $10 more than the flier who is undone by a snapped spar.",
+      "The following is NOT true: The flier who is undone by a trespassing dog is cheaper than the flier who uses kevlar thread in entry fee order."
+    ]
   }
 }

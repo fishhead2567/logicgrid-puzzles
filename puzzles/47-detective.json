@@ -411,5 +411,29 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.\nSix investigators are involved. Determine each investigator's start time, theory, clue and alibi.\n- **Investigator**: Ngozi, Fergus, Ariadne, Hortensia, Leopold and Barnabas.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am, noon and 1pm.\n- **Theory**: a clerical error, an inside job, a jealous rival, a conspiracy of two, nothing happened at all and a magpie.\n- **Clue produced**: a tyre mark, a torn receipt, a smell of creosote, an unexplained hole, a bootprint and a dropped glove.\n- **Alibi**: the dentist, watching the snooker, choir practice, a long bath, a locked greenhouse and no alibi whatsoever.\nEvery investigator has a different start time, theory, clue and alibi, so within each category every item is used exactly once.",
+    "clues": [
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The investigator who favours a conspiracy of two and 8am are exactly three hours apart in start time order. (b) The investigator who claims watching the snooker and 1pm are exactly five hours apart in start time order.",
+      "The investigator who favours nothing happened at all and 10am are exactly one hour apart in start time order, in one direction or the other.",
+      "The investigator who produces a bootprint and noon are exactly two hours apart in start time order.",
+      "11am falls somewhere between the investigator who produces an unexplained hole and Fergus in start time order.",
+      "The investigator who favours a conspiracy of two falls somewhere between the investigator who produces a bootprint and noon in start time order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The investigator who produces an unexplained hole and 1pm are exactly one hour apart in start time order, in one direction or the other. (b) The investigator who claims a long bath is exactly one hour earlier than Hortensia, with no start time in between.",
+      "The investigator who favours a magpie and 8am are exactly four hours apart in start time order.",
+      "At least one of the following holds, and possibly more than one: (a) The investigator who produces an unexplained hole and the investigator who favours a magpie are exactly one hour apart in start time order, in one direction or the other. (b) The investigator who produces a dropped glove and Barnabas both sit at odd-numbered hours or both at even-numbered hours.",
+      "The investigator who claims a locked greenhouse does not produce a bootprint.",
+      "The investigator who produces a tyre mark and Hortensia are exactly three hours apart in start time order.",
+      "The investigator who produces a torn receipt does not favour nothing happened at all. The investigator who favours nothing happened at all is earlier than Ngozi in start time order.",
+      "The investigator who claims a long bath is exactly one hour earlier than Hortensia, with no start time in between.",
+      "The investigator who claims no alibi whatsoever and the investigator who favours a jealous rival are exactly four hours apart in start time order.",
+      "The investigator who claims a locked greenhouse is exactly one hour earlier than Ariadne, with no start time in between.",
+      "The investigator who favours a clerical error is exactly one hour earlier than the investigator who claims the dentist, with no start time in between.",
+      "The investigator who produces a bootprint and the investigator who favours a jealous rival both sit at odd-numbered hours or both at even-numbered hours.",
+      "Leopold and the investigator who favours nothing happened at all are exactly one hour apart in start time order, in one direction or the other.",
+      "The investigator who produces a torn receipt and Hortensia are exactly two hours apart in start time order.",
+      "Ngozi does not favour an inside job."
+    ]
   }
 }

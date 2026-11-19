@@ -260,5 +260,20 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.\nFive crews are involved. Determine each crew's placing, boat and colours.\n- **Crew**: the Almshouse crew, the Creamery crew, the Tannery crew, the Seminary crew and the Gasworks crew.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Boat**: the Peregrine, the Gilded Eel, the Obstinate, the Mudlark and the Last Resort.\n- **Colours**: bottle green; navy with a white band; cherry and grey; pink and cream; and lilac and bronze.\nEvery crew has a different placing, boat and colours, so within each category every item is used exactly once.",
+    "clues": [
+      "The crew who rows the Obstinate and first are exactly three places apart in placing order.",
+      "At least one of the following holds, and possibly more than one: (a) The Almshouse crew rows the Gilded Eel. (b) The Creamery crew and fourth both sit at odd-numbered places or both at even-numbered places.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The Tannery crew does not finish fifth. (b) One of the crew who rows the Last Resort and the Creamery crew sits at an odd-numbered placing and the other at an even-numbered placing.",
+      "The crew who wears pink and cream is exactly one place better than fifth, with no placing in between.",
+      "The crew who rows the Peregrine and the Almshouse crew are exactly one place apart in placing order, in one direction or the other.",
+      "The crew who wears bottle green is better than the Seminary crew in placing order.",
+      "The crew who rows the Gilded Eel and the crew who wears cherry and grey are exactly one place apart in placing order, in one direction or the other.",
+      "The crew who wears pink and cream is better than the crew who rows the Peregrine in placing order.",
+      "The crew who rows the Last Resort and the crew who wears lilac and bronze are exactly four places apart in placing order.",
+      "The crew who rows the Last Resort is exactly one place better than the crew who wears cherry and grey, with no placing in between."
+    ]
   }
 }

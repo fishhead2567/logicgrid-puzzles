@@ -211,5 +211,18 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 12
+  },
+  "text": {
+    "intro": "The Ashfold Knitting Circle meets weekly and has not agreed on anything since 1998.\nFour knitters are involved. Determine each knitter's day, project and yarn.\n- **Knitter**: Ebba, Lionel, Angus and Maudie.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday and Thursday.\n- **Project**: a shawl of impossible lace, a fisherman's gansey, a cable-knit blanket and a Fair Isle tam.\n- **Yarn**: undyed Shetland, recycled sari silk, mohair of great expense and hand-spun alpaca.\nEvery knitter has a different day, project and yarn, so within each category every item is used exactly once.",
+    "clues": [
+      "The knitter who is making a cable-knit blanket knits on Wednesday.",
+      "The knitter who is making a Fair Isle tam works in mohair of great expense.",
+      "Wednesday is exactly one day earlier than the knitter who is making a shawl of impossible lace, with no day in between.",
+      "Lionel does not knit on Wednesday.",
+      "Maudie is exactly one day earlier than the knitter who works in mohair of great expense, with no day in between.",
+      "Angus is not making a Fair Isle tam. The knitter who is making a Fair Isle tam is earlier than Lionel in day order.",
+      "Angus does not work in recycled sari silk.",
+      "The knitter who works in hand-spun alpaca is exactly one day earlier than the knitter who is making a Fair Isle tam, with no day in between."
+    ]
   }
 }

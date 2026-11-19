@@ -382,5 +382,24 @@
     },
     "trial_eliminations": 2,
     "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The annual honey show has been judged, and at least two people are writing letters about it.\nSix beekeepers are involved. Determine each beekeeper's entry fee, honey, hive and note.\n- **Beekeeper**: Wilhelmina, Priya, Ezekiel, Mungo, Breda and Antonina.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8, $10 and $12.\n- **Honey**: clover honey, borage honey, lime blossom honey, heather honey, chestnut honey and sea lavender honey.\n- **Hive type**: a national hive, a WBC hive, a Langstroth hive, a Warre hive, a long deep hive and a top-bar hive.\n- **Judge's note**: an overbearing aroma, a cloudy jar, crystallised early, an unlabelled lid, slightly over-filtered and a trace of wax.\nEvery beekeeper has a different entry fee, honey, hive and note, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) Wilhelmina pays $2. (b) The beekeeper who keeps a national hive enters sea lavender honey.",
+      "Priya falls somewhere between $8 and the beekeeper who enters borage honey in entry fee order.",
+      "The beekeeper who keeps a WBC hive and $12 are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) Ezekiel does not have a jar noted as a trace of wax. (b) The beekeeper who has a jar noted as an overbearing aroma pays $6.",
+      "The beekeeper who enters chestnut honey is exactly one fee step cheaper than $4, with no entry fee in between.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The beekeeper who enters borage honey does not have a jar noted as an overbearing aroma. (b) The beekeeper who keeps a Langstroth hive does not pay $2.",
+      "Priya is exactly one fee step cheaper than the beekeeper who has a jar noted as a cloudy jar, with no entry fee in between.",
+      "Wilhelmina has an entry fee exactly $6 more than the beekeeper who enters lime blossom honey.",
+      "Mungo has an entry fee exactly $4 more than the beekeeper who enters clover honey.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) Breda and the beekeeper who has a jar noted as a trace of wax are exactly one fee step apart in entry fee order, in one direction or the other. (b) Mungo has a jar noted as a cloudy jar.",
+      "The following is NOT true: The beekeeper who keeps a top-bar hive is cheaper than the beekeeper who has a jar noted as a trace of wax in entry fee order.",
+      "At least one of the following holds, and possibly more than one: (a) The beekeeper who enters lime blossom honey is cheaper than the beekeeper who keeps a top-bar hive in entry fee order. (b) Mungo is cheaper than the beekeeper who has a jar noted as an overbearing aroma in entry fee order.",
+      "The beekeeper who keeps a long deep hive has an entry fee exactly $10 more than the beekeeper who has a jar noted as slightly over-filtered.",
+      "At least one of the following holds, and possibly more than one: (a) Ezekiel has a jar noted as a cloudy jar. (b) The beekeeper who keeps a Langstroth hive does not have a jar noted as crystallised early."
+    ]
   }
 }

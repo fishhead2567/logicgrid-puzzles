@@ -289,5 +289,22 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The orchid house at Fenn Park is shared by its growers, each convinced the others are overwatering.\nFive growers are involved. Determine each grower's harvest month, orchid, potting mix and pest.\n- **Grower**: Leocadia, Nkiruka, Columbine, Sigismund and Ambrose.\n- **Harvest month** (listed from earlier to later): January, February, March, April and May.\n- **Orchid**: a dancing lady, a slipper orchid, a ghost orchid, a jewel orchid and a moth orchid.\n- **Potting mix**: tree fern fibre, sphagnum moss, lava rock, coconut husk and bare root on cork.\n- **Pest**: mealybug, red spider mite, scale insects, fungus gnats and thrips.\nEvery grower has a different harvest month, orchid, potting mix and pest, so within each category every item is used exactly once.",
+    "clues": [
+      "Sigismund pots in coconut husk.",
+      "The grower who is troubled by mealybug is exactly one month earlier than March, with no harvest month in between.",
+      "February is exactly one month earlier than the grower who grows a moth orchid, with no harvest month in between.",
+      "Leocadia and the grower who pots in sphagnum moss are exactly three months apart in harvest month order. March is exactly one month earlier than Leocadia, with no harvest month in between.",
+      "The grower who is troubled by thrips and April are exactly one month apart in harvest month order, in one direction or the other.",
+      "Sigismund and the grower who pots in bare root on cork both sit at odd-numbered months or both at even-numbered months.",
+      "Sigismund is earlier than the grower who pots in tree fern fibre in harvest month order.",
+      "The grower who grows a jewel orchid and the grower who is troubled by red spider mite are exactly two months apart in harvest month order.",
+      "The grower who grows a dancing lady falls somewhere between Nkiruka and the grower who pots in bare root on cork in harvest month order.",
+      "The grower who grows a jewel orchid and the grower who is troubled by mealybug are exactly one month apart in harvest month order, in one direction or the other.",
+      "The grower who grows a slipper orchid is earlier than the grower who is troubled by fungus gnats in harvest month order.",
+      "Columbine and the grower who is troubled by red spider mite are exactly one month apart in harvest month order, in one direction or the other."
+    ]
   }
 }

@@ -150,5 +150,14 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Ashcombe allotment committee has been locked in a slow war over compost, shade and the correct way to stake a bean.\nFour plot-holders are involved. Determine each plot-holder's placing and crop.\n- **Plot-holder**: Senga, Alphonse, Ewan and Rosamund.\n- **Placing** (listed from better to worse): first, second, third and fourth.\n- **Prize crop**: a row of leeks, a cauliflower, a pumpkin and a bed of beetroot.\nEvery plot-holder has a different placing and crop, so within each category every item is used exactly once.",
+    "clues": [
+      "The plot-holder who grows a row of leeks places first.",
+      "Senga places second.",
+      "The plot-holder who grows a bed of beetroot and Alphonse are exactly one place apart in placing order, in one direction or the other. Alphonse grows a pumpkin.",
+      "Ewan and fourth are exactly one place apart in placing order, in one direction or the other."
+    ]
   }
 }

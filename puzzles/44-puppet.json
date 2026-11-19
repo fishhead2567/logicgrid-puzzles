@@ -440,5 +440,29 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The Little Vesper Theatre seats forty people and employs a company of puppeteers who will not be in the same room together.\nSix puppeteers are involved. Determine each puppeteer's slot, puppet, play and accompaniment.\n- **Puppeteer**: Bowen, Halima, Stellan, Mirabel, Josefa and Lorcan.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four, slot five and slot six.\n- **Lead puppet**: a tin soldier, a shepherd boy, a drowned sailor, a moth queen, a brass magistrate and a one-eyed cat.\n- **Play**: Six Spoons, Hollowmas, Marrowbone, The Clockwork Orchard, Winterling and The Drowned Bell.\n- **Accompaniment**: a musical saw, a hurdy-gurdy, a bowed psaltery, a prepared piano, two kettle drums and a pump organ.\nEvery puppeteer has a different slot, puppet, play and accompaniment, so within each category every item is used exactly once.",
+    "clues": [
+      "The puppeteer who stages The Drowned Bell falls somewhere between slot five and slot one in slot order.",
+      "Slot two is exactly one slot earlier than the puppeteer who works a moth queen, with no slot in between.",
+      "The puppeteer who stages Winterling and Josefa are exactly five slots apart in slot order. The puppeteer who works a shepherd boy falls somewhere between Josefa and slot four in slot order.",
+      "Mirabel falls somewhere between the puppeteer who works a brass magistrate and slot two in slot order. The puppeteer who is accompanied by a musical saw does not work a brass magistrate.",
+      "At least one of the following holds, and possibly more than one: (a) The puppeteer who stages Six Spoons performs in slot three. (b) The puppeteer who stages Hollowmas and the puppeteer who works a one-eyed cat both sit at odd-numbered slots or both at even-numbered slots.",
+      "Slot three falls somewhere between the puppeteer who is accompanied by a prepared piano and Halima in slot order.",
+      "The puppeteer who is accompanied by a pump organ and slot two are exactly one slot apart in slot order, in one direction or the other.",
+      "The puppeteer who is accompanied by two kettle drums and slot four are exactly one slot apart in slot order, in one direction or the other.",
+      "The puppeteer who is accompanied by a prepared piano falls somewhere between Lorcan and slot one in slot order.",
+      "At least one of the following holds, and possibly more than one: (a) The puppeteer who is accompanied by a hurdy-gurdy is earlier than the puppeteer who stages The Clockwork Orchard in slot order. (b) The puppeteer who is accompanied by a bowed psaltery is later than slot five in slot order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The puppeteer who is accompanied by a bowed psaltery is later than slot five in slot order. (b) The puppeteer who is accompanied by a pump organ and the puppeteer who stages The Clockwork Orchard are exactly one slot apart in slot order, in one direction or the other.",
+      "The puppeteer who is accompanied by a hurdy-gurdy and slot three both sit at odd-numbered slots or both at even-numbered slots.",
+      "The puppeteer who stages The Clockwork Orchard does not work a brass magistrate.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The puppeteer who is accompanied by a prepared piano and the puppeteer who works a one-eyed cat are exactly two slots apart in slot order. (b) The puppeteer who is accompanied by a pump organ works a moth queen.",
+      "At least one of the following holds, and possibly more than one: (a) The puppeteer who works a moth queen is earlier than Bowen in slot order. (b) The puppeteer who is accompanied by a bowed psaltery stages Six Spoons.",
+      "One of the puppeteer who is accompanied by a hurdy-gurdy and the puppeteer who stages Hollowmas sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "Josefa is exactly one slot earlier than the puppeteer who stages Marrowbone, with no slot in between.",
+      "At least one of the following holds, and possibly more than one: (a) The puppeteer who works a one-eyed cat and Stellan are exactly one slot apart in slot order, in one direction or the other. (b) The puppeteer who stages The Clockwork Orchard works a moth queen.",
+      "The puppeteer who works a tin soldier is earlier than the puppeteer who is accompanied by two kettle drums in slot order."
+    ]
   }
 }

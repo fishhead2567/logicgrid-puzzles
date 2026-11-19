@@ -175,5 +175,16 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The Grindle Bay Open is judged at four o'clock, whatever the tide is doing.\nFive builders are involved. Determine each builder's placing and cause.\n- **Builder**: Aleksy, Fenwick, Khalid, Juniper and Hartley.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Undone by**: a cricket ball, a sudden shower, the incoming tide, structural overreach and a loose dog.\nEvery builder has a different placing and cause, so within each category every item is used exactly once.",
+    "clues": [
+      "Hartley places third.",
+      "The builder who is undone by a sudden shower places fourth.",
+      "Juniper falls somewhere between second and the builder who is undone by a loose dog in placing order.",
+      "Juniper and the builder who is undone by structural overreach are exactly one place apart in placing order, in one direction or the other.",
+      "The builder who is undone by a cricket ball is exactly one place better than Fenwick, with no placing in between.",
+      "Aleksy is better than the builder who is undone by a loose dog in placing order."
+    ]
   }
 }

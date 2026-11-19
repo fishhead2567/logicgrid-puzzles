@@ -329,5 +329,23 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The preserves tent is the most competitive building at the show, and the only one with a locked door.\nFive entrants are involved. Determine each entrant's price, preserve, jar and ingredient.\n- **Entrant**: Ottilie, Emeka, Drusilla, Rafferty and Stanislaw.\n- **Price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Preserve**: sloe and apple butter; damson cheese; hot pepper jelly; green walnut pickle; and medlar jam.\n- **Jar**: an unlabelled jar, a jar with a cloth lid, a recycled honey jar, a sealed crock and a hexagonal jar.\n- **Secret ingredient**: a bay leaf, orange zest, a splash of gin, nothing whatsoever and star anise.\nEvery entrant has a different price, preserve, jar and ingredient, so within each category every item is used exactly once.",
+    "clues": [
+      "Drusilla charges $7. The entrant who enters damson cheese is exactly one price step cheaper than $7, with no price in between.",
+      "The entrant who uses a recycled honey jar and $9 are exactly one price step apart in price order, in one direction or the other.",
+      "The entrant who adds nothing whatsoever and $9 are exactly one price step apart in price order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) The entrant who adds star anise charges $7. (b) Emeka does not enter medlar jam.",
+      "The entrant who enters sloe and apple butter and $9 are exactly one price step apart in price order, in one direction or the other.",
+      "Rafferty and the entrant who enters green walnut pickle are exactly one price step apart in price order, in one direction or the other.",
+      "The entrant who enters green walnut pickle is exactly one price step cheaper than the entrant who uses a hexagonal jar, with no price in between.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The entrant who adds star anise is exactly one price step cheaper than the entrant who uses a recycled honey jar, with no price in between. (b) Ottilie does not add orange zest.",
+      "The entrant who adds a splash of gin is exactly one price step cheaper than the entrant who enters green walnut pickle, with no price in between.",
+      "The entrant who enters sloe and apple butter is cheaper than the entrant who uses an unlabelled jar in price order.",
+      "At least one of the following holds, and possibly more than one: (a) Rafferty and the entrant who adds a splash of gin are exactly one price step apart in price order, in one direction or the other. (b) The entrant who enters medlar jam adds a bay leaf.",
+      "Emeka is cheaper than the entrant who adds orange zest in price order.",
+      "The entrant who uses a sealed crock and the entrant who enters medlar jam are exactly one price step apart in price order, in one direction or the other."
+    ]
   }
 }

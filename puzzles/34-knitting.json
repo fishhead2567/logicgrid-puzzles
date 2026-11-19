@@ -327,5 +327,22 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Ashfold Knitting Circle meets weekly and has not agreed on anything since 1998.\nFive knitters are involved. Determine each knitter's day, project, yarn and setback.\n- **Knitter**: Maudie, Lionel, Serafina, Ebba and Nkechi.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Project**: a cable-knit blanket, a shawl of impossible lace, a pair of argyle socks, a dog coat and a tea cosy shaped like a hen.\n- **Yarn**: hand-spun alpaca, mill-end acrylic, nettle fibre, recycled sari silk and undyed Shetland.\n- **Setback**: a dropped stitch in row nine, a cat, losing the pattern entirely, a misread chart and running out of dye lot.\nEvery knitter has a different day, project, yarn and setback, so within each category every item is used exactly once.",
+    "clues": [
+      "The knitter who works in recycled sari silk falls somewhere between Monday and Nkechi in day order.",
+      "At least one of the following holds, and possibly more than one: (a) The knitter who is making a pair of argyle socks and the knitter who is set back by a dropped stitch in row nine are exactly one day apart in day order, in one direction or the other. (b) One of Tuesday and the knitter who is making a dog coat sits at an odd-numbered day and the other at an even-numbered day.",
+      "The knitter who is making a cable-knit blanket falls somewhere between Thursday and Ebba in day order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The knitter who is set back by a dropped stitch in row nine and Thursday are exactly one day apart in day order, in one direction or the other. (b) The knitter who is making a cable-knit blanket is exactly one day earlier than the knitter who is set back by running out of dye lot, with no day in between.",
+      "Nkechi is earlier than Thursday in day order. Nkechi and the knitter who works in hand-spun alpaca are exactly one day apart in day order, in one direction or the other.",
+      "Friday and the knitter who is making a pair of argyle socks both sit at odd-numbered days or both at even-numbered days.",
+      "The knitter who is set back by a misread chart and the knitter who works in undyed Shetland are exactly two days apart in day order.",
+      "The knitter who is making a pair of argyle socks is not set back by a cat. Lionel is earlier than the knitter who is set back by a cat in day order.",
+      "Lionel and the knitter who works in nettle fibre are exactly four days apart in day order.",
+      "The knitter who is set back by running out of dye lot is exactly one day earlier than Serafina, with no day in between.",
+      "At least one of the following holds, and possibly more than one: (a) Lionel is earlier than the knitter who works in undyed Shetland in day order. (b) Nkechi is earlier than the knitter who is making a pair of argyle socks in day order.",
+      "The knitter who is making a tea cosy shaped like a hen is earlier than the knitter who works in mill-end acrylic in day order."
+    ]
   }
 }

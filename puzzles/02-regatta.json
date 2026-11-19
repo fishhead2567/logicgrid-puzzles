@@ -151,5 +151,14 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.\nFour crews are involved. Determine each crew's placing and boat.\n- **Crew**: the Tannery crew, the Brickworks crew, the Customs crew and the Almshouse crew.\n- **Placing** (listed from better to worse): first, second, third and fourth.\n- **Boat**: the Gilded Eel, the Last Resort, the Dauntless and the Obstinate.\nEvery crew has a different placing and boat, so within each category every item is used exactly once.",
+    "clues": [
+      "The Customs crew finishes first.",
+      "The Almshouse crew rows the Last Resort.",
+      "The Tannery crew rows the Gilded Eel. The crew who rows the Last Resort is better than the Tannery crew in placing order.",
+      "Second is exactly one place better than the crew who rows the Obstinate, with no placing in between."
+    ]
   }
 }

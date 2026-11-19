@@ -245,5 +245,20 @@
     },
     "trial_eliminations": 0,
     "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Coldwater Hall Aquarium keeps a night rota of tanks, and one keeper who is definitely feeding the wrong things.\nFive keepers are involved. Determine each keeper's slot, tank and feed.\n- **Keeper**: Oskar, Marisol, Chiamaka, Rhiannon and Fitzwilliam.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Tank**: the jellyfish column, the touch pool, the deep reef, the seahorse nursery and the kelp tank.\n- **Feed**: live mysis, a gelatine cube of unclear provenance, mussel meat, nori sheets and chopped squid.\nEvery keeper has a different slot, tank and feed, so within each category every item is used exactly once.",
+    "clues": [
+      "The keeper who tends the touch pool works slot five.",
+      "The keeper who feeds nori sheets does not work slot three.",
+      "The keeper who feeds chopped squid and slot one are exactly one slot apart in slot order, in one direction or the other.",
+      "The keeper who feeds mussel meat does not work slot five.",
+      "Slot one is exactly one slot earlier than Fitzwilliam, with no slot in between.",
+      "The keeper who feeds live mysis is earlier than the keeper who tends the deep reef in slot order. The keeper who tends the deep reef is earlier than Marisol in slot order.",
+      "The keeper who feeds chopped squid is earlier than the keeper who tends the kelp tank in slot order.",
+      "The keeper who feeds live mysis is earlier than Chiamaka in slot order.",
+      "The keeper who feeds mussel meat and Rhiannon are exactly one slot apart in slot order, in one direction or the other. Chiamaka is earlier than the keeper who feeds mussel meat in slot order.",
+      "The keeper who feeds mussel meat and the keeper who tends the jellyfish column are exactly one slot apart in slot order, in one direction or the other."
+    ]
   }
 }
