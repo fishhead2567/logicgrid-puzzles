@@ -4,7 +4,7 @@ Puzzle content for the LogicGrid app. **Generated, not hand-edited** -- rebuilt
 from the generator repo with `scripts/build_content_repo.py`.
 
 50 puzzles, ratings 1-7, 5 with a verified narrative.
-Generated 2026-11-19T03:27:26+00:00 by logicgrid 0.1.0.
+Generated 2026-11-19T03:38:28+00:00 by logicgrid 0.1.0.
 
 ## Fetch contract
 
@@ -65,3 +65,13 @@ one has been read back by three independent extractors and proved to yield the
 same unique solution as the canonical clues. `verdict` is `pass`, or
 `pass_equivalent` where the readers agreed on the answer by differently-shaped
 routes.
+
+## Licence
+
+MIT -- see [LICENSE](LICENSE). That covers the puzzle content here as well as
+the manifest.
+
+Logic grid puzzles of this shape are a long-standing magazine format. These are
+written in the style of Penny Dell's "Logic Problems", but "Penny Dell" is
+someone else's trademark and nothing here is affiliated with or endorsed by
+them.
