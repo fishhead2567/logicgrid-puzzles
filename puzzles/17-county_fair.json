@@ -1,0 +1,190 @@
+{
+  "pid": "7592df768a12",
+  "title": "The Hollow Creek Pie Judging",
+  "theme": "county_fair",
+  "blurb": "The Hollow Creek county fair runs its pie judging with more ceremony than the state legislature.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.13,
+  "seed": 2026172710059,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172710059
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "baker",
+    "entity_noun_plural": "bakers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "baker",
+        "label": "Baker",
+        "items": [
+          "Winnie",
+          "Odette",
+          "Loretta",
+          "Caspian"
+        ],
+        "ordered": false,
+        "noun": "baker",
+        "subject": true
+      },
+      {
+        "name": "county",
+        "label": "Home county",
+        "items": [
+          "Hobbs Bend",
+          "Fenwick",
+          "Quarry Hill",
+          "Ardmore"
+        ],
+        "ordered": false,
+        "noun": "county",
+        "verb": "comes from"
+      },
+      {
+        "name": "crust",
+        "label": "Crust",
+        "items": [
+          "a fork-crimped edge",
+          "a fluted rim",
+          "a crumb topping",
+          "a double crust"
+        ],
+        "ordered": false,
+        "noun": "crust",
+        "verb": "uses"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "crust:a fluted rim",
+          "b": "place:third"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "place:first",
+          "b": "county:Hobbs Bend"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "crust:a crumb topping",
+          "b": "place:second"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "baker:Loretta",
+          "b": "county:Fenwick"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "baker:Winnie",
+          "b": "county:Quarry Hill"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "crust:a fork-crimped edge",
+          "b": "baker:Odette"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth"
+    ],
+    "baker": [
+      "Loretta",
+      "Winnie",
+      "Odette",
+      "Caspian"
+    ],
+    "county": [
+      "Ardmore",
+      "Hobbs Bend",
+      "Quarry Hill",
+      "Fenwick"
+    ],
+    "crust": [
+      "a crumb topping",
+      "a fork-crimped edge",
+      "a fluted rim",
+      "a double crust"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 1,
+      "immediately_before": 3,
+      "adjacent": 1,
+      "before": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 27,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 15,
+      "order": 11
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  }
+}

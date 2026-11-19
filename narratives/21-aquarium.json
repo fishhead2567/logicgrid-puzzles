@@ -1,0 +1,17 @@
+{
+  "pid": "8464a2b72386",
+  "title": "The Night Shift at Coldwater Hall",
+  "introduction": "Long after the last school group has filed out, Coldwater Hall Aquarium belongs to five keepers, who work their way through the building one tank at a time while the filters hum in the dark. The rota gives each keeper a different place in the running order, which runs from earliest to latest as slot one, slot two, slot three, slot four and slot five. Each keeper also looks after a different one of the five tanks -- the jellyfish column, the touch pool, the deep reef, the seahorse nursery and the kelp tank -- and carries a different one of the five feeds: live mysis, a gelatine cube of unclear provenance, mussel meat, nori sheets and chopped squid. The keepers are Oskar, Marisol, Chiamaka, Rhiannon and Fitzwilliam, and every slot, every tank and every feed belongs to exactly one of them. Somebody, the morning staff are quite sure, has been giving the wrong supper to the wrong animals; your job is simply to work out who took which tank, when, and with what.",
+  "clues": [
+    "The keeper who tends the touch pool works slot five, and the keeper who carries mussel meat does not work slot five.",
+    "Fitzwilliam takes the slot immediately after the keeper who works slot one, with no slot in between.",
+    "The keeper who feeds live mysis works somewhere earlier in the running order than the keeper who tends the deep reef, and also somewhere earlier than Chiamaka.",
+    "The keeper who tends the deep reef works somewhere earlier in the running order than Marisol.",
+    "The keeper who feeds chopped squid works exactly one slot apart from slot one, in one direction or the other, and somewhere earlier in the running order than the keeper who tends the kelp tank.",
+    "Chiamaka works somewhere earlier in the running order than the keeper who carries mussel meat, and that mussel meat keeper works exactly one slot apart from Rhiannon and exactly one slot apart from the keeper who tends the jellyfish column, in either direction in each case.",
+    "The keeper who hands out nori sheets does not work slot three."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

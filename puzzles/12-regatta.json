@@ -1,0 +1,191 @@
+{
+  "pid": "6031b36e1684",
+  "title": "The Mudflat Regatta",
+  "theme": "regatta",
+  "blurb": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.13,
+  "seed": 2026172670464,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172670464
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "crew",
+    "entity_noun_plural": "crews",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "finishes"
+      },
+      {
+        "name": "crew",
+        "label": "Crew",
+        "items": [
+          "the Customs crew",
+          "the Seminary crew",
+          "the Creamery crew",
+          "the Almshouse crew"
+        ],
+        "ordered": false,
+        "noun": "crew",
+        "subject": true
+      },
+      {
+        "name": "stroke",
+        "label": "Stroke",
+        "items": [
+          "Bartholomew",
+          "Crispin",
+          "Thomasina",
+          "Yusuf"
+        ],
+        "ordered": false,
+        "noun": "stroke",
+        "verb": "is stroked by"
+      },
+      {
+        "name": "boat",
+        "label": "Boat",
+        "items": [
+          "the Peregrine",
+          "the Wet Hen",
+          "the Gilded Eel",
+          "the Obstinate"
+        ],
+        "ordered": false,
+        "noun": "boat",
+        "verb": "rows"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "boat:the Wet Hen",
+          "b": "place:second"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "stroke:Thomasina",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "boat:the Obstinate",
+          "b": "stroke:Yusuf"
+        },
+        {
+          "kind": "between",
+          "a": "crew:the Customs crew",
+          "b": "boat:the Obstinate",
+          "c": "boat:the Wet Hen"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "stroke:Crispin",
+          "b": "crew:the Almshouse crew"
+        },
+        {
+          "kind": "not_link",
+          "a": "crew:the Creamery crew",
+          "b": "stroke:Crispin"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "boat:the Gilded Eel",
+          "b": "crew:the Seminary crew"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth"
+    ],
+    "crew": [
+      "the Seminary crew",
+      "the Almshouse crew",
+      "the Customs crew",
+      "the Creamery crew"
+    ],
+    "stroke": [
+      "Crispin",
+      "Yusuf",
+      "Thomasina",
+      "Bartholomew"
+    ],
+    "boat": [
+      "the Peregrine",
+      "the Wet Hen",
+      "the Gilded Eel",
+      "the Obstinate"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 1,
+      "immediately_before": 2,
+      "not_link": 3,
+      "between": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 28,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 17,
+      "order": 7
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  }
+}

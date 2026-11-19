@@ -1,0 +1,261 @@
+{
+  "pid": "9a786ef7d7be",
+  "title": "The Loft Layout Dispute",
+  "theme": "train",
+  "blurb": "The members of the model railway society share one loft layout and a deep well of resentment.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 8.5792,
+  "seed": 2026173004844,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173004844
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "modeller",
+    "entity_noun_plural": "modellers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "stores on"
+      },
+      {
+        "name": "modeller",
+        "label": "Modeller",
+        "items": [
+          "Rosamond",
+          "Esperanza",
+          "Hendrik",
+          "Gilbert",
+          "Abiodun"
+        ],
+        "ordered": false,
+        "noun": "modeller",
+        "subject": true
+      },
+      {
+        "name": "scenery",
+        "label": "Scenery",
+        "items": [
+          "a working level crossing",
+          "a sheet of static grass",
+          "a flocked cutting",
+          "a river of resin",
+          "a coal staithe"
+        ],
+        "ordered": false,
+        "noun": "scenery",
+        "verb": "builds"
+      },
+      {
+        "name": "grievance",
+        "label": "Grievance",
+        "items": [
+          "the timetable",
+          "the wiring",
+          "somebody else's couplings",
+          "a missing screwdriver",
+          "the lighting"
+        ],
+        "ordered": false,
+        "noun": "grievance",
+        "verb": "complains about"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "grievance:somebody else's couplings",
+          "b": "modeller:Esperanza"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "scenery:a coal staithe",
+          "b": "shelf:the fourth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "grievance:the timetable",
+          "b": "shelf:the fifth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "shelf:the fourth shelf",
+          "b": "scenery:a river of resin",
+          "c": "scenery:a sheet of static grass"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "modeller:Abiodun",
+          "b": "shelf:the third shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "scenery:a river of resin",
+              "b": "shelf:the bottom shelf"
+            },
+            {
+              "kind": "parity",
+              "a": "modeller:Gilbert",
+              "b": "scenery:a coal staithe",
+              "same": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "modeller:Rosamond",
+          "b": "scenery:a working level crossing"
+        },
+        {
+          "kind": "parity",
+          "a": "modeller:Abiodun",
+          "b": "scenery:a working level crossing",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "grievance:a missing screwdriver",
+          "b": "scenery:a sheet of static grass"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "grievance:somebody else's couplings",
+          "b": "scenery:a sheet of static grass"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "grievance:the wiring",
+          "b": "modeller:Abiodun"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "modeller": [
+      "Hendrik",
+      "Abiodun",
+      "Esperanza",
+      "Gilbert",
+      "Rosamond"
+    ],
+    "scenery": [
+      "a working level crossing",
+      "a river of resin",
+      "a coal staithe",
+      "a flocked cutting",
+      "a sheet of static grass"
+    ],
+    "grievance": [
+      "the wiring",
+      "a missing screwdriver",
+      "somebody else's couplings",
+      "the timetable",
+      "the lighting"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 1,
+      "adjacent": 2,
+      "between": 1,
+      "immediately_before": 2,
+      "or": 1,
+      "not_link": 2,
+      "parity": 1,
+      "before": 1
+    },
+    "positives": 1,
+    "compounds": 1
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 5,
+      "bijection": 21,
+      "order": 14,
+      "disjunction": 1
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

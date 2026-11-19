@@ -1,0 +1,16 @@
+{
+  "pid": "b44a026ec09b",
+  "title": "The Thistledown Balloon Ascent",
+  "introduction": "The Thistledown Ascent is less a race than a slow argument conducted at two thousand feet, and this year four pilots took part, each lifting off at a different hour and each drifting down somewhere entirely of their own choosing. The four start times, listed from earliest to latest, were 8am, 9am, 10am and 11am. The four pilots were Anneliese, Montague, Rosalind and Delphine. Each came down in a different place: a reservoir bank, a golf course bunker, a railway siding or a caravan park. Each carried a different ballast: dried beans, sandbags, iron filings or lead shot. Every pilot has exactly one start time, one landing place and one ballast, and within each of those categories no two pilots share a member, so each start time, each landing place and each ballast belongs to exactly one pilot. From the clues below, work out which pilot launched when, where each came down, and what each carried.",
+  "clues": [
+    "The pilot who came down in a golf course bunker launched at 10am, and that pilot was not Anneliese.",
+    "The pilot who carried dried beans launched earlier than the pilot who came down in a golf course bunker, and did not come down in a railway siding.",
+    "Montague carried sandbags.",
+    "The pilot who came down in a reservoir bank launched later than 9am.",
+    "The pilot who came down in a caravan park did not launch at 9am, and was not Anneliese.",
+    "Delphine launched later than 10am, and did not carry iron filings."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

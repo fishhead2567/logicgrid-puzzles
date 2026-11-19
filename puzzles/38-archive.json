@@ -1,0 +1,270 @@
+{
+  "pid": "e93f580ea8e8",
+  "title": "The Mislabelled Drawers",
+  "theme": "archive",
+  "blurb": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.5355,
+  "seed": 2026172876358,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172876358
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "archivist",
+    "entity_noun_plural": "archivists",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "files on"
+      },
+      {
+        "name": "archivist",
+        "label": "Archivist",
+        "items": [
+          "Ms Okafor",
+          "Mr Pelletier",
+          "Dr Lindqvist",
+          "Mr Ravensworth",
+          "Dr Mwangi"
+        ],
+        "ordered": false,
+        "noun": "archivist",
+        "subject": true
+      },
+      {
+        "name": "holding",
+        "label": "Holding",
+        "items": [
+          "a box of unopened wills",
+          "a folder of libel writs",
+          "the workhouse admissions book",
+          "a set of tram timetables",
+          "the smallpox ledgers"
+        ],
+        "ordered": false,
+        "noun": "holding",
+        "verb": "catalogues"
+      },
+      {
+        "name": "decade",
+        "label": "Decade",
+        "items": [
+          "the 1860s",
+          "the 1970s",
+          "the 1910s",
+          "the 1890s",
+          "the 1830s"
+        ],
+        "ordered": false,
+        "noun": "decade",
+        "verb": "covers"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "shelf:the second shelf",
+          "b": "holding:a folder of libel writs",
+          "c": "holding:a set of tram timetables"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "holding:the workhouse admissions book",
+          "b": "shelf:the fourth shelf",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "shelf:the fourth shelf",
+              "b": "archivist:Ms Okafor"
+            },
+            {
+              "kind": "link",
+              "a": "archivist:Mr Ravensworth",
+              "b": "holding:the smallpox ledgers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "decade:the 1830s",
+          "b": "holding:a folder of libel writs",
+          "c": "shelf:the bottom shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "archivist:Mr Ravensworth",
+          "b": "shelf:the second shelf",
+          "k": 3,
+          "rel": "eq"
+        },
+        {
+          "kind": "not_link",
+          "a": "archivist:Mr Ravensworth",
+          "b": "decade:the 1890s"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "decade:the 1910s",
+          "b": "shelf:the fourth shelf",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "archivist:Dr Mwangi",
+              "b": "holding:a folder of libel writs"
+            },
+            {
+              "kind": "not_link",
+              "a": "archivist:Mr Pelletier",
+              "b": "decade:the 1910s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "decade:the 1860s",
+          "b": "archivist:Mr Pelletier",
+          "c": "archivist:Mr Ravensworth"
+        },
+        {
+          "kind": "before",
+          "a": "decade:the 1860s",
+          "b": "archivist:Dr Mwangi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "holding:a set of tram timetables",
+          "b": "archivist:Dr Lindqvist"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "archivist": [
+      "Mr Pelletier",
+      "Dr Lindqvist",
+      "Dr Mwangi",
+      "Ms Okafor",
+      "Mr Ravensworth"
+    ],
+    "holding": [
+      "a set of tram timetables",
+      "the workhouse admissions book",
+      "a box of unopened wills",
+      "a folder of libel writs",
+      "the smallpox ledgers"
+    ],
+    "decade": [
+      "the 1910s",
+      "the 1860s",
+      "the 1830s",
+      "the 1890s",
+      "the 1970s"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 9,
+    "kinds": {
+      "between": 3,
+      "gap": 3,
+      "or": 2,
+      "not_link": 1,
+      "before": 1,
+      "immediately_before": 1
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 38,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 16,
+      "order": 18,
+      "disjunction": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

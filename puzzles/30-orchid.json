@@ -1,0 +1,293 @@
+{
+  "pid": "ed9395b8aef1",
+  "title": "The Orchid House Reckoning",
+  "theme": "orchid",
+  "blurb": "The orchid house at Fenn Park is shared by its growers, each convinced the others are overwatering.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 6.13,
+  "seed": 2026172917735,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172917735
+  },
+  "schema": {
+    "spine": "month",
+    "entity_noun": "grower",
+    "entity_noun_plural": "growers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "month",
+        "label": "Harvest month",
+        "items": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May"
+        ],
+        "ordered": true,
+        "noun": "harvest month",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "month",
+        "verb": "harvests in"
+      },
+      {
+        "name": "grower",
+        "label": "Grower",
+        "items": [
+          "Leocadia",
+          "Nkiruka",
+          "Columbine",
+          "Sigismund",
+          "Ambrose"
+        ],
+        "ordered": false,
+        "noun": "grower",
+        "subject": true
+      },
+      {
+        "name": "orchid",
+        "label": "Orchid",
+        "items": [
+          "a dancing lady",
+          "a slipper orchid",
+          "a ghost orchid",
+          "a jewel orchid",
+          "a moth orchid"
+        ],
+        "ordered": false,
+        "noun": "orchid",
+        "verb": "grows"
+      },
+      {
+        "name": "mix",
+        "label": "Potting mix",
+        "items": [
+          "tree fern fibre",
+          "sphagnum moss",
+          "lava rock",
+          "coconut husk",
+          "bare root on cork"
+        ],
+        "ordered": false,
+        "noun": "potting mix",
+        "verb": "pots in"
+      },
+      {
+        "name": "pest",
+        "label": "Pest",
+        "items": [
+          "mealybug",
+          "red spider mite",
+          "scale insects",
+          "fungus gnats",
+          "thrips"
+        ],
+        "ordered": false,
+        "noun": "pest",
+        "verb": "is troubled by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "grower:Sigismund",
+          "b": "mix:coconut husk"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "pest:mealybug",
+          "b": "month:March"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "month:February",
+          "b": "orchid:a moth orchid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "grower:Leocadia",
+          "b": "mix:sphagnum moss",
+          "k": 3,
+          "rel": "eq"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "month:March",
+          "b": "grower:Leocadia"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "month:April",
+          "b": "pest:thrips"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "grower:Sigismund",
+          "b": "mix:bare root on cork",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "grower:Sigismund",
+          "b": "mix:tree fern fibre"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "orchid:a jewel orchid",
+          "b": "pest:red spider mite",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "orchid:a dancing lady",
+          "b": "grower:Nkiruka",
+          "c": "mix:bare root on cork"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "orchid:a jewel orchid",
+          "b": "pest:mealybug"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "orchid:a slipper orchid",
+          "b": "pest:fungus gnats"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "grower:Columbine",
+          "b": "pest:red spider mite"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "month": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "grower": [
+      "Nkiruka",
+      "Columbine",
+      "Sigismund",
+      "Leocadia",
+      "Ambrose"
+    ],
+    "orchid": [
+      "a jewel orchid",
+      "a slipper orchid",
+      "a moth orchid",
+      "a dancing lady",
+      "a ghost orchid"
+    ],
+    "mix": [
+      "sphagnum moss",
+      "lava rock",
+      "coconut husk",
+      "tree fern fibre",
+      "bare root on cork"
+    ],
+    "pest": [
+      "scale insects",
+      "mealybug",
+      "red spider mite",
+      "fungus gnats",
+      "thrips"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 12,
+    "kinds": {
+      "link": 1,
+      "immediately_before": 3,
+      "gap": 2,
+      "adjacent": 3,
+      "parity": 1,
+      "before": 2,
+      "between": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 54,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 31,
+      "order": 19
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  }
+}

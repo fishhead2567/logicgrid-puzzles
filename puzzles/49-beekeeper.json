@@ -1,0 +1,386 @@
+{
+  "pid": "cff23af7210c",
+  "title": "The Honey Show Scandal",
+  "theme": "beekeeper",
+  "blurb": "The annual honey show has been judged, and at least two people are writing letters about it.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 17.2771,
+  "seed": 2026173172925,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173172925
+  },
+  "schema": {
+    "spine": "fee",
+    "entity_noun": "beekeeper",
+    "entity_noun_plural": "beekeepers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "fee",
+        "label": "Entry fee",
+        "items": [
+          "$2",
+          "$4",
+          "$6",
+          "$8",
+          "$10",
+          "$12"
+        ],
+        "ordered": true,
+        "values": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12
+        ],
+        "unit": "$",
+        "noun": "entry fee",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "fee step",
+        "verb": "pays"
+      },
+      {
+        "name": "keeper",
+        "label": "Beekeeper",
+        "items": [
+          "Wilhelmina",
+          "Priya",
+          "Ezekiel",
+          "Mungo",
+          "Breda",
+          "Antonina"
+        ],
+        "ordered": false,
+        "noun": "beekeeper",
+        "subject": true
+      },
+      {
+        "name": "honey",
+        "label": "Honey",
+        "items": [
+          "clover honey",
+          "borage honey",
+          "lime blossom honey",
+          "heather honey",
+          "chestnut honey",
+          "sea lavender honey"
+        ],
+        "ordered": false,
+        "noun": "honey",
+        "verb": "enters"
+      },
+      {
+        "name": "hive",
+        "label": "Hive type",
+        "items": [
+          "a national hive",
+          "a WBC hive",
+          "a Langstroth hive",
+          "a Warre hive",
+          "a long deep hive",
+          "a top-bar hive"
+        ],
+        "ordered": false,
+        "noun": "hive",
+        "verb": "keeps"
+      },
+      {
+        "name": "verdict",
+        "label": "Judge's note",
+        "items": [
+          "an overbearing aroma",
+          "a cloudy jar",
+          "crystallised early",
+          "an unlabelled lid",
+          "slightly over-filtered",
+          "a trace of wax"
+        ],
+        "ordered": false,
+        "noun": "note",
+        "verb": "has a jar noted as"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "fee:$2",
+              "b": "keeper:Wilhelmina"
+            },
+            {
+              "kind": "link",
+              "a": "hive:a national hive",
+              "b": "honey:sea lavender honey"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "keeper:Priya",
+          "b": "fee:$8",
+          "c": "honey:borage honey"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "fee:$12",
+          "b": "hive:a WBC hive"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "not_link",
+            "a": "keeper:Ezekiel",
+            "b": "verdict:a trace of wax"
+          },
+          "y": {
+            "kind": "link",
+            "a": "fee:$6",
+            "b": "verdict:an overbearing aroma"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "honey:chestnut honey",
+          "b": "fee:$4"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "not_link",
+            "a": "honey:borage honey",
+            "b": "verdict:an overbearing aroma"
+          },
+          "y": {
+            "kind": "not_link",
+            "a": "fee:$2",
+            "b": "hive:a Langstroth hive"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "keeper:Priya",
+          "b": "verdict:a cloudy jar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "arith",
+          "a": "keeper:Wilhelmina",
+          "b": "honey:lime blossom honey",
+          "k": 6,
+          "op": "add"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "arith",
+          "a": "keeper:Mungo",
+          "b": "honey:clover honey",
+          "k": 4,
+          "op": "add"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "adjacent",
+            "a": "keeper:Breda",
+            "b": "verdict:a trace of wax"
+          },
+          "y": {
+            "kind": "link",
+            "a": "keeper:Mungo",
+            "b": "verdict:a cloudy jar"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "before",
+            "a": "hive:a top-bar hive",
+            "b": "verdict:a trace of wax"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "honey:lime blossom honey",
+              "b": "hive:a top-bar hive"
+            },
+            {
+              "kind": "before",
+              "a": "keeper:Mungo",
+              "b": "verdict:an overbearing aroma"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "arith",
+          "a": "hive:a long deep hive",
+          "b": "verdict:slightly over-filtered",
+          "k": 10,
+          "op": "add"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "keeper:Ezekiel",
+              "b": "verdict:a cloudy jar"
+            },
+            {
+              "kind": "not_link",
+              "a": "hive:a Langstroth hive",
+              "b": "verdict:crystallised early"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "fee": [
+      "$2",
+      "$4",
+      "$6",
+      "$8",
+      "$10",
+      "$12"
+    ],
+    "keeper": [
+      "Breda",
+      "Antonina",
+      "Ezekiel",
+      "Mungo",
+      "Priya",
+      "Wilhelmina"
+    ],
+    "honey": [
+      "chestnut honey",
+      "clover honey",
+      "lime blossom honey",
+      "sea lavender honey",
+      "heather honey",
+      "borage honey"
+    ],
+    "hive": [
+      "a Warre hive",
+      "a Langstroth hive",
+      "a top-bar hive",
+      "a national hive",
+      "a WBC hive",
+      "a long deep hive"
+    ],
+    "verdict": [
+      "slightly over-filtered",
+      "an unlabelled lid",
+      "a trace of wax",
+      "crystallised early",
+      "an overbearing aroma",
+      "a cloudy jar"
+    ]
+  },
+  "stats": {
+    "atoms": 14,
+    "numbered_clues": 14,
+    "kinds": {
+      "or": 3,
+      "between": 1,
+      "adjacent": 1,
+      "if_then": 3,
+      "immediately_before": 2,
+      "arith": 3,
+      "not": 1
+    },
+    "positives": 0,
+    "compounds": 7
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 81,
+    "tier_counts": {
+      "bijection": 42,
+      "order": 22,
+      "disjunction": 15,
+      "trial": 2
+    },
+    "trial_eliminations": 2,
+    "unknown_cells": 24
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "pid": "51590a7afa8a",
+  "title": "The Mudflat Regatta",
+  "theme": "regatta",
+  "blurb": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 8.7392,
+  "seed": 2026172868439,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172868439
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "crew",
+    "entity_noun_plural": "crews",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "finishes"
+      },
+      {
+        "name": "crew",
+        "label": "Crew",
+        "items": [
+          "the Creamery crew",
+          "the Brickworks crew",
+          "the Customs crew",
+          "the Seminary crew",
+          "the Tannery crew"
+        ],
+        "ordered": false,
+        "noun": "crew",
+        "subject": true
+      },
+      {
+        "name": "stroke",
+        "label": "Stroke",
+        "items": [
+          "Yusuf",
+          "Ondine",
+          "Bartholomew",
+          "Crispin",
+          "Everard"
+        ],
+        "ordered": false,
+        "noun": "stroke",
+        "verb": "is stroked by"
+      },
+      {
+        "name": "boat",
+        "label": "Boat",
+        "items": [
+          "the Gilded Eel",
+          "the Wet Hen",
+          "the Obstinate",
+          "the Peregrine",
+          "the Dauntless"
+        ],
+        "ordered": false,
+        "noun": "boat",
+        "verb": "rows"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "place:second",
+          "b": "crew:the Creamery crew",
+          "c": "stroke:Crispin"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "boat:the Gilded Eel",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "crew:the Seminary crew",
+          "b": "stroke:Yusuf"
+        },
+        {
+          "kind": "before",
+          "a": "stroke:Yusuf",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "place:third",
+          "b": "stroke:Everard",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "boat:the Dauntless",
+          "b": "place:fifth",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:fourth",
+          "b": "stroke:Ondine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "crew:the Customs crew",
+          "b": "place:fourth",
+          "c": "stroke:Everard"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "crew:the Tannery crew",
+          "b": "boat:the Obstinate"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "crew:the Seminary crew",
+          "b": "boat:the Peregrine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "crew:the Creamery crew",
+              "b": "stroke:Bartholomew"
+            },
+            {
+              "kind": "parity",
+              "a": "boat:the Gilded Eel",
+              "b": "crew:the Creamery crew",
+              "same": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "crew": [
+      "the Creamery crew",
+      "the Seminary crew",
+      "the Customs crew",
+      "the Tannery crew",
+      "the Brickworks crew"
+    ],
+    "stroke": [
+      "Everard",
+      "Bartholomew",
+      "Yusuf",
+      "Crispin",
+      "Ondine"
+    ],
+    "boat": [
+      "the Wet Hen",
+      "the Gilded Eel",
+      "the Peregrine",
+      "the Dauntless",
+      "the Obstinate"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 10,
+    "kinds": {
+      "between": 2,
+      "before": 5,
+      "parity": 2,
+      "immediately_before": 1,
+      "or": 1
+    },
+    "positives": 0,
+    "compounds": 1
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 41,
+    "tier_counts": {
+      "bijection": 19,
+      "order": 21,
+      "disjunction": 1
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

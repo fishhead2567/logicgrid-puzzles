@@ -1,0 +1,306 @@
+{
+  "pid": "839c46297d44",
+  "title": "The Hollow Creek Pie Judging",
+  "theme": "county_fair",
+  "blurb": "The Hollow Creek county fair runs its pie judging with more ceremony than the state legislature.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.3142,
+  "seed": 2026173135112,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173135112
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "baker",
+    "entity_noun_plural": "bakers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "baker",
+        "label": "Baker",
+        "items": [
+          "Odette",
+          "Bramwell",
+          "Marigold",
+          "Winnie",
+          "Thaddeus"
+        ],
+        "ordered": false,
+        "noun": "baker",
+        "subject": true
+      },
+      {
+        "name": "filling",
+        "label": "Filling",
+        "items": [
+          "pecan",
+          "green tomato",
+          "rhubarb",
+          "mincemeat",
+          "sour cherry"
+        ],
+        "ordered": false,
+        "noun": "filling",
+        "verb": "bakes"
+      },
+      {
+        "name": "county",
+        "label": "Home county",
+        "items": [
+          "Quarry Hill",
+          "Little Pell",
+          "Fenwick",
+          "Dunmore",
+          "Hobbs Bend"
+        ],
+        "ordered": false,
+        "noun": "county",
+        "verb": "comes from"
+      },
+      {
+        "name": "crust",
+        "label": "Crust",
+        "items": [
+          "a cut-out star top",
+          "a fork-crimped edge",
+          "a fluted rim",
+          "a crumb topping",
+          "a lattice top"
+        ],
+        "ordered": false,
+        "noun": "crust",
+        "verb": "uses"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:third",
+          "b": "crust:a fork-crimped edge"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "baker:Odette",
+          "b": "filling:pecan",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "crust:a cut-out star top",
+          "b": "filling:green tomato"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "baker:Thaddeus",
+          "b": "crust:a cut-out star top"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "county:Fenwick",
+          "b": "filling:sour cherry"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "county:Quarry Hill",
+          "b": "baker:Winnie",
+          "c": "crust:a lattice top"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "baker:Bramwell",
+          "b": "crust:a crumb topping",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "baker:Winnie",
+          "b": "filling:rhubarb"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "baker:Thaddeus",
+          "b": "crust:a lattice top"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "baker:Marigold",
+              "b": "county:Quarry Hill"
+            },
+            {
+              "kind": "parity",
+              "a": "county:Hobbs Bend",
+              "b": "filling:sour cherry",
+              "same": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "filling:sour cherry",
+          "b": "county:Dunmore"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "baker:Thaddeus",
+          "b": "filling:mincemeat",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "baker:Bramwell",
+          "b": "county:Dunmore"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "baker": [
+      "Thaddeus",
+      "Marigold",
+      "Winnie",
+      "Bramwell",
+      "Odette"
+    ],
+    "filling": [
+      "pecan",
+      "rhubarb",
+      "green tomato",
+      "sour cherry",
+      "mincemeat"
+    ],
+    "county": [
+      "Little Pell",
+      "Hobbs Bend",
+      "Fenwick",
+      "Quarry Hill",
+      "Dunmore"
+    ],
+    "crust": [
+      "a crumb topping",
+      "a cut-out star top",
+      "a fluted rim",
+      "a fork-crimped edge",
+      "a lattice top"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 12,
+    "kinds": {
+      "before": 2,
+      "gap": 3,
+      "not_link": 1,
+      "immediately_before": 4,
+      "between": 1,
+      "adjacent": 1,
+      "or": 1
+    },
+    "positives": 0,
+    "compounds": 1
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 59,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 26,
+      "order": 31,
+      "disjunction": 1
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "pid": "19304b56f314",
+  "title": "The Crossings to Inverlaig",
+  "theme": "ferry",
+  "blurb": "The Inverlaig ferry runs a full day of crossings in theory, and a variable number in practice.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.14,
+  "seed": 2026172638788,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172638788
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "skipper",
+    "entity_noun_plural": "skippers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "sails at"
+      },
+      {
+        "name": "skipper",
+        "label": "Skipper",
+        "items": [
+          "Eilidh",
+          "Fearghas",
+          "Ruaridh",
+          "Calla",
+          "Murdo"
+        ],
+        "ordered": false,
+        "noun": "skipper",
+        "subject": true
+      },
+      {
+        "name": "delay",
+        "label": "Delay blamed on",
+        "items": [
+          "the tide",
+          "a passenger's dog",
+          "fog",
+          "paperwork",
+          "a slipway repair"
+        ],
+        "ordered": false,
+        "noun": "reason",
+        "verb": "blames"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "skipper:Fearghas",
+          "b": "time:11am"
+        },
+        {
+          "kind": "link",
+          "a": "delay:paperwork",
+          "b": "time:11am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "skipper:Ruaridh",
+          "b": "delay:fog"
+        },
+        {
+          "kind": "link",
+          "a": "skipper:Ruaridh",
+          "b": "time:10am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "delay:a slipway repair",
+          "b": "skipper:Calla"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "delay:paperwork",
+          "b": "skipper:Eilidh"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "delay:a passenger's dog",
+          "b": "skipper:Calla"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "skipper": [
+      "Fearghas",
+      "Calla",
+      "Ruaridh",
+      "Eilidh",
+      "Murdo"
+    ],
+    "delay": [
+      "a passenger's dog",
+      "a slipway repair",
+      "the tide",
+      "paperwork",
+      "fog"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 5,
+    "kinds": {
+      "before": 3,
+      "link": 4
+    },
+    "positives": 4,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 24,
+    "tier_counts": {
+      "direct": 6,
+      "bijection": 13,
+      "order": 5
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  }
+}

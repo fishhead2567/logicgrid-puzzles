@@ -1,0 +1,334 @@
+{
+  "pid": "2546e1b0803f",
+  "title": "Mrs Pell's Impossible Shelves",
+  "theme": "bookshop",
+  "blurb": "Mrs Pell's secondhand bookshop shelves by a system she alone understands, and she has gone to Margate for a fortnight.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.3142,
+  "seed": 2026172852601,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172852601
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "volume",
+    "entity_noun_plural": "volumes",
+    "entity_animate": false,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "sits on"
+      },
+      {
+        "name": "book",
+        "label": "Volume",
+        "items": [
+          "a book of sea shanties",
+          "a water-stained atlas",
+          "a Latin primer",
+          "a treatise on clocks",
+          "a guide to fungi"
+        ],
+        "ordered": false,
+        "noun": "volume",
+        "subject": true
+      },
+      {
+        "name": "buyer",
+        "label": "Buyer",
+        "items": [
+          "Rodrigo",
+          "Sybilla",
+          "Augustus",
+          "Ignatius",
+          "Fenella"
+        ],
+        "ordered": false,
+        "noun": "buyer",
+        "verb": "was bought by"
+      },
+      {
+        "name": "bookmark",
+        "label": "Found inside",
+        "items": [
+          "a recipe for quince jelly",
+          "a postcard from Hull",
+          "a pressed violet",
+          "a tram ticket",
+          "a pawn ticket"
+        ],
+        "ordered": false,
+        "noun": "keepsake",
+        "verb": "contains"
+      },
+      {
+        "name": "price_tag",
+        "label": "Pencilled price",
+        "items": [
+          "seven and six",
+          "half a crown",
+          "ninepence",
+          "four shillings",
+          "a guinea"
+        ],
+        "ordered": false,
+        "noun": "price",
+        "verb": "is priced at"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "buyer:Ignatius",
+          "b": "shelf:the fifth shelf"
+        },
+        {
+          "kind": "gap",
+          "a": "bookmark:a pressed violet",
+          "b": "shelf:the fifth shelf",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "price_tag:half a crown",
+          "b": "shelf:the second shelf"
+        },
+        {
+          "kind": "not_link",
+          "a": "book:a book of sea shanties",
+          "b": "shelf:the second shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "bookmark:a tram ticket",
+          "b": "shelf:the fifth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "buyer:Augustus",
+              "b": "price_tag:seven and six"
+            },
+            {
+              "kind": "not_link",
+              "a": "bookmark:a recipe for quince jelly",
+              "b": "shelf:the fifth shelf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "buyer:Augustus",
+          "b": "book:a book of sea shanties",
+          "c": "shelf:the fourth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "shelf:the third shelf",
+          "b": "price_tag:half a crown",
+          "c": "price_tag:ninepence"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "price_tag:seven and six",
+          "b": "shelf:the fourth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "buyer:Rodrigo",
+          "b": "book:a treatise on clocks",
+          "c": "shelf:the fifth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "buyer:Fenella",
+          "b": "shelf:the fourth shelf",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "book:a water-stained atlas",
+          "b": "bookmark:a recipe for quince jelly"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "bookmark:a postcard from Hull",
+          "b": "price_tag:four shillings",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "bookmark:a postcard from Hull",
+          "b": "buyer:Rodrigo",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "book:a Latin primer",
+          "b": "bookmark:a tram ticket"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "book:a guide to fungi",
+          "b": "buyer:Rodrigo"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "book": [
+      "a book of sea shanties",
+      "a treatise on clocks",
+      "a water-stained atlas",
+      "a Latin primer",
+      "a guide to fungi"
+    ],
+    "buyer": [
+      "Ignatius",
+      "Fenella",
+      "Augustus",
+      "Rodrigo",
+      "Sybilla"
+    ],
+    "bookmark": [
+      "a postcard from Hull",
+      "a pressed violet",
+      "a tram ticket",
+      "a recipe for quince jelly",
+      "a pawn ticket"
+    ],
+    "price_tag": [
+      "half a crown",
+      "a guinea",
+      "four shillings",
+      "ninepence",
+      "seven and six"
+    ]
+  },
+  "stats": {
+    "atoms": 16,
+    "numbered_clues": 14,
+    "kinds": {
+      "not_link": 3,
+      "gap": 3,
+      "immediately_before": 2,
+      "before": 1,
+      "or": 1,
+      "between": 3,
+      "adjacent": 2,
+      "parity": 1
+    },
+    "positives": 0,
+    "compounds": 1
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 51,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 23,
+      "order": 24,
+      "disjunction": 1
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  }
+}

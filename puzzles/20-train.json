@@ -1,0 +1,227 @@
+{
+  "pid": "b17bdaedfe62",
+  "title": "The Loft Layout Dispute",
+  "theme": "train",
+  "blurb": "The members of the model railway society share one loft layout and a deep well of resentment.",
+  "profile": "moderate",
+  "rating": 3,
+  "score": 5.355,
+  "seed": 2026172733816,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172733816
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "modeller",
+    "entity_noun_plural": "modellers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "stores on"
+      },
+      {
+        "name": "modeller",
+        "label": "Modeller",
+        "items": [
+          "Rosamond",
+          "Gilbert",
+          "Abiodun",
+          "Cuthbert",
+          "Hendrik"
+        ],
+        "ordered": false,
+        "noun": "modeller",
+        "subject": true
+      },
+      {
+        "name": "stock",
+        "label": "Rolling stock",
+        "items": [
+          "a scratch-built crane wagon",
+          "a brass pannier tank",
+          "a rake of milk tankers",
+          "a battered autocoach",
+          "a kit-built brake van"
+        ],
+        "ordered": false,
+        "noun": "stock",
+        "verb": "owns"
+      },
+      {
+        "name": "scenery",
+        "label": "Scenery",
+        "items": [
+          "a plaster tunnel mouth",
+          "a coal staithe",
+          "a cardboard viaduct",
+          "a flocked cutting",
+          "a working level crossing"
+        ],
+        "ordered": false,
+        "noun": "scenery",
+        "verb": "builds"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "modeller:Hendrik",
+          "b": "shelf:the fifth shelf"
+        },
+        {
+          "kind": "link",
+          "a": "scenery:a flocked cutting",
+          "b": "shelf:the fifth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "modeller:Abiodun",
+          "b": "scenery:a plaster tunnel mouth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "scenery:a cardboard viaduct",
+          "b": "shelf:the fifth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "shelf:the fourth shelf",
+          "b": "modeller:Rosamond"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "modeller:Cuthbert",
+          "b": "stock:a brass pannier tank",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "modeller:Abiodun",
+          "b": "stock:a rake of milk tankers"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "scenery:a cardboard viaduct",
+          "b": "stock:a battered autocoach",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "stock:a kit-built brake van",
+          "b": "scenery:a coal staithe"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "modeller": [
+      "Cuthbert",
+      "Gilbert",
+      "Abiodun",
+      "Hendrik",
+      "Rosamond"
+    ],
+    "stock": [
+      "a kit-built brake van",
+      "a battered autocoach",
+      "a scratch-built crane wagon",
+      "a rake of milk tankers",
+      "a brass pannier tank"
+    ],
+    "scenery": [
+      "a working level crossing",
+      "a coal staithe",
+      "a plaster tunnel mouth",
+      "a cardboard viaduct",
+      "a flocked cutting"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 8,
+    "kinds": {
+      "adjacent": 2,
+      "link": 2,
+      "immediately_before": 3,
+      "gap": 2
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 39,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 21,
+      "order": 14
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

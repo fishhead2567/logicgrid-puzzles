@@ -1,0 +1,14 @@
+{
+  "pid": "a7db3a10cde0",
+  "title": "Andy's Swiftest Birds",
+  "introduction": "Andy keeps four racing pigeons, and he will happily tell anyone who stands still long enough that no two of them are alike in temper or in stride. Each bird is entered at its own race distance, and the four distances, listed from shorter to longer, are 200 miles, 300 miles, 400 miles, and 500 miles. The birds answer to the names Alabaster, Nutmeg, Hieronymus, and Cadwallader, and each one descends from a different bloodline: a Delbar, a Janssen, a Stichelbaut, and a Sion. Every name, every distance, and every bloodline belongs to exactly one of the four pigeons, so each is used once and once only. From the clues below, work out which bird flies which distance and which bloodline it comes from.",
+  "clues": [
+    "The pigeon that descends from a Sion and the bird entered at 200 miles are entered at distances exactly one hundred miles apart, in one direction or the other.",
+    "Cadwallader flies 200 miles, and the pigeon that descends from a Delbar flies 200 miles as well.",
+    "The pigeon that descends from a Stichelbaut flies 400 miles.",
+    "Alabaster descends from a Sion, and Nutmeg is not the bird entered at 500 miles."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass_equivalent"
+}

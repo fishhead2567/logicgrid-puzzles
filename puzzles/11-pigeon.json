@@ -1,0 +1,210 @@
+{
+  "pid": "0b2dbd7e7112",
+  "title": "Andy's Swiftest Birds",
+  "theme": "pigeon",
+  "blurb": "Andy races pigeons, and each bird is bred for a different combination of stubbornness and speed.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.13,
+  "seed": 2026172662545,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172662545
+  },
+  "schema": {
+    "spine": "distance",
+    "entity_noun": "pigeon",
+    "entity_noun_plural": "pigeons",
+    "entity_animate": false,
+    "categories": [
+      {
+        "name": "distance",
+        "label": "Distance",
+        "items": [
+          "200 miles",
+          "300 miles",
+          "400 miles",
+          "500 miles"
+        ],
+        "ordered": true,
+        "values": [
+          200,
+          300,
+          400,
+          500
+        ],
+        "unit_suffix": " miles",
+        "noun": "distance",
+        "cmp_less": "shorter",
+        "cmp_more": "longer",
+        "step_noun": "hundred miles",
+        "verb": "flies"
+      },
+      {
+        "name": "bird",
+        "label": "Pigeon",
+        "items": [
+          "Grimsby",
+          "Cadwallader",
+          "Nutmeg",
+          "Dot"
+        ],
+        "ordered": false,
+        "noun": "pigeon",
+        "subject": true
+      },
+      {
+        "name": "plumage",
+        "label": "Plumage",
+        "items": [
+          "chequered black",
+          "bronze",
+          "slate blue",
+          "mealy red"
+        ],
+        "ordered": false,
+        "noun": "plumage",
+        "verb": "is"
+      },
+      {
+        "name": "breed",
+        "label": "Breed",
+        "items": [
+          "a Delbar",
+          "a Van Loon",
+          "a Sion",
+          "a Janssen"
+        ],
+        "ordered": false,
+        "noun": "breed",
+        "verb": "descends from"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "bird:Grimsby",
+          "b": "plumage:chequered black"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "bird:Dot",
+          "b": "distance:300 miles"
+        },
+        {
+          "kind": "before",
+          "a": "distance:300 miles",
+          "b": "breed:a Janssen"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "breed:a Sion",
+          "b": "distance:500 miles",
+          "c": "plumage:mealy red"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "breed:a Janssen",
+          "b": "plumage:slate blue"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "breed:a Janssen",
+          "b": "plumage:bronze",
+          "c": "plumage:mealy red"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "breed:a Delbar",
+          "b": "bird:Dot"
+        },
+        {
+          "kind": "not_link",
+          "a": "bird:Nutmeg",
+          "b": "breed:a Delbar"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "distance": [
+      "200 miles",
+      "300 miles",
+      "400 miles",
+      "500 miles"
+    ],
+    "bird": [
+      "Cadwallader",
+      "Nutmeg",
+      "Grimsby",
+      "Dot"
+    ],
+    "plumage": [
+      "mealy red",
+      "slate blue",
+      "chequered black",
+      "bronze"
+    ],
+    "breed": [
+      "a Delbar",
+      "a Sion",
+      "a Janssen",
+      "a Van Loon"
+    ]
+  },
+  "stats": {
+    "atoms": 8,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 1,
+      "not_link": 2,
+      "before": 2,
+      "between": 2,
+      "adjacent": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 28,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 14,
+      "order": 11
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  }
+}

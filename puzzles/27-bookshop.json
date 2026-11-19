@@ -1,0 +1,266 @@
+{
+  "pid": "e2543b96baa8",
+  "title": "Mrs Pell's Impossible Shelves",
+  "theme": "bookshop",
+  "blurb": "Mrs Pell's secondhand bookshop shelves by a system she alone understands, and she has gone to Margate for a fortnight.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026172789249,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172789249
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "volume",
+    "entity_noun_plural": "volumes",
+    "entity_animate": false,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "sits on"
+      },
+      {
+        "name": "book",
+        "label": "Volume",
+        "items": [
+          "a water-stained atlas",
+          "a book of sea shanties",
+          "an album of pressed ferns",
+          "a beekeeping manual",
+          "a guide to fungi"
+        ],
+        "ordered": false,
+        "noun": "volume",
+        "subject": true
+      },
+      {
+        "name": "bookmark",
+        "label": "Found inside",
+        "items": [
+          "a lock of hair",
+          "a laundry list",
+          "a postcard from Hull",
+          "a recipe for quince jelly",
+          "a pressed violet"
+        ],
+        "ordered": false,
+        "noun": "keepsake",
+        "verb": "contains"
+      },
+      {
+        "name": "price_tag",
+        "label": "Pencilled price",
+        "items": [
+          "half a crown",
+          "seven and six",
+          "two shillings",
+          "a guinea",
+          "one and six"
+        ],
+        "ordered": false,
+        "noun": "price",
+        "verb": "is priced at"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "shelf:the second shelf",
+          "b": "bookmark:a pressed violet"
+        },
+        {
+          "kind": "gap",
+          "a": "book:an album of pressed ferns",
+          "b": "shelf:the second shelf",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "bookmark:a recipe for quince jelly",
+          "b": "price_tag:half a crown"
+        },
+        {
+          "kind": "not_link",
+          "a": "bookmark:a recipe for quince jelly",
+          "b": "shelf:the second shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "price_tag:seven and six",
+          "b": "shelf:the second shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "shelf:the second shelf",
+          "b": "bookmark:a postcard from Hull",
+          "c": "price_tag:one and six"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "bookmark:a postcard from Hull",
+          "b": "price_tag:half a crown"
+        },
+        {
+          "kind": "not_link",
+          "a": "book:a water-stained atlas",
+          "b": "bookmark:a postcard from Hull"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "price_tag:one and six",
+          "b": "book:a guide to fungi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "price_tag:half a crown",
+          "b": "book:an album of pressed ferns"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "price_tag:a guinea",
+          "b": "bookmark:a lock of hair",
+          "c": "bookmark:a postcard from Hull"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "book:a beekeeping manual",
+          "b": "price_tag:one and six",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "price_tag:a guinea",
+          "b": "book:a water-stained atlas"
+        },
+        {
+          "kind": "not_link",
+          "a": "book:a book of sea shanties",
+          "b": "price_tag:a guinea"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "book": [
+      "a beekeeping manual",
+      "a guide to fungi",
+      "a water-stained atlas",
+      "a book of sea shanties",
+      "an album of pressed ferns"
+    ],
+    "bookmark": [
+      "a lock of hair",
+      "a laundry list",
+      "a recipe for quince jelly",
+      "a pressed violet",
+      "a postcard from Hull"
+    ],
+    "price_tag": [
+      "one and six",
+      "a guinea",
+      "seven and six",
+      "half a crown",
+      "two shillings"
+    ]
+  },
+  "stats": {
+    "atoms": 14,
+    "numbered_clues": 10,
+    "kinds": {
+      "before": 2,
+      "gap": 1,
+      "not_link": 5,
+      "adjacent": 1,
+      "between": 2,
+      "immediately_before": 2,
+      "parity": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 5,
+      "bijection": 16,
+      "order": 20
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

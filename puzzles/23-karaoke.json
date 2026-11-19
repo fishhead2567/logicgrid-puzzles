@@ -1,0 +1,246 @@
+{
+  "pid": "3461a7266d47",
+  "title": "Tuesday Night at the Dented Bell",
+  "theme": "karaoke",
+  "blurb": "The Dented Bell runs karaoke on Tuesdays. Attendance is loyal; talent is not.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026172757573,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172757573
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "singer",
+    "entity_noun_plural": "singers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "sings in"
+      },
+      {
+        "name": "singer",
+        "label": "Singer",
+        "items": [
+          "Deshawn",
+          "Annalise",
+          "Vikram",
+          "Bogdan",
+          "Pernilla"
+        ],
+        "ordered": false,
+        "noun": "singer",
+        "subject": true
+      },
+      {
+        "name": "song",
+        "label": "Song",
+        "items": [
+          "a maudlin folk song",
+          "a disco standard",
+          "an eight-minute prog epic",
+          "a sea shanty",
+          "a power ballad"
+        ],
+        "ordered": false,
+        "noun": "song",
+        "verb": "performs"
+      },
+      {
+        "name": "reception",
+        "label": "Reception",
+        "items": [
+          "a standing ovation",
+          "the landlord cutting the power",
+          "polite silence",
+          "a request for an encore nobody wanted",
+          "one heckler"
+        ],
+        "ordered": false,
+        "noun": "reception",
+        "verb": "gets"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "slot:slot two",
+          "b": "song:a power ballad"
+        },
+        {
+          "kind": "not_link",
+          "a": "reception:a standing ovation",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "slot:slot four",
+          "b": "singer:Pernilla",
+          "c": "song:an eight-minute prog epic"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "singer:Annalise",
+          "b": "slot:slot one"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "slot:slot one",
+          "b": "singer:Deshawn"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "reception:polite silence",
+          "b": "slot:slot five"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "reception:the landlord cutting the power",
+          "b": "slot:slot one",
+          "c": "song:a sea shanty"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "singer:Deshawn",
+          "b": "song:a power ballad"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "reception:a request for an encore nobody wanted",
+          "b": "song:an eight-minute prog epic",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "reception:one heckler",
+          "b": "singer:Bogdan",
+          "k": 3,
+          "rel": "eq"
+        },
+        {
+          "kind": "before",
+          "a": "singer:Bogdan",
+          "b": "song:a maudlin folk song"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "singer": [
+      "Vikram",
+      "Deshawn",
+      "Annalise",
+      "Bogdan",
+      "Pernilla"
+    ],
+    "song": [
+      "a disco standard",
+      "an eight-minute prog epic",
+      "a power ballad",
+      "a sea shanty",
+      "a maudlin folk song"
+    ],
+    "reception": [
+      "one heckler",
+      "the landlord cutting the power",
+      "a standing ovation",
+      "polite silence",
+      "a request for an encore nobody wanted"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 9,
+    "kinds": {
+      "immediately_before": 1,
+      "not_link": 2,
+      "between": 2,
+      "before": 3,
+      "adjacent": 1,
+      "gap": 2
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 46,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 23,
+      "order": 21
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

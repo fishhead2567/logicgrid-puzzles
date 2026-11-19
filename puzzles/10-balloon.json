@@ -1,0 +1,214 @@
+{
+  "pid": "b44a026ec09b",
+  "title": "The Thistledown Balloon Ascent",
+  "theme": "balloon",
+  "blurb": "The Thistledown Ascent is less a race than a slow argument conducted at two thousand feet.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.93,
+  "seed": 2026172654626,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172654626
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "pilot",
+    "entity_noun_plural": "pilots",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "launches at"
+      },
+      {
+        "name": "pilot",
+        "label": "Pilot",
+        "items": [
+          "Anneliese",
+          "Montague",
+          "Rosalind",
+          "Delphine"
+        ],
+        "ordered": false,
+        "noun": "pilot",
+        "subject": true
+      },
+      {
+        "name": "landing",
+        "label": "Landed at",
+        "items": [
+          "a reservoir bank",
+          "a golf course bunker",
+          "a railway siding",
+          "a caravan park"
+        ],
+        "ordered": false,
+        "noun": "landing site",
+        "verb": "comes down in"
+      },
+      {
+        "name": "ballast",
+        "label": "Ballast",
+        "items": [
+          "dried beans",
+          "sandbags",
+          "iron filings",
+          "lead shot"
+        ],
+        "ordered": false,
+        "noun": "ballast",
+        "verb": "carries"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "ballast:dried beans",
+          "b": "landing:a golf course bunker"
+        },
+        {
+          "kind": "link",
+          "a": "landing:a golf course bunker",
+          "b": "time:10am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "ballast:sandbags",
+          "b": "pilot:Montague"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "time:9am",
+          "b": "landing:a reservoir bank"
+        },
+        {
+          "kind": "not_link",
+          "a": "landing:a caravan park",
+          "b": "time:9am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "ballast:iron filings",
+          "b": "pilot:Delphine"
+        },
+        {
+          "kind": "before",
+          "a": "time:10am",
+          "b": "pilot:Delphine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "landing:a caravan park",
+          "b": "pilot:Anneliese"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "landing:a golf course bunker",
+          "b": "pilot:Anneliese"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "ballast:dried beans",
+          "b": "landing:a railway siding"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am"
+    ],
+    "pilot": [
+      "Rosalind",
+      "Anneliese",
+      "Montague",
+      "Delphine"
+    ],
+    "landing": [
+      "a caravan park",
+      "a railway siding",
+      "a golf course bunker",
+      "a reservoir bank"
+    ],
+    "ballast": [
+      "dried beans",
+      "iron filings",
+      "sandbags",
+      "lead shot"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 7,
+    "kinds": {
+      "before": 3,
+      "link": 2,
+      "not_link": 5
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 29,
+    "tier_counts": {
+      "direct": 9,
+      "bijection": 17,
+      "order": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  }
+}

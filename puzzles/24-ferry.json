@@ -1,0 +1,277 @@
+{
+  "pid": "e45cb743da43",
+  "title": "The Crossings to Inverlaig",
+  "theme": "ferry",
+  "blurb": "The Inverlaig ferry runs a full day of crossings in theory, and a variable number in practice.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 6.01,
+  "seed": 2026172765492,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172765492
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "skipper",
+    "entity_noun_plural": "skippers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "sails at"
+      },
+      {
+        "name": "skipper",
+        "label": "Skipper",
+        "items": [
+          "Ruaridh",
+          "Senga",
+          "Tormod",
+          "Fearghas",
+          "Eilidh"
+        ],
+        "ordered": false,
+        "noun": "skipper",
+        "subject": true
+      },
+      {
+        "name": "cargo",
+        "label": "Notable cargo",
+        "items": [
+          "a wedding party",
+          "a brass band",
+          "nineteen sheep",
+          "a film crew and no permits",
+          "a church organ"
+        ],
+        "ordered": false,
+        "noun": "cargo",
+        "verb": "carries"
+      },
+      {
+        "name": "vessel",
+        "label": "Vessel",
+        "items": [
+          "the Steadfast",
+          "the Siller Grey",
+          "the Three Brothers",
+          "the Kelpie",
+          "the Ailsa Belle"
+        ],
+        "ordered": false,
+        "noun": "vessel",
+        "verb": "commands"
+      },
+      {
+        "name": "delay",
+        "label": "Delay blamed on",
+        "items": [
+          "fog",
+          "paperwork",
+          "the tide",
+          "a slipway repair",
+          "a missing deckhand"
+        ],
+        "ordered": false,
+        "noun": "reason",
+        "verb": "blames"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "time:8am",
+          "b": "vessel:the Ailsa Belle"
+        },
+        {
+          "kind": "gap",
+          "a": "delay:a slipway repair",
+          "b": "time:8am",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "cargo:a church organ",
+          "b": "vessel:the Three Brothers"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "skipper:Senga",
+          "b": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "vessel:the Steadfast",
+          "b": "cargo:a brass band"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "cargo:a wedding party",
+          "b": "skipper:Tormod"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "cargo:a brass band",
+          "b": "delay:the tide",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "skipper:Eilidh",
+          "b": "delay:a missing deckhand"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "cargo:nineteen sheep",
+          "b": "delay:the tide",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "delay:fog",
+          "b": "cargo:a church organ"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "delay:a missing deckhand",
+          "b": "skipper:Senga"
+        },
+        {
+          "kind": "between",
+          "a": "vessel:the Kelpie",
+          "b": "delay:a missing deckhand",
+          "c": "skipper:Ruaridh"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "skipper": [
+      "Ruaridh",
+      "Eilidh",
+      "Tormod",
+      "Senga",
+      "Fearghas"
+    ],
+    "cargo": [
+      "a film crew and no permits",
+      "a wedding party",
+      "a church organ",
+      "nineteen sheep",
+      "a brass band"
+    ],
+    "vessel": [
+      "the Ailsa Belle",
+      "the Kelpie",
+      "the Three Brothers",
+      "the Steadfast",
+      "the Siller Grey"
+    ],
+    "delay": [
+      "the tide",
+      "fog",
+      "a missing deckhand",
+      "paperwork",
+      "a slipway repair"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 2,
+      "gap": 3,
+      "not_link": 2,
+      "immediately_before": 4,
+      "between": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 56,
+    "tier_counts": {
+      "direct": 6,
+      "bijection": 27,
+      "order": 23
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  }
+}

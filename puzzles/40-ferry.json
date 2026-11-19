@@ -1,0 +1,269 @@
+{
+  "pid": "d5e7c2e47f6f",
+  "title": "The Crossings to Inverlaig",
+  "theme": "ferry",
+  "blurb": "The Inverlaig ferry runs a full day of crossings in theory, and a variable number in practice.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 9.1022,
+  "seed": 2026172996925,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172996925
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "skipper",
+    "entity_noun_plural": "skippers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "sails at"
+      },
+      {
+        "name": "skipper",
+        "label": "Skipper",
+        "items": [
+          "Ruaridh",
+          "Murdo",
+          "Senga",
+          "Tormod",
+          "Fearghas"
+        ],
+        "ordered": false,
+        "noun": "skipper",
+        "subject": true
+      },
+      {
+        "name": "cargo",
+        "label": "Notable cargo",
+        "items": [
+          "a consignment of bees",
+          "a church organ",
+          "a brass band",
+          "a film crew and no permits",
+          "a refrigerated van"
+        ],
+        "ordered": false,
+        "noun": "cargo",
+        "verb": "carries"
+      },
+      {
+        "name": "vessel",
+        "label": "Vessel",
+        "items": [
+          "the Tern",
+          "the Broch Maid",
+          "the Siller Grey",
+          "the Three Brothers",
+          "the Kelpie"
+        ],
+        "ordered": false,
+        "noun": "vessel",
+        "verb": "commands"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "cargo:a film crew and no permits",
+          "b": "vessel:the Tern"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "time:9am",
+          "b": "skipper:Fearghas"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "skipper:Tormod",
+          "b": "time:9am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "cargo:a brass band",
+          "b": "time:11am",
+          "c": "vessel:the Broch Maid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "skipper:Ruaridh",
+              "b": "time:noon"
+            },
+            {
+              "kind": "link",
+              "a": "cargo:a church organ",
+              "b": "vessel:the Kelpie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "time:9am",
+          "b": "cargo:a church organ"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "cargo:a brass band",
+          "b": "skipper:Senga",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "skipper:Fearghas",
+              "b": "vessel:the Broch Maid"
+            },
+            {
+              "kind": "parity",
+              "a": "cargo:a church organ",
+              "b": "vessel:the Three Brothers",
+              "same": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "vessel:the Three Brothers",
+          "b": "skipper:Senga"
+        },
+        {
+          "kind": "before",
+          "a": "cargo:a refrigerated van",
+          "b": "skipper:Senga"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "cargo:a church organ",
+          "b": "vessel:the Siller Grey"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "skipper": [
+      "Tormod",
+      "Ruaridh",
+      "Fearghas",
+      "Senga",
+      "Murdo"
+    ],
+    "cargo": [
+      "a refrigerated van",
+      "a brass band",
+      "a church organ",
+      "a consignment of bees",
+      "a film crew and no permits"
+    ],
+    "vessel": [
+      "the Broch Maid",
+      "the Kelpie",
+      "the Three Brothers",
+      "the Siller Grey",
+      "the Tern"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 1,
+      "immediately_before": 4,
+      "between": 1,
+      "or": 2,
+      "parity": 1,
+      "before": 2
+    },
+    "positives": 1,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 22,
+      "order": 13,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

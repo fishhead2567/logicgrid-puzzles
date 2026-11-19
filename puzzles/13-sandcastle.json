@@ -1,0 +1,179 @@
+{
+  "pid": "bc2b8118b14a",
+  "title": "The Grindle Bay Sandcastle Open",
+  "theme": "sandcastle",
+  "blurb": "The Grindle Bay Open is judged at four o'clock, whatever the tide is doing.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.62,
+  "seed": 2026172887841,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172887841
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "builder",
+    "entity_noun_plural": "builders",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "builder",
+        "label": "Builder",
+        "items": [
+          "Aleksy",
+          "Fenwick",
+          "Khalid",
+          "Juniper",
+          "Hartley"
+        ],
+        "ordered": false,
+        "noun": "builder",
+        "subject": true
+      },
+      {
+        "name": "ruin",
+        "label": "Undone by",
+        "items": [
+          "a cricket ball",
+          "a sudden shower",
+          "the incoming tide",
+          "structural overreach",
+          "a loose dog"
+        ],
+        "ordered": false,
+        "noun": "cause",
+        "verb": "is undone by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "builder:Hartley",
+          "b": "place:third"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "place:fourth",
+          "b": "ruin:a sudden shower"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "builder:Juniper",
+          "b": "place:second",
+          "c": "ruin:a loose dog"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "builder:Juniper",
+          "b": "ruin:structural overreach"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "ruin:a cricket ball",
+          "b": "builder:Fenwick"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "builder:Aleksy",
+          "b": "ruin:a loose dog"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "builder": [
+      "Aleksy",
+      "Fenwick",
+      "Hartley",
+      "Juniper",
+      "Khalid"
+    ],
+    "ruin": [
+      "a cricket ball",
+      "the incoming tide",
+      "structural overreach",
+      "a sudden shower",
+      "a loose dog"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 2,
+      "between": 1,
+      "adjacent": 1,
+      "immediately_before": 1,
+      "before": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 26,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 16,
+      "order": 8
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  }
+}

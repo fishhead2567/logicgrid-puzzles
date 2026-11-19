@@ -1,0 +1,264 @@
+{
+  "pid": "6beff5f46fbb",
+  "title": "The Mudflat Regatta",
+  "theme": "regatta",
+  "blurb": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 9.2622,
+  "seed": 2026172828844,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172828844
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "crew",
+    "entity_noun_plural": "crews",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "finishes"
+      },
+      {
+        "name": "crew",
+        "label": "Crew",
+        "items": [
+          "the Almshouse crew",
+          "the Creamery crew",
+          "the Tannery crew",
+          "the Seminary crew",
+          "the Gasworks crew"
+        ],
+        "ordered": false,
+        "noun": "crew",
+        "subject": true
+      },
+      {
+        "name": "boat",
+        "label": "Boat",
+        "items": [
+          "the Peregrine",
+          "the Gilded Eel",
+          "the Obstinate",
+          "the Mudlark",
+          "the Last Resort"
+        ],
+        "ordered": false,
+        "noun": "boat",
+        "verb": "rows"
+      },
+      {
+        "name": "colours",
+        "label": "Colours",
+        "items": [
+          "bottle green",
+          "navy with a white band",
+          "cherry and grey",
+          "pink and cream",
+          "lilac and bronze"
+        ],
+        "ordered": false,
+        "noun": "colours",
+        "verb": "wears"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "boat:the Obstinate",
+          "b": "place:first",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "boat:the Gilded Eel",
+              "b": "crew:the Almshouse crew"
+            },
+            {
+              "kind": "parity",
+              "a": "crew:the Creamery crew",
+              "b": "place:fourth",
+              "same": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "not_link",
+            "a": "crew:the Tannery crew",
+            "b": "place:fifth"
+          },
+          "y": {
+            "kind": "parity",
+            "a": "boat:the Last Resort",
+            "b": "crew:the Creamery crew",
+            "same": false
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "colours:pink and cream",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "boat:the Peregrine",
+          "b": "crew:the Almshouse crew"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "colours:bottle green",
+          "b": "crew:the Seminary crew"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "boat:the Gilded Eel",
+          "b": "colours:cherry and grey"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "colours:pink and cream",
+          "b": "boat:the Peregrine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "boat:the Last Resort",
+          "b": "colours:lilac and bronze",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "boat:the Last Resort",
+          "b": "colours:cherry and grey"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "crew": [
+      "the Gasworks crew",
+      "the Creamery crew",
+      "the Seminary crew",
+      "the Almshouse crew",
+      "the Tannery crew"
+    ],
+    "boat": [
+      "the Last Resort",
+      "the Mudlark",
+      "the Gilded Eel",
+      "the Obstinate",
+      "the Peregrine"
+    ],
+    "colours": [
+      "bottle green",
+      "cherry and grey",
+      "navy with a white band",
+      "pink and cream",
+      "lilac and bronze"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 10,
+    "kinds": {
+      "gap": 2,
+      "or": 1,
+      "not_both": 1,
+      "immediately_before": 2,
+      "adjacent": 2,
+      "before": 2
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 30,
+    "tier_counts": {
+      "bijection": 13,
+      "order": 15,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

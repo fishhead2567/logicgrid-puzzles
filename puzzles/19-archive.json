@@ -1,0 +1,228 @@
+{
+  "pid": "64fd78628fcd",
+  "title": "The Mislabelled Drawers",
+  "theme": "archive",
+  "blurb": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026172830626,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172830626
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "archivist",
+    "entity_noun_plural": "archivists",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "files on"
+      },
+      {
+        "name": "archivist",
+        "label": "Archivist",
+        "items": [
+          "Dr Mwangi",
+          "Ms Castellano",
+          "Dr Lindqvist",
+          "Mr Ravensworth",
+          "Ms Okafor"
+        ],
+        "ordered": false,
+        "noun": "archivist",
+        "subject": true
+      },
+      {
+        "name": "decade",
+        "label": "Decade",
+        "items": [
+          "the 1890s",
+          "the 1970s",
+          "the 1910s",
+          "the 1950s",
+          "the 1830s"
+        ],
+        "ordered": false,
+        "noun": "decade",
+        "verb": "covers"
+      },
+      {
+        "name": "damage",
+        "label": "Condition",
+        "items": [
+          "immaculate",
+          "water-damaged",
+          "fire-scorched",
+          "over-repaired with tape",
+          "foxed"
+        ],
+        "ordered": false,
+        "noun": "condition",
+        "verb": "describes theirs as"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "archivist:Ms Castellano",
+          "b": "shelf:the bottom shelf",
+          "k": 4,
+          "rel": "eq"
+        },
+        {
+          "kind": "not_link",
+          "a": "decade:the 1890s",
+          "b": "shelf:the bottom shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "damage:water-damaged",
+          "b": "shelf:the bottom shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "damage:foxed",
+          "b": "archivist:Dr Lindqvist",
+          "c": "archivist:Dr Mwangi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "decade:the 1970s",
+          "b": "damage:fire-scorched"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "archivist:Dr Lindqvist",
+          "b": "damage:over-repaired with tape"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "archivist:Dr Lindqvist",
+          "b": "decade:the 1910s"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "archivist:Ms Okafor",
+          "b": "decade:the 1970s"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "damage:water-damaged",
+          "b": "decade:the 1830s"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "archivist": [
+      "Dr Mwangi",
+      "Ms Okafor",
+      "Mr Ravensworth",
+      "Dr Lindqvist",
+      "Ms Castellano"
+    ],
+    "decade": [
+      "the 1950s",
+      "the 1890s",
+      "the 1970s",
+      "the 1830s",
+      "the 1910s"
+    ],
+    "damage": [
+      "immaculate",
+      "water-damaged",
+      "foxed",
+      "fire-scorched",
+      "over-repaired with tape"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 8,
+    "kinds": {
+      "gap": 1,
+      "not_link": 1,
+      "adjacent": 2,
+      "between": 1,
+      "immediately_before": 3,
+      "before": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 42,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 19,
+      "order": 22
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}

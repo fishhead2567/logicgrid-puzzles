@@ -1,0 +1,247 @@
+{
+  "pid": "d90682969ed6",
+  "title": "Preserves, and the Preservation of Grudges",
+  "theme": "jam",
+  "blurb": "The preserves tent is the most competitive building at the show, and the only one with a locked door.",
+  "profile": "moderate",
+  "rating": 3,
+  "score": 5.355,
+  "seed": 2026172805087,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172805087
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "entrant",
+    "entity_noun_plural": "entrants",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Price",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9",
+          "$11"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "unit": "$",
+        "noun": "price",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "charges"
+      },
+      {
+        "name": "entrant",
+        "label": "Entrant",
+        "items": [
+          "Ottilie",
+          "Emeka",
+          "Harriet",
+          "Bernadette",
+          "Stanislaw"
+        ],
+        "ordered": false,
+        "noun": "entrant",
+        "subject": true
+      },
+      {
+        "name": "preserve",
+        "label": "Preserve",
+        "items": [
+          "rosehip syrup",
+          "hot pepper jelly",
+          "green walnut pickle",
+          "quince jelly",
+          "sloe and apple butter"
+        ],
+        "ordered": false,
+        "noun": "preserve",
+        "verb": "enters"
+      },
+      {
+        "name": "secret",
+        "label": "Secret ingredient",
+        "items": [
+          "star anise",
+          "orange zest",
+          "a splash of gin",
+          "black pepper",
+          "nothing whatsoever"
+        ],
+        "ordered": false,
+        "noun": "ingredient",
+        "verb": "adds"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "price:$5",
+          "b": "secret:nothing whatsoever"
+        },
+        {
+          "kind": "link",
+          "a": "entrant:Bernadette",
+          "b": "price:$5"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "price:$3",
+          "b": "secret:star anise"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "entrant:Stanislaw",
+          "b": "price:$9"
+        },
+        {
+          "kind": "not_link",
+          "a": "price:$9",
+          "b": "secret:black pepper"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "price:$5",
+          "b": "secret:a splash of gin"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "preserve:green walnut pickle",
+          "b": "price:$11"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "entrant:Emeka",
+          "b": "preserve:green walnut pickle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "entrant:Ottilie",
+          "b": "preserve:hot pepper jelly"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "preserve:rosehip syrup",
+          "b": "secret:a splash of gin"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "entrant:Bernadette",
+          "b": "preserve:quince jelly"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9",
+      "$11"
+    ],
+    "entrant": [
+      "Emeka",
+      "Bernadette",
+      "Stanislaw",
+      "Ottilie",
+      "Harriet"
+    ],
+    "preserve": [
+      "sloe and apple butter",
+      "green walnut pickle",
+      "quince jelly",
+      "rosehip syrup",
+      "hot pepper jelly"
+    ],
+    "secret": [
+      "star anise",
+      "black pepper",
+      "nothing whatsoever",
+      "orange zest",
+      "a splash of gin"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 9,
+    "kinds": {
+      "adjacent": 2,
+      "link": 2,
+      "immediately_before": 3,
+      "not_link": 1,
+      "before": 3
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 43,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 25,
+      "order": 15
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  }
+}
