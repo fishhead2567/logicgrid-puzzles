@@ -1,0 +1,6 @@
+# The manifest records a sha256 and a byte count for every puzzle and
+# narrative file, and the app verifies them after download. Git's autocrlf
+# would rewrite line endings on checkout on Windows, changing the bytes and
+# failing every check. These files are data, not source: never convert them.
+*.json -text
+*.md text eol=lf
