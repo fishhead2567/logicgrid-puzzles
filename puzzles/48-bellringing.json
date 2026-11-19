@@ -1,0 +1,398 @@
+{
+  "pid": "5c510f2405c0",
+  "title": "The Quarter-Peal at St Botolph's",
+  "theme": "bellringing",
+  "blurb": "Six ringers, six rounds of the Tuesday practice, and a tower captain keeping a ledger of everyone's mistakes.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 16.2978,
+  "seed": 2026173055551,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173055551,
+    "theme": "bellringing"
+  },
+  "schema": {
+    "spine": "round",
+    "entity_noun": "ringer",
+    "entity_noun_plural": "ringers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "round",
+        "label": "Round",
+        "items": [
+          "round one",
+          "round two",
+          "round three",
+          "round four",
+          "round five",
+          "round six"
+        ],
+        "ordered": true,
+        "noun": "round",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "round",
+        "verb": "rings in"
+      },
+      {
+        "name": "ringer",
+        "label": "Ringer",
+        "items": [
+          "Lavinia",
+          "Dorcas",
+          "Ambrose",
+          "Fenwick",
+          "Osbert",
+          "Prudence"
+        ],
+        "ordered": false,
+        "noun": "ringer",
+        "subject": true
+      },
+      {
+        "name": "method",
+        "label": "Method",
+        "items": [
+          "Cambridge Surprise Minor",
+          "Stedman Caters",
+          "Plain Bob Major",
+          "Grandsire Doubles",
+          "Plain Bob Minor",
+          "Grandsire Triples"
+        ],
+        "ordered": false,
+        "noun": "method",
+        "verb": "calls"
+      },
+      {
+        "name": "bell",
+        "label": "Bell",
+        "items": [
+          "the tenor",
+          "the fifth",
+          "the sharp second",
+          "the second",
+          "the third",
+          "the fourth"
+        ],
+        "ordered": false,
+        "noun": "bell",
+        "verb": "takes"
+      },
+      {
+        "name": "slip",
+        "label": "Slip",
+        "items": [
+          "an early snap lead",
+          "nothing at all",
+          "a missed dodge",
+          "a fired shot",
+          "going methodless",
+          "a clipped backstroke"
+        ],
+        "ordered": false,
+        "noun": "slip",
+        "verb": "is blamed for"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "method:Plain Bob Major",
+          "b": "round:round six",
+          "c": "round:round three"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "bell:the fourth",
+          "b": "round:round four"
+        },
+        {
+          "kind": "before",
+          "a": "round:round four",
+          "b": "method:Grandsire Triples"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "adjacent",
+            "a": "method:Plain Bob Major",
+            "b": "round:round five"
+          },
+          "y": {
+            "kind": "not_link",
+            "a": "round:round six",
+            "b": "slip:a fired shot"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "before",
+            "a": "round:round two",
+            "b": "bell:the tenor"
+          },
+          "y": {
+            "kind": "adjacent",
+            "a": "method:Stedman Caters",
+            "b": "round:round four"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "round:round five",
+          "b": "ringer:Prudence",
+          "c": "slip:an early snap lead"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "ringer:Dorcas",
+          "b": "method:Plain Bob Minor"
+        },
+        {
+          "kind": "between",
+          "a": "ringer:Dorcas",
+          "b": "round:round five",
+          "c": "slip:a fired shot"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "method:Plain Bob Minor",
+          "b": "slip:nothing at all"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "before",
+            "a": "slip:a clipped backstroke",
+            "b": "bell:the second"
+          },
+          "y": {
+            "kind": "before",
+            "a": "slip:a missed dodge",
+            "b": "bell:the fifth"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "before",
+            "a": "ringer:Osbert",
+            "b": "method:Plain Bob Minor"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "ringer:Ambrose",
+          "b": "slip:going methodless"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "bell:the third",
+          "b": "method:Plain Bob Minor",
+          "c": "ringer:Lavinia"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "ringer:Osbert",
+          "b": "slip:a missed dodge"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "method:Grandsire Doubles",
+          "b": "slip:an early snap lead"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "method:Cambridge Surprise Minor",
+          "b": "slip:a missed dodge",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "bell:the second",
+              "b": "ringer:Ambrose"
+            },
+            {
+              "kind": "link",
+              "a": "bell:the second",
+              "b": "ringer:Lavinia"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "round": [
+      "round one",
+      "round two",
+      "round three",
+      "round four",
+      "round five",
+      "round six"
+    ],
+    "ringer": [
+      "Lavinia",
+      "Dorcas",
+      "Fenwick",
+      "Osbert",
+      "Ambrose",
+      "Prudence"
+    ],
+    "method": [
+      "Grandsire Doubles",
+      "Cambridge Surprise Minor",
+      "Plain Bob Minor",
+      "Stedman Caters",
+      "Plain Bob Major",
+      "Grandsire Triples"
+    ],
+    "bell": [
+      "the tenor",
+      "the third",
+      "the fourth",
+      "the second",
+      "the sharp second",
+      "the fifth"
+    ],
+    "slip": [
+      "a fired shot",
+      "an early snap lead",
+      "a clipped backstroke",
+      "nothing at all",
+      "a missed dodge",
+      "going methodless"
+    ]
+  },
+  "stats": {
+    "atoms": 17,
+    "numbered_clues": 15,
+    "kinds": {
+      "between": 4,
+      "before": 3,
+      "not_both": 1,
+      "if_then": 2,
+      "immediately_before": 4,
+      "not": 1,
+      "gap": 1,
+      "or": 1
+    },
+    "positives": 0,
+    "compounds": 5
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 87,
+    "tier_counts": {
+      "bijection": 35,
+      "order": 44,
+      "disjunction": 7,
+      "trial": 1
+    },
+    "trial_eliminations": 1,
+    "unknown_cells": 24
+  },
+  "text": {
+    "intro": "Six ringers, six rounds of the Tuesday practice, and a tower captain keeping a ledger of everyone's mistakes.\nSix ringers are involved. Determine each ringer's round, method, bell and slip.\n- **Ringer**: Lavinia, Dorcas, Ambrose, Fenwick, Osbert and Prudence.\n- **Round** (listed from earlier to later): round one, round two, round three, round four, round five and round six.\n- **Method**: Cambridge Surprise Minor, Stedman Caters, Plain Bob Major, Grandsire Doubles, Plain Bob Minor and Grandsire Triples.\n- **Bell**: the tenor, the fifth, the sharp second, the second, the third and the fourth.\n- **Slip**: an early snap lead, nothing at all, a missed dodge, a fired shot, going methodless and a clipped backstroke.\nEvery ringer has a different round, method, bell and slip, so within each category every item is used exactly once.",
+    "clues": [
+      "The ringer who calls Plain Bob Major falls somewhere between round six and round three in round order.",
+      "The ringer who takes the fourth is earlier than round four in round order. The ringer who calls Grandsire Triples is later than round four in round order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The ringer who calls Plain Bob Major and round five are exactly one round apart in round order, in one direction or the other. (b) The ringer who is blamed for a fired shot does not ring in round six.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The ringer who takes the tenor is later than round two in round order. (b) The ringer who calls Stedman Caters and round four are exactly one round apart in round order, in one direction or the other.",
+      "Round five falls somewhere between Prudence and the ringer who is blamed for an early snap lead in round order.",
+      "Dorcas is earlier than the ringer who calls Plain Bob Minor in round order. Dorcas falls somewhere between round five and the ringer who is blamed for a fired shot in round order.",
+      "The ringer who calls Plain Bob Minor is exactly one round earlier than the ringer who is blamed for nothing at all, with no round in between.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The ringer who is blamed for a clipped backstroke is earlier than the ringer who takes the second in round order. (b) The ringer who is blamed for a missed dodge is earlier than the ringer who takes the fifth in round order.",
+      "The following is NOT true: Osbert is earlier than the ringer who calls Plain Bob Minor in round order.",
+      "Ambrose is exactly one round earlier than the ringer who is blamed for going methodless, with no round in between.",
+      "The ringer who takes the third falls somewhere between the ringer who calls Plain Bob Minor and Lavinia in round order.",
+      "Osbert is exactly one round earlier than the ringer who is blamed for a missed dodge, with no round in between.",
+      "The ringer who calls Grandsire Doubles is exactly one round earlier than the ringer who is blamed for an early snap lead, with no round in between.",
+      "The ringer who calls Cambridge Surprise Minor and the ringer who is blamed for a missed dodge are exactly three rounds apart in round order.",
+      "At least one of the following holds, and possibly more than one: (a) The ringer who takes the second and Ambrose are exactly one round apart in round order, in one direction or the other. (b) Lavinia takes the second."
+    ]
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "pid": "4e68c71b9042",
+  "title": "The Heavies at Kinloch Rannoch",
+  "theme": "highland",
+  "blurb": "Six throwers in the heavy events, measured to the foot, in a field where the wind counts for more than anybody admits.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.4733,
+  "seed": 2026172920928,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172920928,
+    "theme": "highland"
+  },
+  "schema": {
+    "spine": "throw",
+    "entity_noun": "thrower",
+    "entity_noun_plural": "throwers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "throw",
+        "label": "Best throw",
+        "items": [
+          "28 feet",
+          "32 feet",
+          "36 feet",
+          "40 feet",
+          "44 feet"
+        ],
+        "ordered": true,
+        "values": [
+          28,
+          32,
+          36,
+          40,
+          44
+        ],
+        "unit_suffix": " feet",
+        "noun": "best throw",
+        "cmp_less": "shorter",
+        "cmp_more": "longer",
+        "step_noun": "throw step",
+        "verb": "throws"
+      },
+      {
+        "name": "thrower",
+        "label": "Thrower",
+        "items": [
+          "Duncan Rait",
+          "Lachlan Cree",
+          "Angus Dunbar",
+          "Morag Inglis",
+          "Isla Kinnear"
+        ],
+        "ordered": false,
+        "noun": "thrower",
+        "subject": true
+      },
+      {
+        "name": "event",
+        "label": "Event",
+        "items": [
+          "the open stone",
+          "the Scottish hammer",
+          "the Braemar stone",
+          "the caber toss",
+          "the sheaf toss"
+        ],
+        "ordered": false,
+        "noun": "event",
+        "verb": "competes in"
+      },
+      {
+        "name": "grumble",
+        "label": "Grumble",
+        "items": [
+          "no excuse whatsoever",
+          "a turned ankle",
+          "a slipped grip",
+          "a soft run-up",
+          "a crosswind"
+        ],
+        "ordered": false,
+        "noun": "grumble",
+        "verb": "complains of"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "event:the sheaf toss",
+          "b": "throw:40 feet"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "grumble:a slipped grip",
+          "b": "throw:28 feet",
+          "c": "thrower:Angus Dunbar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "grumble:a crosswind",
+          "b": "throw:28 feet"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "link",
+            "a": "event:the Scottish hammer",
+            "b": "grumble:a soft run-up"
+          },
+          "y": {
+            "kind": "not_link",
+            "a": "event:the Braemar stone",
+            "b": "throw:28 feet"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "event:the Braemar stone",
+          "b": "throw:28 feet"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "not_link",
+              "a": "grumble:a soft run-up",
+              "b": "thrower:Angus Dunbar"
+            },
+            {
+              "kind": "not_link",
+              "a": "grumble:no excuse whatsoever",
+              "b": "thrower:Lachlan Cree"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "grumble:a turned ankle",
+              "b": "thrower:Morag Inglis"
+            },
+            {
+              "kind": "before",
+              "a": "thrower:Lachlan Cree",
+              "b": "grumble:no excuse whatsoever"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "grumble:a turned ankle",
+          "b": "thrower:Isla Kinnear"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "grumble:a slipped grip",
+          "b": "event:the open stone"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "thrower:Morag Inglis",
+          "b": "event:the caber toss"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "throw": [
+      "28 feet",
+      "32 feet",
+      "36 feet",
+      "40 feet",
+      "44 feet"
+    ],
+    "thrower": [
+      "Duncan Rait",
+      "Morag Inglis",
+      "Lachlan Cree",
+      "Isla Kinnear",
+      "Angus Dunbar"
+    ],
+    "event": [
+      "the Scottish hammer",
+      "the Braemar stone",
+      "the caber toss",
+      "the sheaf toss",
+      "the open stone"
+    ],
+    "grumble": [
+      "no excuse whatsoever",
+      "a crosswind",
+      "a turned ankle",
+      "a slipped grip",
+      "a soft run-up"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 1,
+      "between": 1,
+      "adjacent": 3,
+      "not_both": 1,
+      "or": 2,
+      "before": 1,
+      "immediately_before": 1
+    },
+    "positives": 1,
+    "compounds": 3
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 23,
+      "order": 14,
+      "disjunction": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Six throwers in the heavy events, measured to the foot, in a field where the wind counts for more than anybody admits.\nFive throwers are involved. Determine each thrower's best throw, event and grumble.\n- **Thrower**: Duncan Rait, Lachlan Cree, Angus Dunbar, Morag Inglis and Isla Kinnear.\n- **Best throw** (listed from shorter to longer): 28 feet, 32 feet, 36 feet, 40 feet and 44 feet.\n- **Event**: the open stone, the Scottish hammer, the Braemar stone, the caber toss and the sheaf toss.\n- **Grumble**: no excuse whatsoever, a turned ankle, a slipped grip, a soft run-up and a crosswind.\nEvery thrower has a different best throw, event and grumble, so within each category every item is used exactly once.",
+    "clues": [
+      "The thrower who competes in the sheaf toss throws 40 feet.",
+      "The thrower who complains of a slipped grip falls somewhere between 28 feet and Angus Dunbar in best throw order.",
+      "The thrower who complains of a crosswind and 28 feet are exactly one throw step apart in best throw order, in one direction or the other.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The thrower who competes in the Scottish hammer complains of a soft run-up. (b) The thrower who competes in the Braemar stone does not throw 28 feet.",
+      "The thrower who competes in the Braemar stone and 28 feet are exactly one throw step apart in best throw order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) Angus Dunbar does not complain of a soft run-up. (b) Lachlan Cree does not complain of no excuse whatsoever.",
+      "At least one of the following holds, and possibly more than one: (a) The thrower who complains of a turned ankle and Morag Inglis are exactly one throw step apart in best throw order, in one direction or the other. (b) Lachlan Cree is shorter than the thrower who complains of no excuse whatsoever in best throw order.",
+      "The thrower who complains of a turned ankle and Isla Kinnear are exactly one throw step apart in best throw order, in one direction or the other.",
+      "The thrower who complains of a slipped grip is shorter than the thrower who competes in the open stone in best throw order.",
+      "Morag Inglis is exactly one throw step shorter than the thrower who competes in the caber toss, with no best throw in between."
+    ]
+  }
+}

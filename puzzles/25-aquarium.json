@@ -1,0 +1,255 @@
+{
+  "pid": "bfce7b725169",
+  "title": "The Night Shift at Coldwater Hall",
+  "theme": "aquarium",
+  "blurb": "Coldwater Hall Aquarium keeps a night rota of tanks, and one keeper who is definitely feeding the wrong things.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026172873414,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172873414,
+    "theme": "aquarium"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "keeper",
+    "entity_noun_plural": "keepers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "works"
+      },
+      {
+        "name": "keeper",
+        "label": "Keeper",
+        "items": [
+          "Marisol",
+          "Bartolo",
+          "Fitzwilliam",
+          "Oskar",
+          "Agnetha"
+        ],
+        "ordered": false,
+        "noun": "keeper",
+        "subject": true
+      },
+      {
+        "name": "tank",
+        "label": "Tank",
+        "items": [
+          "the octopus enclosure",
+          "the kelp tank",
+          "the deep reef",
+          "the touch pool",
+          "the jellyfish column"
+        ],
+        "ordered": false,
+        "noun": "tank",
+        "verb": "tends"
+      },
+      {
+        "name": "incident",
+        "label": "Logged incident",
+        "items": [
+          "an algal bloom",
+          "a blocked skimmer",
+          "a visitor's dropped phone",
+          "a failed chiller",
+          "an unexplained pH swing"
+        ],
+        "ordered": false,
+        "noun": "incident",
+        "verb": "logs"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "incident:a failed chiller",
+          "b": "slot:slot two"
+        },
+        {
+          "kind": "link",
+          "a": "keeper:Marisol",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "slot:slot one",
+          "b": "tank:the kelp tank"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "keeper:Agnetha",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tank:the deep reef",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "incident:an unexplained pH swing",
+          "b": "keeper:Marisol",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "incident:an algal bloom",
+          "b": "keeper:Bartolo"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "incident:a blocked skimmer",
+          "b": "tank:the kelp tank"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "keeper:Fitzwilliam",
+          "b": "tank:the touch pool",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "tank:the octopus enclosure",
+          "b": "keeper:Agnetha",
+          "c": "keeper:Fitzwilliam"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "keeper": [
+      "Agnetha",
+      "Marisol",
+      "Bartolo",
+      "Oskar",
+      "Fitzwilliam"
+    ],
+    "tank": [
+      "the deep reef",
+      "the kelp tank",
+      "the touch pool",
+      "the octopus enclosure",
+      "the jellyfish column"
+    ],
+    "incident": [
+      "a blocked skimmer",
+      "an algal bloom",
+      "a failed chiller",
+      "a visitor's dropped phone",
+      "an unexplained pH swing"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 9,
+    "kinds": {
+      "adjacent": 1,
+      "link": 1,
+      "immediately_before": 4,
+      "parity": 1,
+      "before": 1,
+      "gap": 1,
+      "between": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 38,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 21,
+      "order": 16
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Coldwater Hall Aquarium keeps a night rota of tanks, and one keeper who is definitely feeding the wrong things.\nFive keepers are involved. Determine each keeper's slot, tank and incident.\n- **Keeper**: Marisol, Bartolo, Fitzwilliam, Oskar and Agnetha.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Tank**: the octopus enclosure, the kelp tank, the deep reef, the touch pool and the jellyfish column.\n- **Logged incident**: an algal bloom, a blocked skimmer, a visitor's dropped phone, a failed chiller and an unexplained pH swing.\nEvery keeper has a different slot, tank and incident, so within each category every item is used exactly once.",
+    "clues": [
+      "The keeper who logs a failed chiller and slot two are exactly one slot apart in slot order, in one direction or the other. Marisol works slot two.",
+      "Slot one is exactly one slot earlier than the keeper who tends the kelp tank, with no slot in between.",
+      "Agnetha is exactly one slot earlier than slot two, with no slot in between.",
+      "The keeper who tends the deep reef is exactly one slot earlier than slot two, with no slot in between.",
+      "One of the keeper who logs an unexplained pH swing and Marisol sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "The keeper who logs an algal bloom is exactly one slot earlier than Bartolo, with no slot in between.",
+      "The keeper who logs a blocked skimmer is earlier than the keeper who tends the kelp tank in slot order.",
+      "Fitzwilliam and the keeper who tends the touch pool are exactly two slots apart in slot order.",
+      "The keeper who tends the octopus enclosure falls somewhere between Agnetha and Fitzwilliam in slot order."
+    ]
+  }
+}

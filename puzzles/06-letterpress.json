@@ -1,0 +1,178 @@
+{
+  "pid": "e60d8235504a",
+  "title": "The Jobbing Shop on Dyer's Row",
+  "theme": "letterpress",
+  "blurb": "A jobbing print shop with six compositors, six quoted prices and one hell-box filling up faster than anybody will admit to.",
+  "profile": "gentle",
+  "rating": 1,
+  "score": 3.97,
+  "seed": 2026172722953,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172722953,
+    "theme": "letterpress"
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "compositor",
+    "entity_noun_plural": "compositors",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Quoted price",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9
+        ],
+        "unit": "$",
+        "noun": "quoted price",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "quotes"
+      },
+      {
+        "name": "compositor",
+        "label": "Compositor",
+        "items": [
+          "Harriet Lisle",
+          "Ned Ashby",
+          "Winifred Oakes",
+          "Alfred Nunn"
+        ],
+        "ordered": false,
+        "noun": "compositor",
+        "subject": true
+      },
+      {
+        "name": "job",
+        "label": "Job",
+        "items": [
+          "a parish newsletter",
+          "a regatta programme",
+          "an auction bill",
+          "a wedding order of service"
+        ],
+        "ordered": false,
+        "noun": "job",
+        "verb": "is setting"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "job:a regatta programme",
+          "b": "price:$7"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "compositor:Winifred Oakes",
+          "b": "price:$5"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "job:an auction bill",
+          "b": "price:$9"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "compositor:Harriet Lisle",
+          "b": "price:$5"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "compositor:Ned Ashby",
+          "b": "job:a parish newsletter"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9"
+    ],
+    "compositor": [
+      "Harriet Lisle",
+      "Winifred Oakes",
+      "Ned Ashby",
+      "Alfred Nunn"
+    ],
+    "job": [
+      "a wedding order of service",
+      "a parish newsletter",
+      "a regatta programme",
+      "an auction bill"
+    ]
+  },
+  "stats": {
+    "atoms": 5,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 3,
+      "immediately_before": 1,
+      "adjacent": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 15,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 9,
+      "order": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "A jobbing print shop with six compositors, six quoted prices and one hell-box filling up faster than anybody will admit to.\nFour compositors are involved. Determine each compositor's quoted price and job.\n- **Compositor**: Harriet Lisle, Ned Ashby, Winifred Oakes and Alfred Nunn.\n- **Quoted price** (listed from cheaper to dearer): $3, $5, $7 and $9.\n- **Job**: a parish newsletter, a regatta programme, an auction bill and a wedding order of service.\nEvery compositor has a different quoted price and job, so within each category every item is used exactly once.",
+    "clues": [
+      "The compositor who is setting a regatta programme quotes $7.",
+      "Winifred Oakes quotes $5.",
+      "The compositor who is setting an auction bill quotes $9.",
+      "Harriet Lisle is exactly one price step cheaper than $5, with no quoted price in between.",
+      "Ned Ashby and the compositor who is setting a parish newsletter are exactly one price step apart in quoted price order, in one direction or the other."
+    ]
+  }
+}

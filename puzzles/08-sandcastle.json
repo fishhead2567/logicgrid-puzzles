@@ -1,0 +1,171 @@
+{
+  "pid": "9c31bad60a31",
+  "title": "The Grindle Bay Sandcastle Open",
+  "theme": "sandcastle",
+  "blurb": "The Grindle Bay Open is judged at four o'clock, whatever the tide is doing.",
+  "profile": "gentle",
+  "rating": 1,
+  "score": 3.97,
+  "seed": 2026172738791,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172738791,
+    "theme": "sandcastle"
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "builder",
+    "entity_noun_plural": "builders",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "builder",
+        "label": "Builder",
+        "items": [
+          "Juniper",
+          "Aleksy",
+          "Hartley",
+          "Bronagh"
+        ],
+        "ordered": false,
+        "noun": "builder",
+        "subject": true
+      },
+      {
+        "name": "tool",
+        "label": "Chief tool",
+        "items": [
+          "a soup spoon",
+          "bare hands",
+          "a bucket with no handle",
+          "a cake slice"
+        ],
+        "ordered": false,
+        "noun": "tool",
+        "verb": "works with"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "builder:Hartley",
+          "b": "place:third"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "builder:Aleksy",
+          "b": "tool:a cake slice"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "builder:Bronagh",
+          "b": "tool:a bucket with no handle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "tool:bare hands",
+          "b": "place:third"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "builder:Aleksy",
+          "b": "place:second"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth"
+    ],
+    "builder": [
+      "Aleksy",
+      "Juniper",
+      "Hartley",
+      "Bronagh"
+    ],
+    "tool": [
+      "a cake slice",
+      "bare hands",
+      "a soup spoon",
+      "a bucket with no handle"
+    ]
+  },
+  "stats": {
+    "atoms": 5,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 3,
+      "before": 1,
+      "immediately_before": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 18,
+    "tier_counts": {
+      "direct": 5,
+      "bijection": 11,
+      "order": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Grindle Bay Open is judged at four o'clock, whatever the tide is doing.\nFour builders are involved. Determine each builder's placing and tool.\n- **Builder**: Juniper, Aleksy, Hartley and Bronagh.\n- **Placing** (listed from better to worse): first, second, third and fourth.\n- **Chief tool**: a soup spoon, bare hands, a bucket with no handle and a cake slice.\nEvery builder has a different placing and tool, so within each category every item is used exactly once.",
+    "clues": [
+      "Hartley places third.",
+      "Aleksy works with a cake slice.",
+      "Bronagh works with a bucket with no handle.",
+      "The builder who works with bare hands is better than third in placing order.",
+      "Aleksy is exactly one place better than second, with no placing in between."
+    ]
+  }
+}

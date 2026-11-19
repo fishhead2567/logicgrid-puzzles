@@ -1,625 +1,637 @@
 {
   "schema": 1,
-  "generated": "2026-11-19T03:59:54+00:00",
+  "generated": "2026-11-19T22:48:20+00:00",
   "generator": "logicgrid 0.1.0",
   "count": 50,
-  "narrated": 5,
+  "narrated": 0,
   "puzzles": [
     {
-      "pid": "89f5280affb0",
-      "id": "01-kite",
-      "title": "The Wind Is Free, the Field Is Not",
-      "theme": "kite",
-      "profile": "gentle",
-      "rating": 2,
-      "categories": 3,
-      "items": 4,
-      "clues": 3,
-      "puzzle": {
-        "path": "puzzles/01-kite.json",
-        "sha256": "07ecda4fc8fba853b7562f9401a326caab49b4b3e5631d1d9640e8a73594ecb9",
-        "bytes": 4153
-      }
-    },
-    {
-      "pid": "4e6bca5074dc",
-      "id": "02-regatta",
-      "title": "The Mudflat Regatta",
-      "theme": "regatta",
-      "profile": "gentle",
-      "rating": 1,
-      "categories": 3,
-      "items": 4,
-      "clues": 4,
-      "puzzle": {
-        "path": "puzzles/02-regatta.json",
-        "sha256": "0b298c7f9bc5c70b57eae5c765c7105d4d10aa678b81f73eb48faf47f9c3e767",
-        "bytes": 4047
-      }
-    },
-    {
-      "pid": "65dfd2b93c53",
-      "id": "03-county_fair",
-      "title": "The Hollow Creek Pie Judging",
-      "theme": "county_fair",
-      "profile": "gentle",
-      "rating": 1,
-      "categories": 3,
-      "items": 4,
-      "clues": 5,
-      "puzzle": {
-        "path": "puzzles/03-county_fair.json",
-        "sha256": "5eb1123d5438d3555a6ac86eadce065162302386e9c65d55067370d31c44e726",
-        "bytes": 3837
-      }
-    },
-    {
-      "pid": "a7db3a10cde0",
-      "id": "04-pigeon",
-      "title": "Andy's Swiftest Birds",
-      "theme": "pigeon",
-      "profile": "gentle",
-      "rating": 1,
-      "categories": 3,
-      "items": 4,
-      "clues": 5,
-      "puzzle": {
-        "path": "puzzles/04-pigeon.json",
-        "sha256": "f9f6388bcfd3ccea288767999684ce5a1e78280566109ddec4f906382bfffb21",
-        "bytes": 4256
-      },
-      "narrative": {
-        "path": "narratives/04-pigeon.json",
-        "sha256": "ea2bdd5836f39517d9cfe16894f796d66b061e9fc6534245e1e417695164fc24",
-        "bytes": 1315
-      }
-    },
-    {
-      "pid": "4c437f283d38",
-      "id": "05-cheese",
-      "title": "The Cheesemongers' Standoff",
-      "theme": "cheese",
-      "profile": "gentle",
-      "rating": 1,
-      "categories": 3,
-      "items": 4,
-      "clues": 6,
-      "puzzle": {
-        "path": "puzzles/05-cheese.json",
-        "sha256": "967a4f2ff770c5ed9c2f172cb3fdb1a726fa31b0b3da7f3fee3223bef43783bd",
-        "bytes": 4282
-      }
-    },
-    {
-      "pid": "62c05f182b20",
-      "id": "06-kite",
-      "title": "The Wind Is Free, the Field Is Not",
-      "theme": "kite",
-      "profile": "gentle",
-      "rating": 1,
-      "categories": 3,
-      "items": 4,
-      "clues": 5,
-      "puzzle": {
-        "path": "puzzles/06-kite.json",
-        "sha256": "48d50fb646fe272ea9978624ab251eac7b9f86bf18981cef868a73f76d5793bc",
-        "bytes": 4023
-      }
-    },
-    {
-      "pid": "c37adfb45fd5",
-      "id": "07-allotment",
-      "title": "Plot Wars on the Ashcombe Allotments",
-      "theme": "allotment",
-      "profile": "gentle",
-      "rating": 1,
-      "categories": 3,
-      "items": 4,
-      "clues": 4,
-      "puzzle": {
-        "path": "puzzles/07-allotment.json",
-        "sha256": "48493c3e1d4341abcd7ed36fadb8de042ba44a2646874fb4332246874c1f29bc",
-        "bytes": 3948
-      }
-    },
-    {
-      "pid": "19304b56f314",
-      "id": "08-ferry",
-      "title": "The Crossings to Inverlaig",
-      "theme": "ferry",
+      "pid": "c25568d60cc1",
+      "id": "01-bookshop",
+      "title": "Mrs Pell's Impossible Shelves",
+      "theme": "bookshop",
       "profile": "gentle",
       "rating": 2,
       "categories": 3,
       "items": 5,
-      "clues": 5,
+      "clues": 7,
       "puzzle": {
-        "path": "puzzles/08-ferry.json",
-        "sha256": "df346a587af1563ed3a5658d3a83b0dc35fe04f74f03251b0e9e273b54022004",
-        "bytes": 4270
+        "path": "puzzles/01-bookshop.json",
+        "sha256": "72e5cbf25b67039bd46564bd277bf5cc4d102f3790da9c4c0ded59bf502be89e",
+        "bytes": 5673
       }
     },
     {
-      "pid": "ff457a01d66a",
-      "id": "09-bookshop",
-      "title": "Mrs Pell's Impossible Shelves",
-      "theme": "bookshop",
-      "profile": "easy",
-      "rating": 3,
+      "pid": "f8e494d9163f",
+      "id": "02-lighthouse",
+      "title": "The Saltmarsh Light Rotation",
+      "theme": "lighthouse",
+      "profile": "gentle",
+      "rating": 1,
+      "categories": 3,
+      "items": 4,
+      "clues": 6,
+      "puzzle": {
+        "path": "puzzles/02-lighthouse.json",
+        "sha256": "32e811c938960af49f731a506aff78dab1e2d92c016e0c07f69d25929f241d22",
+        "bytes": 4216
+      }
+    },
+    {
+      "pid": "11b1bffd9c2a",
+      "id": "03-beekeeper",
+      "title": "The Honey Show Scandal",
+      "theme": "beekeeper",
+      "profile": "gentle",
+      "rating": 1,
+      "categories": 3,
+      "items": 4,
+      "clues": 5,
+      "puzzle": {
+        "path": "puzzles/03-beekeeper.json",
+        "sha256": "88ee5ef0344afc93938455704a7a1af73b60aed90ce10f6df5249ab25740c4b6",
+        "bytes": 4055
+      }
+    },
+    {
+      "pid": "f5db7c635d5e",
+      "id": "04-dream_cars",
+      "title": "The Dream Garage",
+      "theme": "dream_cars",
+      "profile": "gentle",
+      "rating": 2,
       "categories": 3,
       "items": 5,
       "clues": 6,
       "puzzle": {
-        "path": "puzzles/09-bookshop.json",
-        "sha256": "83585d5933fbb323a6b37cb953147021f01116aa9d73bd538c980369c90760a1",
-        "bytes": 5596
+        "path": "puzzles/04-dream_cars.json",
+        "sha256": "e6310d5975d7545e25716b78ae39d2f8911700d360c65f2980a60c467b85f327",
+        "bytes": 4589
       }
     },
     {
-      "pid": "b44a026ec09b",
-      "id": "10-balloon",
-      "title": "The Thistledown Balloon Ascent",
-      "theme": "balloon",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 4,
-      "items": 4,
-      "clues": 7,
-      "puzzle": {
-        "path": "puzzles/10-balloon.json",
-        "sha256": "4238ed2e34fcd065c1877be26540fed4fb43fad97451847595b275aae08b8b2a",
-        "bytes": 5578
-      },
-      "narrative": {
-        "path": "narratives/10-balloon.json",
-        "sha256": "e4917dba89452be66daf8f8a0c8ff9878b8c8ed5713cbe82b2dc47551f9fe6b9",
-        "bytes": 1632
-      }
-    },
-    {
-      "pid": "0b2dbd7e7112",
-      "id": "11-pigeon",
-      "title": "Andy's Swiftest Birds",
-      "theme": "pigeon",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 4,
-      "items": 4,
-      "clues": 6,
-      "puzzle": {
-        "path": "puzzles/11-pigeon.json",
-        "sha256": "d1a20e112529f7cfdf3119b9d2e9a41689cbd083a17b87d5797d08c37ee6944f",
-        "bytes": 5426
-      }
-    },
-    {
-      "pid": "6031b36e1684",
-      "id": "12-regatta",
-      "title": "The Mudflat Regatta",
-      "theme": "regatta",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 4,
-      "items": 4,
-      "clues": 5,
-      "puzzle": {
-        "path": "puzzles/12-regatta.json",
-        "sha256": "75b882b65cf8fa1f570a0cf2f31557ba4b79a1f78842d53de9aa967227991d07",
-        "bytes": 5094
-      }
-    },
-    {
-      "pid": "bc2b8118b14a",
-      "id": "13-sandcastle",
-      "title": "The Grindle Bay Sandcastle Open",
-      "theme": "sandcastle",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 3,
-      "items": 5,
-      "clues": 6,
-      "puzzle": {
-        "path": "puzzles/13-sandcastle.json",
-        "sha256": "f09eb6285c877e83ad6163675a4dc73a127566110a97e912c2a1092b9de56027",
-        "bytes": 4607
-      }
-    },
-    {
-      "pid": "3e67e3a21be0",
-      "id": "14-tea",
-      "title": "The Blind Tasting at Pemberton's",
-      "theme": "tea",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 4,
-      "items": 5,
-      "clues": 8,
-      "puzzle": {
-        "path": "puzzles/14-tea.json",
-        "sha256": "ecbab988d721d6e59002ab4067d393f58714359b4582a994db6e7a941bca5b25",
-        "bytes": 6362
-      }
-    },
-    {
-      "pid": "499d363d1146",
-      "id": "15-balloon",
-      "title": "The Thistledown Balloon Ascent",
-      "theme": "balloon",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 4,
-      "items": 4,
-      "clues": 7,
-      "puzzle": {
-        "path": "puzzles/15-balloon.json",
-        "sha256": "bafe6d6f482794402469c6f8c8f2391a4fb38e44bebaa3cde7bcd5ca434a7f00",
-        "bytes": 5690
-      }
-    },
-    {
-      "pid": "d7bd206c23b6",
-      "id": "16-bookshop",
-      "title": "Mrs Pell's Impossible Shelves",
-      "theme": "bookshop",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 4,
-      "items": 5,
-      "clues": 8,
-      "puzzle": {
-        "path": "puzzles/16-bookshop.json",
-        "sha256": "ac032ef53b67955a9c8da963c54bd7348d1a00e9361a4857ed33173ac9ad136b",
-        "bytes": 6715
-      }
-    },
-    {
-      "pid": "7592df768a12",
-      "id": "17-county_fair",
-      "title": "The Hollow Creek Pie Judging",
-      "theme": "county_fair",
-      "profile": "easy",
-      "rating": 3,
-      "categories": 4,
-      "items": 4,
-      "clues": 6,
-      "puzzle": {
-        "path": "puzzles/17-county_fair.json",
-        "sha256": "8e6dc70fad8c407548710747a844ae077bfbd7bb7a3521eda501ae8c767c4df1",
-        "bytes": 4912
-      }
-    },
-    {
-      "pid": "e969a5749303",
-      "id": "18-knitting",
+      "pid": "2f742529c0b3",
+      "id": "05-knitting",
       "title": "The Ashfold Knitting Circle",
       "theme": "knitting",
+      "profile": "gentle",
+      "rating": 1,
+      "categories": 3,
+      "items": 4,
+      "clues": 5,
+      "puzzle": {
+        "path": "puzzles/05-knitting.json",
+        "sha256": "dea7849ea210ad910ff20c9b161466fc033ff9b2a7f5b656aae07b57d9efb72d",
+        "bytes": 4067
+      }
+    },
+    {
+      "pid": "e60d8235504a",
+      "id": "06-letterpress",
+      "title": "The Jobbing Shop on Dyer's Row",
+      "theme": "letterpress",
+      "profile": "gentle",
+      "rating": 1,
+      "categories": 3,
+      "items": 4,
+      "clues": 5,
+      "puzzle": {
+        "path": "puzzles/06-letterpress.json",
+        "sha256": "bc0ccdacf43144511db1115c50b8bc5a3ec9191d72268c3c6d7af017abdc28d7",
+        "bytes": 4398
+      }
+    },
+    {
+      "pid": "b12da526c87b",
+      "id": "07-radio",
+      "title": "The Graveyard Shift at WPKX",
+      "theme": "radio",
+      "profile": "gentle",
+      "rating": 1,
+      "categories": 3,
+      "items": 4,
+      "clues": 4,
+      "puzzle": {
+        "path": "puzzles/07-radio.json",
+        "sha256": "3f153796145ce76f06e623fcce92b9593a115aa11009f25ede16ddd0e573cc67",
+        "bytes": 4281
+      }
+    },
+    {
+      "pid": "9c31bad60a31",
+      "id": "08-sandcastle",
+      "title": "The Grindle Bay Sandcastle Open",
+      "theme": "sandcastle",
+      "profile": "gentle",
+      "rating": 1,
+      "categories": 3,
+      "items": 4,
+      "clues": 5,
+      "puzzle": {
+        "path": "puzzles/08-sandcastle.json",
+        "sha256": "0512f1489eb161a22c052b376bd2ef7bd17c18252962bb5358279c1bad5d59f0",
+        "bytes": 3918
+      }
+    },
+    {
+      "pid": "84157d3818a1",
+      "id": "09-build_server",
+      "title": "The Build Server Contest",
+      "theme": "build_server",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 3,
+      "items": 5,
+      "clues": 5,
+      "puzzle": {
+        "path": "puzzles/09-build_server.json",
+        "sha256": "f58b9412af0524dc4347ec1ea4969666ff615f9fa6ddeccc29730035bb40767e",
+        "bytes": 4966
+      }
+    },
+    {
+      "pid": "b143dae5487e",
+      "id": "10-hamradio",
+      "title": "Field Day on Barrow Hill",
+      "theme": "hamradio",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 3,
+      "items": 5,
+      "clues": 7,
+      "puzzle": {
+        "path": "puzzles/10-hamradio.json",
+        "sha256": "fa962cc60c9a13756f49c881b6c99c5196f7dd7a44550a9f3ded819dbdee0e89",
+        "bytes": 4814
+      }
+    },
+    {
+      "pid": "3b108afe321d",
+      "id": "11-kite",
+      "title": "The Wind Is Free, the Field Is Not",
+      "theme": "kite",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 4,
+      "items": 4,
+      "clues": 6,
+      "puzzle": {
+        "path": "puzzles/11-kite.json",
+        "sha256": "e4eaa0203bd02db7e909097ce0c590bb49286492a119d146997ed32338834fa3",
+        "bytes": 5204
+      }
+    },
+    {
+      "pid": "117e699ee6a0",
+      "id": "12-road_trip",
+      "title": "The Great American Road Trip",
+      "theme": "road_trip",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 4,
+      "items": 5,
+      "clues": 9,
+      "puzzle": {
+        "path": "puzzles/12-road_trip.json",
+        "sha256": "2dacaf9a2ed04f8e25dbe9fa99c9d387a763d9273ba8a02fd67972adbc7f0978",
+        "bytes": 6997
+      }
+    },
+    {
+      "pid": "adaa7e609ef1",
+      "id": "13-cider",
+      "title": "The Pomace and the Prize",
+      "theme": "cider",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 4,
+      "items": 4,
+      "clues": 6,
+      "puzzle": {
+        "path": "puzzles/13-cider.json",
+        "sha256": "c7ac5fde6f6509aa590625c6adcb983cc81097314ff8152526beed2016ad7c06",
+        "bytes": 5201
+      }
+    },
+    {
+      "pid": "2f5ecd966970",
+      "id": "14-allotment",
+      "title": "Plot Wars on the Ashcombe Allotments",
+      "theme": "allotment",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 3,
+      "items": 5,
+      "clues": 6,
+      "puzzle": {
+        "path": "puzzles/14-allotment.json",
+        "sha256": "8a96b5e8624ddc34bd86a0c0af775d7fae3a775286bd58805925a616baa61916",
+        "bytes": 5097
+      }
+    },
+    {
+      "pid": "93058c19cdc8",
+      "id": "15-electives",
+      "title": "Elective Sign-Up at Ridgeline High",
+      "theme": "electives",
       "profile": "easy",
       "rating": 3,
       "categories": 4,
       "items": 4,
       "clues": 8,
       "puzzle": {
-        "path": "puzzles/18-knitting.json",
-        "sha256": "a9dda0e8ca86e4376e2fb6bc4599e16c5d491de0e1e2cef980cb4e13e6733a18",
-        "bytes": 5788
+        "path": "puzzles/15-electives.json",
+        "sha256": "805374028da3664a3f4f422b6deb510a7a1806d0ac742f6f591471becfe74604",
+        "bytes": 5980
       }
     },
     {
-      "pid": "64fd78628fcd",
-      "id": "19-archive",
-      "title": "The Mislabelled Drawers",
-      "theme": "archive",
+      "pid": "ac912de06f09",
+      "id": "16-mushroom",
+      "title": "The Foragers of Thorn Bottom",
+      "theme": "mushroom",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 3,
+      "items": 5,
+      "clues": 6,
+      "puzzle": {
+        "path": "puzzles/16-mushroom.json",
+        "sha256": "24f743de97f0c31206237af3ae7bed9632c2365a68aa2f70adebded66849bf34",
+        "bytes": 4621
+      }
+    },
+    {
+      "pid": "c10f8d448e10",
+      "id": "17-detective",
+      "title": "The Case of the Missing Trowel",
+      "theme": "detective",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 3,
+      "items": 5,
+      "clues": 5,
+      "puzzle": {
+        "path": "puzzles/17-detective.json",
+        "sha256": "7f1a0f31339b43584feb289c537879f6bb5079265c72fa749038162387fcef7b",
+        "bytes": 4865
+      }
+    },
+    {
+      "pid": "c5aa264afab3",
+      "id": "18-medals",
+      "title": "The Medals Got Mixed Up",
+      "theme": "medals",
+      "profile": "easy",
+      "rating": 3,
+      "categories": 3,
+      "items": 5,
+      "clues": 6,
+      "puzzle": {
+        "path": "puzzles/18-medals.json",
+        "sha256": "24642d80ef912110575773521c34c12fff0f44d00f390e8ca0630efb62b3aa6e",
+        "bytes": 4849
+      }
+    },
+    {
+      "pid": "b30fe4d51b38",
+      "id": "19-sheepdog",
+      "title": "The Clun Forest Trials",
+      "theme": "sheepdog",
+      "profile": "moderate",
+      "rating": 4,
+      "categories": 4,
+      "items": 5,
+      "clues": 9,
+      "puzzle": {
+        "path": "puzzles/19-sheepdog.json",
+        "sha256": "38bf0be7d0facf19f119789ee86f602ea1d17b00ab8e8434a7a0608b59a00948",
+        "bytes": 6142
+      }
+    },
+    {
+      "pid": "b3ad67fcd652",
+      "id": "20-jam",
+      "title": "Preserves, and the Preservation of Grudges",
+      "theme": "jam",
+      "profile": "moderate",
+      "rating": 4,
+      "categories": 5,
+      "items": 5,
+      "clues": 11,
+      "puzzle": {
+        "path": "puzzles/20-jam.json",
+        "sha256": "beeb48833b7d8638194501a2fab75fed48e9c19d700ceb8a371a46d9784c6c65",
+        "bytes": 8045
+      }
+    },
+    {
+      "pid": "975ae76073d7",
+      "id": "21-class_pet",
+      "title": "The Room 12 Class Pet Vote",
+      "theme": "class_pet",
+      "profile": "moderate",
+      "rating": 4,
+      "categories": 4,
+      "items": 5,
+      "clues": 9,
+      "puzzle": {
+        "path": "puzzles/21-class_pet.json",
+        "sha256": "0febcd12548ae36b0ecd7011a03f42a6731d7ca1cd46cc41c3f27e8f147e393f",
+        "bytes": 6406
+      }
+    },
+    {
+      "pid": "f3ab9d685a55",
+      "id": "22-christmas",
+      "title": "Christmas Morning on Lark Street",
+      "theme": "christmas",
+      "profile": "moderate",
+      "rating": 4,
+      "categories": 4,
+      "items": 5,
+      "clues": 9,
+      "puzzle": {
+        "path": "puzzles/22-christmas.json",
+        "sha256": "6bf137883d5550560774aefeeda9226a71425d035d37b08181183ccec501ca27",
+        "bytes": 6456
+      }
+    },
+    {
+      "pid": "8832c12fd7e5",
+      "id": "23-shearing",
+      "title": "The Blades Final at Waihopai",
+      "theme": "shearing",
+      "profile": "moderate",
+      "rating": 4,
+      "categories": 4,
+      "items": 5,
+      "clues": 10,
+      "puzzle": {
+        "path": "puzzles/23-shearing.json",
+        "sha256": "df1c1234630d7d1661d476f9d313b6ba0184bf6c1553cb3a88ae0068b27d780f",
+        "bytes": 7054
+      }
+    },
+    {
+      "pid": "f93ca7baec7d",
+      "id": "24-karaoke",
+      "title": "Tuesday Night at the Dented Bell",
+      "theme": "karaoke",
       "profile": "moderate",
       "rating": 4,
       "categories": 4,
       "items": 5,
       "clues": 8,
       "puzzle": {
-        "path": "puzzles/19-archive.json",
-        "sha256": "2eef081caf23365569fae3210c59a439ffba360e536a15d957e03ef5d70be70a",
-        "bytes": 6571
+        "path": "puzzles/24-karaoke.json",
+        "sha256": "f00f47f968c8a3b4bc72a92b405807abac62dae8ee3fb361beb6198127a338d3",
+        "bytes": 6497
       }
     },
     {
-      "pid": "b17bdaedfe62",
-      "id": "20-train",
-      "title": "The Loft Layout Dispute",
-      "theme": "train",
-      "profile": "moderate",
-      "rating": 3,
-      "categories": 4,
-      "items": 5,
-      "clues": 8,
-      "puzzle": {
-        "path": "puzzles/20-train.json",
-        "sha256": "f166cbfbd422217a449d8d9d67b0caab187a54dd9205c48c86e637a94ce42c38",
-        "bytes": 6642
-      }
-    },
-    {
-      "pid": "8464a2b72386",
-      "id": "21-aquarium",
+      "pid": "bfce7b725169",
+      "id": "25-aquarium",
       "title": "The Night Shift at Coldwater Hall",
       "theme": "aquarium",
       "profile": "moderate",
       "rating": 4,
       "categories": 4,
       "items": 5,
-      "clues": 10,
+      "clues": 9,
       "puzzle": {
-        "path": "puzzles/21-aquarium.json",
-        "sha256": "4e4a96836dde6279d079aafebc73239dff1c4decee7ac515ecb347663d580dfe",
-        "bytes": 6862
-      },
-      "narrative": {
-        "path": "narratives/21-aquarium.json",
-        "sha256": "d4544a352a210084f5cbc34b616f5fe1ed04fd5cded560514cea532276018a6d",
-        "bytes": 2212
+        "path": "puzzles/25-aquarium.json",
+        "sha256": "8d34275ea0e0ff2bc459e62a481ef044b2eb4deba6c75abdb8f9fd7b508682af",
+        "bytes": 6756
       }
     },
     {
-      "pid": "f794a760cdbb",
-      "id": "22-jam",
-      "title": "Preserves, and the Preservation of Grudges",
-      "theme": "jam",
+      "pid": "2e37a59d12c2",
+      "id": "26-trivia_night",
+      "title": "Trivia Night at the Public Library",
+      "theme": "trivia_night",
       "profile": "moderate",
       "rating": 4,
       "categories": 4,
       "items": 5,
       "clues": 9,
       "puzzle": {
-        "path": "puzzles/22-jam.json",
-        "sha256": "1521d2355653609379e9859764c4d3488e8e422b35c7dcd4a7efae96ec770ecb",
-        "bytes": 6653
+        "path": "puzzles/26-trivia_night.json",
+        "sha256": "9f0fe11e2c049f4400a33ee5f01bfadbd3792ec0ba1ebc54f60255a41f59d6a3",
+        "bytes": 6640
       }
     },
     {
-      "pid": "3461a7266d47",
-      "id": "23-karaoke",
-      "title": "Tuesday Night at the Dented Bell",
-      "theme": "karaoke",
+      "pid": "95aadb73d784",
+      "id": "27-observatory",
+      "title": "A Bad Week at the Pinhole Observatory",
+      "theme": "observatory",
       "profile": "moderate",
       "rating": 4,
       "categories": 4,
       "items": 5,
-      "clues": 9,
-      "puzzle": {
-        "path": "puzzles/23-karaoke.json",
-        "sha256": "c6111634a57c48bb8b2b86ee2df92b2a74278229539f1e9583fc677172eaeeaf",
-        "bytes": 6954
-      }
-    },
-    {
-      "pid": "e45cb743da43",
-      "id": "24-ferry",
-      "title": "The Crossings to Inverlaig",
-      "theme": "ferry",
-      "profile": "moderate",
-      "rating": 4,
-      "categories": 5,
-      "items": 5,
       "clues": 10,
       "puzzle": {
-        "path": "puzzles/24-ferry.json",
-        "sha256": "defbec5878347d49cec8127141bf9d0723604aefd48e00dc94977009e82b5b1e",
-        "bytes": 7603
+        "path": "puzzles/27-observatory.json",
+        "sha256": "84e6973ac032956fc7f98989224fd6c83cadfe9081876c9398c977caca022905",
+        "bytes": 7265
       }
     },
     {
-      "pid": "1b765d23b809",
-      "id": "25-radio",
-      "title": "The Graveyard Shift at WPKX",
-      "theme": "radio",
-      "profile": "moderate",
-      "rating": 3,
-      "categories": 4,
-      "items": 5,
-      "clues": 10,
-      "puzzle": {
-        "path": "puzzles/25-radio.json",
-        "sha256": "69806ffbbf64aada4f589c3fcac64ba41354bc4922c297c46b9f3feee4d9ecfd",
-        "bytes": 6850
-      }
-    },
-    {
-      "pid": "806399ad4383",
-      "id": "26-balloon",
+      "pid": "c911d3778874",
+      "id": "28-balloon",
       "title": "The Thistledown Balloon Ascent",
       "theme": "balloon",
       "profile": "moderate",
       "rating": 4,
       "categories": 4,
       "items": 5,
-      "clues": 8,
-      "puzzle": {
-        "path": "puzzles/26-balloon.json",
-        "sha256": "b0b11542ecaf8911150b9079c6813fb2688c42e1799131066f8d5edfd435a71a",
-        "bytes": 6232
-      }
-    },
-    {
-      "pid": "e2543b96baa8",
-      "id": "27-bookshop",
-      "title": "Mrs Pell's Impossible Shelves",
-      "theme": "bookshop",
-      "profile": "moderate",
-      "rating": 4,
-      "categories": 4,
-      "items": 5,
       "clues": 10,
       "puzzle": {
-        "path": "puzzles/27-bookshop.json",
-        "sha256": "9bf2324b8217ff46ffcdc57eca254436dd8a9e6f54ed436568242cd1611d4dd2",
-        "bytes": 8247
+        "path": "puzzles/28-balloon.json",
+        "sha256": "95323ded62d0e991660022b006b36d2e9fa89c5124b39e9e62e12efd87791dc1",
+        "bytes": 6619
       }
     },
     {
-      "pid": "436ea20afeef",
-      "id": "28-karaoke",
-      "title": "Tuesday Night at the Dented Bell",
-      "theme": "karaoke",
-      "profile": "moderate",
-      "rating": 4,
-      "categories": 4,
-      "items": 5,
-      "clues": 12,
-      "puzzle": {
-        "path": "puzzles/28-karaoke.json",
-        "sha256": "b65c59e7812942fcb1eb9f324bf40be226c84c9b06f2815c8144bc18ad4e5fc2",
-        "bytes": 7736
-      }
-    },
-    {
-      "pid": "d90682969ed6",
-      "id": "29-jam",
-      "title": "Preserves, and the Preservation of Grudges",
-      "theme": "jam",
+      "pid": "fdac0fe2797e",
+      "id": "29-county_fair",
+      "title": "The Hollow Creek Pie Judging",
+      "theme": "county_fair",
       "profile": "moderate",
       "rating": 3,
       "categories": 4,
       "items": 5,
-      "clues": 9,
+      "clues": 8,
       "puzzle": {
-        "path": "puzzles/29-jam.json",
-        "sha256": "030833fdfc8b48a084849afd3c95a11785e0608bc8dff5ec7316098e6652f507",
-        "bytes": 6620
+        "path": "puzzles/29-county_fair.json",
+        "sha256": "1eafd8f28a03a3885fd70b9c7892e7c91f6638c46b8fff517790cc3af7d44008",
+        "bytes": 6361
       }
     },
     {
-      "pid": "ed9395b8aef1",
-      "id": "30-orchid",
-      "title": "The Orchid House Reckoning",
-      "theme": "orchid",
+      "pid": "8beb98920a3f",
+      "id": "30-rodeo",
+      "title": "The Cutbank County Rodeo",
+      "theme": "rodeo",
       "profile": "moderate",
       "rating": 4,
-      "categories": 5,
+      "categories": 4,
       "items": 5,
-      "clues": 12,
+      "clues": 8,
       "puzzle": {
-        "path": "puzzles/30-orchid.json",
-        "sha256": "82cdf116ec342aab0077987fbdfcb185d85c4ebde691799299d75ec17e7b2dad",
-        "bytes": 8208
+        "path": "puzzles/30-rodeo.json",
+        "sha256": "0dfe053bc79e30ea6b85c27b542543cfb774516806e5d15896aa6695bb23d124",
+        "bytes": 6694
       }
     },
     {
-      "pid": "839c46297d44",
-      "id": "31-county_fair",
-      "title": "The Hollow Creek Pie Judging",
-      "theme": "county_fair",
+      "pid": "4e68c71b9042",
+      "id": "31-highland",
+      "title": "The Heavies at Kinloch Rannoch",
+      "theme": "highland",
       "profile": "hard",
       "rating": 6,
-      "categories": 5,
-      "items": 5,
-      "clues": 12,
-      "puzzle": {
-        "path": "puzzles/31-county_fair.json",
-        "sha256": "3b022d7bcde40795500550d3a43e1c896f7c8d99f1dee51928b69e7fc04181c4",
-        "bytes": 8336
-      },
-      "narrative": {
-        "path": "narratives/31-county_fair.json",
-        "sha256": "8a55eda75403eff76f2d51011024a4b9ac7800c67f918749c479baa5acf30db1",
-        "bytes": 2337
-      }
-    },
-    {
-      "pid": "6beff5f46fbb",
-      "id": "32-regatta",
-      "title": "The Mudflat Regatta",
-      "theme": "regatta",
-      "profile": "hard",
-      "rating": 5,
       "categories": 4,
       "items": 5,
       "clues": 10,
       "puzzle": {
-        "path": "puzzles/32-regatta.json",
-        "sha256": "2262d5c7bb0024daa4eb76cdcb318b27c07d80f733775bdcccd94e44f4f8cb02",
-        "bytes": 7661
+        "path": "puzzles/31-highland.json",
+        "sha256": "81c61e093fda5120561379f6b01004bef160eed17fee87f9941067189d6c3b4e",
+        "bytes": 8262
       }
     },
     {
-      "pid": "17f4b197963e",
-      "id": "33-detective",
-      "title": "The Case of the Missing Trowel",
-      "theme": "detective",
+      "pid": "81dbc64fc4c9",
+      "id": "32-cheese",
+      "title": "The Cheesemongers' Standoff",
+      "theme": "cheese",
+      "profile": "hard",
+      "rating": 6,
+      "categories": 4,
+      "items": 5,
+      "clues": 9,
+      "puzzle": {
+        "path": "puzzles/32-cheese.json",
+        "sha256": "f7e08f9b7d567b034d54ace8c3308cf71b95b901f966f6bc3abd31d7c022474f",
+        "bytes": 7513
+      }
+    },
+    {
+      "pid": "caced914c28a",
+      "id": "33-fast_food",
+      "title": "The Food Court Standoff",
+      "theme": "fast_food",
+      "profile": "hard",
+      "rating": 6,
+      "categories": 4,
+      "items": 5,
+      "clues": 10,
+      "puzzle": {
+        "path": "puzzles/33-fast_food.json",
+        "sha256": "b41448e4642048abb9f30ecd1e8bc90d43f848a826ca211637b15969cacc955b",
+        "bytes": 7214
+      }
+    },
+    {
+      "pid": "1085880a8d1d",
+      "id": "34-bonsai",
+      "title": "The Autumn Show at Kiyosumi",
+      "theme": "bonsai",
       "profile": "hard",
       "rating": 5,
       "categories": 4,
       "items": 5,
       "clues": 11,
       "puzzle": {
-        "path": "puzzles/33-detective.json",
-        "sha256": "18c570da26816f0fe9af646a5865e2c2f430cbf55a0e72cf5de494019b3acc0f",
-        "bytes": 7831
+        "path": "puzzles/34-bonsai.json",
+        "sha256": "7f2afe600ca96091c42b25e5a7bbd90271866a26f669eea5eeb640082b8729ce",
+        "bytes": 7919
       }
     },
     {
-      "pid": "6abcb141d88b",
-      "id": "34-knitting",
-      "title": "The Ashfold Knitting Circle",
-      "theme": "knitting",
+      "pid": "3321b1f9e67c",
+      "id": "35-drystone",
+      "title": "The Walling Match at Gunnerside",
+      "theme": "drystone",
       "profile": "hard",
       "rating": 6,
       "categories": 5,
       "items": 5,
-      "clues": 12,
+      "clues": 13,
       "puzzle": {
-        "path": "puzzles/34-knitting.json",
-        "sha256": "8c9f77421d497a8428f8a26d4ec509fe2144b2c64a27699289c068930cdaa469",
-        "bytes": 10042
+        "path": "puzzles/35-drystone.json",
+        "sha256": "e75b57348d7fb95e1a18b32667150bf34d1aef15a1674a6748cb17f50cf44c91",
+        "bytes": 9517
       }
     },
     {
-      "pid": "2546e1b0803f",
-      "id": "35-bookshop",
-      "title": "Mrs Pell's Impossible Shelves",
-      "theme": "bookshop",
+      "pid": "4ce9d9b1ba63",
+      "id": "36-clockmaker",
+      "title": "A Benchful of Clocks, and No Agreement",
+      "theme": "clockmaker",
       "profile": "hard",
       "rating": 6,
       "categories": 5,
       "items": 5,
       "clues": 14,
       "puzzle": {
-        "path": "puzzles/35-bookshop.json",
-        "sha256": "c4614bedd5e8acd2fbb3dfdaff9b2d97e0541f83df4929c14e2c2e025a21359e",
-        "bytes": 10011
+        "path": "puzzles/36-clockmaker.json",
+        "sha256": "f29e58eaa8c12dd8ac8f54053b14c0724265950a54b708ffc41773e72b46f9a7",
+        "bytes": 10601
       }
     },
     {
-      "pid": "b966e5803151",
-      "id": "36-aquarium",
-      "title": "The Night Shift at Coldwater Hall",
-      "theme": "aquarium",
+      "pid": "6d150f109290",
+      "id": "37-ferry",
+      "title": "The Crossings to Inverlaig",
+      "theme": "ferry",
+      "profile": "hard",
+      "rating": 6,
+      "categories": 5,
+      "items": 5,
+      "clues": 12,
+      "puzzle": {
+        "path": "puzzles/37-ferry.json",
+        "sha256": "25fecad24d40b2a9e69099af68d2aaa7c0405f7d37a757c239c198436bef96a3",
+        "bytes": 8681
+      }
+    },
+    {
+      "pid": "ebe66b5bd069",
+      "id": "38-puppet",
+      "title": "A Fortnight at the Little Vesper Theatre",
+      "theme": "puppet",
       "profile": "hard",
       "rating": 5,
       "categories": 5,
       "items": 5,
-      "clues": 13,
+      "clues": 15,
       "puzzle": {
-        "path": "puzzles/36-aquarium.json",
-        "sha256": "765a65e1e0b85c93493df9fe717f58060bc239aa6785e1075f7f9ec433afd889",
-        "bytes": 9252
+        "path": "puzzles/38-puppet.json",
+        "sha256": "ceafca06eb42983851ab23c084b361187eb7437a26994045a120daa2d70f5cd5",
+        "bytes": 9643
       }
     },
     {
-      "pid": "51590a7afa8a",
-      "id": "37-regatta",
-      "title": "The Mudflat Regatta",
-      "theme": "regatta",
+      "pid": "877b1dc35ecd",
+      "id": "39-train",
+      "title": "The Loft Layout Dispute",
+      "theme": "train",
       "profile": "hard",
-      "rating": 5,
-      "categories": 4,
+      "rating": 6,
+      "categories": 5,
       "items": 5,
-      "clues": 10,
+      "clues": 14,
       "puzzle": {
-        "path": "puzzles/37-regatta.json",
-        "sha256": "b909ca9f77c67e0d33a99d7f09eaf8cdaac76e4d61ab0947a1de4039af6722ed",
-        "bytes": 7167
+        "path": "puzzles/39-train.json",
+        "sha256": "d70ba9241d975a05c68d183c42234fbc40bb691caad1bad02ef4d4967f8fa22a",
+        "bytes": 10992
       }
     },
     {
-      "pid": "e93f580ea8e8",
-      "id": "38-archive",
+      "pid": "c10d27909278",
+      "id": "40-archive",
       "title": "The Mislabelled Drawers",
       "theme": "archive",
       "profile": "hard",
@@ -628,206 +640,169 @@
       "items": 5,
       "clues": 9,
       "puzzle": {
-        "path": "puzzles/38-archive.json",
-        "sha256": "571d8aa6cc67f4203f0231b93cb078b193af697d442a5e97cb7d08b06d74dee9",
-        "bytes": 8097
+        "path": "puzzles/40-archive.json",
+        "sha256": "af10e443f822a5266fc41792b6dc035ae5c45375b6804df4f5be76e3aa28a1a6",
+        "bytes": 8159
       }
     },
     {
-      "pid": "90152f81ece0",
-      "id": "39-jam",
-      "title": "Preserves, and the Preservation of Grudges",
-      "theme": "jam",
+      "pid": "7c8c5d7feefe",
+      "id": "41-chili_cookoff",
+      "title": "The Firehouse Chili Cook-Off",
+      "theme": "chili_cookoff",
       "profile": "hard",
       "rating": 6,
-      "categories": 5,
-      "items": 5,
-      "clues": 13,
-      "puzzle": {
-        "path": "puzzles/39-jam.json",
-        "sha256": "6adf8dedd88de39e294f633e47815dc48f6ee8dd14d2c2881033f6a950de8b49",
-        "bytes": 9663
-      }
-    },
-    {
-      "pid": "d5e7c2e47f6f",
-      "id": "40-ferry",
-      "title": "The Crossings to Inverlaig",
-      "theme": "ferry",
-      "profile": "hard",
-      "rating": 5,
       "categories": 4,
       "items": 5,
-      "clues": 10,
+      "clues": 12,
       "puzzle": {
-        "path": "puzzles/40-ferry.json",
-        "sha256": "b1789911a9dd102fe71d4bb04b8211fc09a20d8b36a4a9161a38520a90000ccc",
-        "bytes": 7662
+        "path": "puzzles/41-chili_cookoff.json",
+        "sha256": "804cfd9157e9feb01eec1de6ebaf73a7db62c0d09d92f8877b890e643959a92b",
+        "bytes": 8527
       }
     },
     {
-      "pid": "9a786ef7d7be",
-      "id": "41-train",
-      "title": "The Loft Layout Dispute",
-      "theme": "train",
-      "profile": "hard",
-      "rating": 5,
-      "categories": 4,
-      "items": 5,
-      "clues": 10,
-      "puzzle": {
-        "path": "puzzles/41-train.json",
-        "sha256": "4653d94a8fed5141c4dc7b74ac1347aeaad08df156e351b4e4bd2a91693c3763",
-        "bytes": 7825
-      }
-    },
-    {
-      "pid": "02e1b932e31f",
-      "id": "42-kite",
-      "title": "The Wind Is Free, the Field Is Not",
-      "theme": "kite",
+      "pid": "b82fddcf5176",
+      "id": "42-tea",
+      "title": "The Blind Tasting at Pemberton's",
+      "theme": "tea",
       "profile": "hard",
       "rating": 6,
       "categories": 5,
       "items": 5,
-      "clues": 13,
-      "puzzle": {
-        "path": "puzzles/42-kite.json",
-        "sha256": "3c4a38b2f0488595aeb4f9c3d4f096e1610ecde15312f8466c51c14f6bf55fb2",
-        "bytes": 8860
-      }
-    },
-    {
-      "pid": "b1ba6858a21b",
-      "id": "43-cheese",
-      "title": "The Cheesemongers' Standoff",
-      "theme": "cheese",
-      "profile": "expert",
-      "rating": 7,
-      "categories": 5,
-      "items": 6,
-      "clues": 18,
-      "puzzle": {
-        "path": "puzzles/43-cheese.json",
-        "sha256": "b8535cfbf50221c07f7446a272e3c1cb1505e014e35cab92bac10e084ffbffab",
-        "bytes": 13234
-      }
-    },
-    {
-      "pid": "43faff2d5910",
-      "id": "44-puppet",
-      "title": "A Fortnight at the Little Vesper Theatre",
-      "theme": "puppet",
-      "profile": "expert",
-      "rating": 7,
-      "categories": 5,
-      "items": 6,
-      "clues": 19,
-      "puzzle": {
-        "path": "puzzles/44-puppet.json",
-        "sha256": "6f10c66bf1e78ed7801ff597e1786af30779d3904141a57fa6b0479fc0b43de0",
-        "bytes": 13727
-      }
-    },
-    {
-      "pid": "cef269ec12db",
-      "id": "45-jam",
-      "title": "Preserves, and the Preservation of Grudges",
-      "theme": "jam",
-      "profile": "expert",
-      "rating": 7,
-      "categories": 5,
-      "items": 6,
-      "clues": 18,
-      "puzzle": {
-        "path": "puzzles/45-jam.json",
-        "sha256": "2db939c9223867fbe8bfdfbf67c4cb46b10043e95ef4830fe77775d43ec38b6e",
-        "bytes": 12671
-      },
-      "narrative": {
-        "path": "narratives/45-jam.json",
-        "sha256": "7f9bfd7ce0bc788aa35ee568cd1f0472cc1f8d83ca7596a30d725d64f6e7e933",
-        "bytes": 3868
-      }
-    },
-    {
-      "pid": "58cffe6ce7a7",
-      "id": "46-archive",
-      "title": "The Mislabelled Drawers",
-      "theme": "archive",
-      "profile": "expert",
-      "rating": 7,
-      "categories": 5,
-      "items": 6,
-      "clues": 23,
-      "puzzle": {
-        "path": "puzzles/46-archive.json",
-        "sha256": "16e5171595a7ee63c9e163e19eb94d4377d8749e93c9aa8b0f4e3195e9881dcc",
-        "bytes": 16061
-      }
-    },
-    {
-      "pid": "7e5abe865022",
-      "id": "47-detective",
-      "title": "The Case of the Missing Trowel",
-      "theme": "detective",
-      "profile": "expert",
-      "rating": 6,
-      "categories": 5,
-      "items": 6,
-      "clues": 19,
-      "puzzle": {
-        "path": "puzzles/47-detective.json",
-        "sha256": "e0319b59bdbce230dfe364640707778462d77f5767a87641ee5b00aa6d67d85c",
-        "bytes": 12538
-      }
-    },
-    {
-      "pid": "5028cbce60ba",
-      "id": "48-kite",
-      "title": "The Wind Is Free, the Field Is Not",
-      "theme": "kite",
-      "profile": "expert",
-      "rating": 7,
-      "categories": 5,
-      "items": 6,
       "clues": 16,
       "puzzle": {
-        "path": "puzzles/48-kite.json",
-        "sha256": "eeacd7198aa93899b398477cf60fbe4a7d3406e4aeeeeee1f62fdcfa5268e880",
-        "bytes": 11341
+        "path": "puzzles/42-tea.json",
+        "sha256": "88a10133fa5408d0de55c2fea5181533139825b51722149b05505fc909644b29",
+        "bytes": 10219
       }
     },
     {
-      "pid": "cff23af7210c",
-      "id": "49-beekeeper",
-      "title": "The Honey Show Scandal",
-      "theme": "beekeeper",
-      "profile": "expert",
-      "rating": 7,
-      "categories": 5,
-      "items": 6,
-      "clues": 14,
-      "puzzle": {
-        "path": "puzzles/49-beekeeper.json",
-        "sha256": "959c42d45ff84a70076ddf3727a5d59dd71890eb2a8e929a6d3012fead8fde20",
-        "bytes": 11130
-      }
-    },
-    {
-      "pid": "92efe43ad662",
-      "id": "50-regatta",
+      "pid": "df74438e6803",
+      "id": "43-regatta",
       "title": "The Mudflat Regatta",
       "theme": "regatta",
       "profile": "expert",
       "rating": 7,
       "categories": 5,
+      "items": 6,
+      "clues": 18,
+      "puzzle": {
+        "path": "puzzles/43-regatta.json",
+        "sha256": "a138ada2ebfb7eb9980c18104473c15d1c8a7b716cf56feb447c87b73af5e285",
+        "bytes": 12321
+      }
+    },
+    {
+      "pid": "978a042a4acf",
+      "id": "44-pigeon",
+      "title": "Andy's Swiftest Birds",
+      "theme": "pigeon",
+      "profile": "expert",
+      "rating": 6,
+      "categories": 5,
+      "items": 5,
+      "clues": 13,
+      "puzzle": {
+        "path": "puzzles/44-pigeon.json",
+        "sha256": "2c806b1d244f249d6d497fe62897a5beab2b29a8cedfacd73eefe32ae542380c",
+        "bytes": 10113
+      }
+    },
+    {
+      "pid": "ec52499a64ae",
+      "id": "45-chess",
+      "title": "The Ravelston Chess Club Ladder",
+      "theme": "chess",
+      "profile": "expert",
+      "rating": 7,
+      "categories": 5,
+      "items": 5,
+      "clues": 14,
+      "puzzle": {
+        "path": "puzzles/45-chess.json",
+        "sha256": "c438de34c562f875a1d331de15ff5e1b4facf9bf7c29ce9eeeb47f2ea985a232",
+        "bytes": 11227
+      }
+    },
+    {
+      "pid": "be1bf3602a2c",
+      "id": "46-pickleball",
+      "title": "The Tuesday Pickleball Ladder",
+      "theme": "pickleball",
+      "profile": "expert",
+      "rating": 7,
+      "categories": 5,
+      "items": 6,
+      "clues": 18,
+      "puzzle": {
+        "path": "puzzles/46-pickleball.json",
+        "sha256": "3e6fb87d85411cafd174f82c379b1f534c8aec1274102e201852b3c73e26814b",
+        "bytes": 12393
+      }
+    },
+    {
+      "pid": "7e858d688302",
+      "id": "47-esports",
+      "title": "The Lakeshore Esports Bracket",
+      "theme": "esports",
+      "profile": "expert",
+      "rating": 7,
+      "categories": 5,
+      "items": 6,
+      "clues": 18,
+      "puzzle": {
+        "path": "puzzles/47-esports.json",
+        "sha256": "0f3515bae5141a1ccbeb50707d1ba9fd52cd3fe8e11cc21f44884302378eed51",
+        "bytes": 12254
+      }
+    },
+    {
+      "pid": "5c510f2405c0",
+      "id": "48-bellringing",
+      "title": "The Quarter-Peal at St Botolph's",
+      "theme": "bellringing",
+      "profile": "expert",
+      "rating": 7,
+      "categories": 5,
+      "items": 6,
+      "clues": 15,
+      "puzzle": {
+        "path": "puzzles/48-bellringing.json",
+        "sha256": "7ffcf1bbe34df98c1ca079ef91126eb4d0f8f8b964d780d31494f728c9855001",
+        "bytes": 11378
+      }
+    },
+    {
+      "pid": "1e2919e232fa",
+      "id": "49-orchid",
+      "title": "The Orchid House Reckoning",
+      "theme": "orchid",
+      "profile": "expert",
+      "rating": 7,
+      "categories": 5,
       "items": 5,
       "clues": 16,
       "puzzle": {
-        "path": "puzzles/50-regatta.json",
-        "sha256": "191e958b9396eb8e6ca83b94ade00a74c562ff89515cf4af6056037bff9978fe",
-        "bytes": 11503
+        "path": "puzzles/49-orchid.json",
+        "sha256": "292537792521ef9712921c2ce2578efc946a8047719f0f729dca1bf43f549dca",
+        "bytes": 10911
+      }
+    },
+    {
+      "pid": "c9fcbda5e771",
+      "id": "50-cider",
+      "title": "The Pomace and the Prize",
+      "theme": "cider",
+      "profile": "expert",
+      "rating": 7,
+      "categories": 5,
+      "items": 6,
+      "clues": 19,
+      "puzzle": {
+        "path": "puzzles/50-cider.json",
+        "sha256": "02bb8a4f291f590d2148e204aa80096d609e578bbc4e41e1cf5caf52a7c3e4c3",
+        "bytes": 13266
       }
     }
   ]

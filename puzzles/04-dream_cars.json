@@ -1,0 +1,202 @@
+{
+  "pid": "f5db7c635d5e",
+  "title": "The Dream Garage",
+  "theme": "dream_cars",
+  "blurb": "Six kids turned loose at the auto show, each one certain they have found the only car worth owning.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.14,
+  "seed": 2026172707115,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172707115,
+    "theme": "dream_cars"
+  },
+  "schema": {
+    "spine": "speed",
+    "entity_noun": "kid",
+    "entity_noun_plural": "kids",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "speed",
+        "label": "Top speed",
+        "items": [
+          "120 mph",
+          "130 mph",
+          "140 mph",
+          "150 mph",
+          "160 mph"
+        ],
+        "ordered": true,
+        "values": [
+          120,
+          130,
+          140,
+          150,
+          160
+        ],
+        "unit_suffix": " mph",
+        "noun": "top speed",
+        "cmp_less": "slower",
+        "cmp_more": "faster",
+        "step_noun": "speed step",
+        "verb": "wants a car that does"
+      },
+      {
+        "name": "kid",
+        "label": "Kid",
+        "items": [
+          "Harriet",
+          "Imani",
+          "Svetlana",
+          "Cormac",
+          "Jalen"
+        ],
+        "ordered": false,
+        "noun": "kid",
+        "subject": true
+      },
+      {
+        "name": "paint",
+        "label": "Paint",
+        "items": [
+          "candy-apple red",
+          "sea-foam green",
+          "burnt orange",
+          "matte black",
+          "deep purple"
+        ],
+        "ordered": false,
+        "noun": "paint",
+        "verb": "picks"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "paint:candy-apple red",
+          "b": "speed:160 mph"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Jalen",
+          "b": "speed:130 mph"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Jalen",
+          "b": "paint:sea-foam green"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Svetlana",
+          "b": "paint:matte black"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "kid:Imani",
+          "b": "paint:deep purple"
+        },
+        {
+          "kind": "before",
+          "a": "kid:Imani",
+          "b": "speed:130 mph"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "kid:Cormac",
+          "b": "speed:130 mph"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "speed": [
+      "120 mph",
+      "130 mph",
+      "140 mph",
+      "150 mph",
+      "160 mph"
+    ],
+    "kid": [
+      "Imani",
+      "Jalen",
+      "Cormac",
+      "Svetlana",
+      "Harriet"
+    ],
+    "paint": [
+      "burnt orange",
+      "sea-foam green",
+      "deep purple",
+      "matte black",
+      "candy-apple red"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 4,
+      "not_link": 1,
+      "before": 1,
+      "adjacent": 1
+    },
+    "positives": 4,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 23,
+    "tier_counts": {
+      "direct": 7,
+      "bijection": 14,
+      "order": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "Six kids turned loose at the auto show, each one certain they have found the only car worth owning.\nFive kids are involved. Determine each kid's top speed and paint.\n- **Kid**: Harriet, Imani, Svetlana, Cormac and Jalen.\n- **Top speed** (listed from slower to faster): 120 mph, 130 mph, 140 mph, 150 mph and 160 mph.\n- **Paint**: candy-apple red, sea-foam green, burnt orange, matte black and deep purple.\nEvery kid has a different top speed and paint, so within each category every item is used exactly once.",
+    "clues": [
+      "The kid who picks candy-apple red wants a car that does 160 mph.",
+      "Jalen wants a car that does 130 mph.",
+      "Jalen picks sea-foam green.",
+      "Svetlana picks matte black.",
+      "Imani does not pick deep purple. Imani is slower than 130 mph in top speed order.",
+      "Cormac and 130 mph are exactly one speed step apart in top speed order, in one direction or the other."
+    ]
+  }
+}

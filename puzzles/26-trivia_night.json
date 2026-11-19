@@ -1,0 +1,254 @@
+{
+  "pid": "2e37a59d12c2",
+  "title": "Trivia Night at the Public Library",
+  "theme": "trivia_night",
+  "blurb": "The library runs trivia on the first Thursday of the month. Six regulars, six team names, and a scorekeeper who will not be hurried.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026172881333,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172881333,
+    "theme": "trivia_night"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "player",
+    "entity_noun_plural": "players",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "scores"
+      },
+      {
+        "name": "player",
+        "label": "Player",
+        "items": [
+          "Takeshi",
+          "Priscilla",
+          "Darby",
+          "Vikram",
+          "Odalys"
+        ],
+        "ordered": false,
+        "noun": "player",
+        "subject": true
+      },
+      {
+        "name": "team",
+        "label": "Team",
+        "items": [
+          "the Quizzard of Oz",
+          "Nacho Average Team",
+          "the Wi-Fighters",
+          "the Smarty Pants",
+          "the Library Cards"
+        ],
+        "ordered": false,
+        "noun": "team",
+        "verb": "plays for"
+      },
+      {
+        "name": "category",
+        "label": "Category",
+        "items": [
+          "world flags",
+          "dinosaurs",
+          "90s cartoons",
+          "one-hit wonders",
+          "state capitals"
+        ],
+        "ordered": false,
+        "noun": "category",
+        "verb": "takes the questions on"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "player:Takeshi",
+          "b": "points:70 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "category:dinosaurs",
+          "b": "points:61 points",
+          "c": "team:Nacho Average Team"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "points:67 points",
+          "b": "player:Priscilla"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "points:70 points",
+          "b": "category:90s cartoons"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "category:state capitals",
+          "b": "player:Takeshi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "player:Darby",
+          "b": "team:the Quizzard of Oz"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "category:one-hit wonders",
+          "b": "team:the Quizzard of Oz",
+          "c": "team:the Smarty Pants"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "category:one-hit wonders",
+          "b": "player:Vikram"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "category:dinosaurs",
+          "b": "team:the Wi-Fighters"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "player": [
+      "Odalys",
+      "Darby",
+      "Vikram",
+      "Takeshi",
+      "Priscilla"
+    ],
+    "team": [
+      "the Smarty Pants",
+      "the Wi-Fighters",
+      "the Quizzard of Oz",
+      "the Library Cards",
+      "Nacho Average Team"
+    ],
+    "category": [
+      "world flags",
+      "one-hit wonders",
+      "state capitals",
+      "dinosaurs",
+      "90s cartoons"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 9,
+    "kinds": {
+      "link": 1,
+      "between": 2,
+      "before": 2,
+      "immediately_before": 3,
+      "not_link": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 39,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 19,
+      "order": 18
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The library runs trivia on the first Thursday of the month. Six regulars, six team names, and a scorekeeper who will not be hurried.\nFive players are involved. Determine each player's score, team and category.\n- **Player**: Takeshi, Priscilla, Darby, Vikram and Odalys.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Team**: the Quizzard of Oz, Nacho Average Team, the Wi-Fighters, the Smarty Pants and the Library Cards.\n- **Category**: world flags, dinosaurs, 90s cartoons, one-hit wonders and state capitals.\nEvery player has a different score, team and category, so within each category every item is used exactly once.",
+    "clues": [
+      "Takeshi scores 70 points.",
+      "The player who takes the questions on dinosaurs falls somewhere between 61 points and the player who plays for Nacho Average Team in score order.",
+      "Priscilla is higher than 67 points in score order.",
+      "70 points is exactly one score step lower than the player who takes the questions on 90s cartoons, with no score in between.",
+      "The player who takes the questions on state capitals is exactly one score step lower than Takeshi, with no score in between.",
+      "Darby is exactly one score step lower than the player who plays for the Quizzard of Oz, with no score in between.",
+      "The player who takes the questions on one-hit wonders falls somewhere between the player who plays for the Quizzard of Oz and the player who plays for the Smarty Pants in score order.",
+      "The player who takes the questions on one-hit wonders is lower than Vikram in score order.",
+      "The player who takes the questions on dinosaurs does not play for the Wi-Fighters."
+    ]
+  }
+}

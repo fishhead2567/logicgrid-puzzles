@@ -1,0 +1,255 @@
+{
+  "pid": "b30fe4d51b38",
+  "title": "The Clun Forest Trials",
+  "theme": "sheepdog",
+  "blurb": "A hillside, six handlers, and a judge who deducts for a wide outrun with the enthusiasm of a man settling an old score.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026172825900,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172825900,
+    "theme": "sheepdog"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "handler",
+    "entity_noun_plural": "handlers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "scores"
+      },
+      {
+        "name": "handler",
+        "label": "Handler",
+        "items": [
+          "Idris",
+          "Huw Pryce",
+          "Nerys",
+          "Eiddwen",
+          "Constance"
+        ],
+        "ordered": false,
+        "noun": "handler",
+        "subject": true
+      },
+      {
+        "name": "dog",
+        "label": "Dog",
+        "items": [
+          "Tweed",
+          "Fly",
+          "Gyp",
+          "Bute",
+          "Moss"
+        ],
+        "ordered": false,
+        "noun": "dog",
+        "verb": "runs"
+      },
+      {
+        "name": "flock",
+        "label": "Flock",
+        "items": [
+          "Herdwicks",
+          "Dalesbreds",
+          "Cheviots",
+          "Beulahs",
+          "Rough Fells"
+        ],
+        "ordered": false,
+        "noun": "flock",
+        "verb": "gathers"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "flock:Beulahs",
+          "b": "points:64 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "handler:Nerys",
+          "b": "dog:Tweed",
+          "c": "points:67 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "points:67 points",
+          "b": "flock:Rough Fells"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "flock:Cheviots",
+          "b": "dog:Bute",
+          "c": "dog:Tweed"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "handler:Huw Pryce",
+          "b": "flock:Rough Fells"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "dog:Gyp",
+          "b": "flock:Beulahs"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "dog:Gyp",
+          "b": "flock:Herdwicks"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "dog:Fly",
+          "b": "handler:Idris"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "flock:Cheviots",
+          "b": "handler:Constance"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "handler": [
+      "Eiddwen",
+      "Constance",
+      "Huw Pryce",
+      "Nerys",
+      "Idris"
+    ],
+    "dog": [
+      "Gyp",
+      "Bute",
+      "Moss",
+      "Fly",
+      "Tweed"
+    ],
+    "flock": [
+      "Dalesbreds",
+      "Beulahs",
+      "Cheviots",
+      "Rough Fells",
+      "Herdwicks"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 9,
+    "kinds": {
+      "link": 1,
+      "between": 2,
+      "immediately_before": 2,
+      "before": 1,
+      "not_link": 1,
+      "adjacent": 2
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 25,
+      "order": 14
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "A hillside, six handlers, and a judge who deducts for a wide outrun with the enthusiasm of a man settling an old score.\nFive handlers are involved. Determine each handler's score, dog and flock.\n- **Handler**: Idris, Huw Pryce, Nerys, Eiddwen and Constance.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Dog**: Tweed, Fly, Gyp, Bute and Moss.\n- **Flock**: Herdwicks, Dalesbreds, Cheviots, Beulahs and Rough Fells.\nEvery handler has a different score, dog and flock, so within each category every item is used exactly once.",
+    "clues": [
+      "The handler who gathers Beulahs scores 64 points.",
+      "Nerys falls somewhere between the handler who runs Tweed and 67 points in score order.",
+      "67 points is exactly one score step lower than the handler who gathers Rough Fells, with no score in between.",
+      "The handler who gathers Cheviots falls somewhere between the handler who runs Bute and the handler who runs Tweed in score order.",
+      "Huw Pryce is exactly one score step lower than the handler who gathers Rough Fells, with no score in between.",
+      "The handler who runs Gyp is lower than the handler who gathers Beulahs in score order.",
+      "The handler who runs Gyp does not gather Herdwicks.",
+      "The handler who runs Fly and Idris are exactly one score step apart in score order, in one direction or the other.",
+      "The handler who gathers Cheviots and Constance are exactly one score step apart in score order, in one direction or the other."
+    ]
+  }
+}

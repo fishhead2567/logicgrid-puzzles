@@ -1,0 +1,380 @@
+{
+  "pid": "b82fddcf5176",
+  "title": "The Blind Tasting at Pemberton's",
+  "theme": "tea",
+  "blurb": "Pemberton's holds a blind tasting each spring. The tasters are blind to the tea; the tea is not blind to them.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 10.4735,
+  "seed": 2026173008037,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173008037,
+    "theme": "tea"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "taster",
+    "entity_noun_plural": "tasters",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "tastes at"
+      },
+      {
+        "name": "taster",
+        "label": "Taster",
+        "items": [
+          "Ignatia",
+          "Bertrand",
+          "Soren",
+          "Rolf",
+          "Chidi"
+        ],
+        "ordered": false,
+        "noun": "taster",
+        "subject": true
+      },
+      {
+        "name": "tea",
+        "label": "Tea",
+        "items": [
+          "a Keemun",
+          "a Nilgiri frost",
+          "a first-flush Darjeeling",
+          "a silver needle white",
+          "a smoked Lapsang"
+        ],
+        "ordered": false,
+        "noun": "tea",
+        "verb": "samples"
+      },
+      {
+        "name": "note",
+        "label": "Tasting note",
+        "items": [
+          "iron filings",
+          "wet slate",
+          "pine smoke",
+          "stewed apricot",
+          "bruised peach"
+        ],
+        "ordered": false,
+        "noun": "note",
+        "verb": "reports"
+      },
+      {
+        "name": "cup",
+        "label": "Cup",
+        "items": [
+          "a pewter beaker",
+          "a lacquered bowl",
+          "an enamel mug",
+          "a bone china cup",
+          "a glass tumbler"
+        ],
+        "ordered": false,
+        "noun": "cup",
+        "verb": "drinks from"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "cup:a lacquered bowl",
+          "b": "tea:a silver needle white"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "gap",
+              "a": "note:pine smoke",
+              "b": "taster:Bertrand",
+              "k": 2,
+              "rel": "eq"
+            },
+            {
+              "kind": "not_link",
+              "a": "note:iron filings",
+              "b": "time:noon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "note:bruised peach",
+          "b": "time:9am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "tea:a smoked Lapsang",
+          "b": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tea:a Keemun",
+          "b": "time:11am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "cup:a lacquered bowl",
+          "b": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "gap",
+              "a": "taster:Soren",
+              "b": "time:8am",
+              "k": 2,
+              "rel": "eq"
+            },
+            {
+              "kind": "link",
+              "a": "taster:Bertrand",
+              "b": "time:8am"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tea:a smoked Lapsang",
+          "b": "taster:Rolf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "note:pine smoke",
+          "b": "cup:a glass tumbler"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "cup:a bone china cup",
+          "b": "tea:a silver needle white"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "adjacent",
+            "a": "cup:an enamel mug",
+            "b": "taster:Soren"
+          },
+          "y": {
+            "kind": "link",
+            "a": "cup:an enamel mug",
+            "b": "taster:Ignatia"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "cup:a pewter beaker",
+          "b": "note:stewed apricot"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "cup:a lacquered bowl",
+          "b": "taster:Soren"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "note:stewed apricot",
+          "b": "taster:Ignatia",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "cup:a lacquered bowl",
+          "b": "note:wet slate"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "note:bruised peach",
+          "b": "tea:a first-flush Darjeeling"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "taster": [
+      "Chidi",
+      "Ignatia",
+      "Soren",
+      "Bertrand",
+      "Rolf"
+    ],
+    "tea": [
+      "a Nilgiri frost",
+      "a silver needle white",
+      "a Keemun",
+      "a smoked Lapsang",
+      "a first-flush Darjeeling"
+    ],
+    "note": [
+      "bruised peach",
+      "pine smoke",
+      "wet slate",
+      "stewed apricot",
+      "iron filings"
+    ],
+    "cup": [
+      "a bone china cup",
+      "a lacquered bowl",
+      "a glass tumbler",
+      "an enamel mug",
+      "a pewter beaker"
+    ]
+  },
+  "stats": {
+    "atoms": 16,
+    "numbered_clues": 16,
+    "kinds": {
+      "link": 1,
+      "or": 2,
+      "immediately_before": 4,
+      "adjacent": 4,
+      "before": 2,
+      "not_both": 1,
+      "gap": 1,
+      "not_link": 1
+    },
+    "positives": 1,
+    "compounds": 3
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 57,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 26,
+      "order": 22,
+      "disjunction": 5
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Pemberton's holds a blind tasting each spring. The tasters are blind to the tea; the tea is not blind to them.\nFive tasters are involved. Determine each taster's start time, tea, note and cup.\n- **Taster**: Ignatia, Bertrand, Soren, Rolf and Chidi.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Tea**: a Keemun, a Nilgiri frost, a first-flush Darjeeling, a silver needle white and a smoked Lapsang.\n- **Tasting note**: iron filings, wet slate, pine smoke, stewed apricot and bruised peach.\n- **Cup**: a pewter beaker, a lacquered bowl, an enamel mug, a bone china cup and a glass tumbler.\nEvery taster has a different start time, tea, note and cup, so within each category every item is used exactly once.",
+    "clues": [
+      "The taster who drinks from a lacquered bowl samples a silver needle white.",
+      "At least one of the following holds, and possibly more than one: (a) The taster who reports pine smoke and Bertrand are exactly two hours apart in start time order. (b) The taster who reports iron filings does not taste at noon.",
+      "The taster who reports bruised peach is exactly one hour earlier than 9am, with no start time in between.",
+      "The taster who samples a smoked Lapsang and noon are exactly one hour apart in start time order, in one direction or the other.",
+      "The taster who samples a Keemun is exactly one hour earlier than 11am, with no start time in between.",
+      "The taster who drinks from a lacquered bowl is earlier than noon in start time order.",
+      "At least one of the following holds, and possibly more than one: (a) Soren and 8am are exactly two hours apart in start time order. (b) Bertrand tastes at 8am.",
+      "The taster who samples a smoked Lapsang is exactly one hour earlier than Rolf, with no start time in between.",
+      "The taster who reports pine smoke is exactly one hour earlier than the taster who drinks from a glass tumbler, with no start time in between.",
+      "The taster who drinks from a bone china cup is earlier than the taster who samples a silver needle white in start time order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The taster who drinks from an enamel mug and Soren are exactly one hour apart in start time order, in one direction or the other. (b) Ignatia drinks from an enamel mug.",
+      "The taster who drinks from a pewter beaker and the taster who reports stewed apricot are exactly one hour apart in start time order, in one direction or the other.",
+      "The taster who drinks from a lacquered bowl and Soren are exactly one hour apart in start time order, in one direction or the other.",
+      "The taster who reports stewed apricot and Ignatia are exactly two hours apart in start time order.",
+      "The taster who drinks from a lacquered bowl and the taster who reports wet slate are exactly one hour apart in start time order, in one direction or the other.",
+      "The taster who reports bruised peach does not sample a first-flush Darjeeling."
+    ]
+  }
+}

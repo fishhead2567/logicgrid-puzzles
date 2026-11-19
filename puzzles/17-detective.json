@@ -1,0 +1,183 @@
+{
+  "pid": "c10f8d448e10",
+  "title": "The Case of the Missing Trowel",
+  "theme": "detective",
+  "blurb": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.1,
+  "seed": 2026172810062,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172810062,
+    "theme": "detective"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "investigator",
+    "entity_noun_plural": "investigators",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "reports at"
+      },
+      {
+        "name": "sleuth",
+        "label": "Investigator",
+        "items": [
+          "Ariadne",
+          "Leopold",
+          "Fergus",
+          "Hortensia",
+          "Immaculata"
+        ],
+        "ordered": false,
+        "noun": "investigator",
+        "subject": true
+      },
+      {
+        "name": "theory",
+        "label": "Theory",
+        "items": [
+          "a conspiracy of two",
+          "nothing happened at all",
+          "a magpie",
+          "an inside job",
+          "a clerical error"
+        ],
+        "ordered": false,
+        "noun": "theory",
+        "verb": "favours"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "theory:a clerical error",
+          "b": "time:10am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "theory:a conspiracy of two",
+          "b": "time:10am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "time:11am",
+          "b": "sleuth:Ariadne"
+        },
+        {
+          "kind": "between",
+          "a": "theory:nothing happened at all",
+          "b": "sleuth:Ariadne",
+          "c": "sleuth:Immaculata"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "theory:a magpie",
+          "b": "sleuth:Fergus"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "theory:nothing happened at all",
+          "b": "sleuth:Leopold"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "sleuth": [
+      "Immaculata",
+      "Fergus",
+      "Hortensia",
+      "Leopold",
+      "Ariadne"
+    ],
+    "theory": [
+      "a magpie",
+      "a clerical error",
+      "nothing happened at all",
+      "a conspiracy of two",
+      "an inside job"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 5,
+    "kinds": {
+      "immediately_before": 3,
+      "adjacent": 1,
+      "before": 1,
+      "between": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 28,
+    "tier_counts": {
+      "bijection": 13,
+      "order": 15
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.\nFive investigators are involved. Determine each investigator's start time and theory.\n- **Investigator**: Ariadne, Leopold, Fergus, Hortensia and Immaculata.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Theory**: a conspiracy of two, nothing happened at all, a magpie, an inside job and a clerical error.\nEvery investigator has a different start time and theory, so within each category every item is used exactly once.",
+    "clues": [
+      "The investigator who favours a clerical error is exactly one hour earlier than 10am, with no start time in between.",
+      "The investigator who favours a conspiracy of two and 10am are exactly one hour apart in start time order, in one direction or the other.",
+      "Ariadne is later than 11am in start time order. The investigator who favours nothing happened at all falls somewhere between Ariadne and Immaculata in start time order.",
+      "The investigator who favours a magpie is exactly one hour earlier than Fergus, with no start time in between.",
+      "The investigator who favours nothing happened at all is exactly one hour earlier than Leopold, with no start time in between."
+    ]
+  }
+}

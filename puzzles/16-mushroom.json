@@ -1,0 +1,194 @@
+{
+  "pid": "ac912de06f09",
+  "title": "The Foragers of Thorn Bottom",
+  "theme": "mushroom",
+  "blurb": "The Thorn Bottom foraging club keeps meticulous records, chiefly so that blame can be apportioned later.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.62,
+  "seed": 2026172802143,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172802143,
+    "theme": "mushroom"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "forager",
+    "entity_noun_plural": "foragers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Day",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "ordered": true,
+        "noun": "day",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "forages on"
+      },
+      {
+        "name": "forager",
+        "label": "Forager",
+        "items": [
+          "Ramiro",
+          "Eilish",
+          "Solomon",
+          "Annika",
+          "Tobias"
+        ],
+        "ordered": false,
+        "noun": "forager",
+        "subject": true
+      },
+      {
+        "name": "basket",
+        "label": "Basket",
+        "items": [
+          "a canvas satchel",
+          "an upturned hat",
+          "a string bag",
+          "a wicker trug",
+          "a tin pail"
+        ],
+        "ordered": false,
+        "noun": "basket",
+        "verb": "carries"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "basket:a string bag",
+          "b": "forager:Ramiro"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "basket:a wicker trug",
+          "b": "forager:Annika"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "forager:Annika",
+          "b": "basket:a canvas satchel"
+        },
+        {
+          "kind": "before",
+          "a": "day:Wednesday",
+          "b": "basket:a canvas satchel"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "day:Wednesday",
+          "b": "basket:a tin pail"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "day:Monday",
+          "b": "forager:Tobias"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "day:Friday",
+          "b": "forager:Eilish"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "forager": [
+      "Ramiro",
+      "Tobias",
+      "Annika",
+      "Eilish",
+      "Solomon"
+    ],
+    "basket": [
+      "a string bag",
+      "an upturned hat",
+      "a wicker trug",
+      "a canvas satchel",
+      "a tin pail"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 2,
+      "immediately_before": 2,
+      "before": 2,
+      "not_link": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 21,
+    "tier_counts": {
+      "direct": 5,
+      "bijection": 11,
+      "order": 5
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The Thorn Bottom foraging club keeps meticulous records, chiefly so that blame can be apportioned later.\nFive foragers are involved. Determine each forager's day and basket.\n- **Forager**: Ramiro, Eilish, Solomon, Annika and Tobias.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Basket**: a canvas satchel, an upturned hat, a string bag, a wicker trug and a tin pail.\nEvery forager has a different day and basket, so within each category every item is used exactly once.",
+    "clues": [
+      "Ramiro carries a string bag.",
+      "Annika carries a wicker trug.",
+      "Annika is exactly one day earlier than the forager who carries a canvas satchel, with no day in between. The forager who carries a canvas satchel is later than Wednesday in day order.",
+      "The forager who carries a tin pail is later than Wednesday in day order.",
+      "Monday is exactly one day earlier than Tobias, with no day in between.",
+      "Eilish does not forage on Friday."
+    ]
+  }
+}

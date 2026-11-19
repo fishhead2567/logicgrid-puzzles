@@ -1,0 +1,243 @@
+{
+  "pid": "f93ca7baec7d",
+  "title": "Tuesday Night at the Dented Bell",
+  "theme": "karaoke",
+  "blurb": "The Dented Bell runs karaoke on Tuesdays. Attendance is loyal; talent is not.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026172865495,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172865495,
+    "theme": "karaoke"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "singer",
+    "entity_noun_plural": "singers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "sings in"
+      },
+      {
+        "name": "singer",
+        "label": "Singer",
+        "items": [
+          "Deshawn",
+          "Caitriona",
+          "Pernilla",
+          "Vikram",
+          "Bogdan"
+        ],
+        "ordered": false,
+        "noun": "singer",
+        "subject": true
+      },
+      {
+        "name": "drink",
+        "label": "Drink",
+        "items": [
+          "a rum and coke",
+          "a lime and soda",
+          "a double whisky",
+          "tap water",
+          "a glass of the house red"
+        ],
+        "ordered": false,
+        "noun": "drink",
+        "verb": "orders"
+      },
+      {
+        "name": "reception",
+        "label": "Reception",
+        "items": [
+          "a singalong",
+          "polite silence",
+          "a standing ovation",
+          "scattered applause",
+          "a request for an encore nobody wanted"
+        ],
+        "ordered": false,
+        "noun": "reception",
+        "verb": "gets"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "singer:Pernilla",
+          "b": "slot:slot three"
+        },
+        {
+          "kind": "link",
+          "a": "reception:a request for an encore nobody wanted",
+          "b": "slot:slot three"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "singer:Deshawn",
+          "b": "slot:slot five"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "drink:a glass of the house red",
+          "b": "slot:slot five",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "reception:polite silence",
+          "b": "singer:Bogdan",
+          "c": "singer:Caitriona"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "drink:a rum and coke",
+          "b": "reception:a singalong",
+          "c": "reception:scattered applause"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "singer:Bogdan",
+          "b": "drink:a double whisky"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "drink:a lime and soda",
+          "b": "reception:a request for an encore nobody wanted"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "reception:a singalong",
+          "b": "drink:a double whisky"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "singer": [
+      "Pernilla",
+      "Bogdan",
+      "Vikram",
+      "Deshawn",
+      "Caitriona"
+    ],
+    "drink": [
+      "a glass of the house red",
+      "a lime and soda",
+      "a double whisky",
+      "a rum and coke",
+      "tap water"
+    ],
+    "reception": [
+      "a standing ovation",
+      "a singalong",
+      "a request for an encore nobody wanted",
+      "polite silence",
+      "scattered applause"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 8,
+    "kinds": {
+      "before": 2,
+      "link": 1,
+      "adjacent": 1,
+      "gap": 1,
+      "between": 2,
+      "immediately_before": 2
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 20,
+      "order": 20
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Dented Bell runs karaoke on Tuesdays. Attendance is loyal; talent is not.\nFive singers are involved. Determine each singer's slot, drink and reception.\n- **Singer**: Deshawn, Caitriona, Pernilla, Vikram and Bogdan.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Drink**: a rum and coke; a lime and soda; a double whisky; tap water; and a glass of the house red.\n- **Reception**: a singalong, polite silence, a standing ovation, scattered applause and a request for an encore nobody wanted.\nEvery singer has a different slot, drink and reception, so within each category every item is used exactly once.",
+    "clues": [
+      "Pernilla is earlier than slot three in slot order. The singer who gets a request for an encore nobody wanted sings in slot three.",
+      "Deshawn and slot five are exactly one slot apart in slot order, in one direction or the other.",
+      "The singer who orders a glass of the house red and slot five are exactly four slots apart in slot order.",
+      "The singer who gets polite silence falls somewhere between Bogdan and Caitriona in slot order.",
+      "The singer who orders a rum and coke falls somewhere between the singer who gets a singalong and the singer who gets scattered applause in slot order.",
+      "Bogdan is exactly one slot earlier than the singer who orders a double whisky, with no slot in between.",
+      "The singer who orders a lime and soda is earlier than the singer who gets a request for an encore nobody wanted in slot order.",
+      "The singer who gets a singalong is exactly one slot earlier than the singer who orders a double whisky, with no slot in between."
+    ]
+  }
+}

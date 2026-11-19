@@ -1,0 +1,440 @@
+{
+  "pid": "df74438e6803",
+  "title": "The Mudflat Regatta",
+  "theme": "regatta",
+  "blurb": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 11.4027,
+  "seed": 2026173015956,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173015956,
+    "theme": "regatta"
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "crew",
+    "entity_noun_plural": "crews",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth",
+          "sixth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "finishes"
+      },
+      {
+        "name": "crew",
+        "label": "Crew",
+        "items": [
+          "the Creamery crew",
+          "the Almshouse crew",
+          "the Gasworks crew",
+          "the Brickworks crew",
+          "the Tannery crew",
+          "the Seminary crew"
+        ],
+        "ordered": false,
+        "noun": "crew",
+        "subject": true
+      },
+      {
+        "name": "stroke",
+        "label": "Stroke",
+        "items": [
+          "Everard",
+          "Yusuf",
+          "Crispin",
+          "Thomasina",
+          "Bartholomew",
+          "Maeve"
+        ],
+        "ordered": false,
+        "noun": "stroke",
+        "verb": "is stroked by"
+      },
+      {
+        "name": "boat",
+        "label": "Boat",
+        "items": [
+          "the Dauntless",
+          "the Obstinate",
+          "the Last Resort",
+          "the Mudlark",
+          "the Wet Hen",
+          "the Gilded Eel"
+        ],
+        "ordered": false,
+        "noun": "boat",
+        "verb": "rows"
+      },
+      {
+        "name": "colours",
+        "label": "Colours",
+        "items": [
+          "pink and cream",
+          "bottle green",
+          "mustard and black",
+          "lilac and bronze",
+          "navy with a white band",
+          "cherry and grey"
+        ],
+        "ordered": false,
+        "noun": "colours",
+        "verb": "wears"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "crew:the Tannery crew",
+          "b": "place:fourth",
+          "k": 2,
+          "rel": "eq"
+        },
+        {
+          "kind": "not_link",
+          "a": "crew:the Brickworks crew",
+          "b": "place:fourth"
+        },
+        {
+          "kind": "not_link",
+          "a": "boat:the Mudlark",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "boat:the Mudlark",
+              "b": "place:first"
+            },
+            {
+              "kind": "gap",
+              "a": "boat:the Gilded Eel",
+              "b": "place:second",
+              "k": 3,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "crew:the Creamery crew",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "place:fifth",
+          "b": "stroke:Thomasina",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "colours:navy with a white band",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "place:first",
+          "b": "boat:the Obstinate"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:fifth",
+          "b": "colours:cherry and grey"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "crew:the Brickworks crew",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "colours:lilac and bronze",
+          "b": "place:fifth",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:first",
+          "b": "boat:the Mudlark"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "boat:the Last Resort",
+          "b": "colours:lilac and bronze",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "parity",
+            "a": "boat:the Gilded Eel",
+            "b": "crew:the Almshouse crew",
+            "same": true
+          },
+          "y": {
+            "kind": "before",
+            "a": "stroke:Maeve",
+            "b": "boat:the Obstinate"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "stroke:Bartholomew",
+          "b": "colours:cherry and grey",
+          "c": "colours:lilac and bronze"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "colours:mustard and black",
+          "b": "crew:the Seminary crew",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "colours:cherry and grey",
+              "b": "crew:the Creamery crew"
+            },
+            {
+              "kind": "gap",
+              "a": "colours:pink and cream",
+              "b": "stroke:Everard",
+              "k": 5,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "stroke:Yusuf",
+          "b": "boat:the Last Resort",
+          "c": "boat:the Wet Hen"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "boat:the Obstinate",
+          "b": "crew:the Almshouse crew"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "adjacent",
+            "a": "boat:the Dauntless",
+            "b": "crew:the Creamery crew"
+          },
+          "y": {
+            "kind": "link",
+            "a": "boat:the Wet Hen",
+            "b": "crew:the Creamery crew"
+          }
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth",
+      "sixth"
+    ],
+    "crew": [
+      "the Almshouse crew",
+      "the Tannery crew",
+      "the Creamery crew",
+      "the Seminary crew",
+      "the Gasworks crew",
+      "the Brickworks crew"
+    ],
+    "stroke": [
+      "Maeve",
+      "Crispin",
+      "Thomasina",
+      "Bartholomew",
+      "Yusuf",
+      "Everard"
+    ],
+    "boat": [
+      "the Dauntless",
+      "the Obstinate",
+      "the Mudlark",
+      "the Wet Hen",
+      "the Gilded Eel",
+      "the Last Resort"
+    ],
+    "colours": [
+      "pink and cream",
+      "mustard and black",
+      "lilac and bronze",
+      "navy with a white band",
+      "bottle green",
+      "cherry and grey"
+    ]
+  },
+  "stats": {
+    "atoms": 20,
+    "numbered_clues": 18,
+    "kinds": {
+      "gap": 3,
+      "not_link": 3,
+      "or": 2,
+      "immediately_before": 2,
+      "parity": 2,
+      "before": 2,
+      "adjacent": 2,
+      "if_then": 2,
+      "between": 2
+    },
+    "positives": 0,
+    "compounds": 4
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 65,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 33,
+      "order": 22,
+      "disjunction": 7
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.\nSix crews are involved. Determine each crew's placing, stroke, boat and colours.\n- **Crew**: the Creamery crew, the Almshouse crew, the Gasworks crew, the Brickworks crew, the Tannery crew and the Seminary crew.\n- **Placing** (listed from better to worse): first, second, third, fourth, fifth and sixth.\n- **Stroke**: Everard, Yusuf, Crispin, Thomasina, Bartholomew and Maeve.\n- **Boat**: the Dauntless, the Obstinate, the Last Resort, the Mudlark, the Wet Hen and the Gilded Eel.\n- **Colours**: pink and cream; bottle green; mustard and black; lilac and bronze; navy with a white band; and cherry and grey.\nEvery crew has a different placing, stroke, boat and colours, so within each category every item is used exactly once.",
+    "clues": [
+      "The Tannery crew and fourth are exactly two places apart in placing order. The Brickworks crew does not finish fourth. The crew who rows the Mudlark does not finish fourth.",
+      "At least one of the following holds, and possibly more than one: (a) The crew who rows the Mudlark and first are exactly one place apart in placing order, in one direction or the other. (b) The crew who rows the Gilded Eel and second are exactly three places apart in placing order.",
+      "The Creamery crew is exactly one place better than fourth, with no placing in between.",
+      "Fifth and the crew who is stroked by Thomasina both sit at odd-numbered places or both at even-numbered places.",
+      "The crew who wears navy with a white band does not finish fifth.",
+      "First is exactly one place better than the crew who rows the Obstinate, with no placing in between.",
+      "The crew who wears cherry and grey is worse than fifth in placing order.",
+      "The Brickworks crew and fifth are exactly one place apart in placing order, in one direction or the other.",
+      "The crew who wears lilac and bronze and fifth both sit at odd-numbered places or both at even-numbered places.",
+      "The crew who rows the Mudlark is worse than first in placing order.",
+      "The crew who rows the Last Resort and the crew who wears lilac and bronze are exactly three places apart in placing order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The crew who rows the Gilded Eel and the Almshouse crew both sit at odd-numbered places or both at even-numbered places. (b) The crew who is stroked by Maeve is better than the crew who rows the Obstinate in placing order.",
+      "The crew who is stroked by Bartholomew falls somewhere between the crew who wears cherry and grey and the crew who wears lilac and bronze in placing order.",
+      "The crew who wears mustard and black and the Seminary crew are exactly two places apart in placing order.",
+      "At least one of the following holds, and possibly more than one: (a) The crew who wears cherry and grey and the Creamery crew are exactly one place apart in placing order, in one direction or the other. (b) The crew who wears pink and cream and the crew who is stroked by Everard are exactly five places apart in placing order.",
+      "The crew who is stroked by Yusuf falls somewhere between the crew who rows the Last Resort and the crew who rows the Wet Hen in placing order.",
+      "The crew who rows the Obstinate and the Almshouse crew are exactly one place apart in placing order, in one direction or the other.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The crew who rows the Dauntless and the Creamery crew are exactly one place apart in placing order, in one direction or the other. (b) The Creamery crew rows the Wet Hen."
+    ]
+  }
+}

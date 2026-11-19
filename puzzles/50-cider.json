@@ -1,0 +1,455 @@
+{
+  "pid": "c9fcbda5e771",
+  "title": "The Pomace and the Prize",
+  "theme": "cider",
+  "blurb": "Six makers press in six different months and each is privately certain the others have let theirs go to vinegar.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 17.7169,
+  "seed": 2026173071389,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173071389,
+    "theme": "cider"
+  },
+  "schema": {
+    "spine": "month",
+    "entity_noun": "maker",
+    "entity_noun_plural": "makers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "month",
+        "label": "Pressing month",
+        "items": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June"
+        ],
+        "ordered": true,
+        "noun": "pressing month",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "month",
+        "verb": "presses in"
+      },
+      {
+        "name": "maker",
+        "label": "Maker",
+        "items": [
+          "Petroc",
+          "Silas Vane",
+          "Araminta",
+          "Bryony",
+          "Morwenna",
+          "Jethro"
+        ],
+        "ordered": false,
+        "noun": "maker",
+        "subject": true
+      },
+      {
+        "name": "apple",
+        "label": "Apple",
+        "items": [
+          "Kingston Black",
+          "Browns Apple",
+          "Yarlington Mill",
+          "Foxwhelp",
+          "Dabinett",
+          "Harry Masters Jersey"
+        ],
+        "ordered": false,
+        "noun": "apple",
+        "verb": "presses"
+      },
+      {
+        "name": "vessel",
+        "label": "Vessel",
+        "items": [
+          "a sherry butt",
+          "a glass demijohn",
+          "a stainless tank",
+          "an earthenware jar",
+          "an oak hogshead",
+          "a rum cask"
+        ],
+        "ordered": false,
+        "noun": "vessel",
+        "verb": "ferments in"
+      },
+      {
+        "name": "fault",
+        "label": "Fault",
+        "items": [
+          "mousiness",
+          "sulphur",
+          "ropiness",
+          "a framboise note",
+          "acetification",
+          "nothing detectable"
+        ],
+        "ordered": false,
+        "noun": "fault",
+        "verb": "is accused of"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "maker:Silas Vane",
+              "b": "vessel:an oak hogshead"
+            },
+            {
+              "kind": "link",
+              "a": "month:June",
+              "b": "vessel:an oak hogshead"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "month:February",
+          "b": "vessel:an earthenware jar",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "maker:Jethro",
+          "b": "fault:ropiness",
+          "c": "month:June"
+        },
+        {
+          "kind": "before",
+          "a": "maker:Jethro",
+          "b": "apple:Dabinett"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "adjacent",
+            "a": "maker:Morwenna",
+            "b": "month:April"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "apple:Yarlington Mill",
+              "b": "month:February"
+            },
+            {
+              "kind": "adjacent",
+              "a": "fault:mousiness",
+              "b": "month:February"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "immediately_before",
+            "a": "vessel:a sherry butt",
+            "b": "month:April"
+          },
+          "y": {
+            "kind": "before",
+            "a": "vessel:a sherry butt",
+            "b": "maker:Petroc"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "maker:Bryony",
+          "b": "month:February",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "apple:Kingston Black",
+          "b": "fault:nothing detectable",
+          "c": "vessel:a stainless tank"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "apple:Dabinett",
+          "b": "vessel:a stainless tank",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "fault:sulphur",
+          "b": "maker:Jethro"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "apple:Yarlington Mill",
+          "b": "vessel:a sherry butt",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "adjacent",
+            "a": "fault:mousiness",
+            "b": "vessel:a sherry butt"
+          },
+          "y": {
+            "kind": "parity",
+            "a": "fault:ropiness",
+            "b": "maker:Morwenna",
+            "same": false
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "apple:Foxwhelp",
+              "b": "vessel:a rum cask"
+            },
+            {
+              "kind": "link",
+              "a": "fault:acetification",
+              "b": "vessel:a sherry butt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "apple:Harry Masters Jersey",
+          "b": "fault:a framboise note",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "apple:Browns Apple",
+          "b": "vessel:a sherry butt"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "apple:Harry Masters Jersey",
+          "b": "fault:ropiness"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "maker:Morwenna",
+          "b": "apple:Foxwhelp",
+          "c": "apple:Harry Masters Jersey"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "apple:Browns Apple",
+          "b": "fault:acetification",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "fault:mousiness",
+          "b": "vessel:an earthenware jar"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "month": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June"
+    ],
+    "maker": [
+      "Silas Vane",
+      "Araminta",
+      "Jethro",
+      "Morwenna",
+      "Bryony",
+      "Petroc"
+    ],
+    "apple": [
+      "Yarlington Mill",
+      "Harry Masters Jersey",
+      "Kingston Black",
+      "Browns Apple",
+      "Dabinett",
+      "Foxwhelp"
+    ],
+    "vessel": [
+      "an oak hogshead",
+      "a stainless tank",
+      "a sherry butt",
+      "a glass demijohn",
+      "an earthenware jar",
+      "a rum cask"
+    ],
+    "fault": [
+      "ropiness",
+      "sulphur",
+      "a framboise note",
+      "acetification",
+      "nothing detectable",
+      "mousiness"
+    ]
+  },
+  "stats": {
+    "atoms": 20,
+    "numbered_clues": 19,
+    "kinds": {
+      "or": 3,
+      "gap": 1,
+      "between": 3,
+      "before": 2,
+      "not": 1,
+      "if_then": 1,
+      "parity": 5,
+      "not_both": 1,
+      "adjacent": 3
+    },
+    "positives": 0,
+    "compounds": 6
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 85,
+    "tier_counts": {
+      "bijection": 42,
+      "order": 27,
+      "disjunction": 9,
+      "trial": 7
+    },
+    "trial_eliminations": 7,
+    "unknown_cells": 24
+  },
+  "text": {
+    "intro": "Six makers press in six different months and each is privately certain the others have let theirs go to vinegar.\nSix makers are involved. Determine each maker's pressing month, apple, vessel and fault.\n- **Maker**: Petroc, Silas Vane, Araminta, Bryony, Morwenna and Jethro.\n- **Pressing month** (listed from earlier to later): January, February, March, April, May and June.\n- **Apple**: Kingston Black, Browns Apple, Yarlington Mill, Foxwhelp, Dabinett and Harry Masters Jersey.\n- **Vessel**: a sherry butt, a glass demijohn, a stainless tank, an earthenware jar, an oak hogshead and a rum cask.\n- **Fault**: mousiness, sulphur, ropiness, a framboise note, acetification and nothing detectable.\nEvery maker has a different pressing month, apple, vessel and fault, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) Silas Vane ferments in an oak hogshead. (b) The maker who ferments in an oak hogshead presses in June.",
+      "The maker who ferments in an earthenware jar and February are exactly three months apart in pressing month order.",
+      "Jethro falls somewhere between the maker who is accused of ropiness and June in pressing month order. Jethro is earlier than the maker who presses Dabinett in pressing month order.",
+      "The following is NOT true: Morwenna and April are exactly one month apart in pressing month order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) The maker who presses Yarlington Mill and February are exactly one month apart in pressing month order, in one direction or the other. (b) The maker who is accused of mousiness and February are exactly one month apart in pressing month order, in one direction or the other.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The maker who ferments in a sherry butt is exactly one month earlier than April, with no pressing month in between. (b) The maker who ferments in a sherry butt is earlier than Petroc in pressing month order.",
+      "One of Bryony and February sits at an odd-numbered pressing month and the other at an even-numbered pressing month.",
+      "The maker who presses Kingston Black falls somewhere between the maker who is accused of nothing detectable and the maker who ferments in a stainless tank in pressing month order.",
+      "One of the maker who presses Dabinett and the maker who ferments in a stainless tank sits at an odd-numbered pressing month and the other at an even-numbered pressing month.",
+      "The maker who is accused of sulphur is earlier than Jethro in pressing month order.",
+      "The maker who presses Yarlington Mill and the maker who ferments in a sherry butt both sit at odd-numbered months or both at even-numbered months.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The maker who is accused of mousiness and the maker who ferments in a sherry butt are exactly one month apart in pressing month order, in one direction or the other. (b) One of the maker who is accused of ropiness and Morwenna sits at an odd-numbered pressing month and the other at an even-numbered pressing month.",
+      "At least one of the following holds, and possibly more than one: (a) The maker who presses Foxwhelp ferments in a rum cask. (b) The maker who is accused of acetification ferments in a sherry butt.",
+      "One of the maker who presses Harry Masters Jersey and the maker who is accused of a framboise note sits at an odd-numbered pressing month and the other at an even-numbered pressing month.",
+      "The maker who presses Browns Apple and the maker who ferments in a sherry butt are exactly one month apart in pressing month order, in one direction or the other.",
+      "The maker who presses Harry Masters Jersey and the maker who is accused of ropiness are exactly one month apart in pressing month order, in one direction or the other.",
+      "Morwenna falls somewhere between the maker who presses Foxwhelp and the maker who presses Harry Masters Jersey in pressing month order.",
+      "The maker who presses Browns Apple and the maker who is accused of acetification both sit at odd-numbered months or both at even-numbered months.",
+      "The maker who is accused of mousiness and the maker who ferments in an earthenware jar are exactly one month apart in pressing month order, in one direction or the other."
+    ]
+  }
+}

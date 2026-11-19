@@ -1,0 +1,302 @@
+{
+  "pid": "b3ad67fcd652",
+  "title": "Preserves, and the Preservation of Grudges",
+  "theme": "jam",
+  "blurb": "The preserves tent is the most competitive building at the show, and the only one with a locked door.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 6.25,
+  "seed": 2026172833819,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172833819,
+    "theme": "jam"
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "entrant",
+    "entity_noun_plural": "entrants",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Price",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9",
+          "$11"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "unit": "$",
+        "noun": "price",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "charges"
+      },
+      {
+        "name": "entrant",
+        "label": "Entrant",
+        "items": [
+          "Harriet",
+          "Stanislaw",
+          "Rafferty",
+          "Emeka",
+          "Bernadette"
+        ],
+        "ordered": false,
+        "noun": "entrant",
+        "subject": true
+      },
+      {
+        "name": "preserve",
+        "label": "Preserve",
+        "items": [
+          "hot pepper jelly",
+          "medlar jam",
+          "green walnut pickle",
+          "damson cheese",
+          "rosehip syrup"
+        ],
+        "ordered": false,
+        "noun": "preserve",
+        "verb": "enters"
+      },
+      {
+        "name": "jar",
+        "label": "Jar",
+        "items": [
+          "a hexagonal jar",
+          "a tall french jar",
+          "an unlabelled jar",
+          "a jar with a cloth lid",
+          "a squat kilner"
+        ],
+        "ordered": false,
+        "noun": "jar",
+        "verb": "uses"
+      },
+      {
+        "name": "secret",
+        "label": "Secret ingredient",
+        "items": [
+          "a splash of gin",
+          "black pepper",
+          "nothing whatsoever",
+          "a bay leaf",
+          "orange zest"
+        ],
+        "ordered": false,
+        "noun": "ingredient",
+        "verb": "adds"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "entrant:Harriet",
+          "b": "price:$5"
+        },
+        {
+          "kind": "before",
+          "a": "price:$5",
+          "b": "preserve:green walnut pickle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "price:$9",
+          "b": "secret:orange zest"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "jar:a tall french jar",
+          "b": "price:$11"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "entrant:Stanislaw",
+          "b": "jar:a squat kilner",
+          "c": "price:$11"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "preserve:medlar jam",
+          "b": "jar:a jar with a cloth lid",
+          "c": "jar:an unlabelled jar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "secret:a splash of gin",
+          "b": "jar:an unlabelled jar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "preserve:medlar jam",
+          "b": "secret:black pepper"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "preserve:hot pepper jelly",
+          "b": "entrant:Bernadette",
+          "c": "entrant:Emeka"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "jar:a squat kilner",
+          "b": "secret:a bay leaf",
+          "c": "secret:orange zest"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "jar:an unlabelled jar",
+          "b": "preserve:rosehip syrup"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "entrant:Emeka",
+          "b": "secret:a splash of gin"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9",
+      "$11"
+    ],
+    "entrant": [
+      "Harriet",
+      "Emeka",
+      "Rafferty",
+      "Stanislaw",
+      "Bernadette"
+    ],
+    "preserve": [
+      "damson cheese",
+      "medlar jam",
+      "hot pepper jelly",
+      "rosehip syrup",
+      "green walnut pickle"
+    ],
+    "jar": [
+      "a jar with a cloth lid",
+      "a hexagonal jar",
+      "a squat kilner",
+      "a tall french jar",
+      "an unlabelled jar"
+    ],
+    "secret": [
+      "black pepper",
+      "a bay leaf",
+      "a splash of gin",
+      "nothing whatsoever",
+      "orange zest"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 11,
+    "kinds": {
+      "before": 3,
+      "adjacent": 4,
+      "between": 4,
+      "immediately_before": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 55,
+    "tier_counts": {
+      "bijection": 23,
+      "order": 32
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The preserves tent is the most competitive building at the show, and the only one with a locked door.\nFive entrants are involved. Determine each entrant's price, preserve, jar and ingredient.\n- **Entrant**: Harriet, Stanislaw, Rafferty, Emeka and Bernadette.\n- **Price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Preserve**: hot pepper jelly, medlar jam, green walnut pickle, damson cheese and rosehip syrup.\n- **Jar**: a hexagonal jar, a tall french jar, an unlabelled jar, a jar with a cloth lid and a squat kilner.\n- **Secret ingredient**: a splash of gin, black pepper, nothing whatsoever, a bay leaf and orange zest.\nEvery entrant has a different price, preserve, jar and ingredient, so within each category every item is used exactly once.",
+    "clues": [
+      "Harriet is cheaper than $5 in price order. The entrant who enters green walnut pickle is dearer than $5 in price order.",
+      "The entrant who adds orange zest and $9 are exactly one price step apart in price order, in one direction or the other.",
+      "The entrant who uses a tall french jar and $11 are exactly one price step apart in price order, in one direction or the other.",
+      "Stanislaw falls somewhere between the entrant who uses a squat kilner and $11 in price order.",
+      "The entrant who enters medlar jam falls somewhere between the entrant who uses a jar with a cloth lid and the entrant who uses an unlabelled jar in price order.",
+      "The entrant who adds a splash of gin is cheaper than the entrant who uses an unlabelled jar in price order.",
+      "The entrant who enters medlar jam and the entrant who adds black pepper are exactly one price step apart in price order, in one direction or the other.",
+      "The entrant who enters hot pepper jelly falls somewhere between Bernadette and Emeka in price order.",
+      "The entrant who uses a squat kilner falls somewhere between the entrant who adds a bay leaf and the entrant who adds orange zest in price order.",
+      "The entrant who uses an unlabelled jar and the entrant who enters rosehip syrup are exactly one price step apart in price order, in one direction or the other.",
+      "Emeka is exactly one price step cheaper than the entrant who adds a splash of gin, with no price in between."
+    ]
+  }
+}

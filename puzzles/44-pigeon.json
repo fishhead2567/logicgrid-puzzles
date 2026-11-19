@@ -1,0 +1,367 @@
+{
+  "pid": "978a042a4acf",
+  "title": "Andy's Swiftest Birds",
+  "theme": "pigeon",
+  "blurb": "Andy races pigeons, and each bird is bred for a different combination of stubbornness and speed.",
+  "profile": "expert",
+  "rating": 6,
+  "score": 11.169,
+  "seed": 2026173023875,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173023875,
+    "theme": "pigeon"
+  },
+  "schema": {
+    "spine": "distance",
+    "entity_noun": "pigeon",
+    "entity_noun_plural": "pigeons",
+    "entity_animate": false,
+    "categories": [
+      {
+        "name": "distance",
+        "label": "Distance",
+        "items": [
+          "200 miles",
+          "300 miles",
+          "400 miles",
+          "500 miles",
+          "600 miles"
+        ],
+        "ordered": true,
+        "values": [
+          200,
+          300,
+          400,
+          500,
+          600
+        ],
+        "unit_suffix": " miles",
+        "noun": "distance",
+        "cmp_less": "shorter",
+        "cmp_more": "longer",
+        "step_noun": "hundred miles",
+        "verb": "flies"
+      },
+      {
+        "name": "bird",
+        "label": "Pigeon",
+        "items": [
+          "Grimsby",
+          "Pip",
+          "Cadwallader",
+          "Hieronymus",
+          "Alabaster"
+        ],
+        "ordered": false,
+        "noun": "pigeon",
+        "subject": true
+      },
+      {
+        "name": "plumage",
+        "label": "Plumage",
+        "items": [
+          "pied white",
+          "slate blue",
+          "grizzle",
+          "chequered black",
+          "bronze"
+        ],
+        "ordered": false,
+        "noun": "plumage",
+        "verb": "is"
+      },
+      {
+        "name": "breed",
+        "label": "Breed",
+        "items": [
+          "a Busschaert",
+          "a Stichelbaut",
+          "a Sion",
+          "a Janssen",
+          "a Vandenabeele"
+        ],
+        "ordered": false,
+        "noun": "breed",
+        "verb": "descends from"
+      },
+      {
+        "name": "loft",
+        "label": "Loft",
+        "items": [
+          "the canal loft",
+          "the stable loft",
+          "the allotment loft",
+          "the chapel loft",
+          "the garage loft"
+        ],
+        "ordered": false,
+        "noun": "loft",
+        "verb": "is kept in"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "distance:500 miles",
+              "b": "loft:the chapel loft"
+            },
+            {
+              "kind": "link",
+              "a": "distance:400 miles",
+              "b": "loft:the garage loft"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "loft:the chapel loft",
+          "b": "distance:400 miles"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "distance:500 miles",
+          "b": "breed:a Busschaert"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "arith",
+          "a": "distance:500 miles",
+          "b": "bird:Grimsby",
+          "k": 200,
+          "op": "add"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "adjacent",
+            "a": "distance:500 miles",
+            "b": "plumage:bronze"
+          },
+          "y": {
+            "kind": "link",
+            "a": "distance:500 miles",
+            "b": "plumage:chequered black"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "distance:500 miles",
+              "b": "loft:the chapel loft"
+            },
+            {
+              "kind": "not_link",
+              "a": "bird:Hieronymus",
+              "b": "loft:the garage loft"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "breed:a Janssen",
+              "b": "plumage:bronze"
+            },
+            {
+              "kind": "not_link",
+              "a": "bird:Pip",
+              "b": "breed:a Janssen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "before",
+            "a": "plumage:slate blue",
+            "b": "breed:a Janssen"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "loft:the stable loft",
+          "b": "breed:a Stichelbaut",
+          "c": "plumage:bronze"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "loft:the allotment loft",
+          "b": "plumage:pied white"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "bird:Alabaster",
+          "b": "breed:a Stichelbaut"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "before",
+            "a": "bird:Alabaster",
+            "b": "breed:a Sion"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "bird:Cadwallader",
+          "b": "loft:the garage loft"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "distance": [
+      "200 miles",
+      "300 miles",
+      "400 miles",
+      "500 miles",
+      "600 miles"
+    ],
+    "bird": [
+      "Alabaster",
+      "Grimsby",
+      "Pip",
+      "Cadwallader",
+      "Hieronymus"
+    ],
+    "plumage": [
+      "grizzle",
+      "pied white",
+      "slate blue",
+      "chequered black",
+      "bronze"
+    ],
+    "breed": [
+      "a Sion",
+      "a Janssen",
+      "a Stichelbaut",
+      "a Vandenabeele",
+      "a Busschaert"
+    ],
+    "loft": [
+      "the allotment loft",
+      "the chapel loft",
+      "the garage loft",
+      "the stable loft",
+      "the canal loft"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 13,
+    "kinds": {
+      "or": 3,
+      "immediately_before": 2,
+      "arith": 1,
+      "if_then": 1,
+      "not": 2,
+      "between": 1,
+      "adjacent": 2,
+      "before": 1
+    },
+    "positives": 0,
+    "compounds": 6
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 59,
+    "tier_counts": {
+      "bijection": 34,
+      "order": 17,
+      "disjunction": 8
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Andy races pigeons, and each bird is bred for a different combination of stubbornness and speed.\nFive pigeons are involved. Determine each pigeon's distance, plumage, breed and loft.\n- **Pigeon**: Grimsby, Pip, Cadwallader, Hieronymus and Alabaster.\n- **Distance** (listed from shorter to longer): 200 miles, 300 miles, 400 miles, 500 miles and 600 miles.\n- **Plumage**: pied white, slate blue, grizzle, chequered black and bronze.\n- **Breed**: a Busschaert, a Stichelbaut, a Sion, a Janssen and a Vandenabeele.\n- **Loft**: the canal loft, the stable loft, the allotment loft, the chapel loft and the garage loft.\nEvery pigeon has a different distance, plumage, breed and loft, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) The pigeon that is kept in the chapel loft and 500 miles are exactly one hundred miles apart in distance order, in one direction or the other. (b) The pigeon that is kept in the garage loft flies 400 miles.",
+      "The pigeon that is kept in the chapel loft is exactly one hundred miles shorter than 400 miles, with no distance in between.",
+      "500 miles is exactly one hundred miles shorter than the pigeon that descends from a Busschaert, with no distance in between.",
+      "500 miles has a distance exactly 200 miles more than Grimsby.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The pigeon that is bronze and 500 miles are exactly one hundred miles apart in distance order, in one direction or the other. (b) The pigeon that is chequered black flies 500 miles.",
+      "At least one of the following holds, and possibly more than one: (a) The pigeon that is kept in the chapel loft and 500 miles are exactly one hundred miles apart in distance order, in one direction or the other. (b) Hieronymus is not kept in the garage loft.",
+      "At least one of the following holds, and possibly more than one: (a) The pigeon that descends from a Janssen and the pigeon that is bronze are exactly one hundred miles apart in distance order, in one direction or the other. (b) Pip does not descend from a Janssen.",
+      "The following is NOT true: The pigeon that is slate blue is shorter than the pigeon that descends from a Janssen in distance order.",
+      "The pigeon that is kept in the stable loft falls somewhere between the pigeon that descends from a Stichelbaut and the pigeon that is bronze in distance order.",
+      "The pigeon that is kept in the allotment loft and the pigeon that is pied white are exactly one hundred miles apart in distance order, in one direction or the other.",
+      "Alabaster is shorter than the pigeon that descends from a Stichelbaut in distance order.",
+      "The following is NOT true: Alabaster is shorter than the pigeon that descends from a Sion in distance order.",
+      "Cadwallader and the pigeon that is kept in the garage loft are exactly one hundred miles apart in distance order, in one direction or the other."
+    ]
+  }
+}

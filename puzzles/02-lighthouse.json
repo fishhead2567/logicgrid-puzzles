@@ -1,0 +1,183 @@
+{
+  "pid": "f8e494d9163f",
+  "title": "The Saltmarsh Light Rotation",
+  "theme": "lighthouse",
+  "blurb": "The lighthouses along the Saltmarsh coast share a single relief keeper roster, and the logbooks have become a scholarly mess.",
+  "profile": "gentle",
+  "rating": 1,
+  "score": 3.97,
+  "seed": 2026172691277,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172691277,
+    "theme": "lighthouse"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "keeper",
+    "entity_noun_plural": "keepers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Day",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "ordered": true,
+        "noun": "day",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "works on"
+      },
+      {
+        "name": "keeper",
+        "label": "Keeper",
+        "items": [
+          "Lucian",
+          "Barnaby",
+          "Hollis",
+          "Perpetua"
+        ],
+        "ordered": false,
+        "noun": "keeper",
+        "subject": true
+      },
+      {
+        "name": "weather",
+        "label": "Weather noted",
+        "items": [
+          "thunder",
+          "a gale",
+          "drizzle",
+          "sea fog"
+        ],
+        "ordered": false,
+        "noun": "weather",
+        "verb": "notes"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Wednesday",
+          "b": "weather:a gale"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "keeper:Perpetua",
+          "b": "weather:thunder"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "keeper:Lucian",
+          "b": "weather:drizzle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "day:Tuesday",
+          "b": "weather:drizzle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "day:Wednesday",
+          "b": "keeper:Hollis"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "day:Wednesday",
+          "b": "weather:sea fog"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "keeper": [
+      "Lucian",
+      "Perpetua",
+      "Barnaby",
+      "Hollis"
+    ],
+    "weather": [
+      "drizzle",
+      "thunder",
+      "a gale",
+      "sea fog"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 3,
+      "not_link": 1,
+      "adjacent": 1,
+      "immediately_before": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 17,
+    "tier_counts": {
+      "direct": 7,
+      "bijection": 8,
+      "order": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The lighthouses along the Saltmarsh coast share a single relief keeper roster, and the logbooks have become a scholarly mess.\nFour keepers are involved. Determine each keeper's day and weather.\n- **Keeper**: Lucian, Barnaby, Hollis and Perpetua.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday and Thursday.\n- **Weather noted**: thunder, a gale, drizzle and sea fog.\nEvery keeper has a different day and weather, so within each category every item is used exactly once.",
+    "clues": [
+      "The keeper who notes a gale works on Wednesday.",
+      "Perpetua notes thunder.",
+      "Lucian notes drizzle.",
+      "The keeper who notes drizzle does not work on Tuesday.",
+      "Hollis and Wednesday are exactly one day apart in day order, in one direction or the other.",
+      "Wednesday is exactly one day earlier than the keeper who notes sea fog, with no day in between."
+    ]
+  }
+}

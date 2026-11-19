@@ -1,0 +1,256 @@
+{
+  "pid": "f3ab9d685a55",
+  "title": "Christmas Morning on Lark Street",
+  "theme": "christmas",
+  "blurb": "Six kids, six wish lists, and one set of parents trying very hard to remember who asked for what.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026172849657,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172849657,
+    "theme": "christmas"
+  },
+  "schema": {
+    "spine": "age",
+    "entity_noun": "kid",
+    "entity_noun_plural": "kids",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "age",
+        "label": "Age",
+        "items": [
+          "8 years old",
+          "9 years old",
+          "10 years old",
+          "11 years old",
+          "12 years old"
+        ],
+        "ordered": true,
+        "values": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "noun": "age",
+        "cmp_less": "younger",
+        "cmp_more": "older",
+        "step_noun": "year",
+        "verb": "is"
+      },
+      {
+        "name": "kid",
+        "label": "Kid",
+        "items": [
+          "Frankie",
+          "Deshawn",
+          "Esperanza",
+          "Alton",
+          "Margo"
+        ],
+        "ordered": false,
+        "noun": "kid",
+        "subject": true
+      },
+      {
+        "name": "toy",
+        "label": "Toy",
+        "items": [
+          "an electric keyboard",
+          "a pink skateboard",
+          "a robot dog",
+          "a bug-collecting kit",
+          "a karaoke machine"
+        ],
+        "ordered": false,
+        "noun": "toy",
+        "verb": "hopes for"
+      },
+      {
+        "name": "snack",
+        "label": "Snack",
+        "items": [
+          "carrot sticks",
+          "oatmeal cookies",
+          "peanut butter crackers",
+          "sugar cookies",
+          "gingerbread"
+        ],
+        "ordered": false,
+        "noun": "snack",
+        "verb": "leaves out"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Frankie",
+          "b": "snack:peanut butter crackers"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "age:9 years old",
+          "b": "snack:carrot sticks"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "age:10 years old",
+          "b": "kid:Esperanza"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "age:10 years old",
+          "b": "toy:a karaoke machine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "kid:Margo",
+          "b": "snack:sugar cookies"
+        },
+        {
+          "kind": "adjacent",
+          "a": "age:12 years old",
+          "b": "kid:Margo"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "age:9 years old",
+          "b": "snack:oatmeal cookies"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "kid:Alton",
+          "b": "toy:a robot dog"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "toy:an electric keyboard",
+          "b": "snack:carrot sticks"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "toy:a pink skateboard",
+          "b": "kid:Alton"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "age": [
+      "8 years old",
+      "9 years old",
+      "10 years old",
+      "11 years old",
+      "12 years old"
+    ],
+    "kid": [
+      "Deshawn",
+      "Esperanza",
+      "Alton",
+      "Margo",
+      "Frankie"
+    ],
+    "toy": [
+      "a pink skateboard",
+      "an electric keyboard",
+      "a bug-collecting kit",
+      "a karaoke machine",
+      "a robot dog"
+    ],
+    "snack": [
+      "oatmeal cookies",
+      "sugar cookies",
+      "carrot sticks",
+      "gingerbread",
+      "peanut butter crackers"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 9,
+    "kinds": {
+      "link": 1,
+      "adjacent": 4,
+      "immediately_before": 2,
+      "not_link": 2,
+      "before": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 6,
+      "bijection": 25,
+      "order": 10
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Six kids, six wish lists, and one set of parents trying very hard to remember who asked for what.\nFive kids are involved. Determine each kid's age, toy and snack.\n- **Kid**: Frankie, Deshawn, Esperanza, Alton and Margo.\n- **Age** (listed from younger to older): 8 years old, 9 years old, 10 years old, 11 years old and 12 years old.\n- **Toy**: an electric keyboard, a pink skateboard, a robot dog, a bug-collecting kit and a karaoke machine.\n- **Snack**: carrot sticks, oatmeal cookies, peanut butter crackers, sugar cookies and gingerbread.\nEvery kid has a different age, toy and snack, so within each category every item is used exactly once.",
+    "clues": [
+      "Frankie leaves out peanut butter crackers.",
+      "The kid who leaves out carrot sticks and 9 years old are exactly one year apart in age order, in one direction or the other.",
+      "Esperanza and 10 years old are exactly one year apart in age order, in one direction or the other.",
+      "10 years old is exactly one year younger than the kid who hopes for a karaoke machine, with no age in between.",
+      "Margo does not leave out sugar cookies. Margo and 12 years old are exactly one year apart in age order, in one direction or the other.",
+      "The kid who leaves out oatmeal cookies and 9 years old are exactly one year apart in age order, in one direction or the other.",
+      "Alton does not hope for a robot dog.",
+      "The kid who hopes for an electric keyboard is exactly one year younger than the kid who leaves out carrot sticks, with no age in between.",
+      "The kid who hopes for a pink skateboard is younger than Alton in age order."
+    ]
+  }
+}

@@ -3,8 +3,8 @@
 Puzzle content for the LogicGrid app. **Generated, not hand-edited** -- rebuilt
 from the generator repo with `scripts/build_content_repo.py`.
 
-50 puzzles, ratings 1-7, 5 with a verified narrative.
-Generated 2026-11-19T03:59:54+00:00 by logicgrid 0.1.0.
+50 puzzles, ratings 1-7, 0 with a verified narrative.
+Generated 2026-11-19T22:48:20+00:00 by logicgrid 0.1.0.
 
 ## Fetch contract
 

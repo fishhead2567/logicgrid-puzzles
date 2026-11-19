@@ -1,0 +1,266 @@
+{
+  "pid": "95aadb73d784",
+  "title": "A Bad Week at the Pinhole Observatory",
+  "theme": "observatory",
+  "blurb": "The Pinhole Amateur Astronomical Society has one good telescope and a great many strong opinions about who may point it where.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026172889252,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172889252,
+    "theme": "observatory"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "astronomer",
+    "entity_noun_plural": "astronomers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Day",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "ordered": true,
+        "noun": "day",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "observes on"
+      },
+      {
+        "name": "astronomer",
+        "label": "Astronomer",
+        "items": [
+          "Cornelius",
+          "Niamh",
+          "Sunniva",
+          "Dmitri",
+          "Ptolemy"
+        ],
+        "ordered": false,
+        "noun": "astronomer",
+        "subject": true
+      },
+      {
+        "name": "target",
+        "label": "Observed",
+        "items": [
+          "a lunar occultation",
+          "Saturn's rings",
+          "a comet fragment",
+          "the Andromeda galaxy",
+          "the Crab Nebula"
+        ],
+        "ordered": false,
+        "noun": "target",
+        "verb": "studies"
+      },
+      {
+        "name": "mishap",
+        "label": "Mishap",
+        "items": [
+          "a flat battery",
+          "a cracked filter",
+          "a dropped lens cap",
+          "a dewed-up eyepiece",
+          "an unexpected cloud bank"
+        ],
+        "ordered": false,
+        "noun": "mishap",
+        "verb": "is undone by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "but_not",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "mishap:a dewed-up eyepiece",
+          "b": "target:the Andromeda galaxy"
+        },
+        {
+          "kind": "link",
+          "a": "day:Tuesday",
+          "b": "target:the Andromeda galaxy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "mishap:a flat battery",
+          "b": "day:Tuesday"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "day:Tuesday",
+          "b": "target:a comet fragment"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "astronomer:Niamh",
+          "b": "day:Tuesday"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "day:Thursday",
+          "b": "target:a lunar occultation"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "day:Thursday",
+          "b": "mishap:a cracked filter",
+          "c": "mishap:a dropped lens cap"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "astronomer:Ptolemy",
+          "b": "mishap:a dropped lens cap",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "mishap:a dropped lens cap",
+          "b": "target:a lunar occultation",
+          "c": "target:the Crab Nebula"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "astronomer:Cornelius",
+          "b": "target:a comet fragment"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "astronomer:Dmitri",
+          "b": "mishap:a cracked filter"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "astronomer": [
+      "Niamh",
+      "Cornelius",
+      "Sunniva",
+      "Dmitri",
+      "Ptolemy"
+    ],
+    "target": [
+      "the Crab Nebula",
+      "the Andromeda galaxy",
+      "a comet fragment",
+      "Saturn's rings",
+      "a lunar occultation"
+    ],
+    "mishap": [
+      "a flat battery",
+      "an unexpected cloud bank",
+      "a dropped lens cap",
+      "a dewed-up eyepiece",
+      "a cracked filter"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 10,
+    "kinds": {
+      "not_link": 1,
+      "link": 1,
+      "before": 2,
+      "adjacent": 3,
+      "immediately_before": 1,
+      "between": 2,
+      "gap": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 30,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 16,
+      "order": 12
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Pinhole Amateur Astronomical Society has one good telescope and a great many strong opinions about who may point it where.\nFive astronomers are involved. Determine each astronomer's day, target and mishap.\n- **Astronomer**: Cornelius, Niamh, Sunniva, Dmitri and Ptolemy.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Observed**: a lunar occultation, Saturn's rings, a comet fragment, the Andromeda galaxy and the Crab Nebula.\n- **Mishap**: a flat battery, a cracked filter, a dropped lens cap, a dewed-up eyepiece and an unexpected cloud bank.\nEvery astronomer has a different day, target and mishap, so within each category every item is used exactly once.",
+    "clues": [
+      "The astronomer who is undone by a dewed-up eyepiece does not study the Andromeda galaxy. The astronomer who studies the Andromeda galaxy observes on Tuesday.",
+      "The astronomer who is undone by a flat battery is earlier than Tuesday in day order.",
+      "The astronomer who studies a comet fragment and Tuesday are exactly one day apart in day order, in one direction or the other.",
+      "Niamh is exactly one day earlier than Tuesday, with no day in between.",
+      "The astronomer who studies a lunar occultation is later than Thursday in day order.",
+      "Thursday falls somewhere between the astronomer who is undone by a cracked filter and the astronomer who is undone by a dropped lens cap in day order.",
+      "Ptolemy and the astronomer who is undone by a dropped lens cap are exactly two days apart in day order.",
+      "The astronomer who is undone by a dropped lens cap falls somewhere between the astronomer who studies a lunar occultation and the astronomer who studies the Crab Nebula in day order.",
+      "Cornelius and the astronomer who studies a comet fragment are exactly one day apart in day order, in one direction or the other.",
+      "Dmitri and the astronomer who is undone by a cracked filter are exactly one day apart in day order, in one direction or the other."
+    ]
+  }
+}

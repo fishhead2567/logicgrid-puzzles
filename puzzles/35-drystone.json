@@ -1,0 +1,335 @@
+{
+  "pid": "3321b1f9e67c",
+  "title": "The Walling Match at Gunnerside",
+  "theme": "drystone",
+  "blurb": "Six wallers, a measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.8372,
+  "seed": 2026172952604,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172952604,
+    "theme": "drystone"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "waller",
+    "entity_noun_plural": "wallers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Finishing time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "finishing time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "finishes at"
+      },
+      {
+        "name": "waller",
+        "label": "Waller",
+        "items": [
+          "Mab Teasdale",
+          "Hilda Crowther",
+          "Ewart Beck",
+          "Ossian Baird",
+          "Clem Hartley"
+        ],
+        "ordered": false,
+        "noun": "waller",
+        "subject": true
+      },
+      {
+        "name": "stone",
+        "label": "Stone",
+        "items": [
+          "Dales limestone",
+          "green slate",
+          "river cobble",
+          "Cotswold oolite",
+          "millstone grit"
+        ],
+        "ordered": false,
+        "noun": "stone",
+        "verb": "works in"
+      },
+      {
+        "name": "feature",
+        "label": "Feature built",
+        "items": [
+          "a cripple hole",
+          "a plain run of copes",
+          "a wall head",
+          "a water smoot",
+          "a stile"
+        ],
+        "ordered": false,
+        "noun": "feature",
+        "verb": "builds in"
+      },
+      {
+        "name": "snag",
+        "label": "Snag",
+        "items": [
+          "stone left unused",
+          "a running joint",
+          "a slipped cope",
+          "gravel hearting",
+          "too little batter"
+        ],
+        "ordered": false,
+        "noun": "snag",
+        "verb": "is pulled up for"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "feature:a cripple hole",
+              "b": "time:10am"
+            },
+            {
+              "kind": "adjacent",
+              "a": "snag:too little batter",
+              "b": "time:8am"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "time:11am",
+          "b": "waller:Mab Teasdale"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "time:10am",
+          "b": "feature:a wall head",
+          "c": "waller:Clem Hartley"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "stone:Cotswold oolite",
+          "b": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "stone:Dales limestone",
+              "b": "waller:Mab Teasdale"
+            },
+            {
+              "kind": "link",
+              "a": "feature:a stile",
+              "b": "stone:green slate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "stone:river cobble",
+          "b": "waller:Ossian Baird"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "snag:a running joint",
+          "b": "waller:Clem Hartley",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "stone:green slate",
+          "b": "waller:Mab Teasdale"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "snag:too little batter",
+          "b": "stone:millstone grit",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "stone:green slate",
+          "b": "waller:Hilda Crowther"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "snag:stone left unused",
+          "b": "waller:Hilda Crowther"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "waller:Ewart Beck",
+          "b": "snag:a slipped cope"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "feature:a plain run of copes",
+          "b": "stone:green slate"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "waller": [
+      "Hilda Crowther",
+      "Ewart Beck",
+      "Mab Teasdale",
+      "Clem Hartley",
+      "Ossian Baird"
+    ],
+    "stone": [
+      "millstone grit",
+      "green slate",
+      "river cobble",
+      "Cotswold oolite",
+      "Dales limestone"
+    ],
+    "feature": [
+      "a wall head",
+      "a stile",
+      "a plain run of copes",
+      "a cripple hole",
+      "a water smoot"
+    ],
+    "snag": [
+      "a running joint",
+      "stone left unused",
+      "a slipped cope",
+      "gravel hearting",
+      "too little batter"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 13,
+    "kinds": {
+      "or": 2,
+      "adjacent": 5,
+      "between": 1,
+      "immediately_before": 2,
+      "before": 1,
+      "gap": 2
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 54,
+    "tier_counts": {
+      "bijection": 26,
+      "order": 26,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Six wallers, a measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.\nFive wallers are involved. Determine each waller's finishing time, stone, feature and snag.\n- **Waller**: Mab Teasdale, Hilda Crowther, Ewart Beck, Ossian Baird and Clem Hartley.\n- **Finishing time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Stone**: Dales limestone, green slate, river cobble, Cotswold oolite and millstone grit.\n- **Feature built**: a cripple hole, a plain run of copes, a wall head, a water smoot and a stile.\n- **Snag**: stone left unused, a running joint, a slipped cope, gravel hearting and too little batter.\nEvery waller has a different finishing time, stone, feature and snag, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) The waller who builds in a cripple hole and 10am are exactly one hour apart in finishing time order, in one direction or the other. (b) The waller who is pulled up for too little batter and 8am are exactly one hour apart in finishing time order, in one direction or the other.",
+      "Mab Teasdale and 11am are exactly one hour apart in finishing time order, in one direction or the other.",
+      "10am falls somewhere between the waller who builds in a wall head and Clem Hartley in finishing time order.",
+      "The waller who works in Cotswold oolite is exactly one hour earlier than noon, with no finishing time in between.",
+      "At least one of the following holds, and possibly more than one: (a) The waller who works in Dales limestone and Mab Teasdale are exactly one hour apart in finishing time order, in one direction or the other. (b) The waller who builds in a stile works in green slate.",
+      "The waller who works in river cobble is earlier than Ossian Baird in finishing time order.",
+      "The waller who is pulled up for a running joint and Clem Hartley are exactly three hours apart in finishing time order.",
+      "The waller who works in green slate and Mab Teasdale are exactly one hour apart in finishing time order, in one direction or the other.",
+      "The waller who is pulled up for too little batter and the waller who works in millstone grit are exactly four hours apart in finishing time order.",
+      "The waller who works in green slate and Hilda Crowther are exactly one hour apart in finishing time order, in one direction or the other.",
+      "The waller who is pulled up for stone left unused and Hilda Crowther are exactly one hour apart in finishing time order, in one direction or the other.",
+      "Ewart Beck is exactly one hour earlier than the waller who is pulled up for a slipped cope, with no finishing time in between.",
+      "The waller who builds in a plain run of copes and the waller who works in green slate are exactly one hour apart in finishing time order, in one direction or the other."
+    ]
+  }
+}

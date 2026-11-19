@@ -1,0 +1,217 @@
+{
+  "pid": "3b108afe321d",
+  "title": "The Wind Is Free, the Field Is Not",
+  "theme": "kite",
+  "blurb": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.13,
+  "seed": 2026172762548,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172762548,
+    "theme": "kite"
+  },
+  "schema": {
+    "spine": "fee",
+    "entity_noun": "flier",
+    "entity_noun_plural": "fliers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "fee",
+        "label": "Entry fee",
+        "items": [
+          "$2",
+          "$4",
+          "$6",
+          "$8"
+        ],
+        "ordered": true,
+        "values": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "unit": "$",
+        "noun": "entry fee",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "fee step",
+        "verb": "pays"
+      },
+      {
+        "name": "flier",
+        "label": "Flier",
+        "items": [
+          "Ifeoma",
+          "Tansy",
+          "Gunnar",
+          "Kipling"
+        ],
+        "ordered": false,
+        "noun": "flier",
+        "subject": true
+      },
+      {
+        "name": "kite",
+        "label": "Kite",
+        "items": [
+          "a parafoil",
+          "a rokkaku fighter",
+          "a delta wing",
+          "a box kite"
+        ],
+        "ordered": false,
+        "noun": "kite",
+        "verb": "flies"
+      },
+      {
+        "name": "line",
+        "label": "Line",
+        "items": [
+          "nylon twine",
+          "fishing monofilament",
+          "parcel string",
+          "braided dacron"
+        ],
+        "ordered": false,
+        "noun": "line",
+        "verb": "uses"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "flier:Kipling",
+          "b": "line:parcel string"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "fee:$6",
+          "b": "kite:a box kite"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "fee:$4",
+          "b": "flier:Gunnar",
+          "c": "flier:Kipling"
+        },
+        {
+          "kind": "before",
+          "a": "kite:a delta wing",
+          "b": "flier:Kipling"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "fee:$4",
+          "b": "line:fishing monofilament",
+          "c": "line:nylon twine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "kite:a parafoil",
+          "b": "flier:Kipling",
+          "c": "flier:Tansy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "kite:a box kite",
+          "b": "line:nylon twine"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "fee": [
+      "$2",
+      "$4",
+      "$6",
+      "$8"
+    ],
+    "flier": [
+      "Gunnar",
+      "Tansy",
+      "Ifeoma",
+      "Kipling"
+    ],
+    "kite": [
+      "a delta wing",
+      "a box kite",
+      "a parafoil",
+      "a rokkaku fighter"
+    ],
+    "line": [
+      "fishing monofilament",
+      "braided dacron",
+      "nylon twine",
+      "parcel string"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 1,
+      "adjacent": 1,
+      "between": 3,
+      "before": 2
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 26,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 11,
+      "order": 13
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  },
+  "text": {
+    "intro": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.\nFour fliers are involved. Determine each flier's entry fee, kite and line.\n- **Flier**: Ifeoma, Tansy, Gunnar and Kipling.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6 and $8.\n- **Kite**: a parafoil, a rokkaku fighter, a delta wing and a box kite.\n- **Line**: nylon twine, fishing monofilament, parcel string and braided dacron.\nEvery flier has a different entry fee, kite and line, so within each category every item is used exactly once.",
+    "clues": [
+      "Kipling uses parcel string.",
+      "The flier who flies a box kite and $6 are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "$4 falls somewhere between Gunnar and Kipling in entry fee order. The flier who flies a delta wing is cheaper than Kipling in entry fee order.",
+      "$4 falls somewhere between the flier who uses fishing monofilament and the flier who uses nylon twine in entry fee order.",
+      "The flier who flies a parafoil falls somewhere between Kipling and Tansy in entry fee order.",
+      "The flier who flies a box kite is cheaper than the flier who uses nylon twine in entry fee order."
+    ]
+  }
+}

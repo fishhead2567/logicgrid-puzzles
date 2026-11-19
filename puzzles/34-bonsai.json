@@ -1,0 +1,293 @@
+{
+  "pid": "1085880a8d1d",
+  "title": "The Autumn Show at Kiyosumi",
+  "theme": "bonsai",
+  "blurb": "Six trees on six stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 8.7392,
+  "seed": 2026172944685,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172944685,
+    "theme": "bonsai"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "exhibitor",
+    "entity_noun_plural": "exhibitors",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Judged score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "judged score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "is awarded"
+      },
+      {
+        "name": "exhibitor",
+        "label": "Exhibitor",
+        "items": [
+          "Hiroshi Mita",
+          "Emi Tsuchida",
+          "Jun Kawabe",
+          "Takumi Ishii",
+          "Noriko Hase"
+        ],
+        "ordered": false,
+        "noun": "exhibitor",
+        "subject": true
+      },
+      {
+        "name": "style",
+        "label": "Style",
+        "items": [
+          "moyogi",
+          "chokkan",
+          "ikadabuki",
+          "bunjin",
+          "kengai"
+        ],
+        "ordered": false,
+        "noun": "style",
+        "verb": "shows"
+      },
+      {
+        "name": "species",
+        "label": "Species",
+        "items": [
+          "a hinoki cypress",
+          "a zelkova",
+          "a winged elm",
+          "a Japanese black pine",
+          "a Chinese quince"
+        ],
+        "ordered": false,
+        "noun": "species",
+        "verb": "has grown"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "points:64 points",
+          "b": "species:a zelkova"
+        },
+        {
+          "kind": "not_link",
+          "a": "points:64 points",
+          "b": "style:ikadabuki"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "points:67 points",
+          "b": "style:kengai"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "points:73 points",
+              "b": "style:moyogi"
+            },
+            {
+              "kind": "before",
+              "a": "exhibitor:Emi Tsuchida",
+              "b": "style:bunjin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "points:67 points",
+          "b": "species:a hinoki cypress",
+          "c": "style:ikadabuki"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "exhibitor:Jun Kawabe",
+          "b": "points:61 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "exhibitor:Hiroshi Mita",
+          "b": "style:chokkan"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "style:bunjin",
+          "b": "exhibitor:Emi Tsuchida"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "species:a Chinese quince",
+          "b": "exhibitor:Hiroshi Mita",
+          "c": "exhibitor:Takumi Ishii"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "species:a hinoki cypress",
+          "b": "style:chokkan"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "exhibitor:Emi Tsuchida",
+          "b": "species:a zelkova"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "exhibitor:Noriko Hase",
+          "b": "species:a Japanese black pine"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "exhibitor": [
+      "Hiroshi Mita",
+      "Jun Kawabe",
+      "Noriko Hase",
+      "Emi Tsuchida",
+      "Takumi Ishii"
+    ],
+    "style": [
+      "ikadabuki",
+      "bunjin",
+      "chokkan",
+      "moyogi",
+      "kengai"
+    ],
+    "species": [
+      "a winged elm",
+      "a Chinese quince",
+      "a zelkova",
+      "a hinoki cypress",
+      "a Japanese black pine"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 11,
+    "kinds": {
+      "immediately_before": 1,
+      "not_link": 1,
+      "before": 4,
+      "or": 1,
+      "between": 2,
+      "adjacent": 3
+    },
+    "positives": 0,
+    "compounds": 1
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 40,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 20,
+      "order": 18,
+      "disjunction": 1
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Six trees on six stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.\nFive exhibitors are involved. Determine each exhibitor's judged score, style and species.\n- **Exhibitor**: Hiroshi Mita, Emi Tsuchida, Jun Kawabe, Takumi Ishii and Noriko Hase.\n- **Judged score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Style**: moyogi, chokkan, ikadabuki, bunjin and kengai.\n- **Species**: a hinoki cypress, a zelkova, a winged elm, a Japanese black pine and a Chinese quince.\nEvery exhibitor has a different judged score, style and species, so within each category every item is used exactly once.",
+    "clues": [
+      "64 points is exactly one score step lower than the exhibitor who has grown a zelkova, with no judged score in between. The exhibitor who shows ikadabuki is not awarded 64 points.",
+      "The exhibitor who shows kengai is higher than 67 points in judged score order.",
+      "At least one of the following holds, and possibly more than one: (a) The exhibitor who shows moyogi and 73 points are exactly one score step apart in judged score order, in one direction or the other. (b) Emi Tsuchida is lower than the exhibitor who shows bunjin in judged score order.",
+      "67 points falls somewhere between the exhibitor who has grown a hinoki cypress and the exhibitor who shows ikadabuki in judged score order.",
+      "Jun Kawabe and 61 points are exactly one score step apart in judged score order, in one direction or the other.",
+      "Hiroshi Mita is lower than the exhibitor who shows chokkan in judged score order.",
+      "The exhibitor who shows bunjin is lower than Emi Tsuchida in judged score order.",
+      "The exhibitor who has grown a Chinese quince falls somewhere between Hiroshi Mita and Takumi Ishii in judged score order.",
+      "The exhibitor who has grown a hinoki cypress and the exhibitor who shows chokkan are exactly one score step apart in judged score order, in one direction or the other.",
+      "Emi Tsuchida and the exhibitor who has grown a zelkova are exactly one score step apart in judged score order, in one direction or the other.",
+      "Noriko Hase is lower than the exhibitor who has grown a Japanese black pine in judged score order."
+    ]
+  }
+}

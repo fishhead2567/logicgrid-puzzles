@@ -1,0 +1,430 @@
+{
+  "pid": "7e858d688302",
+  "title": "The Lakeshore Esports Bracket",
+  "theme": "esports",
+  "blurb": "The school esports club booked the library after hours. Six players, a double-elimination bracket, and a very long argument about seeding.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 16.6494,
+  "seed": 2026173047632,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173047632,
+    "theme": "esports"
+  },
+  "schema": {
+    "spine": "round",
+    "entity_noun": "player",
+    "entity_noun_plural": "players",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "round",
+        "label": "Exit round",
+        "items": [
+          "round one",
+          "round two",
+          "round three",
+          "round four",
+          "round five",
+          "round six"
+        ],
+        "ordered": true,
+        "noun": "exit round",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "round",
+        "verb": "is knocked out in"
+      },
+      {
+        "name": "player",
+        "label": "Player",
+        "items": [
+          "Gus Villalobos",
+          "Beau",
+          "Tyrell",
+          "Oksana",
+          "Saoirse",
+          "Mina"
+        ],
+        "ordered": false,
+        "noun": "player",
+        "subject": true
+      },
+      {
+        "name": "game",
+        "label": "Game",
+        "items": [
+          "the rhythm game",
+          "the soccer sim",
+          "the platformer",
+          "the kart racer",
+          "the puzzle brawler",
+          "the block-builder"
+        ],
+        "ordered": false,
+        "noun": "game",
+        "verb": "mains"
+      },
+      {
+        "name": "gear",
+        "label": "Gear",
+        "items": [
+          "an arcade stick",
+          "a wireless headset",
+          "a borrowed controller",
+          "a tournament pad",
+          "the club's old mouse",
+          "a split keyboard"
+        ],
+        "ordered": false,
+        "noun": "gear",
+        "verb": "plays with"
+      },
+      {
+        "name": "tag",
+        "label": "Tag",
+        "items": [
+          "Static",
+          "Marmalade",
+          "Downhill",
+          "Pocketwatch",
+          "Nine Lives",
+          "BlueHeron"
+        ],
+        "ordered": false,
+        "noun": "tag",
+        "verb": "goes by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "round:round three",
+          "b": "gear:a tournament pad",
+          "c": "gear:a wireless headset"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "game:the block-builder",
+          "b": "round:round four",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "game:the puzzle brawler",
+              "b": "round:round two"
+            },
+            {
+              "kind": "gap",
+              "a": "player:Gus Villalobos",
+              "b": "tag:Static",
+              "k": 4,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "player:Tyrell",
+          "b": "gear:an arcade stick",
+          "c": "round:round two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "before",
+            "a": "round:round one",
+            "b": "player:Oksana"
+          },
+          "y": {
+            "kind": "adjacent",
+            "a": "gear:a tournament pad",
+            "b": "player:Oksana"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "gear:the club's old mouse",
+          "b": "round:round one",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "adjacent",
+            "a": "player:Mina",
+            "b": "round:round three"
+          },
+          "y": {
+            "kind": "adjacent",
+            "a": "round:round three",
+            "b": "tag:Pocketwatch"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "game:the block-builder",
+          "b": "round:round six",
+          "c": "tag:Static"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "game:the block-builder",
+          "b": "round:round two",
+          "c": "tag:BlueHeron"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tag:BlueHeron",
+          "b": "player:Saoirse"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "game:the puzzle brawler",
+          "b": "player:Beau",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "tag:Nine Lives",
+          "b": "game:the platformer",
+          "c": "gear:a wireless headset"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "gear:an arcade stick",
+          "b": "player:Beau"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "game:the kart racer",
+              "b": "gear:an arcade stick"
+            },
+            {
+              "kind": "not_link",
+              "a": "gear:an arcade stick",
+              "b": "player:Saoirse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "gear:the club's old mouse",
+          "b": "tag:Downhill",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "game:the kart racer",
+          "b": "player:Mina"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "game:the soccer sim",
+          "b": "player:Beau"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "player:Beau",
+          "b": "gear:a borrowed controller",
+          "c": "gear:a wireless headset"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "round": [
+      "round one",
+      "round two",
+      "round three",
+      "round four",
+      "round five",
+      "round six"
+    ],
+    "player": [
+      "Oksana",
+      "Mina",
+      "Tyrell",
+      "Beau",
+      "Gus Villalobos",
+      "Saoirse"
+    ],
+    "game": [
+      "the kart racer",
+      "the soccer sim",
+      "the block-builder",
+      "the rhythm game",
+      "the platformer",
+      "the puzzle brawler"
+    ],
+    "gear": [
+      "the club's old mouse",
+      "a wireless headset",
+      "a split keyboard",
+      "a tournament pad",
+      "an arcade stick",
+      "a borrowed controller"
+    ],
+    "tag": [
+      "Static",
+      "Marmalade",
+      "Downhill",
+      "Nine Lives",
+      "BlueHeron",
+      "Pocketwatch"
+    ]
+  },
+  "stats": {
+    "atoms": 18,
+    "numbered_clues": 18,
+    "kinds": {
+      "between": 6,
+      "parity": 2,
+      "or": 2,
+      "if_then": 1,
+      "not_both": 1,
+      "immediately_before": 1,
+      "gap": 2,
+      "adjacent": 2,
+      "before": 1
+    },
+    "positives": 0,
+    "compounds": 4
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 89,
+    "tier_counts": {
+      "bijection": 40,
+      "order": 39,
+      "disjunction": 5,
+      "subset": 3,
+      "trial": 2
+    },
+    "trial_eliminations": 2,
+    "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The school esports club booked the library after hours. Six players, a double-elimination bracket, and a very long argument about seeding.\nSix players are involved. Determine each player's exit round, game, gear and tag.\n- **Player**: Gus Villalobos, Beau, Tyrell, Oksana, Saoirse and Mina.\n- **Exit round** (listed from earlier to later): round one, round two, round three, round four, round five and round six.\n- **Game**: the rhythm game, the soccer sim, the platformer, the kart racer, the puzzle brawler and the block-builder.\n- **Gear**: an arcade stick, a wireless headset, a borrowed controller, a tournament pad, the club's old mouse and a split keyboard.\n- **Tag**: Static, Marmalade, Downhill, Pocketwatch, Nine Lives and BlueHeron.\nEvery player has a different exit round, game, gear and tag, so within each category every item is used exactly once.",
+    "clues": [
+      "Round three falls somewhere between the player who plays with a tournament pad and the player who plays with a wireless headset in exit round order.",
+      "One of the player who mains the block-builder and round four sits at an odd-numbered exit round and the other at an even-numbered exit round.",
+      "At least one of the following holds, and possibly more than one: (a) The player who mains the puzzle brawler and round two are exactly one round apart in exit round order, in one direction or the other. (b) Gus Villalobos and the player who goes by Static are exactly four rounds apart in exit round order.",
+      "Tyrell falls somewhere between the player who plays with an arcade stick and round two in exit round order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) Oksana is later than round one in exit round order. (b) The player who plays with a tournament pad and Oksana are exactly one round apart in exit round order, in one direction or the other.",
+      "The player who plays with the club's old mouse and round one both sit at odd-numbered rounds or both at even-numbered rounds.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) Mina and round three are exactly one round apart in exit round order, in one direction or the other. (b) The player who goes by Pocketwatch and round three are exactly one round apart in exit round order, in one direction or the other.",
+      "The player who mains the block-builder falls somewhere between round six and the player who goes by Static in exit round order.",
+      "The player who mains the block-builder falls somewhere between round two and the player who goes by BlueHeron in exit round order.",
+      "The player who goes by BlueHeron is exactly one round earlier than Saoirse, with no exit round in between.",
+      "The player who mains the puzzle brawler and Beau are exactly two rounds apart in exit round order.",
+      "The player who goes by Nine Lives falls somewhere between the player who mains the platformer and the player who plays with a wireless headset in exit round order.",
+      "The player who plays with an arcade stick and Beau are exactly one round apart in exit round order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) The player who mains the kart racer plays with an arcade stick. (b) Saoirse does not play with an arcade stick.",
+      "The player who plays with the club's old mouse and the player who goes by Downhill are exactly two rounds apart in exit round order.",
+      "The player who mains the kart racer and Mina are exactly one round apart in exit round order, in one direction or the other.",
+      "The player who mains the soccer sim is earlier than Beau in exit round order.",
+      "Beau falls somewhere between the player who plays with a borrowed controller and the player who plays with a wireless headset in exit round order."
+    ]
+  }
+}

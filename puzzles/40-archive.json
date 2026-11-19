@@ -1,0 +1,275 @@
+{
+  "pid": "c10d27909278",
+  "title": "The Mislabelled Drawers",
+  "theme": "archive",
+  "blurb": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.7475,
+  "seed": 2026172992199,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026172992199,
+    "theme": "archive"
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "archivist",
+    "entity_noun_plural": "archivists",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "files on"
+      },
+      {
+        "name": "archivist",
+        "label": "Archivist",
+        "items": [
+          "Ms Castellano",
+          "Mr Ravensworth",
+          "Ms Okafor",
+          "Mr Pelletier",
+          "Dr Mwangi"
+        ],
+        "ordered": false,
+        "noun": "archivist",
+        "subject": true
+      },
+      {
+        "name": "holding",
+        "label": "Holding",
+        "items": [
+          "the harbour dredging reports",
+          "a folder of libel writs",
+          "a box of unopened wills",
+          "the lost property register",
+          "a set of tram timetables"
+        ],
+        "ordered": false,
+        "noun": "holding",
+        "verb": "catalogues"
+      },
+      {
+        "name": "damage",
+        "label": "Condition",
+        "items": [
+          "mouse-chewed",
+          "over-repaired with tape",
+          "fire-scorched",
+          "foxed",
+          "water-damaged"
+        ],
+        "ordered": false,
+        "noun": "condition",
+        "verb": "describes theirs as"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "damage:foxed",
+              "b": "shelf:the second shelf"
+            },
+            {
+              "kind": "parity",
+              "a": "damage:mouse-chewed",
+              "b": "shelf:the third shelf",
+              "same": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "immediately_before",
+              "a": "archivist:Mr Ravensworth",
+              "b": "shelf:the second shelf"
+            },
+            {
+              "kind": "link",
+              "a": "archivist:Dr Mwangi",
+              "b": "shelf:the fifth shelf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "holding:a box of unopened wills",
+          "b": "archivist:Mr Pelletier"
+        },
+        {
+          "kind": "not_link",
+          "a": "holding:a box of unopened wills",
+          "b": "shelf:the bottom shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "holding:the lost property register",
+          "b": "shelf:the second shelf",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "archivist:Dr Mwangi",
+          "b": "damage:water-damaged"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "damage:fire-scorched",
+          "b": "holding:a box of unopened wills",
+          "c": "holding:a set of tram timetables"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "archivist:Ms Okafor",
+          "b": "holding:a box of unopened wills"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "damage:over-repaired with tape",
+          "b": "holding:a folder of libel writs"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "archivist:Mr Pelletier",
+          "b": "holding:the harbour dredging reports"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "archivist": [
+      "Mr Ravensworth",
+      "Ms Okafor",
+      "Dr Mwangi",
+      "Mr Pelletier",
+      "Ms Castellano"
+    ],
+    "holding": [
+      "a set of tram timetables",
+      "a folder of libel writs",
+      "a box of unopened wills",
+      "the lost property register",
+      "the harbour dredging reports"
+    ],
+    "damage": [
+      "over-repaired with tape",
+      "fire-scorched",
+      "foxed",
+      "mouse-chewed",
+      "water-damaged"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 9,
+    "kinds": {
+      "or": 2,
+      "before": 3,
+      "not_link": 1,
+      "gap": 1,
+      "between": 1,
+      "adjacent": 2
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 48,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 24,
+      "order": 19,
+      "disjunction": 4
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.\nFive archivists are involved. Determine each archivist's shelf, holding and condition.\n- **Archivist**: Ms Castellano, Mr Ravensworth, Ms Okafor, Mr Pelletier and Dr Mwangi.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf and the fifth shelf.\n- **Holding**: the harbour dredging reports, a folder of libel writs, a box of unopened wills, the lost property register and a set of tram timetables.\n- **Condition**: mouse-chewed, over-repaired with tape, fire-scorched, foxed and water-damaged.\nEvery archivist has a different shelf, holding and condition, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) The archivist who describes theirs as foxed files on the second shelf. (b) One of the archivist who describes theirs as mouse-chewed and the third shelf sits at an odd-numbered shelf and the other at an even-numbered shelf.",
+      "At least one of the following holds, and possibly more than one: (a) Mr Ravensworth is exactly one shelf lower than the second shelf, with no shelf in between. (b) Dr Mwangi files on the fifth shelf.",
+      "The archivist who catalogues a box of unopened wills is lower than Mr Pelletier in shelf order. The archivist who catalogues a box of unopened wills does not file on the bottom shelf.",
+      "The archivist who catalogues the lost property register and the second shelf are exactly two shelves apart in shelf order.",
+      "Dr Mwangi is lower than the archivist who describes theirs as water-damaged in shelf order.",
+      "The archivist who describes theirs as fire-scorched falls somewhere between the archivist who catalogues a box of unopened wills and the archivist who catalogues a set of tram timetables in shelf order.",
+      "Ms Okafor and the archivist who catalogues a box of unopened wills are exactly one shelf apart in shelf order, in one direction or the other.",
+      "The archivist who describes theirs as over-repaired with tape is lower than the archivist who catalogues a folder of libel writs in shelf order.",
+      "Mr Pelletier and the archivist who catalogues the harbour dredging reports are exactly one shelf apart in shelf order, in one direction or the other."
+    ]
+  }
+}

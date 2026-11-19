@@ -1,0 +1,265 @@
+{
+  "pid": "117e699ee6a0",
+  "title": "The Great American Road Trip",
+  "theme": "road_trip",
+  "blurb": "Six families set out the same weekend, each for a different national park, each certain theirs is the better drive.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.355,
+  "seed": 2026172770467,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172770467,
+    "theme": "road_trip"
+  },
+  "schema": {
+    "spine": "distance",
+    "entity_noun": "driver",
+    "entity_noun_plural": "drivers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "distance",
+        "label": "Distance",
+        "items": [
+          "200 miles",
+          "300 miles",
+          "400 miles",
+          "500 miles",
+          "600 miles"
+        ],
+        "ordered": true,
+        "values": [
+          200,
+          300,
+          400,
+          500,
+          600
+        ],
+        "unit_suffix": " miles",
+        "noun": "distance",
+        "cmp_less": "shorter",
+        "cmp_more": "longer",
+        "step_noun": "hundred miles",
+        "verb": "covers"
+      },
+      {
+        "name": "driver",
+        "label": "Driver",
+        "items": [
+          "Anneke",
+          "Hector Salas",
+          "Roy Tubbs",
+          "Simone",
+          "Wendell"
+        ],
+        "ordered": false,
+        "noun": "driver",
+        "subject": true
+      },
+      {
+        "name": "park",
+        "label": "Park",
+        "items": [
+          "Olympic",
+          "the Badlands",
+          "Yellowstone",
+          "Acadia",
+          "the Great Smoky Mountains"
+        ],
+        "ordered": false,
+        "noun": "park",
+        "verb": "heads for"
+      },
+      {
+        "name": "ride",
+        "label": "Ride",
+        "items": [
+          "a minivan with a roof box",
+          "a hatchback packed to the roof",
+          "a station wagon",
+          "an old convertible",
+          "a rented camper"
+        ],
+        "ordered": false,
+        "noun": "ride",
+        "verb": "drives"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "distance:600 miles",
+          "b": "park:the Great Smoky Mountains"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "driver:Wendell",
+          "b": "distance:600 miles"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "driver:Simone",
+          "b": "ride:a hatchback packed to the roof"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "ride:a minivan with a roof box",
+          "b": "distance:300 miles",
+          "c": "distance:600 miles"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "distance:400 miles",
+          "b": "driver:Anneke",
+          "c": "driver:Hector Salas"
+        },
+        {
+          "kind": "adjacent",
+          "a": "distance:200 miles",
+          "b": "driver:Hector Salas"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "ride:an old convertible",
+          "b": "distance:400 miles"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "distance:200 miles",
+          "b": "park:Yellowstone"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "park:Acadia",
+          "b": "driver:Hector Salas"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "driver:Roy Tubbs",
+          "b": "park:the Badlands"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "ride:a rented camper",
+          "b": "park:the Great Smoky Mountains"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "distance": [
+      "200 miles",
+      "300 miles",
+      "400 miles",
+      "500 miles",
+      "600 miles"
+    ],
+    "driver": [
+      "Simone",
+      "Hector Salas",
+      "Roy Tubbs",
+      "Wendell",
+      "Anneke"
+    ],
+    "park": [
+      "Acadia",
+      "Yellowstone",
+      "Olympic",
+      "the Badlands",
+      "the Great Smoky Mountains"
+    ],
+    "ride": [
+      "a hatchback packed to the roof",
+      "an old convertible",
+      "a minivan with a roof box",
+      "a rented camper",
+      "a station wagon"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 9,
+    "kinds": {
+      "link": 2,
+      "immediately_before": 3,
+      "between": 2,
+      "adjacent": 1,
+      "before": 2,
+      "not_link": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 37,
+    "tier_counts": {
+      "direct": 5,
+      "bijection": 21,
+      "order": 11
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Six families set out the same weekend, each for a different national park, each certain theirs is the better drive.\nFive drivers are involved. Determine each driver's distance, park and ride.\n- **Driver**: Anneke, Hector Salas, Roy Tubbs, Simone and Wendell.\n- **Distance** (listed from shorter to longer): 200 miles, 300 miles, 400 miles, 500 miles and 600 miles.\n- **Park**: Olympic, the Badlands, Yellowstone, Acadia and the Great Smoky Mountains.\n- **Ride**: a minivan with a roof box, a hatchback packed to the roof, a station wagon, an old convertible and a rented camper.\nEvery driver has a different distance, park and ride, so within each category every item is used exactly once.",
+    "clues": [
+      "The driver who heads for the Great Smoky Mountains covers 600 miles. Wendell is exactly one hundred miles shorter than 600 miles, with no distance in between.",
+      "Simone drives a hatchback packed to the roof.",
+      "The driver who drives a minivan with a roof box falls somewhere between 300 miles and 600 miles in distance order.",
+      "400 miles falls somewhere between Anneke and Hector Salas in distance order. Hector Salas and 200 miles are exactly one hundred miles apart in distance order, in one direction or the other.",
+      "The driver who drives an old convertible is shorter than 400 miles in distance order.",
+      "200 miles is exactly one hundred miles shorter than the driver who heads for Yellowstone, with no distance in between.",
+      "The driver who heads for Acadia is shorter than Hector Salas in distance order.",
+      "Roy Tubbs does not head for the Badlands.",
+      "The driver who drives a rented camper is exactly one hundred miles shorter than the driver who heads for the Great Smoky Mountains, with no distance in between."
+    ]
+  }
+}

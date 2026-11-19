@@ -1,0 +1,206 @@
+{
+  "pid": "b143dae5487e",
+  "title": "Field Day on Barrow Hill",
+  "theme": "hamradio",
+  "blurb": "A club field day spread over a week, one operator a night, and a generator that has its own opinions.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.62,
+  "seed": 2026172754629,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172754629,
+    "theme": "hamradio"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "operator",
+    "entity_noun_plural": "operators",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Night",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "ordered": true,
+        "noun": "night",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "operates on"
+      },
+      {
+        "name": "operator",
+        "label": "Operator",
+        "items": [
+          "Horace",
+          "Yusuf",
+          "Clementine",
+          "Bartholomew",
+          "Nkem"
+        ],
+        "ordered": false,
+        "noun": "operator",
+        "subject": true
+      },
+      {
+        "name": "mode",
+        "label": "Mode",
+        "items": [
+          "CW",
+          "RTTY",
+          "FT8",
+          "AM",
+          "SSB"
+        ],
+        "ordered": false,
+        "noun": "mode",
+        "verb": "operates"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Friday",
+          "b": "mode:SSB"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Monday",
+          "b": "mode:RTTY"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "day:Wednesday",
+          "b": "operator:Nkem"
+        },
+        {
+          "kind": "adjacent",
+          "a": "day:Wednesday",
+          "b": "mode:AM"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "operator:Horace",
+          "b": "day:Tuesday"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "operator:Horace",
+          "b": "mode:CW"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "mode:FT8",
+          "b": "operator:Yusuf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "operator:Bartholomew",
+          "b": "mode:SSB"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "operator": [
+      "Horace",
+      "Yusuf",
+      "Clementine",
+      "Bartholomew",
+      "Nkem"
+    ],
+    "mode": [
+      "RTTY",
+      "CW",
+      "FT8",
+      "AM",
+      "SSB"
+    ]
+  },
+  "stats": {
+    "atoms": 8,
+    "numbered_clues": 7,
+    "kinds": {
+      "link": 2,
+      "not_link": 1,
+      "adjacent": 2,
+      "before": 1,
+      "immediately_before": 2
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 20,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 12,
+      "order": 5
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "A club field day spread over a week, one operator a night, and a generator that has its own opinions.\nFive operators are involved. Determine each operator's night and mode.\n- **Operator**: Horace, Yusuf, Clementine, Bartholomew and Nkem.\n- **Night** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Mode**: CW, RTTY, FT8, AM and SSB.\nEvery operator has a different night and mode, so within each category every item is used exactly once.",
+    "clues": [
+      "The operator who operates SSB operates on Friday.",
+      "The operator who operates RTTY operates on Monday.",
+      "Nkem does not operate on Wednesday. The operator who operates AM and Wednesday are exactly one day apart in night order, in one direction or the other.",
+      "Horace is earlier than Tuesday in night order.",
+      "Horace is exactly one day earlier than the operator who operates CW, with no night in between.",
+      "The operator who operates FT8 and Yusuf are exactly one day apart in night order, in one direction or the other.",
+      "Bartholomew is exactly one day earlier than the operator who operates SSB, with no night in between."
+    ]
+  }
+}
