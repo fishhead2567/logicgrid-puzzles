@@ -2,7 +2,7 @@
   "pid": "2e37a59d12c2",
   "title": "Trivia Night at the Public Library",
   "theme": "trivia_night",
-  "blurb": "The library runs trivia on the first Thursday of the month. Six regulars, six team names, and a scorekeeper who will not be hurried.",
+  "blurb": "The library runs trivia on the first Thursday of the month, and the scorekeeper will not be hurried.",
   "profile": "moderate",
   "rating": 4,
   "score": 5.515,
@@ -238,7 +238,7 @@
     "unknown_cells": 15
   },
   "text": {
-    "intro": "The library runs trivia on the first Thursday of the month. Six regulars, six team names, and a scorekeeper who will not be hurried.\nFive players are involved. Determine each player's score, team and category.\n- **Player**: Takeshi, Priscilla, Darby, Vikram and Odalys.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Team**: the Quizzard of Oz, Nacho Average Team, the Wi-Fighters, the Smarty Pants and the Library Cards.\n- **Category**: world flags, dinosaurs, 90s cartoons, one-hit wonders and state capitals.\nEvery player has a different score, team and category, so within each category every item is used exactly once.",
+    "intro": "The library runs trivia on the first Thursday of the month, and the scorekeeper will not be hurried.\nFive players are involved. Determine each player's score, team and category.\n- **Player**: Takeshi, Priscilla, Darby, Vikram and Odalys.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Team**: the Quizzard of Oz, Nacho Average Team, the Wi-Fighters, the Smarty Pants and the Library Cards.\n- **Category**: world flags, dinosaurs, 90s cartoons, one-hit wonders and state capitals.\nEvery player has a different score, team and category, so within each category every item is used exactly once.",
     "clues": [
       "Takeshi scores 70 points.",
       "The player who takes the questions on dinosaurs falls somewhere between 61 points and the player who plays for Nacho Average Team in score order.",

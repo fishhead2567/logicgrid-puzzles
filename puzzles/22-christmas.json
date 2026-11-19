@@ -2,7 +2,7 @@
   "pid": "f3ab9d685a55",
   "title": "Christmas Morning on Lark Street",
   "theme": "christmas",
-  "blurb": "Six kids, six wish lists, and one set of parents trying very hard to remember who asked for what.",
+  "blurb": "A pile of wish lists, and one set of parents trying very hard to remember who asked for what.",
   "profile": "moderate",
   "rating": 4,
   "score": 5.515,
@@ -240,7 +240,7 @@
     "unknown_cells": 15
   },
   "text": {
-    "intro": "Six kids, six wish lists, and one set of parents trying very hard to remember who asked for what.\nFive kids are involved. Determine each kid's age, toy and snack.\n- **Kid**: Frankie, Deshawn, Esperanza, Alton and Margo.\n- **Age** (listed from younger to older): 8 years old, 9 years old, 10 years old, 11 years old and 12 years old.\n- **Toy**: an electric keyboard, a pink skateboard, a robot dog, a bug-collecting kit and a karaoke machine.\n- **Snack**: carrot sticks, oatmeal cookies, peanut butter crackers, sugar cookies and gingerbread.\nEvery kid has a different age, toy and snack, so within each category every item is used exactly once.",
+    "intro": "A pile of wish lists, and one set of parents trying very hard to remember who asked for what.\nFive kids are involved. Determine each kid's age, toy and snack.\n- **Kid**: Frankie, Deshawn, Esperanza, Alton and Margo.\n- **Age** (listed from younger to older): 8 years old, 9 years old, 10 years old, 11 years old and 12 years old.\n- **Toy**: an electric keyboard, a pink skateboard, a robot dog, a bug-collecting kit and a karaoke machine.\n- **Snack**: carrot sticks, oatmeal cookies, peanut butter crackers, sugar cookies and gingerbread.\nEvery kid has a different age, toy and snack, so within each category every item is used exactly once.",
     "clues": [
       "Frankie leaves out peanut butter crackers.",
       "The kid who leaves out carrot sticks and 9 years old are exactly one year apart in age order, in one direction or the other.",

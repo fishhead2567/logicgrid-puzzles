@@ -2,7 +2,7 @@
   "pid": "7e858d688302",
   "title": "The Lakeshore Esports Bracket",
   "theme": "esports",
-  "blurb": "The school esports club booked the library after hours. Six players, a double-elimination bracket, and a very long argument about seeding.",
+  "blurb": "The school esports club booked the library after hours: a double-elimination bracket, and a very long argument about seeding.",
   "profile": "expert",
   "rating": 7,
   "score": 16.6494,
@@ -405,7 +405,7 @@
     "unknown_cells": 24
   },
   "text": {
-    "intro": "The school esports club booked the library after hours. Six players, a double-elimination bracket, and a very long argument about seeding.\nSix players are involved. Determine each player's exit round, game, gear and tag.\n- **Player**: Gus Villalobos, Beau, Tyrell, Oksana, Saoirse and Mina.\n- **Exit round** (listed from earlier to later): round one, round two, round three, round four, round five and round six.\n- **Game**: the rhythm game, the soccer sim, the platformer, the kart racer, the puzzle brawler and the block-builder.\n- **Gear**: an arcade stick, a wireless headset, a borrowed controller, a tournament pad, the club's old mouse and a split keyboard.\n- **Tag**: Static, Marmalade, Downhill, Pocketwatch, Nine Lives and BlueHeron.\nEvery player has a different exit round, game, gear and tag, so within each category every item is used exactly once.",
+    "intro": "The school esports club booked the library after hours: a double-elimination bracket, and a very long argument about seeding.\nSix players are involved. Determine each player's exit round, game, gear and tag.\n- **Player**: Gus Villalobos, Beau, Tyrell, Oksana, Saoirse and Mina.\n- **Exit round** (listed from earlier to later): round one, round two, round three, round four, round five and round six.\n- **Game**: the rhythm game, the soccer sim, the platformer, the kart racer, the puzzle brawler and the block-builder.\n- **Gear**: an arcade stick, a wireless headset, a borrowed controller, a tournament pad, the club's old mouse and a split keyboard.\n- **Tag**: Static, Marmalade, Downhill, Pocketwatch, Nine Lives and BlueHeron.\nEvery player has a different exit round, game, gear and tag, so within each category every item is used exactly once.",
     "clues": [
       "Round three falls somewhere between the player who plays with a tournament pad and the player who plays with a wireless headset in exit round order.",
       "One of the player who mains the block-builder and round four sits at an odd-numbered exit round and the other at an even-numbered exit round.",

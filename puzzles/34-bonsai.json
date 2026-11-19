@@ -2,7 +2,7 @@
   "pid": "1085880a8d1d",
   "title": "The Autumn Show at Kiyosumi",
   "theme": "bonsai",
-  "blurb": "Six trees on six stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.",
+  "blurb": "Trees on stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.",
   "profile": "hard",
   "rating": 5,
   "score": 8.7392,
@@ -275,7 +275,7 @@
     "unknown_cells": 15
   },
   "text": {
-    "intro": "Six trees on six stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.\nFive exhibitors are involved. Determine each exhibitor's judged score, style and species.\n- **Exhibitor**: Hiroshi Mita, Emi Tsuchida, Jun Kawabe, Takumi Ishii and Noriko Hase.\n- **Judged score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Style**: moyogi, chokkan, ikadabuki, bunjin and kengai.\n- **Species**: a hinoki cypress, a zelkova, a winged elm, a Japanese black pine and a Chinese quince.\nEvery exhibitor has a different judged score, style and species, so within each category every item is used exactly once.",
+    "intro": "Trees on stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.\nFive exhibitors are involved. Determine each exhibitor's judged score, style and species.\n- **Exhibitor**: Hiroshi Mita, Emi Tsuchida, Jun Kawabe, Takumi Ishii and Noriko Hase.\n- **Judged score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Style**: moyogi, chokkan, ikadabuki, bunjin and kengai.\n- **Species**: a hinoki cypress, a zelkova, a winged elm, a Japanese black pine and a Chinese quince.\nEvery exhibitor has a different judged score, style and species, so within each category every item is used exactly once.",
     "clues": [
       "64 points is exactly one score step lower than the exhibitor who has grown a zelkova, with no judged score in between. The exhibitor who shows ikadabuki is not awarded 64 points.",
       "The exhibitor who shows kengai is higher than 67 points in judged score order.",

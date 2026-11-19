@@ -2,7 +2,7 @@
   "pid": "adaa7e609ef1",
   "title": "The Pomace and the Prize",
   "theme": "cider",
-  "blurb": "Six makers press in six different months and each is privately certain the others have let theirs go to vinegar.",
+  "blurb": "Every maker presses in a different month, and each is privately certain the others have let theirs go to vinegar.",
   "profile": "easy",
   "rating": 3,
   "score": 4.73,
@@ -193,7 +193,7 @@
     "unknown_cells": 12
   },
   "text": {
-    "intro": "Six makers press in six different months and each is privately certain the others have let theirs go to vinegar.\nFour makers are involved. Determine each maker's pressing month, vessel and fault.\n- **Maker**: Silas Vane, Bryony, Jethro and Araminta.\n- **Pressing month** (listed from earlier to later): January, February, March and April.\n- **Vessel**: a sherry butt, a rum cask, a stainless tank and an oak hogshead.\n- **Fault**: a stuck ferment, sulphur, nothing detectable and acetification.\nEvery maker has a different pressing month, vessel and fault, so within each category every item is used exactly once.",
+    "intro": "Every maker presses in a different month, and each is privately certain the others have let theirs go to vinegar.\nFour makers are involved. Determine each maker's pressing month, vessel and fault.\n- **Maker**: Silas Vane, Bryony, Jethro and Araminta.\n- **Pressing month** (listed from earlier to later): January, February, March and April.\n- **Vessel**: a sherry butt, a rum cask, a stainless tank and an oak hogshead.\n- **Fault**: a stuck ferment, sulphur, nothing detectable and acetification.\nEvery maker has a different pressing month, vessel and fault, so within each category every item is used exactly once.",
     "clues": [
       "The maker who is accused of acetification presses in January.",
       "Bryony presses in April.",

@@ -2,7 +2,7 @@
   "pid": "84157d3818a1",
   "title": "The Build Server Contest",
   "theme": "build_server",
-  "blurb": "A creative-mode server, one weekend, and six builders who all swore they would stay under the block limit.",
+  "blurb": "A creative-mode server, one weekend, and a block limit everybody swore they would stay under.",
   "profile": "easy",
   "rating": 3,
   "score": 4.62,
@@ -187,7 +187,7 @@
     "unknown_cells": 10
   },
   "text": {
-    "intro": "A creative-mode server, one weekend, and six builders who all swore they would stay under the block limit.\nFive builders are involved. Determine each builder's score and biome.\n- **Builder**: Milo, Thandiwe, Keiko, Nadine and Rafferty.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Biome**: a jungle, a snowy tundra, a badlands mesa, a cherry grove and a mushroom field.\nEvery builder has a different score and biome, so within each category every item is used exactly once.",
+    "intro": "A creative-mode server, one weekend, and a block limit everybody swore they would stay under.\nFive builders are involved. Determine each builder's score and biome.\n- **Builder**: Milo, Thandiwe, Keiko, Nadine and Rafferty.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Biome**: a jungle, a snowy tundra, a badlands mesa, a cherry grove and a mushroom field.\nEvery builder has a different score and biome, so within each category every item is used exactly once.",
     "clues": [
       "70 points is exactly one score step lower than Thandiwe, with no score in between. Nadine scores 70 points.",
       "Milo scores 61 points. The builder who builds in a badlands mesa falls somewhere between Milo and Rafferty in score order.",

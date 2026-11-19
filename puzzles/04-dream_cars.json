@@ -2,7 +2,7 @@
   "pid": "f5db7c635d5e",
   "title": "The Dream Garage",
   "theme": "dream_cars",
-  "blurb": "Six kids turned loose at the auto show, each one certain they have found the only car worth owning.",
+  "blurb": "Kids turned loose at the auto show, each one certain they have found the only car worth owning.",
   "profile": "gentle",
   "rating": 2,
   "score": 4.14,
@@ -189,7 +189,7 @@
     "unknown_cells": 10
   },
   "text": {
-    "intro": "Six kids turned loose at the auto show, each one certain they have found the only car worth owning.\nFive kids are involved. Determine each kid's top speed and paint.\n- **Kid**: Harriet, Imani, Svetlana, Cormac and Jalen.\n- **Top speed** (listed from slower to faster): 120 mph, 130 mph, 140 mph, 150 mph and 160 mph.\n- **Paint**: candy-apple red, sea-foam green, burnt orange, matte black and deep purple.\nEvery kid has a different top speed and paint, so within each category every item is used exactly once.",
+    "intro": "Kids turned loose at the auto show, each one certain they have found the only car worth owning.\nFive kids are involved. Determine each kid's top speed and paint.\n- **Kid**: Harriet, Imani, Svetlana, Cormac and Jalen.\n- **Top speed** (listed from slower to faster): 120 mph, 130 mph, 140 mph, 150 mph and 160 mph.\n- **Paint**: candy-apple red, sea-foam green, burnt orange, matte black and deep purple.\nEvery kid has a different top speed and paint, so within each category every item is used exactly once.",
     "clues": [
       "The kid who picks candy-apple red wants a car that does 160 mph.",
       "Jalen wants a car that does 130 mph.",

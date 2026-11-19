@@ -2,7 +2,7 @@
   "pid": "117e699ee6a0",
   "title": "The Great American Road Trip",
   "theme": "road_trip",
-  "blurb": "Six families set out the same weekend, each for a different national park, each certain theirs is the better drive.",
+  "blurb": "Everybody set out the same weekend, each for a different national park, each certain theirs is the better drive.",
   "profile": "easy",
   "rating": 3,
   "score": 5.355,
@@ -249,7 +249,7 @@
     "unknown_cells": 15
   },
   "text": {
-    "intro": "Six families set out the same weekend, each for a different national park, each certain theirs is the better drive.\nFive drivers are involved. Determine each driver's distance, park and ride.\n- **Driver**: Anneke, Hector Salas, Roy Tubbs, Simone and Wendell.\n- **Distance** (listed from shorter to longer): 200 miles, 300 miles, 400 miles, 500 miles and 600 miles.\n- **Park**: Olympic, the Badlands, Yellowstone, Acadia and the Great Smoky Mountains.\n- **Ride**: a minivan with a roof box, a hatchback packed to the roof, a station wagon, an old convertible and a rented camper.\nEvery driver has a different distance, park and ride, so within each category every item is used exactly once.",
+    "intro": "Everybody set out the same weekend, each for a different national park, each certain theirs is the better drive.\nFive drivers are involved. Determine each driver's distance, park and ride.\n- **Driver**: Anneke, Hector Salas, Roy Tubbs, Simone and Wendell.\n- **Distance** (listed from shorter to longer): 200 miles, 300 miles, 400 miles, 500 miles and 600 miles.\n- **Park**: Olympic, the Badlands, Yellowstone, Acadia and the Great Smoky Mountains.\n- **Ride**: a minivan with a roof box, a hatchback packed to the roof, a station wagon, an old convertible and a rented camper.\nEvery driver has a different distance, park and ride, so within each category every item is used exactly once.",
     "clues": [
       "The driver who heads for the Great Smoky Mountains covers 600 miles. Wendell is exactly one hundred miles shorter than 600 miles, with no distance in between.",
       "Simone drives a hatchback packed to the roof.",

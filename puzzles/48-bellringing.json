@@ -2,7 +2,7 @@
   "pid": "5c510f2405c0",
   "title": "The Quarter-Peal at St Botolph's",
   "theme": "bellringing",
-  "blurb": "Six ringers, six rounds of the Tuesday practice, and a tower captain keeping a ledger of everyone's mistakes.",
+  "blurb": "The Tuesday practice, and a tower captain keeping a ledger of everyone's mistakes.",
   "profile": "expert",
   "rating": 7,
   "score": 16.2978,
@@ -376,7 +376,7 @@
     "unknown_cells": 24
   },
   "text": {
-    "intro": "Six ringers, six rounds of the Tuesday practice, and a tower captain keeping a ledger of everyone's mistakes.\nSix ringers are involved. Determine each ringer's round, method, bell and slip.\n- **Ringer**: Lavinia, Dorcas, Ambrose, Fenwick, Osbert and Prudence.\n- **Round** (listed from earlier to later): round one, round two, round three, round four, round five and round six.\n- **Method**: Cambridge Surprise Minor, Stedman Caters, Plain Bob Major, Grandsire Doubles, Plain Bob Minor and Grandsire Triples.\n- **Bell**: the tenor, the fifth, the sharp second, the second, the third and the fourth.\n- **Slip**: an early snap lead, nothing at all, a missed dodge, a fired shot, going methodless and a clipped backstroke.\nEvery ringer has a different round, method, bell and slip, so within each category every item is used exactly once.",
+    "intro": "The Tuesday practice, and a tower captain keeping a ledger of everyone's mistakes.\nSix ringers are involved. Determine each ringer's round, method, bell and slip.\n- **Ringer**: Lavinia, Dorcas, Ambrose, Fenwick, Osbert and Prudence.\n- **Round** (listed from earlier to later): round one, round two, round three, round four, round five and round six.\n- **Method**: Cambridge Surprise Minor, Stedman Caters, Plain Bob Major, Grandsire Doubles, Plain Bob Minor and Grandsire Triples.\n- **Bell**: the tenor, the fifth, the sharp second, the second, the third and the fourth.\n- **Slip**: an early snap lead, nothing at all, a missed dodge, a fired shot, going methodless and a clipped backstroke.\nEvery ringer has a different round, method, bell and slip, so within each category every item is used exactly once.",
     "clues": [
       "The ringer who calls Plain Bob Major falls somewhere between round six and round three in round order.",
       "The ringer who takes the fourth is earlier than round four in round order. The ringer who calls Grandsire Triples is later than round four in round order.",

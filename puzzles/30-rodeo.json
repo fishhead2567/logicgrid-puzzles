@@ -2,7 +2,7 @@
   "pid": "8beb98920a3f",
   "title": "The Cutbank County Rodeo",
   "theme": "rodeo",
-  "blurb": "Six riders, six entry fees paid in cash at the gate, and a scoreboard that nobody trusts.",
+  "blurb": "Entry fees paid in cash at the gate, and a scoreboard that nobody trusts.",
   "profile": "moderate",
   "rating": 4,
   "score": 5.515,
@@ -244,7 +244,7 @@
     "unknown_cells": 15
   },
   "text": {
-    "intro": "Six riders, six entry fees paid in cash at the gate, and a scoreboard that nobody trusts.\nFive riders are involved. Determine each rider's entry fee, animal and outcome.\n- **Rider**: Cody Vance, Buck Jessup, Dalton Reese, Roselle Kerr and Earlene Tate.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Stock drawn**: Brimstone, Half Past Three, Copper Penny, Little Sister and Tumbleweed.\n- **Outcome**: a slap of the free hand, a broken barrier, a re-ride, a disqualification and a clean ride.\nEvery rider has a different entry fee, animal and outcome, so within each category every item is used exactly once.",
+    "intro": "Entry fees paid in cash at the gate, and a scoreboard that nobody trusts.\nFive riders are involved. Determine each rider's entry fee, animal and outcome.\n- **Rider**: Cody Vance, Buck Jessup, Dalton Reese, Roselle Kerr and Earlene Tate.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Stock drawn**: Brimstone, Half Past Three, Copper Penny, Little Sister and Tumbleweed.\n- **Outcome**: a slap of the free hand, a broken barrier, a re-ride, a disqualification and a clean ride.\nEvery rider has a different entry fee, animal and outcome, so within each category every item is used exactly once.",
     "clues": [
       "The rider who finishes with a slap of the free hand is cheaper than Earlene Tate in entry fee order. Earlene Tate draws Copper Penny.",
       "The rider who draws Half Past Three and $4 are exactly one fee step apart in entry fee order, in one direction or the other.",

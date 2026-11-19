@@ -2,7 +2,7 @@
   "pid": "e60d8235504a",
   "title": "The Jobbing Shop on Dyer's Row",
   "theme": "letterpress",
-  "blurb": "A jobbing print shop with six compositors, six quoted prices and one hell-box filling up faster than anybody will admit to.",
+  "blurb": "A jobbing print shop where every job has its quoted price, and one hell-box filling up faster than anybody will admit to.",
   "profile": "gentle",
   "rating": 1,
   "score": 3.97,
@@ -166,7 +166,7 @@
     "unknown_cells": 8
   },
   "text": {
-    "intro": "A jobbing print shop with six compositors, six quoted prices and one hell-box filling up faster than anybody will admit to.\nFour compositors are involved. Determine each compositor's quoted price and job.\n- **Compositor**: Harriet Lisle, Ned Ashby, Winifred Oakes and Alfred Nunn.\n- **Quoted price** (listed from cheaper to dearer): $3, $5, $7 and $9.\n- **Job**: a parish newsletter, a regatta programme, an auction bill and a wedding order of service.\nEvery compositor has a different quoted price and job, so within each category every item is used exactly once.",
+    "intro": "A jobbing print shop where every job has its quoted price, and one hell-box filling up faster than anybody will admit to.\nFour compositors are involved. Determine each compositor's quoted price and job.\n- **Compositor**: Harriet Lisle, Ned Ashby, Winifred Oakes and Alfred Nunn.\n- **Quoted price** (listed from cheaper to dearer): $3, $5, $7 and $9.\n- **Job**: a parish newsletter, a regatta programme, an auction bill and a wedding order of service.\nEvery compositor has a different quoted price and job, so within each category every item is used exactly once.",
     "clues": [
       "The compositor who is setting a regatta programme quotes $7.",
       "Winifred Oakes quotes $5.",

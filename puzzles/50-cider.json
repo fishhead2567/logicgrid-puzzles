@@ -2,7 +2,7 @@
   "pid": "c9fcbda5e771",
   "title": "The Pomace and the Prize",
   "theme": "cider",
-  "blurb": "Six makers press in six different months and each is privately certain the others have let theirs go to vinegar.",
+  "blurb": "Every maker presses in a different month, and each is privately certain the others have let theirs go to vinegar.",
   "profile": "expert",
   "rating": 7,
   "score": 17.7169,
@@ -429,7 +429,7 @@
     "unknown_cells": 24
   },
   "text": {
-    "intro": "Six makers press in six different months and each is privately certain the others have let theirs go to vinegar.\nSix makers are involved. Determine each maker's pressing month, apple, vessel and fault.\n- **Maker**: Petroc, Silas Vane, Araminta, Bryony, Morwenna and Jethro.\n- **Pressing month** (listed from earlier to later): January, February, March, April, May and June.\n- **Apple**: Kingston Black, Browns Apple, Yarlington Mill, Foxwhelp, Dabinett and Harry Masters Jersey.\n- **Vessel**: a sherry butt, a glass demijohn, a stainless tank, an earthenware jar, an oak hogshead and a rum cask.\n- **Fault**: mousiness, sulphur, ropiness, a framboise note, acetification and nothing detectable.\nEvery maker has a different pressing month, apple, vessel and fault, so within each category every item is used exactly once.",
+    "intro": "Every maker presses in a different month, and each is privately certain the others have let theirs go to vinegar.\nSix makers are involved. Determine each maker's pressing month, apple, vessel and fault.\n- **Maker**: Petroc, Silas Vane, Araminta, Bryony, Morwenna and Jethro.\n- **Pressing month** (listed from earlier to later): January, February, March, April, May and June.\n- **Apple**: Kingston Black, Browns Apple, Yarlington Mill, Foxwhelp, Dabinett and Harry Masters Jersey.\n- **Vessel**: a sherry butt, a glass demijohn, a stainless tank, an earthenware jar, an oak hogshead and a rum cask.\n- **Fault**: mousiness, sulphur, ropiness, a framboise note, acetification and nothing detectable.\nEvery maker has a different pressing month, apple, vessel and fault, so within each category every item is used exactly once.",
     "clues": [
       "At least one of the following holds, and possibly more than one: (a) Silas Vane ferments in an oak hogshead. (b) The maker who ferments in an oak hogshead presses in June.",
       "The maker who ferments in an earthenware jar and February are exactly three months apart in pressing month order.",

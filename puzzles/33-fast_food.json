@@ -2,7 +2,7 @@
   "pid": "caced914c28a",
   "title": "The Food Court Standoff",
   "theme": "fast_food",
-  "blurb": "Six friends, one food court, and a shared conviction that everybody else ordered wrong.",
+  "blurb": "One food court, and a shared conviction that everybody else ordered wrong.",
   "profile": "hard",
   "rating": 6,
   "score": 9.7475,
@@ -267,7 +267,7 @@
     "unknown_cells": 15
   },
   "text": {
-    "intro": "Six friends, one food court, and a shared conviction that everybody else ordered wrong.\nFive friends are involved. Determine each friend's total, stand and drink.\n- **Friend**: Paloma, Colton, Hank, Reggie and Dmitri.\n- **Total** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Stand**: Sub Stop, the Chicken Coop, Burger Barn, Taco Tower and Pizza Wheel.\n- **Drink**: an iced tea, a chocolate shake, just water, a lemonade and a root beer.\nEvery friend has a different total, stand and drink, so within each category every item is used exactly once.",
+    "intro": "One food court, and a shared conviction that everybody else ordered wrong.\nFive friends are involved. Determine each friend's total, stand and drink.\n- **Friend**: Paloma, Colton, Hank, Reggie and Dmitri.\n- **Total** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Stand**: Sub Stop, the Chicken Coop, Burger Barn, Taco Tower and Pizza Wheel.\n- **Drink**: an iced tea, a chocolate shake, just water, a lemonade and a root beer.\nEvery friend has a different total, stand and drink, so within each category every item is used exactly once.",
     "clues": [
       "The friend who drinks an iced tea is exactly one price step cheaper than $9, with no total in between.",
       "The friend who eats at Burger Barn is exactly one price step cheaper than $11, with no total in between.",

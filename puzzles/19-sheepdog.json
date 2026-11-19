@@ -2,7 +2,7 @@
   "pid": "b30fe4d51b38",
   "title": "The Clun Forest Trials",
   "theme": "sheepdog",
-  "blurb": "A hillside, six handlers, and a judge who deducts for a wide outrun with the enthusiasm of a man settling an old score.",
+  "blurb": "A hillside, a flock with its own ideas, and a judge who deducts for a wide outrun with the enthusiasm of someone settling an old score.",
   "profile": "moderate",
   "rating": 4,
   "score": 5.515,
@@ -239,7 +239,7 @@
     "unknown_cells": 15
   },
   "text": {
-    "intro": "A hillside, six handlers, and a judge who deducts for a wide outrun with the enthusiasm of a man settling an old score.\nFive handlers are involved. Determine each handler's score, dog and flock.\n- **Handler**: Idris, Huw Pryce, Nerys, Eiddwen and Constance.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Dog**: Tweed, Fly, Gyp, Bute and Moss.\n- **Flock**: Herdwicks, Dalesbreds, Cheviots, Beulahs and Rough Fells.\nEvery handler has a different score, dog and flock, so within each category every item is used exactly once.",
+    "intro": "A hillside, a flock with its own ideas, and a judge who deducts for a wide outrun with the enthusiasm of someone settling an old score.\nFive handlers are involved. Determine each handler's score, dog and flock.\n- **Handler**: Idris, Huw Pryce, Nerys, Eiddwen and Constance.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Dog**: Tweed, Fly, Gyp, Bute and Moss.\n- **Flock**: Herdwicks, Dalesbreds, Cheviots, Beulahs and Rough Fells.\nEvery handler has a different score, dog and flock, so within each category every item is used exactly once.",
     "clues": [
       "The handler who gathers Beulahs scores 64 points.",
       "Nerys falls somewhere between the handler who runs Tweed and 67 points in score order.",

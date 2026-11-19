@@ -2,7 +2,7 @@
   "pid": "3321b1f9e67c",
   "title": "The Walling Match at Gunnerside",
   "theme": "drystone",
-  "blurb": "Six wallers, a measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.",
+  "blurb": "A measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.",
   "profile": "hard",
   "rating": 6,
   "score": 9.8372,
@@ -315,7 +315,7 @@
     "unknown_cells": 20
   },
   "text": {
-    "intro": "Six wallers, a measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.\nFive wallers are involved. Determine each waller's finishing time, stone, feature and snag.\n- **Waller**: Mab Teasdale, Hilda Crowther, Ewart Beck, Ossian Baird and Clem Hartley.\n- **Finishing time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Stone**: Dales limestone, green slate, river cobble, Cotswold oolite and millstone grit.\n- **Feature built**: a cripple hole, a plain run of copes, a wall head, a water smoot and a stile.\n- **Snag**: stone left unused, a running joint, a slipped cope, gravel hearting and too little batter.\nEvery waller has a different finishing time, stone, feature and snag, so within each category every item is used exactly once.",
+    "intro": "A measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.\nFive wallers are involved. Determine each waller's finishing time, stone, feature and snag.\n- **Waller**: Mab Teasdale, Hilda Crowther, Ewart Beck, Ossian Baird and Clem Hartley.\n- **Finishing time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Stone**: Dales limestone, green slate, river cobble, Cotswold oolite and millstone grit.\n- **Feature built**: a cripple hole, a plain run of copes, a wall head, a water smoot and a stile.\n- **Snag**: stone left unused, a running joint, a slipped cope, gravel hearting and too little batter.\nEvery waller has a different finishing time, stone, feature and snag, so within each category every item is used exactly once.",
     "clues": [
       "At least one of the following holds, and possibly more than one: (a) The waller who builds in a cripple hole and 10am are exactly one hour apart in finishing time order, in one direction or the other. (b) The waller who is pulled up for too little batter and 8am are exactly one hour apart in finishing time order, in one direction or the other.",
       "Mab Teasdale and 11am are exactly one hour apart in finishing time order, in one direction or the other.",
