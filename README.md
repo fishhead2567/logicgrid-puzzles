@@ -1,10 +1,13 @@
 # logicgrid-puzzles
 
 Puzzle content for the LogicGrid app. **Generated, not hand-edited** -- rebuilt
-from the generator repo with `scripts/build_content_repo.py`.
+from [logicgrid-generator][gen] with `scripts/build_content_repo.py`. Edits
+here are lost on the next rebuild; change the generator instead.
+
+[gen]: https://github.com/fishhead2567/logicgrid-generator
 
 50 puzzles, ratings 1-7, 0 with a verified narrative.
-Generated 2026-11-20T04:19:53+00:00 by logicgrid 0.1.0.
+Generated 2026-11-20T04:27:00+00:00 by logicgrid 0.1.0.
 
 ## Fetch contract
 
