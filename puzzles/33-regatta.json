@@ -1,0 +1,277 @@
+{
+  "pid": "971594c4e5d7",
+  "title": "The Mudflat Regatta",
+  "theme": "regatta",
+  "blurb": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 8.5792,
+  "seed": 2026173136772,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173136772,
+    "theme": "regatta"
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "crew",
+    "entity_noun_plural": "crews",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "finishes"
+      },
+      {
+        "name": "crew",
+        "label": "Crew",
+        "items": [
+          "the Gasworks crew",
+          "the Creamery crew",
+          "the Seminary crew",
+          "the Customs crew",
+          "the Brickworks crew"
+        ],
+        "ordered": false,
+        "noun": "crew",
+        "subject": true
+      },
+      {
+        "name": "boat",
+        "label": "Boat",
+        "items": [
+          "the Gilded Eel",
+          "the Peregrine",
+          "the Wet Hen",
+          "the Last Resort",
+          "the Obstinate"
+        ],
+        "ordered": false,
+        "noun": "boat",
+        "verb": "rows"
+      },
+      {
+        "name": "colours",
+        "label": "Colours",
+        "items": [
+          "cherry and grey",
+          "mustard and black",
+          "scarlet",
+          "lilac and bronze",
+          "navy with a white band"
+        ],
+        "ordered": false,
+        "noun": "colours",
+        "verb": "wears"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "crew:the Customs crew",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "boat:the Obstinate",
+          "b": "place:first",
+          "c": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:third",
+          "b": "boat:the Peregrine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "boat:the Gilded Eel",
+          "b": "colours:lilac and bronze"
+        },
+        {
+          "kind": "adjacent",
+          "a": "boat:the Gilded Eel",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "colours:mustard and black",
+          "b": "place:second"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "crew:the Gasworks crew",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "boat:the Wet Hen",
+          "b": "crew:the Creamery crew"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "colours:cherry and grey",
+              "b": "crew:the Creamery crew"
+            },
+            {
+              "kind": "adjacent",
+              "a": "colours:scarlet",
+              "b": "crew:the Brickworks crew"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "colours:cherry and grey",
+          "b": "crew:the Brickworks crew"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "boat:the Last Resort",
+          "b": "colours:mustard and black",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "crew": [
+      "the Seminary crew",
+      "the Creamery crew",
+      "the Brickworks crew",
+      "the Gasworks crew",
+      "the Customs crew"
+    ],
+    "boat": [
+      "the Wet Hen",
+      "the Obstinate",
+      "the Gilded Eel",
+      "the Last Resort",
+      "the Peregrine"
+    ],
+    "colours": [
+      "mustard and black",
+      "cherry and grey",
+      "navy with a white band",
+      "scarlet",
+      "lilac and bronze"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 1,
+      "between": 1,
+      "before": 2,
+      "not_link": 2,
+      "adjacent": 2,
+      "immediately_before": 1,
+      "or": 1,
+      "gap": 1
+    },
+    "positives": 1,
+    "compounds": 1
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 39,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 25,
+      "order": 10,
+      "disjunction": 1
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.\nFive crews are involved. Determine each crew's placing, boat and colours.\n- **Crew**: the Gasworks crew, the Creamery crew, the Seminary crew, the Customs crew and the Brickworks crew.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Boat**: the Gilded Eel, the Peregrine, the Wet Hen, the Last Resort and the Obstinate.\n- **Colours**: cherry and grey; mustard and black; scarlet; lilac and bronze; and navy with a white band.\nEvery crew has a different placing, boat and colours, so within each category every item is used exactly once.",
+    "clues": [
+      "The Customs crew finishes fifth.",
+      "The crew who rows the Obstinate falls somewhere between first and fourth in placing order.",
+      "The crew who rows the Peregrine is worse than third in placing order.",
+      "The crew who rows the Gilded Eel does not wear lilac and bronze. The crew who rows the Gilded Eel and fourth are exactly one place apart in placing order, in one direction or the other.",
+      "The crew who wears mustard and black is exactly one place better than second, with no placing in between.",
+      "The Gasworks crew and fifth are exactly one place apart in placing order, in one direction or the other.",
+      "The Creamery crew does not row the Wet Hen.",
+      "At least one of the following holds, and possibly more than one: (a) The crew who wears cherry and grey and the Creamery crew are exactly one place apart in placing order, in one direction or the other. (b) The crew who wears scarlet and the Brickworks crew are exactly one place apart in placing order, in one direction or the other.",
+      "The crew who wears cherry and grey is better than the Brickworks crew in placing order.",
+      "The crew who rows the Last Resort and the crew who wears mustard and black are exactly three places apart in placing order."
+    ]
+  }
+}

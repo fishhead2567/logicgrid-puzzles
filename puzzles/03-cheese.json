@@ -1,0 +1,178 @@
+{
+  "pid": "187d63d44cfc",
+  "title": "The Cheesemongers' Standoff",
+  "theme": "cheese",
+  "blurb": "A case of opinionated cheeses, their equally opinionated makers, and one display that has begun to smell like a political scandal.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.27,
+  "seed": 2026172899202,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172899202,
+    "theme": "cheese"
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "cheese",
+    "entity_noun_plural": "cheeses",
+    "entity_animate": false,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Price",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9
+        ],
+        "unit": "$",
+        "noun": "price",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "sells for"
+      },
+      {
+        "name": "cheese",
+        "label": "Cheese",
+        "items": [
+          "Old Thrashing",
+          "Saltpans",
+          "Winter Tarn",
+          "Bellringer"
+        ],
+        "ordered": false,
+        "noun": "cheese",
+        "subject": true
+      },
+      {
+        "name": "maker",
+        "label": "Maker",
+        "items": [
+          "Lachlan",
+          "Ambrose",
+          "Perdita",
+          "Hepzibah"
+        ],
+        "ordered": false,
+        "noun": "maker",
+        "verb": "was made by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "cheese:Saltpans",
+          "b": "price:$3"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "maker:Lachlan",
+          "b": "price:$7"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "cheese:Winter Tarn",
+          "b": "price:$9"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "cheese:Winter Tarn",
+          "b": "maker:Ambrose"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "cheese:Old Thrashing",
+          "b": "maker:Hepzibah"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9"
+    ],
+    "cheese": [
+      "Saltpans",
+      "Winter Tarn",
+      "Old Thrashing",
+      "Bellringer"
+    ],
+    "maker": [
+      "Ambrose",
+      "Perdita",
+      "Lachlan",
+      "Hepzibah"
+    ]
+  },
+  "stats": {
+    "atoms": 5,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 2,
+      "not_link": 2,
+      "immediately_before": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 18,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 12,
+      "order": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "A case of opinionated cheeses, their equally opinionated makers, and one display that has begun to smell like a political scandal.\nFour cheeses are involved. Determine each cheese's price and maker.\n- **Cheese**: Old Thrashing, Saltpans, Winter Tarn and Bellringer.\n- **Price** (listed from cheaper to dearer): $3, $5, $7 and $9.\n- **Maker**: Lachlan, Ambrose, Perdita and Hepzibah.\nEvery cheese has a different price and maker, so within each category every item is used exactly once.",
+    "clues": [
+      "Saltpans sells for $3.",
+      "The cheese that was made by Lachlan sells for $7.",
+      "Winter Tarn does not sell for $9.",
+      "Winter Tarn was not made by Ambrose.",
+      "Old Thrashing is exactly one price step cheaper than the cheese that was made by Hepzibah, with no price in between."
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "pid": "b560796acebb",
+  "title": "The Great American Road Trip",
+  "theme": "road_trip",
+  "blurb": "Everybody set out the same weekend, each for a different national park, each certain theirs is the better drive.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.93,
+  "seed": 2026172970473,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172970473,
+    "theme": "road_trip"
+  },
+  "schema": {
+    "spine": "distance",
+    "entity_noun": "driver",
+    "entity_noun_plural": "drivers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "distance",
+        "label": "Distance",
+        "items": [
+          "200 miles",
+          "300 miles",
+          "400 miles",
+          "500 miles"
+        ],
+        "ordered": true,
+        "values": [
+          200,
+          300,
+          400,
+          500
+        ],
+        "unit_suffix": " miles",
+        "noun": "distance",
+        "cmp_less": "shorter",
+        "cmp_more": "longer",
+        "step_noun": "hundred miles",
+        "verb": "covers"
+      },
+      {
+        "name": "driver",
+        "label": "Driver",
+        "items": [
+          "Gil Ostrander",
+          "Hector Salas",
+          "Simone",
+          "Wendell"
+        ],
+        "ordered": false,
+        "noun": "driver",
+        "subject": true
+      },
+      {
+        "name": "ride",
+        "label": "Ride",
+        "items": [
+          "a hybrid sedan",
+          "an old convertible",
+          "a rented camper",
+          "a minivan with a roof box"
+        ],
+        "ordered": false,
+        "noun": "ride",
+        "verb": "drives"
+      },
+      {
+        "name": "snag",
+        "label": "Snag",
+        "items": [
+          "nothing at all",
+          "a thunderstorm",
+          "a long line at the gate",
+          "a closed pass"
+        ],
+        "ordered": false,
+        "noun": "snag",
+        "verb": "is delayed by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "distance:400 miles",
+          "b": "ride:a hybrid sedan"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "distance:300 miles",
+          "b": "snag:a long line at the gate"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "distance:500 miles",
+          "b": "driver:Gil Ostrander"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "snag:a thunderstorm",
+          "b": "ride:a minivan with a roof box",
+          "c": "ride:an old convertible"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "driver:Hector Salas",
+          "b": "ride:a minivan with a roof box"
+        },
+        {
+          "kind": "not_link",
+          "a": "driver:Hector Salas",
+          "b": "snag:nothing at all"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "driver:Wendell",
+          "b": "snag:a closed pass"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "driver:Wendell",
+          "b": "snag:nothing at all"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "ride:a rented camper",
+          "b": "snag:a closed pass"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "distance": [
+      "200 miles",
+      "300 miles",
+      "400 miles",
+      "500 miles"
+    ],
+    "driver": [
+      "Hector Salas",
+      "Wendell",
+      "Gil Ostrander",
+      "Simone"
+    ],
+    "ride": [
+      "an old convertible",
+      "a rented camper",
+      "a hybrid sedan",
+      "a minivan with a roof box"
+    ],
+    "snag": [
+      "a closed pass",
+      "a long line at the gate",
+      "a thunderstorm",
+      "nothing at all"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 8,
+    "kinds": {
+      "link": 2,
+      "adjacent": 1,
+      "between": 1,
+      "not_link": 4,
+      "before": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 28,
+    "tier_counts": {
+      "direct": 6,
+      "bijection": 17,
+      "order": 5
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  },
+  "text": {
+    "intro": "Everybody set out the same weekend, each for a different national park, each certain theirs is the better drive.\nFour drivers are involved. Determine each driver's distance, ride and snag.\n- **Driver**: Gil Ostrander, Hector Salas, Simone and Wendell.\n- **Distance** (listed from shorter to longer): 200 miles, 300 miles, 400 miles and 500 miles.\n- **Ride**: a hybrid sedan, an old convertible, a rented camper and a minivan with a roof box.\n- **Snag**: nothing at all, a thunderstorm, a long line at the gate and a closed pass.\nEvery driver has a different distance, ride and snag, so within each category every item is used exactly once.",
+    "clues": [
+      "The driver who drives a hybrid sedan covers 400 miles.",
+      "The driver who is delayed by a long line at the gate covers 300 miles.",
+      "Gil Ostrander and 500 miles are exactly one hundred miles apart in distance order, in one direction or the other.",
+      "The driver who is delayed by a thunderstorm falls somewhere between the driver who drives a minivan with a roof box and the driver who drives an old convertible in distance order.",
+      "Hector Salas does not drive a minivan with a roof box. Hector Salas is not delayed by nothing at all.",
+      "Wendell is not delayed by a closed pass.",
+      "Wendell is shorter than the driver who is delayed by nothing at all in distance order.",
+      "The driver who drives a rented camper is not delayed by a closed pass."
+    ]
+  }
+}

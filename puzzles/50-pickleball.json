@@ -1,0 +1,350 @@
+{
+  "pid": "71e760bf6828",
+  "title": "The Tuesday Pickleball Ladder",
+  "theme": "pickleball",
+  "blurb": "The rec center runs a pickleball ladder on Tuesdays. Courts go by start time, and the sign-up sheet gets rewritten more than once.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 15.1415,
+  "seed": 2026173271395,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173271395,
+    "theme": "pickleball"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "player",
+    "entity_noun_plural": "players",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "plays at"
+      },
+      {
+        "name": "player",
+        "label": "Player",
+        "items": [
+          "Yolanda",
+          "Pete Ng",
+          "Ramesh",
+          "Arlene",
+          "Buzz Kovacs"
+        ],
+        "ordered": false,
+        "noun": "player",
+        "subject": true
+      },
+      {
+        "name": "paddle",
+        "label": "Paddle",
+        "items": [
+          "an oversize paddle",
+          "a bright orange paddle",
+          "a carbon-fiber paddle",
+          "a graphite paddle",
+          "a wooden loaner"
+        ],
+        "ordered": false,
+        "noun": "paddle",
+        "verb": "plays with"
+      },
+      {
+        "name": "serve",
+        "label": "Serve",
+        "items": [
+          "a high lob",
+          "a lefty slice",
+          "the same serve every time",
+          "a flat drive",
+          "a spin serve"
+        ],
+        "ordered": false,
+        "noun": "serve",
+        "verb": "serves with"
+      },
+      {
+        "name": "gripe",
+        "label": "Gripe",
+        "items": [
+          "a bad knee",
+          "a late night",
+          "the noisy court next door",
+          "nobody at all",
+          "a dead ball"
+        ],
+        "ordered": false,
+        "noun": "gripe",
+        "verb": "blames"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "player:Buzz Kovacs",
+          "b": "time:11am",
+          "c": "time:8am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "paddle:an oversize paddle",
+          "b": "time:9am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "paddle:a wooden loaner",
+          "b": "time:9am",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "time:10am",
+          "b": "gripe:a dead ball"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "time:10am",
+          "b": "paddle:a carbon-fiber paddle",
+          "c": "serve:a spin serve"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "serve:a flat drive",
+          "b": "paddle:a graphite paddle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "not_link",
+              "a": "gripe:a late night",
+              "b": "paddle:a wooden loaner"
+            },
+            {
+              "kind": "parity",
+              "a": "paddle:an oversize paddle",
+              "b": "player:Ramesh",
+              "same": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "paddle:a graphite paddle",
+              "b": "gripe:the noisy court next door"
+            },
+            {
+              "kind": "gap",
+              "a": "gripe:nobody at all",
+              "b": "paddle:an oversize paddle",
+              "k": 2,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "paddle:a graphite paddle",
+          "b": "serve:a lefty slice",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "paddle:a carbon-fiber paddle",
+              "b": "serve:a spin serve"
+            },
+            {
+              "kind": "link",
+              "a": "paddle:a graphite paddle",
+              "b": "player:Yolanda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "player:Pete Ng",
+          "b": "gripe:a late night"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "gripe:the noisy court next door",
+          "b": "serve:a lefty slice",
+          "c": "serve:the same serve every time"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "serve:the same serve every time",
+          "b": "gripe:a late night"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "player": [
+      "Pete Ng",
+      "Buzz Kovacs",
+      "Yolanda",
+      "Ramesh",
+      "Arlene"
+    ],
+    "paddle": [
+      "an oversize paddle",
+      "a carbon-fiber paddle",
+      "a graphite paddle",
+      "a bright orange paddle",
+      "a wooden loaner"
+    ],
+    "serve": [
+      "a lefty slice",
+      "a flat drive",
+      "a high lob",
+      "the same serve every time",
+      "a spin serve"
+    ],
+    "gripe": [
+      "a bad knee",
+      "the noisy court next door",
+      "nobody at all",
+      "a dead ball",
+      "a late night"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 13,
+    "kinds": {
+      "between": 3,
+      "before": 2,
+      "gap": 1,
+      "immediately_before": 3,
+      "or": 3,
+      "parity": 1
+    },
+    "positives": 0,
+    "compounds": 3
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 50,
+    "tier_counts": {
+      "bijection": 25,
+      "order": 21,
+      "disjunction": 3,
+      "trial": 1
+    },
+    "trial_eliminations": 1,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The rec center runs a pickleball ladder on Tuesdays. Courts go by start time, and the sign-up sheet gets rewritten more than once.\nFive players are involved. Determine each player's start time, paddle, serve and gripe.\n- **Player**: Yolanda, Pete Ng, Ramesh, Arlene and Buzz Kovacs.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Paddle**: an oversize paddle, a bright orange paddle, a carbon-fiber paddle, a graphite paddle and a wooden loaner.\n- **Serve**: a high lob, a lefty slice, the same serve every time, a flat drive and a spin serve.\n- **Gripe**: a bad knee, a late night, the noisy court next door, nobody at all and a dead ball.\nEvery player has a different start time, paddle, serve and gripe, so within each category every item is used exactly once.",
+    "clues": [
+      "Buzz Kovacs falls somewhere between 11am and 8am in start time order.",
+      "The player who plays with an oversize paddle is earlier than 9am in start time order.",
+      "The player who plays with a wooden loaner and 9am are exactly three hours apart in start time order.",
+      "10am is exactly one hour earlier than the player who blames a dead ball, with no start time in between.",
+      "10am falls somewhere between the player who plays with a carbon-fiber paddle and the player who serves with a spin serve in start time order.",
+      "The player who serves with a flat drive is exactly one hour earlier than the player who plays with a graphite paddle, with no start time in between.",
+      "At least one of the following holds, and possibly more than one: (a) The player who blames a late night does not play with a wooden loaner. (b) One of the player who plays with an oversize paddle and Ramesh sits at an odd-numbered start time and the other at an even-numbered start time.",
+      "At least one of the following holds, and possibly more than one: (a) The player who plays with a graphite paddle is earlier than the player who blames the noisy court next door in start time order. (b) The player who blames nobody at all and the player who plays with an oversize paddle are exactly two hours apart in start time order.",
+      "The player who plays with a graphite paddle and the player who serves with a lefty slice both sit at odd-numbered hours or both at even-numbered hours.",
+      "At least one of the following holds, and possibly more than one: (a) The player who plays with a carbon-fiber paddle and the player who serves with a spin serve are exactly one hour apart in start time order, in one direction or the other. (b) Yolanda plays with a graphite paddle.",
+      "Pete Ng is earlier than the player who blames a late night in start time order.",
+      "The player who blames the noisy court next door falls somewhere between the player who serves with a lefty slice and the player who serves with the same serve every time in start time order.",
+      "The player who serves with the same serve every time is exactly one hour earlier than the player who blames a late night, with no start time in between."
+    ]
+  }
+}

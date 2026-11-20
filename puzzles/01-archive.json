@@ -1,0 +1,183 @@
+{
+  "pid": "8cdc3efb624d",
+  "title": "The Mislabelled Drawers",
+  "theme": "archive",
+  "blurb": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.27,
+  "seed": 2026172883364,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172883364,
+    "theme": "archive"
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "archivist",
+    "entity_noun_plural": "archivists",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "files on"
+      },
+      {
+        "name": "archivist",
+        "label": "Archivist",
+        "items": [
+          "Dr Mwangi",
+          "Mr Pelletier",
+          "Ms Castellano",
+          "Mr Ravensworth"
+        ],
+        "ordered": false,
+        "noun": "archivist",
+        "subject": true
+      },
+      {
+        "name": "decade",
+        "label": "Decade",
+        "items": [
+          "the 1890s",
+          "the 1950s",
+          "the 1830s",
+          "the 1910s"
+        ],
+        "ordered": false,
+        "noun": "decade",
+        "verb": "covers"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "decade:the 1950s",
+          "b": "shelf:the third shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "archivist:Mr Pelletier",
+          "b": "shelf:the second shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "archivist:Ms Castellano",
+          "b": "shelf:the fourth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "decade:the 1890s",
+          "b": "shelf:the second shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "archivist:Mr Ravensworth",
+          "b": "decade:the 1950s"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "archivist:Mr Pelletier",
+          "b": "decade:the 1830s"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf"
+    ],
+    "archivist": [
+      "Dr Mwangi",
+      "Mr Pelletier",
+      "Ms Castellano",
+      "Mr Ravensworth"
+    ],
+    "decade": [
+      "the 1890s",
+      "the 1910s",
+      "the 1950s",
+      "the 1830s"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 2,
+      "immediately_before": 1,
+      "adjacent": 2,
+      "before": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 14,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 8,
+      "order": 4
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Vance Municipal Archive was reorganised in 1974 by somebody who has since left no forwarding address.\nFour archivists are involved. Determine each archivist's shelf and decade.\n- **Archivist**: Dr Mwangi, Mr Pelletier, Ms Castellano and Mr Ravensworth.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf and the fourth shelf.\n- **Decade**: the 1890s, the 1950s, the 1830s and the 1910s.\nEvery archivist has a different shelf and decade, so within each category every item is used exactly once.",
+    "clues": [
+      "The archivist who covers the 1950s files on the third shelf.",
+      "Mr Pelletier files on the second shelf.",
+      "Ms Castellano is exactly one shelf lower than the fourth shelf, with no shelf in between.",
+      "The archivist who covers the 1890s and the second shelf are exactly one shelf apart in shelf order, in one direction or the other.",
+      "Mr Ravensworth and the archivist who covers the 1950s are exactly one shelf apart in shelf order, in one direction or the other.",
+      "Mr Pelletier is lower than the archivist who covers the 1830s in shelf order."
+    ]
+  }
+}

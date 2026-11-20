@@ -1,0 +1,296 @@
+{
+  "pid": "4713cc02058c",
+  "title": "The Night Shift at Harbor Point",
+  "theme": "aquarium",
+  "blurb": "The Harbor Point Aquarium keeps a night rotation of tanks, and one keeper who is definitely feeding the wrong things.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 9.2622,
+  "seed": 2026173144691,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173144691,
+    "theme": "aquarium"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "keeper",
+    "entity_noun_plural": "keepers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "works"
+      },
+      {
+        "name": "keeper",
+        "label": "Keeper",
+        "items": [
+          "Everett",
+          "Chiamaka",
+          "Oskar",
+          "Bartolo",
+          "Marisol"
+        ],
+        "ordered": false,
+        "noun": "keeper",
+        "subject": true
+      },
+      {
+        "name": "tank",
+        "label": "Tank",
+        "items": [
+          "the jellyfish column",
+          "the deep reef",
+          "the touch pool",
+          "the octopus enclosure",
+          "the estuary tank"
+        ],
+        "ordered": false,
+        "noun": "tank",
+        "verb": "tends"
+      },
+      {
+        "name": "incident",
+        "label": "Logged incident",
+        "items": [
+          "a failed chiller",
+          "an escapee",
+          "a visitor's dropped phone",
+          "a cracked viewing pane",
+          "an algal bloom"
+        ],
+        "ordered": false,
+        "noun": "incident",
+        "verb": "logs"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "incident:a failed chiller",
+          "b": "slot:slot four",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "incident:an algal bloom",
+              "b": "keeper:Chiamaka"
+            },
+            {
+              "kind": "not_link",
+              "a": "keeper:Chiamaka",
+              "b": "slot:slot two"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tank:the octopus enclosure",
+          "b": "slot:slot three"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "keeper:Everett",
+          "b": "slot:slot two",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "slot:slot one",
+          "b": "tank:the estuary tank",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "incident:an escapee",
+          "b": "keeper:Oskar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "tank:the touch pool",
+          "b": "keeper:Marisol",
+          "c": "keeper:Oskar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "keeper:Chiamaka",
+          "b": "tank:the jellyfish column"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "immediately_before",
+              "a": "tank:the octopus enclosure",
+              "b": "incident:a visitor's dropped phone"
+            },
+            {
+              "kind": "link",
+              "a": "incident:a visitor's dropped phone",
+              "b": "tank:the deep reef"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "keeper:Oskar",
+          "b": "incident:an algal bloom",
+          "c": "incident:an escapee"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "incident:an algal bloom",
+          "b": "tank:the touch pool",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "keeper": [
+      "Everett",
+      "Bartolo",
+      "Oskar",
+      "Chiamaka",
+      "Marisol"
+    ],
+    "tank": [
+      "the deep reef",
+      "the octopus enclosure",
+      "the estuary tank",
+      "the touch pool",
+      "the jellyfish column"
+    ],
+    "incident": [
+      "a failed chiller",
+      "an algal bloom",
+      "a visitor's dropped phone",
+      "an escapee",
+      "a cracked viewing pane"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 11,
+    "kinds": {
+      "gap": 3,
+      "or": 2,
+      "immediately_before": 1,
+      "parity": 1,
+      "adjacent": 2,
+      "between": 2
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 36,
+    "tier_counts": {
+      "bijection": 18,
+      "order": 16,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Harbor Point Aquarium keeps a night rotation of tanks, and one keeper who is definitely feeding the wrong things.\nFive keepers are involved. Determine each keeper's slot, tank and incident.\n- **Keeper**: Everett, Chiamaka, Oskar, Bartolo and Marisol.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Tank**: the jellyfish column, the deep reef, the touch pool, the octopus enclosure and the estuary tank.\n- **Logged incident**: a failed chiller, an escapee, a visitor's dropped phone, a cracked viewing pane and an algal bloom.\nEvery keeper has a different slot, tank and incident, so within each category every item is used exactly once.",
+    "clues": [
+      "The keeper who logs a failed chiller and slot four are exactly three slots apart in slot order.",
+      "At least one of the following holds, and possibly more than one: (a) The keeper who logs an algal bloom and Chiamaka are exactly one slot apart in slot order, in one direction or the other. (b) Chiamaka does not work slot two.",
+      "The keeper who tends the octopus enclosure is exactly one slot earlier than slot three, with no slot in between.",
+      "One of Everett and slot two sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "The keeper who tends the estuary tank and slot one are exactly two slots apart in slot order.",
+      "The keeper who logs an escapee and Oskar are exactly one slot apart in slot order, in one direction or the other.",
+      "The keeper who tends the touch pool falls somewhere between Marisol and Oskar in slot order.",
+      "Chiamaka and the keeper who tends the jellyfish column are exactly one slot apart in slot order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) The keeper who tends the octopus enclosure is exactly one slot earlier than the keeper who logs a visitor's dropped phone, with no slot in between. (b) The keeper who logs a visitor's dropped phone tends the deep reef.",
+      "Oskar falls somewhere between the keeper who logs an algal bloom and the keeper who logs an escapee in slot order.",
+      "The keeper who logs an algal bloom and the keeper who tends the touch pool are exactly two slots apart in slot order."
+    ]
+  }
+}

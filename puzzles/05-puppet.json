@@ -1,0 +1,177 @@
+{
+  "pid": "2ed0b598015f",
+  "title": "A Fortnight at the Little Vesper Theatre",
+  "theme": "puppet",
+  "blurb": "The Little Vesper Theatre seats forty people and employs a company of puppeteers who will not be in the same room together.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.27,
+  "seed": 2026172915040,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172915040,
+    "theme": "puppet"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "puppeteer",
+    "entity_noun_plural": "puppeteers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "performs in"
+      },
+      {
+        "name": "puppeteer",
+        "label": "Puppeteer",
+        "items": [
+          "Stellan",
+          "Halima",
+          "Bowen",
+          "Mirabel"
+        ],
+        "ordered": false,
+        "noun": "puppeteer",
+        "subject": true
+      },
+      {
+        "name": "music",
+        "label": "Accompaniment",
+        "items": [
+          "a hurdy-gurdy",
+          "a bowed psaltery",
+          "two kettle drums",
+          "a prepared piano"
+        ],
+        "ordered": false,
+        "noun": "accompaniment",
+        "verb": "is accompanied by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "slot:slot one",
+          "b": "music:a bowed psaltery"
+        },
+        {
+          "kind": "link",
+          "a": "puppeteer:Bowen",
+          "b": "slot:slot one"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "music:a hurdy-gurdy",
+          "b": "puppeteer:Halima"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "music:a bowed psaltery",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "music:two kettle drums",
+          "b": "slot:slot four"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "puppeteer:Mirabel",
+          "b": "slot:slot four"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four"
+    ],
+    "puppeteer": [
+      "Bowen",
+      "Halima",
+      "Mirabel",
+      "Stellan"
+    ],
+    "music": [
+      "a prepared piano",
+      "a hurdy-gurdy",
+      "two kettle drums",
+      "a bowed psaltery"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 5,
+    "kinds": {
+      "before": 2,
+      "link": 2,
+      "not_link": 1,
+      "immediately_before": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 19,
+    "tier_counts": {
+      "direct": 5,
+      "bijection": 11,
+      "order": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The Little Vesper Theatre seats forty people and employs a company of puppeteers who will not be in the same room together.\nFour puppeteers are involved. Determine each puppeteer's slot and accompaniment.\n- **Puppeteer**: Stellan, Halima, Bowen and Mirabel.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three and slot four.\n- **Accompaniment**: a hurdy-gurdy, a bowed psaltery, two kettle drums and a prepared piano.\nEvery puppeteer has a different slot and accompaniment, so within each category every item is used exactly once.",
+    "clues": [
+      "The puppeteer who is accompanied by a bowed psaltery is later than slot one in slot order. Bowen performs in slot one.",
+      "Halima is accompanied by a hurdy-gurdy.",
+      "The puppeteer who is accompanied by a bowed psaltery does not perform in slot two.",
+      "The puppeteer who is accompanied by two kettle drums is exactly one slot earlier than slot four, with no slot in between.",
+      "Mirabel is earlier than slot four in slot order."
+    ]
+  }
+}

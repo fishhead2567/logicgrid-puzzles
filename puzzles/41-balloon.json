@@ -1,0 +1,294 @@
+{
+  "pid": "052ccc576fca",
+  "title": "The Mesa Verde Balloon Ascent",
+  "theme": "balloon",
+  "blurb": "The Mesa Verde Ascent is less a race than a slow argument conducted at two thousand feet.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 9.2622,
+  "seed": 2026173200124,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173200124,
+    "theme": "balloon"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "pilot",
+    "entity_noun_plural": "pilots",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "launches at"
+      },
+      {
+        "name": "pilot",
+        "label": "Pilot",
+        "items": [
+          "Annika",
+          "Grover",
+          "Rosa",
+          "Rafael",
+          "Delia"
+        ],
+        "ordered": false,
+        "noun": "pilot",
+        "subject": true
+      },
+      {
+        "name": "envelope",
+        "label": "Envelope",
+        "items": [
+          "the oxblood envelope",
+          "the saffron envelope",
+          "the striped envelope",
+          "the silver envelope",
+          "the kingfisher envelope"
+        ],
+        "ordered": false,
+        "noun": "envelope",
+        "verb": "flies"
+      },
+      {
+        "name": "landing",
+        "label": "Landed at",
+        "items": [
+          "a cabbage field",
+          "an RV park",
+          "a rail siding",
+          "a flooded quarry",
+          "a little-league outfield"
+        ],
+        "ordered": false,
+        "noun": "landing site",
+        "verb": "comes down in"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "envelope:the silver envelope",
+          "b": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "landing:a flooded quarry",
+          "b": "time:noon",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "pilot:Annika",
+          "b": "time:10am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "envelope:the striped envelope",
+          "b": "time:noon",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "pilot:Delia",
+          "b": "landing:a flooded quarry"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "gap",
+              "a": "landing:a cabbage field",
+              "b": "pilot:Delia",
+              "k": 2,
+              "rel": "eq"
+            },
+            {
+              "kind": "link",
+              "a": "envelope:the saffron envelope",
+              "b": "pilot:Grover"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "envelope:the saffron envelope",
+          "b": "pilot:Rafael"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "envelope:the striped envelope",
+          "b": "landing:a rail siding"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "pilot:Rosa",
+          "b": "envelope:the kingfisher envelope"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "landing:a cabbage field",
+              "b": "pilot:Grover"
+            },
+            {
+              "kind": "link",
+              "a": "landing:a flooded quarry",
+              "b": "pilot:Rafael"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "landing:an RV park",
+          "b": "pilot:Grover",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "pilot": [
+      "Rosa",
+      "Delia",
+      "Rafael",
+      "Annika",
+      "Grover"
+    ],
+    "envelope": [
+      "the oxblood envelope",
+      "the saffron envelope",
+      "the striped envelope",
+      "the silver envelope",
+      "the kingfisher envelope"
+    ],
+    "landing": [
+      "a little-league outfield",
+      "an RV park",
+      "a flooded quarry",
+      "a cabbage field",
+      "a rail siding"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 11,
+    "kinds": {
+      "adjacent": 3,
+      "gap": 3,
+      "immediately_before": 1,
+      "or": 2,
+      "before": 2
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 40,
+    "tier_counts": {
+      "bijection": 21,
+      "order": 17,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Mesa Verde Ascent is less a race than a slow argument conducted at two thousand feet.\nFive pilots are involved. Determine each pilot's start time, envelope and landing site.\n- **Pilot**: Annika, Grover, Rosa, Rafael and Delia.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Envelope**: the oxblood envelope, the saffron envelope, the striped envelope, the silver envelope and the kingfisher envelope.\n- **Landed at**: a cabbage field, an RV park, a rail siding, a flooded quarry and a little-league outfield.\nEvery pilot has a different start time, envelope and landing site, so within each category every item is used exactly once.",
+    "clues": [
+      "The pilot who flies the silver envelope and noon are exactly one hour apart in start time order, in one direction or the other.",
+      "The pilot who comes down in a flooded quarry and noon are exactly two hours apart in start time order.",
+      "Annika and 10am are exactly one hour apart in start time order, in one direction or the other.",
+      "The pilot who flies the striped envelope and noon are exactly two hours apart in start time order.",
+      "Delia is exactly one hour earlier than the pilot who comes down in a flooded quarry, with no start time in between.",
+      "At least one of the following holds, and possibly more than one: (a) The pilot who comes down in a cabbage field and Delia are exactly two hours apart in start time order. (b) Grover flies the saffron envelope.",
+      "The pilot who flies the saffron envelope and Rafael are exactly one hour apart in start time order, in one direction or the other.",
+      "The pilot who flies the striped envelope is earlier than the pilot who comes down in a rail siding in start time order.",
+      "Rosa is earlier than the pilot who flies the kingfisher envelope in start time order.",
+      "At least one of the following holds, and possibly more than one: (a) Grover comes down in a cabbage field. (b) Rafael comes down in a flooded quarry.",
+      "The pilot who comes down in an RV park and Grover are exactly three hours apart in start time order."
+    ]
+  }
+}

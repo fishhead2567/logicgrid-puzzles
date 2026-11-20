@@ -1,0 +1,284 @@
+{
+  "pid": "f5dfd113b889",
+  "title": "The Walling Match at Gunnerside",
+  "theme": "drystone",
+  "blurb": "A measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.3755,
+  "seed": 2026173152610,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173152610,
+    "theme": "drystone"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "waller",
+    "entity_noun_plural": "wallers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Finishing time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "finishing time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "finishes at"
+      },
+      {
+        "name": "waller",
+        "label": "Waller",
+        "items": [
+          "Ossian Baird",
+          "Hilda Crowther",
+          "Mab Teasdale",
+          "Ewart Beck",
+          "Clem Hartley"
+        ],
+        "ordered": false,
+        "noun": "waller",
+        "subject": true
+      },
+      {
+        "name": "stone",
+        "label": "Stone",
+        "items": [
+          "green slate",
+          "red sandstone",
+          "Welsh rubble",
+          "Cotswold oolite",
+          "Dales limestone"
+        ],
+        "ordered": false,
+        "noun": "stone",
+        "verb": "works in"
+      },
+      {
+        "name": "feature",
+        "label": "Feature built",
+        "items": [
+          "a water smoot",
+          "a stile",
+          "a set of throughstones",
+          "a cripple hole",
+          "a lunky hole"
+        ],
+        "ordered": false,
+        "noun": "feature",
+        "verb": "builds in"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "feature:a set of throughstones",
+          "b": "time:11am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "waller:Ossian Baird",
+          "b": "time:11am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "time:9am",
+          "b": "stone:Dales limestone"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "feature:a stile",
+              "b": "stone:Cotswold oolite"
+            },
+            {
+              "kind": "adjacent",
+              "a": "feature:a stile",
+              "b": "stone:green slate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "feature:a stile",
+          "b": "waller:Clem Hartley"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "waller:Ewart Beck",
+          "b": "feature:a stile",
+          "c": "feature:a water smoot"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "waller:Clem Hartley",
+          "b": "stone:Welsh rubble"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "stone:red sandstone",
+              "b": "waller:Mab Teasdale"
+            },
+            {
+              "kind": "link",
+              "a": "stone:Welsh rubble",
+              "b": "waller:Ossian Baird"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "waller:Clem Hartley",
+          "b": "feature:a set of throughstones"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "feature:a cripple hole",
+          "b": "stone:Cotswold oolite"
+        },
+        {
+          "kind": "not_link",
+          "a": "feature:a cripple hole",
+          "b": "waller:Ossian Baird"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "waller": [
+      "Clem Hartley",
+      "Hilda Crowther",
+      "Ossian Baird",
+      "Ewart Beck",
+      "Mab Teasdale"
+    ],
+    "stone": [
+      "green slate",
+      "Welsh rubble",
+      "Dales limestone",
+      "red sandstone",
+      "Cotswold oolite"
+    ],
+    "feature": [
+      "a cripple hole",
+      "a stile",
+      "a lunky hole",
+      "a set of throughstones",
+      "a water smoot"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 1,
+      "immediately_before": 3,
+      "or": 2,
+      "adjacent": 1,
+      "between": 1,
+      "before": 1,
+      "not_link": 2
+    },
+    "positives": 1,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 43,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 23,
+      "order": 14,
+      "disjunction": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "A measured length of fallen wall each, and a whole morning in which to rebuild it to the satisfaction of a judge who will push on every cope.\nFive wallers are involved. Determine each waller's finishing time, stone and feature.\n- **Waller**: Ossian Baird, Hilda Crowther, Mab Teasdale, Ewart Beck and Clem Hartley.\n- **Finishing time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Stone**: green slate, red sandstone, Welsh rubble, Cotswold oolite and Dales limestone.\n- **Feature built**: a water smoot, a stile, a set of throughstones, a cripple hole and a lunky hole.\nEvery waller has a different finishing time, stone and feature, so within each category every item is used exactly once.",
+    "clues": [
+      "The waller who builds in a set of throughstones finishes at 11am.",
+      "Ossian Baird is exactly one hour earlier than 11am, with no finishing time in between.",
+      "9am is exactly one hour earlier than the waller who works in Dales limestone, with no finishing time in between.",
+      "At least one of the following holds, and possibly more than one: (a) The waller who builds in a stile and the waller who works in Cotswold oolite are exactly one hour apart in finishing time order, in one direction or the other. (b) The waller who builds in a stile and the waller who works in green slate are exactly one hour apart in finishing time order, in one direction or the other.",
+      "The waller who builds in a stile and Clem Hartley are exactly one hour apart in finishing time order, in one direction or the other.",
+      "Ewart Beck falls somewhere between the waller who builds in a stile and the waller who builds in a water smoot in finishing time order.",
+      "Clem Hartley is exactly one hour earlier than the waller who works in Welsh rubble, with no finishing time in between.",
+      "At least one of the following holds, and possibly more than one: (a) The waller who works in red sandstone is earlier than Mab Teasdale in finishing time order. (b) Ossian Baird works in Welsh rubble.",
+      "Clem Hartley is earlier than the waller who builds in a set of throughstones in finishing time order.",
+      "The waller who builds in a cripple hole does not work in Cotswold oolite. Ossian Baird does not build in a cripple hole."
+    ]
+  }
+}

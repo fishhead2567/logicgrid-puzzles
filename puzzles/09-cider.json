@@ -1,0 +1,199 @@
+{
+  "pid": "390c14c57960",
+  "title": "The Pomace and the Prize",
+  "theme": "cider",
+  "blurb": "Every maker presses in a different month, and each is privately certain the others have let theirs go to vinegar.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.62,
+  "seed": 2026172946716,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172946716,
+    "theme": "cider"
+  },
+  "schema": {
+    "spine": "month",
+    "entity_noun": "maker",
+    "entity_noun_plural": "makers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "month",
+        "label": "Pressing month",
+        "items": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May"
+        ],
+        "ordered": true,
+        "noun": "pressing month",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "month",
+        "verb": "presses in"
+      },
+      {
+        "name": "maker",
+        "label": "Maker",
+        "items": [
+          "Jethro",
+          "Araminta",
+          "Haskell",
+          "Morwenna",
+          "Petroc"
+        ],
+        "ordered": false,
+        "noun": "maker",
+        "subject": true
+      },
+      {
+        "name": "fault",
+        "label": "Fault",
+        "items": [
+          "a stuck ferment",
+          "mousiness",
+          "sulphur",
+          "acetification",
+          "ropiness"
+        ],
+        "ordered": false,
+        "noun": "fault",
+        "verb": "is accused of"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "maker:Haskell",
+          "b": "month:January"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "fault:mousiness",
+          "b": "month:May"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "fault:ropiness",
+          "b": "month:May"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "fault:acetification",
+          "b": "month:February"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "month:March",
+          "b": "maker:Araminta"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "maker:Jethro",
+          "b": "fault:a stuck ferment"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "fault:a stuck ferment",
+          "b": "maker:Petroc"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "month": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "maker": [
+      "Haskell",
+      "Jethro",
+      "Morwenna",
+      "Araminta",
+      "Petroc"
+    ],
+    "fault": [
+      "acetification",
+      "sulphur",
+      "a stuck ferment",
+      "ropiness",
+      "mousiness"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 7,
+    "kinds": {
+      "link": 2,
+      "immediately_before": 4,
+      "before": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 23,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 14,
+      "order": 7
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "Every maker presses in a different month, and each is privately certain the others have let theirs go to vinegar.\nFive makers are involved. Determine each maker's pressing month and fault.\n- **Maker**: Jethro, Araminta, Haskell, Morwenna and Petroc.\n- **Pressing month** (listed from earlier to later): January, February, March, April and May.\n- **Fault**: a stuck ferment, mousiness, sulphur, acetification and ropiness.\nEvery maker has a different pressing month and fault, so within each category every item is used exactly once.",
+    "clues": [
+      "Haskell presses in January.",
+      "The maker who is accused of mousiness presses in May.",
+      "The maker who is accused of ropiness is exactly one month earlier than May, with no pressing month in between.",
+      "The maker who is accused of acetification is exactly one month earlier than February, with no pressing month in between.",
+      "March is exactly one month earlier than Araminta, with no pressing month in between.",
+      "Jethro is exactly one month earlier than the maker who is accused of a stuck ferment, with no pressing month in between.",
+      "The maker who is accused of a stuck ferment is earlier than Petroc in pressing month order."
+    ]
+  }
+}

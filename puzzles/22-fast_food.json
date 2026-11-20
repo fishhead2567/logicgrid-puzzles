@@ -1,0 +1,246 @@
+{
+  "pid": "7a4e51aa64aa",
+  "title": "The Food Court Standoff",
+  "theme": "fast_food",
+  "blurb": "One food court, and a shared conviction that everybody else ordered wrong.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026173049663,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173049663,
+    "theme": "fast_food"
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "friend",
+    "entity_noun_plural": "friends",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Total",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9",
+          "$11"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "unit": "$",
+        "noun": "total",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "spends"
+      },
+      {
+        "name": "friend",
+        "label": "Friend",
+        "items": [
+          "Hank",
+          "Dmitri",
+          "Noor",
+          "Aaliyah",
+          "Paloma"
+        ],
+        "ordered": false,
+        "noun": "friend",
+        "subject": true
+      },
+      {
+        "name": "main",
+        "label": "Main",
+        "items": [
+          "a bean burrito",
+          "a chicken sandwich",
+          "a personal pepperoni",
+          "a double cheeseburger",
+          "three crunchy tacos"
+        ],
+        "ordered": false,
+        "noun": "main",
+        "verb": "orders"
+      },
+      {
+        "name": "drink",
+        "label": "Drink",
+        "items": [
+          "a blue slushie",
+          "a root beer",
+          "a lemonade",
+          "an orange soda",
+          "a chocolate shake"
+        ],
+        "ordered": false,
+        "noun": "drink",
+        "verb": "drinks"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "drink:a lemonade",
+          "b": "price:$9"
+        },
+        {
+          "kind": "between",
+          "a": "friend:Aaliyah",
+          "b": "price:$3",
+          "c": "price:$9"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "friend:Dmitri",
+          "b": "price:$9"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "main:three crunchy tacos",
+          "b": "price:$3"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "drink:an orange soda",
+          "b": "friend:Noor"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "friend:Hank",
+          "b": "drink:a blue slushie"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "main:a chicken sandwich",
+          "b": "drink:an orange soda"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "friend:Paloma",
+          "b": "main:a bean burrito"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "main:a personal pepperoni",
+          "b": "drink:a blue slushie",
+          "c": "drink:a chocolate shake"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9",
+      "$11"
+    ],
+    "friend": [
+      "Hank",
+      "Aaliyah",
+      "Dmitri",
+      "Paloma",
+      "Noor"
+    ],
+    "main": [
+      "a double cheeseburger",
+      "three crunchy tacos",
+      "a chicken sandwich",
+      "a personal pepperoni",
+      "a bean burrito"
+    ],
+    "drink": [
+      "a root beer",
+      "a blue slushie",
+      "a lemonade",
+      "an orange soda",
+      "a chocolate shake"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 8,
+    "kinds": {
+      "adjacent": 4,
+      "between": 2,
+      "before": 1,
+      "immediately_before": 2
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 37,
+    "tier_counts": {
+      "bijection": 18,
+      "order": 19
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "One food court, and a shared conviction that everybody else ordered wrong.\nFive friends are involved. Determine each friend's total, main and drink.\n- **Friend**: Hank, Dmitri, Noor, Aaliyah and Paloma.\n- **Total** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Main**: a bean burrito, a chicken sandwich, a personal pepperoni, a double cheeseburger and three crunchy tacos.\n- **Drink**: a blue slushie, a root beer, a lemonade, an orange soda and a chocolate shake.\nEvery friend has a different total, main and drink, so within each category every item is used exactly once.",
+    "clues": [
+      "The friend who drinks a lemonade and $9 are exactly one price step apart in total order, in one direction or the other. Aaliyah falls somewhere between $3 and $9 in total order.",
+      "Dmitri and $9 are exactly one price step apart in total order, in one direction or the other.",
+      "The friend who orders three crunchy tacos and $3 are exactly one price step apart in total order, in one direction or the other.",
+      "The friend who drinks an orange soda is cheaper than Noor in total order.",
+      "Hank is exactly one price step cheaper than the friend who drinks a blue slushie, with no total in between.",
+      "The friend who orders a chicken sandwich is exactly one price step cheaper than the friend who drinks an orange soda, with no total in between.",
+      "Paloma and the friend who orders a bean burrito are exactly one price step apart in total order, in one direction or the other.",
+      "The friend who orders a personal pepperoni falls somewhere between the friend who drinks a blue slushie and the friend who drinks a chocolate shake in total order."
+    ]
+  }
+}

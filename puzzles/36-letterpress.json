@@ -1,0 +1,320 @@
+{
+  "pid": "1adeff24d4e5",
+  "title": "The Jobbing Shop on Dyer's Row",
+  "theme": "letterpress",
+  "blurb": "A jobbing print shop where every job has its quoted price, and one hell-box filling up faster than anybody will admit to.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 9.1022,
+  "seed": 2026173160529,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173160529,
+    "theme": "letterpress"
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "compositor",
+    "entity_noun_plural": "compositors",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Quoted price",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9",
+          "$11"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "unit": "$",
+        "noun": "quoted price",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "quotes"
+      },
+      {
+        "name": "compositor",
+        "label": "Compositor",
+        "items": [
+          "Harriet Lisle",
+          "Cecil Braddock",
+          "Ned Ashby",
+          "Winifred Oakes",
+          "Josiah Peake"
+        ],
+        "ordered": false,
+        "noun": "compositor",
+        "subject": true
+      },
+      {
+        "name": "face",
+        "label": "Typeface",
+        "items": [
+          "Perpetua",
+          "Bodoni",
+          "Plantin",
+          "Baskerville",
+          "Caslon"
+        ],
+        "ordered": false,
+        "noun": "typeface",
+        "verb": "sets in"
+      },
+      {
+        "name": "mishap",
+        "label": "Mishap",
+        "items": [
+          "a slurred impression",
+          "an inverted sort",
+          "a clean run",
+          "a cracked chase",
+          "a loose quoin"
+        ],
+        "ordered": false,
+        "noun": "mishap",
+        "verb": "owns up to"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "face:Perpetua",
+          "b": "mishap:a cracked chase"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "compositor:Ned Ashby",
+              "b": "price:$3"
+            },
+            {
+              "kind": "not_link",
+              "a": "compositor:Josiah Peake",
+              "b": "price:$9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "face:Baskerville",
+          "b": "price:$9"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "price:$9",
+          "b": "mishap:a clean run",
+          "c": "mishap:an inverted sort"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "price:$7",
+          "b": "mishap:a loose quoin",
+          "c": "mishap:a slurred impression"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "compositor:Winifred Oakes",
+          "b": "price:$7"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "price:$5",
+          "b": "face:Plantin"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "price:$5",
+          "b": "mishap:a loose quoin"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "before",
+            "a": "compositor:Josiah Peake",
+            "b": "face:Baskerville"
+          },
+          "y": {
+            "kind": "not_link",
+            "a": "compositor:Harriet Lisle",
+            "b": "face:Baskerville"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "compositor:Ned Ashby",
+          "b": "mishap:a slurred impression"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "mishap:a clean run",
+          "b": "compositor:Cecil Braddock",
+          "c": "face:Perpetua"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "compositor:Cecil Braddock",
+          "b": "face:Bodoni"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "compositor:Josiah Peake",
+          "b": "mishap:an inverted sort"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9",
+      "$11"
+    ],
+    "compositor": [
+      "Ned Ashby",
+      "Winifred Oakes",
+      "Harriet Lisle",
+      "Josiah Peake",
+      "Cecil Braddock"
+    ],
+    "face": [
+      "Perpetua",
+      "Caslon",
+      "Baskerville",
+      "Bodoni",
+      "Plantin"
+    ],
+    "mishap": [
+      "a cracked chase",
+      "a slurred impression",
+      "a clean run",
+      "a loose quoin",
+      "an inverted sort"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 13,
+    "kinds": {
+      "link": 1,
+      "or": 1,
+      "adjacent": 4,
+      "between": 3,
+      "before": 2,
+      "not_both": 1,
+      "not_link": 1
+    },
+    "positives": 1,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 40,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 20,
+      "order": 14,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "A jobbing print shop where every job has its quoted price, and one hell-box filling up faster than anybody will admit to.\nFive compositors are involved. Determine each compositor's quoted price, typeface and mishap.\n- **Compositor**: Harriet Lisle, Cecil Braddock, Ned Ashby, Winifred Oakes and Josiah Peake.\n- **Quoted price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Typeface**: Perpetua, Bodoni, Plantin, Baskerville and Caslon.\n- **Mishap**: a slurred impression, an inverted sort, a clean run, a cracked chase and a loose quoin.\nEvery compositor has a different quoted price, typeface and mishap, so within each category every item is used exactly once.",
+    "clues": [
+      "The compositor who sets in Perpetua owns up to a cracked chase.",
+      "At least one of the following holds, and possibly more than one: (a) Ned Ashby quotes $3. (b) Josiah Peake does not quote $9.",
+      "The compositor who sets in Baskerville and $9 are exactly one price step apart in quoted price order, in one direction or the other.",
+      "$9 falls somewhere between the compositor who owns up to a clean run and the compositor who owns up to an inverted sort in quoted price order.",
+      "$7 falls somewhere between the compositor who owns up to a loose quoin and the compositor who owns up to a slurred impression in quoted price order.",
+      "Winifred Oakes and $7 are exactly one price step apart in quoted price order, in one direction or the other.",
+      "The compositor who sets in Plantin is dearer than $5 in quoted price order.",
+      "The compositor who owns up to a loose quoin is dearer than $5 in quoted price order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) Josiah Peake is cheaper than the compositor who sets in Baskerville in quoted price order. (b) Harriet Lisle does not set in Baskerville.",
+      "Ned Ashby does not own up to a slurred impression.",
+      "The compositor who owns up to a clean run falls somewhere between Cecil Braddock and the compositor who sets in Perpetua in quoted price order.",
+      "Cecil Braddock and the compositor who sets in Bodoni are exactly one price step apart in quoted price order, in one direction or the other.",
+      "Josiah Peake and the compositor who owns up to an inverted sort are exactly one price step apart in quoted price order, in one direction or the other."
+    ]
+  }
+}

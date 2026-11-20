@@ -1,0 +1,394 @@
+{
+  "pid": "aa4dc08e654c",
+  "title": "The Blind Tasting at Pemberton's",
+  "theme": "tea",
+  "blurb": "Pemberton's holds a blind tasting each spring. The tasters are blind to the tea; the tea is not blind to them.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 16.4293,
+  "seed": 2026173255557,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173255557,
+    "theme": "tea"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "taster",
+    "entity_noun_plural": "tasters",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon",
+          "1pm"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "tastes at"
+      },
+      {
+        "name": "taster",
+        "label": "Taster",
+        "items": [
+          "Marguerite",
+          "Rolf",
+          "Soren",
+          "Chidi",
+          "Ignatia",
+          "Yolanda"
+        ],
+        "ordered": false,
+        "noun": "taster",
+        "subject": true
+      },
+      {
+        "name": "tea",
+        "label": "Tea",
+        "items": [
+          "a first-flush Darjeeling",
+          "a silver needle white",
+          "a roasted oolong",
+          "a smoked Lapsang",
+          "a Nilgiri frost",
+          "a Keemun"
+        ],
+        "ordered": false,
+        "noun": "tea",
+        "verb": "samples"
+      },
+      {
+        "name": "note",
+        "label": "Tasting note",
+        "items": [
+          "cold butter",
+          "bruised peach",
+          "stewed apricot",
+          "iron filings",
+          "hay and honey",
+          "wet slate"
+        ],
+        "ordered": false,
+        "noun": "note",
+        "verb": "reports"
+      },
+      {
+        "name": "cup",
+        "label": "Cup",
+        "items": [
+          "a glass tumbler",
+          "a lacquered bowl",
+          "a chipped blue cup",
+          "an enamel mug",
+          "a pewter beaker",
+          "a bone china cup"
+        ],
+        "ordered": false,
+        "noun": "cup",
+        "verb": "drinks from"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "note:cold butter",
+              "b": "time:8am"
+            },
+            {
+              "kind": "gap",
+              "a": "tea:a Keemun",
+              "b": "time:10am",
+              "k": 2,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "tea:a first-flush Darjeeling",
+          "b": "cup:a lacquered bowl",
+          "c": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "taster:Rolf",
+          "b": "time:11am",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "cup:a glass tumbler",
+              "b": "taster:Soren"
+            },
+            {
+              "kind": "not_link",
+              "a": "taster:Yolanda",
+              "b": "tea:a Keemun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "taster:Rolf",
+          "b": "tea:a Keemun",
+          "c": "tea:a Nilgiri frost"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "note:cold butter",
+              "b": "taster:Marguerite"
+            },
+            {
+              "kind": "immediately_before",
+              "a": "note:iron filings",
+              "b": "cup:a glass tumbler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tea:a smoked Lapsang",
+          "b": "note:stewed apricot"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "taster:Marguerite",
+          "b": "tea:a Keemun",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "cup:a glass tumbler",
+          "b": "taster:Rolf"
+        },
+        {
+          "kind": "not_link",
+          "a": "cup:a glass tumbler",
+          "b": "taster:Chidi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "tea:a Keemun",
+          "b": "note:hay and honey",
+          "c": "note:stewed apricot"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "note:iron filings",
+          "b": "taster:Chidi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tea:a silver needle white",
+          "b": "cup:an enamel mug"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "note:wet slate",
+          "b": "taster:Ignatia",
+          "k": 5,
+          "rel": "eq"
+        },
+        {
+          "kind": "not_link",
+          "a": "cup:a bone china cup",
+          "b": "taster:Ignatia"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "note:cold butter",
+          "b": "tea:a Nilgiri frost"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tea:a Nilgiri frost",
+          "b": "cup:a pewter beaker"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon",
+      "1pm"
+    ],
+    "taster": [
+      "Chidi",
+      "Marguerite",
+      "Yolanda",
+      "Rolf",
+      "Soren",
+      "Ignatia"
+    ],
+    "tea": [
+      "a silver needle white",
+      "a smoked Lapsang",
+      "a Nilgiri frost",
+      "a first-flush Darjeeling",
+      "a Keemun",
+      "a roasted oolong"
+    ],
+    "note": [
+      "wet slate",
+      "iron filings",
+      "stewed apricot",
+      "cold butter",
+      "bruised peach",
+      "hay and honey"
+    ],
+    "cup": [
+      "a lacquered bowl",
+      "an enamel mug",
+      "a glass tumbler",
+      "a pewter beaker",
+      "a bone china cup",
+      "a chipped blue cup"
+    ]
+  },
+  "stats": {
+    "atoms": 17,
+    "numbered_clues": 15,
+    "kinds": {
+      "or": 3,
+      "between": 3,
+      "parity": 2,
+      "immediately_before": 4,
+      "not_link": 2,
+      "adjacent": 2,
+      "gap": 1
+    },
+    "positives": 0,
+    "compounds": 3
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 87,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 39,
+      "order": 39,
+      "disjunction": 4,
+      "trial": 3
+    },
+    "trial_eliminations": 3,
+    "unknown_cells": 24
+  },
+  "text": {
+    "intro": "Pemberton's holds a blind tasting each spring. The tasters are blind to the tea; the tea is not blind to them.\nSix tasters are involved. Determine each taster's start time, tea, note and cup.\n- **Taster**: Marguerite, Rolf, Soren, Chidi, Ignatia and Yolanda.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am, noon and 1pm.\n- **Tea**: a first-flush Darjeeling, a silver needle white, a roasted oolong, a smoked Lapsang, a Nilgiri frost and a Keemun.\n- **Tasting note**: cold butter; bruised peach; stewed apricot; iron filings; hay and honey; and wet slate.\n- **Cup**: a glass tumbler, a lacquered bowl, a chipped blue cup, an enamel mug, a pewter beaker and a bone china cup.\nEvery taster has a different start time, tea, note and cup, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) The taster who reports cold butter and 8am are exactly one hour apart in start time order, in one direction or the other. (b) The taster who samples a Keemun and 10am are exactly two hours apart in start time order.",
+      "The taster who samples a first-flush Darjeeling falls somewhere between the taster who drinks from a lacquered bowl and noon in start time order.",
+      "Rolf and 11am both sit at odd-numbered hours or both at even-numbered hours.",
+      "At least one of the following holds, and possibly more than one: (a) The taster who drinks from a glass tumbler and Soren are exactly one hour apart in start time order, in one direction or the other. (b) Yolanda does not sample a Keemun.",
+      "Rolf falls somewhere between the taster who samples a Keemun and the taster who samples a Nilgiri frost in start time order.",
+      "At least one of the following holds, and possibly more than one: (a) The taster who reports cold butter and Marguerite are exactly one hour apart in start time order, in one direction or the other. (b) The taster who reports iron filings is exactly one hour earlier than the taster who drinks from a glass tumbler, with no start time in between.",
+      "The taster who samples a smoked Lapsang is exactly one hour earlier than the taster who reports stewed apricot, with no start time in between.",
+      "One of Marguerite and the taster who samples a Keemun sits at an odd-numbered start time and the other at an even-numbered start time.",
+      "The taster who drinks from a glass tumbler is exactly one hour earlier than Rolf, with no start time in between. Chidi does not drink from a glass tumbler.",
+      "The taster who samples a Keemun falls somewhere between the taster who reports hay and honey and the taster who reports stewed apricot in start time order.",
+      "The taster who reports iron filings and Chidi are exactly one hour apart in start time order, in one direction or the other.",
+      "The taster who samples a silver needle white is exactly one hour earlier than the taster who drinks from an enamel mug, with no start time in between.",
+      "The taster who reports wet slate and Ignatia are exactly five hours apart in start time order. Ignatia does not drink from a bone china cup.",
+      "The taster who reports cold butter and the taster who samples a Nilgiri frost are exactly one hour apart in start time order, in one direction or the other.",
+      "The taster who samples a Nilgiri frost is exactly one hour earlier than the taster who drinks from a pewter beaker, with no start time in between."
+    ]
+  }
+}

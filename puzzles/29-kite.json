@@ -1,0 +1,252 @@
+{
+  "pid": "55e247ecaf19",
+  "title": "The Wind Is Free, the Field Is Not",
+  "theme": "kite",
+  "blurb": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026173105096,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173105096,
+    "theme": "kite"
+  },
+  "schema": {
+    "spine": "fee",
+    "entity_noun": "flier",
+    "entity_noun_plural": "fliers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "fee",
+        "label": "Entry fee",
+        "items": [
+          "$2",
+          "$4",
+          "$6",
+          "$8",
+          "$10"
+        ],
+        "ordered": true,
+        "values": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "unit": "$",
+        "noun": "entry fee",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "fee step",
+        "verb": "pays"
+      },
+      {
+        "name": "flier",
+        "label": "Flier",
+        "items": [
+          "Kipling",
+          "Tansy",
+          "Blaise",
+          "Morwenna",
+          "Gunnar"
+        ],
+        "ordered": false,
+        "noun": "flier",
+        "subject": true
+      },
+      {
+        "name": "kite",
+        "label": "Kite",
+        "items": [
+          "a rokkaku fighter",
+          "a box kite",
+          "a delta wing",
+          "a paper sled kite",
+          "a hand-painted dragon"
+        ],
+        "ordered": false,
+        "noun": "kite",
+        "verb": "flies"
+      },
+      {
+        "name": "line",
+        "label": "Line",
+        "items": [
+          "nylon twine",
+          "braided dacron",
+          "hemp cord",
+          "kevlar thread",
+          "fishing monofilament"
+        ],
+        "ordered": false,
+        "noun": "line",
+        "verb": "uses"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "fee:$6",
+          "b": "line:braided dacron"
+        },
+        {
+          "kind": "not_link",
+          "a": "fee:$6",
+          "b": "kite:a delta wing"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "fee:$10",
+          "b": "flier:Blaise"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "line:nylon twine",
+          "b": "fee:$6"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "line:hemp cord",
+          "b": "kite:a paper sled kite"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "kite:a box kite",
+          "b": "flier:Tansy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "flier:Tansy",
+          "b": "line:fishing monofilament",
+          "c": "line:kevlar thread"
+        },
+        {
+          "kind": "not_link",
+          "a": "flier:Gunnar",
+          "b": "line:kevlar thread"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "kite:a rokkaku fighter",
+          "b": "line:fishing monofilament"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "flier:Morwenna",
+          "b": "kite:a hand-painted dragon"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "fee": [
+      "$2",
+      "$4",
+      "$6",
+      "$8",
+      "$10"
+    ],
+    "flier": [
+      "Kipling",
+      "Morwenna",
+      "Tansy",
+      "Blaise",
+      "Gunnar"
+    ],
+    "kite": [
+      "a delta wing",
+      "a box kite",
+      "a hand-painted dragon",
+      "a rokkaku fighter",
+      "a paper sled kite"
+    ],
+    "line": [
+      "kevlar thread",
+      "nylon twine",
+      "hemp cord",
+      "braided dacron",
+      "fishing monofilament"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 8,
+    "kinds": {
+      "adjacent": 2,
+      "not_link": 2,
+      "immediately_before": 4,
+      "before": 1,
+      "between": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 43,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 22,
+      "order": 19
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.\nFive fliers are involved. Determine each flier's entry fee, kite and line.\n- **Flier**: Kipling, Tansy, Blaise, Morwenna and Gunnar.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Kite**: a rokkaku fighter, a box kite, a delta wing, a paper sled kite and a hand-painted dragon.\n- **Line**: nylon twine, braided dacron, hemp cord, kevlar thread and fishing monofilament.\nEvery flier has a different entry fee, kite and line, so within each category every item is used exactly once.",
+    "clues": [
+      "The flier who uses braided dacron and $6 are exactly one fee step apart in entry fee order, in one direction or the other. The flier who flies a delta wing does not pay $6.",
+      "Blaise and $10 are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "The flier who uses nylon twine is exactly one fee step cheaper than $6, with no entry fee in between.",
+      "The flier who uses hemp cord is cheaper than the flier who flies a paper sled kite in entry fee order.",
+      "The flier who flies a box kite is exactly one fee step cheaper than Tansy, with no entry fee in between.",
+      "Tansy falls somewhere between the flier who uses fishing monofilament and the flier who uses kevlar thread in entry fee order. Gunnar does not use kevlar thread.",
+      "The flier who flies a rokkaku fighter is exactly one fee step cheaper than the flier who uses fishing monofilament, with no entry fee in between.",
+      "Morwenna is exactly one fee step cheaper than the flier who flies a hand-painted dragon, with no entry fee in between."
+    ]
+  }
+}

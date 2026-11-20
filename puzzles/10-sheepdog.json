@@ -1,0 +1,204 @@
+{
+  "pid": "18d702673a4e",
+  "title": "The Clun Forest Trials",
+  "theme": "sheepdog",
+  "blurb": "A hillside, a flock with its own ideas, and a judge who deducts for a wide outrun with the enthusiasm of someone settling an old score.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.86,
+  "seed": 2026172954635,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172954635,
+    "theme": "sheepdog"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "handler",
+    "entity_noun_plural": "handlers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "scores"
+      },
+      {
+        "name": "handler",
+        "label": "Handler",
+        "items": [
+          "Constance",
+          "Eiddwen",
+          "Marged",
+          "Huw Pryce",
+          "Tarrant"
+        ],
+        "ordered": false,
+        "noun": "handler",
+        "subject": true
+      },
+      {
+        "name": "dog",
+        "label": "Dog",
+        "items": [
+          "Bute",
+          "Gyp",
+          "Fly",
+          "Nell",
+          "Craig"
+        ],
+        "ordered": false,
+        "noun": "dog",
+        "verb": "runs"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "dog:Gyp",
+          "b": "points:73 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "dog:Bute",
+          "b": "handler:Constance"
+        },
+        {
+          "kind": "between",
+          "a": "dog:Bute",
+          "b": "points:61 points",
+          "c": "points:67 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "points:70 points",
+          "b": "handler:Tarrant"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "dog:Fly",
+          "b": "points:67 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "handler:Huw Pryce",
+          "b": "points:70 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "dog:Craig",
+          "b": "handler:Marged"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "handler": [
+      "Eiddwen",
+      "Marged",
+      "Huw Pryce",
+      "Constance",
+      "Tarrant"
+    ],
+    "dog": [
+      "Craig",
+      "Bute",
+      "Nell",
+      "Fly",
+      "Gyp"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 1,
+      "before": 3,
+      "between": 1,
+      "adjacent": 1,
+      "immediately_before": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 23,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 14,
+      "order": 8
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "A hillside, a flock with its own ideas, and a judge who deducts for a wide outrun with the enthusiasm of someone settling an old score.\nFive handlers are involved. Determine each handler's score and dog.\n- **Handler**: Constance, Eiddwen, Marged, Huw Pryce and Tarrant.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Dog**: Bute, Gyp, Fly, Nell and Craig.\nEvery handler has a different score and dog, so within each category every item is used exactly once.",
+    "clues": [
+      "The handler who runs Gyp scores 73 points.",
+      "The handler who runs Bute is lower than Constance in score order. The handler who runs Bute falls somewhere between 61 points and 67 points in score order.",
+      "Tarrant is higher than 70 points in score order.",
+      "The handler who runs Fly and 67 points are exactly one score step apart in score order, in one direction or the other.",
+      "Huw Pryce is exactly one score step lower than 70 points, with no score in between.",
+      "The handler who runs Craig is lower than Marged in score order."
+    ]
+  }
+}

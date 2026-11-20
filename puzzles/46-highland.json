@@ -1,0 +1,423 @@
+{
+  "pid": "d15277230140",
+  "title": "The Heavies at Kinloch Rannoch",
+  "theme": "highland",
+  "blurb": "The heavy events, measured to the foot, in a field where the wind counts for more than anybody admits.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 16.2033,
+  "seed": 2026173239719,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173239719,
+    "theme": "highland"
+  },
+  "schema": {
+    "spine": "throw",
+    "entity_noun": "thrower",
+    "entity_noun_plural": "throwers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "throw",
+        "label": "Best throw",
+        "items": [
+          "28 feet",
+          "32 feet",
+          "36 feet",
+          "40 feet",
+          "44 feet"
+        ],
+        "ordered": true,
+        "values": [
+          28,
+          32,
+          36,
+          40,
+          44
+        ],
+        "unit_suffix": " feet",
+        "noun": "best throw",
+        "cmp_less": "shorter",
+        "cmp_more": "longer",
+        "step_noun": "throw step",
+        "verb": "throws"
+      },
+      {
+        "name": "thrower",
+        "label": "Thrower",
+        "items": [
+          "Rab Souter",
+          "Fiona Strachan",
+          "Lachlan Cree",
+          "Angus Dunbar",
+          "Morag Inglis"
+        ],
+        "ordered": false,
+        "noun": "thrower",
+        "subject": true
+      },
+      {
+        "name": "event",
+        "label": "Event",
+        "items": [
+          "the weight for distance",
+          "the Scottish hammer",
+          "the caber toss",
+          "the sheaf toss",
+          "the weight over the bar"
+        ],
+        "ordered": false,
+        "noun": "event",
+        "verb": "competes in"
+      },
+      {
+        "name": "tartan",
+        "label": "Tartan",
+        "items": [
+          "Cameron of Erracht",
+          "Lamont ancient",
+          "Murray of Atholl",
+          "Fraser hunting",
+          "Buchanan"
+        ],
+        "ordered": false,
+        "noun": "tartan",
+        "verb": "wears"
+      },
+      {
+        "name": "grumble",
+        "label": "Grumble",
+        "items": [
+          "a turned ankle",
+          "a crosswind",
+          "a borrowed caber",
+          "a slipped grip",
+          "a soft run-up"
+        ],
+        "ordered": false,
+        "noun": "grumble",
+        "verb": "complains of"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "tartan:Murray of Atholl",
+              "b": "throw:32 feet"
+            },
+            {
+              "kind": "not_link",
+              "a": "throw:36 feet",
+              "b": "thrower:Angus Dunbar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "link",
+            "a": "tartan:Lamont ancient",
+            "b": "thrower:Lachlan Cree"
+          },
+          "y": {
+            "kind": "not_link",
+            "a": "tartan:Lamont ancient",
+            "b": "throw:36 feet"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "throw:40 feet",
+          "b": "thrower:Angus Dunbar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "throw:40 feet",
+          "b": "tartan:Fraser hunting",
+          "c": "tartan:Murray of Atholl"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "adjacent",
+            "a": "grumble:a slipped grip",
+            "b": "thrower:Lachlan Cree"
+          },
+          "y": {
+            "kind": "link",
+            "a": "throw:36 feet",
+            "b": "thrower:Rab Souter"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "throw:40 feet",
+          "b": "grumble:a borrowed caber"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "event:the Scottish hammer",
+          "b": "throw:44 feet"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "grumble:a turned ankle",
+          "b": "tartan:Cameron of Erracht"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "event:the sheaf toss",
+          "b": "grumble:a soft run-up"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "event:the weight over the bar",
+              "b": "grumble:a slipped grip"
+            },
+            {
+              "kind": "link",
+              "a": "event:the sheaf toss",
+              "b": "thrower:Lachlan Cree"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "grumble:a slipped grip",
+          "b": "event:the weight for distance",
+          "c": "thrower:Morag Inglis"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "tartan:Lamont ancient",
+          "b": "event:the weight for distance",
+          "c": "event:the weight over the bar"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "event:the caber toss",
+          "b": "thrower:Morag Inglis"
+        },
+        {
+          "kind": "not_link",
+          "a": "event:the caber toss",
+          "b": "grumble:a crosswind"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "event:the weight over the bar",
+              "b": "grumble:a slipped grip"
+            },
+            {
+              "kind": "not_link",
+              "a": "event:the Scottish hammer",
+              "b": "tartan:Lamont ancient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "arith",
+          "a": "tartan:Murray of Atholl",
+          "b": "grumble:a turned ankle",
+          "k": 16,
+          "op": "add"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "tartan:Lamont ancient",
+          "b": "thrower:Rab Souter"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "thrower:Fiona Strachan",
+          "b": "event:the sheaf toss"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "throw": [
+      "28 feet",
+      "32 feet",
+      "36 feet",
+      "40 feet",
+      "44 feet"
+    ],
+    "thrower": [
+      "Rab Souter",
+      "Fiona Strachan",
+      "Lachlan Cree",
+      "Morag Inglis",
+      "Angus Dunbar"
+    ],
+    "event": [
+      "the caber toss",
+      "the weight for distance",
+      "the sheaf toss",
+      "the Scottish hammer",
+      "the weight over the bar"
+    ],
+    "tartan": [
+      "Fraser hunting",
+      "Cameron of Erracht",
+      "Lamont ancient",
+      "Buchanan",
+      "Murray of Atholl"
+    ],
+    "grumble": [
+      "a turned ankle",
+      "a crosswind",
+      "a slipped grip",
+      "a soft run-up",
+      "a borrowed caber"
+    ]
+  },
+  "stats": {
+    "atoms": 18,
+    "numbered_clues": 17,
+    "kinds": {
+      "or": 3,
+      "not_both": 1,
+      "adjacent": 1,
+      "between": 3,
+      "if_then": 1,
+      "before": 2,
+      "immediately_before": 3,
+      "not_link": 3,
+      "arith": 1
+    },
+    "positives": 0,
+    "compounds": 5
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 56,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 25,
+      "order": 22,
+      "disjunction": 1,
+      "trial": 5
+    },
+    "trial_eliminations": 5,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The heavy events, measured to the foot, in a field where the wind counts for more than anybody admits.\nFive throwers are involved. Determine each thrower's best throw, event, tartan and grumble.\n- **Thrower**: Rab Souter, Fiona Strachan, Lachlan Cree, Angus Dunbar and Morag Inglis.\n- **Best throw** (listed from shorter to longer): 28 feet, 32 feet, 36 feet, 40 feet and 44 feet.\n- **Event**: the weight for distance, the Scottish hammer, the caber toss, the sheaf toss and the weight over the bar.\n- **Tartan**: Cameron of Erracht, Lamont ancient, Murray of Atholl, Fraser hunting and Buchanan.\n- **Grumble**: a turned ankle, a crosswind, a borrowed caber, a slipped grip and a soft run-up.\nEvery thrower has a different best throw, event, tartan and grumble, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) The thrower who wears Murray of Atholl and 32 feet are exactly one throw step apart in best throw order, in one direction or the other. (b) Angus Dunbar does not throw 36 feet.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) Lachlan Cree wears Lamont ancient. (b) The thrower who wears Lamont ancient does not throw 36 feet.",
+      "Angus Dunbar and 40 feet are exactly one throw step apart in best throw order, in one direction or the other.",
+      "40 feet falls somewhere between the thrower who wears Fraser hunting and the thrower who wears Murray of Atholl in best throw order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The thrower who complains of a slipped grip and Lachlan Cree are exactly one throw step apart in best throw order, in one direction or the other. (b) Rab Souter throws 36 feet.",
+      "The thrower who complains of a borrowed caber is longer than 40 feet in best throw order.",
+      "The thrower who competes in the Scottish hammer is exactly one throw step shorter than 44 feet, with no best throw in between.",
+      "The thrower who complains of a turned ankle is exactly one throw step shorter than the thrower who wears Cameron of Erracht, with no best throw in between.",
+      "The thrower who competes in the sheaf toss is shorter than the thrower who complains of a soft run-up in best throw order.",
+      "At least one of the following holds, and possibly more than one: (a) The thrower who competes in the weight over the bar and the thrower who complains of a slipped grip are exactly one throw step apart in best throw order, in one direction or the other. (b) Lachlan Cree competes in the sheaf toss.",
+      "The thrower who complains of a slipped grip falls somewhere between the thrower who competes in the weight for distance and Morag Inglis in best throw order.",
+      "The thrower who wears Lamont ancient falls somewhere between the thrower who competes in the weight for distance and the thrower who competes in the weight over the bar in best throw order.",
+      "Morag Inglis does not compete in the caber toss. The thrower who competes in the caber toss does not complain of a crosswind.",
+      "At least one of the following holds, and possibly more than one: (a) The thrower who competes in the weight over the bar and the thrower who complains of a slipped grip are exactly one throw step apart in best throw order, in one direction or the other. (b) The thrower who competes in the Scottish hammer does not wear Lamont ancient.",
+      "The thrower who wears Murray of Atholl has a best throw exactly 16 feet more than the thrower who complains of a turned ankle.",
+      "Rab Souter does not wear Lamont ancient.",
+      "Fiona Strachan is exactly one throw step shorter than the thrower who competes in the sheaf toss, with no best throw in between."
+    ]
+  }
+}

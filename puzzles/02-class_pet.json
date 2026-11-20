@@ -1,0 +1,178 @@
+{
+  "pid": "557fcdaf3241",
+  "title": "The Room 12 Class Pet Vote",
+  "theme": "class_pet",
+  "blurb": "Mr. Ocampo said the class could pick one pet. Nobody warned him that would mean campaign posters.",
+  "profile": "gentle",
+  "rating": 1,
+  "score": 3.97,
+  "seed": 2026172891283,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172891283,
+    "theme": "class_pet"
+  },
+  "schema": {
+    "spine": "votes",
+    "entity_noun": "kid",
+    "entity_noun_plural": "kids",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "votes",
+        "label": "Vote count",
+        "items": [
+          "4 votes",
+          "6 votes",
+          "8 votes",
+          "10 votes"
+        ],
+        "ordered": true,
+        "values": [
+          4,
+          6,
+          8,
+          10
+        ],
+        "unit_suffix": " votes",
+        "noun": "vote count",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "vote step",
+        "verb": "wins"
+      },
+      {
+        "name": "kid",
+        "label": "Kid",
+        "items": [
+          "Sanjay",
+          "Kwame",
+          "Dashiell",
+          "Ezra"
+        ],
+        "ordered": false,
+        "noun": "kid",
+        "subject": true
+      },
+      {
+        "name": "petname",
+        "label": "Name",
+        "items": [
+          "Noodle",
+          "Taco",
+          "Rocket",
+          "Sir Pickles"
+        ],
+        "ordered": false,
+        "noun": "name",
+        "verb": "calls it"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Kwame",
+          "b": "votes:6 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Ezra",
+          "b": "votes:8 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "petname:Sir Pickles",
+          "b": "votes:8 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "petname:Noodle",
+          "b": "votes:6 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "petname:Taco",
+          "b": "kid:Sanjay"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "votes": [
+      "4 votes",
+      "6 votes",
+      "8 votes",
+      "10 votes"
+    ],
+    "kid": [
+      "Dashiell",
+      "Kwame",
+      "Ezra",
+      "Sanjay"
+    ],
+    "petname": [
+      "Noodle",
+      "Taco",
+      "Sir Pickles",
+      "Rocket"
+    ]
+  },
+  "stats": {
+    "atoms": 5,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 3,
+      "adjacent": 1,
+      "before": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 15,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 9,
+      "order": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "Mr. Ocampo said the class could pick one pet. Nobody warned him that would mean campaign posters.\nFour kids are involved. Determine each kid's vote count and name.\n- **Kid**: Sanjay, Kwame, Dashiell and Ezra.\n- **Vote count** (listed from lower to higher): 4 votes, 6 votes, 8 votes and 10 votes.\n- **Name**: Noodle, Taco, Rocket and Sir Pickles.\nEvery kid has a different vote count and name, so within each category every item is used exactly once.",
+    "clues": [
+      "Kwame wins 6 votes.",
+      "Ezra wins 8 votes.",
+      "The kid who calls it Sir Pickles wins 8 votes.",
+      "The kid who calls it Noodle and 6 votes are exactly one vote step apart in vote count order, in one direction or the other.",
+      "The kid who calls it Taco is lower than Sanjay in vote count order."
+    ]
+  }
+}

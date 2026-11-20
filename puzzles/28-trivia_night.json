@@ -1,0 +1,254 @@
+{
+  "pid": "8eaea97a1465",
+  "title": "Trivia Night at the Public Library",
+  "theme": "trivia_night",
+  "blurb": "The library runs trivia on the first Thursday of the month, and the scorekeeper will not be hurried.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026173097177,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173097177,
+    "theme": "trivia_night"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "player",
+    "entity_noun_plural": "players",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "scores"
+      },
+      {
+        "name": "player",
+        "label": "Player",
+        "items": [
+          "Odalys",
+          "Lou Ann",
+          "Takeshi",
+          "Vikram",
+          "Darby"
+        ],
+        "ordered": false,
+        "noun": "player",
+        "subject": true
+      },
+      {
+        "name": "team",
+        "label": "Team",
+        "items": [
+          "the Wi-Fighters",
+          "the Library Cards",
+          "Nacho Average Team",
+          "the Smarty Pants",
+          "the Quizzard of Oz"
+        ],
+        "ordered": false,
+        "noun": "team",
+        "verb": "plays for"
+      },
+      {
+        "name": "category",
+        "label": "Category",
+        "items": [
+          "state capitals",
+          "breakfast cereals",
+          "one-hit wonders",
+          "cloud formations",
+          "90s cartoons"
+        ],
+        "ordered": false,
+        "noun": "category",
+        "verb": "takes the questions on"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "category:state capitals",
+          "b": "points:67 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "team:the Library Cards",
+          "b": "points:70 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "team:the Smarty Pants",
+          "b": "player:Vikram",
+          "c": "points:64 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "points:64 points",
+          "b": "player:Lou Ann"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "player:Vikram",
+          "b": "category:breakfast cereals",
+          "c": "team:the Wi-Fighters"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "team:the Smarty Pants",
+          "b": "player:Takeshi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "team:the Quizzard of Oz",
+          "b": "category:state capitals"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "category:one-hit wonders",
+          "b": "player:Darby"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "category:cloud formations",
+          "b": "team:Nacho Average Team"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "player": [
+      "Odalys",
+      "Darby",
+      "Lou Ann",
+      "Vikram",
+      "Takeshi"
+    ],
+    "team": [
+      "the Library Cards",
+      "the Quizzard of Oz",
+      "the Smarty Pants",
+      "Nacho Average Team",
+      "the Wi-Fighters"
+    ],
+    "category": [
+      "one-hit wonders",
+      "breakfast cereals",
+      "state capitals",
+      "90s cartoons",
+      "cloud formations"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 9,
+    "kinds": {
+      "link": 1,
+      "before": 2,
+      "between": 2,
+      "immediately_before": 3,
+      "adjacent": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 36,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 19,
+      "order": 16
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The library runs trivia on the first Thursday of the month, and the scorekeeper will not be hurried.\nFive players are involved. Determine each player's score, team and category.\n- **Player**: Odalys, Lou Ann, Takeshi, Vikram and Darby.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Team**: the Wi-Fighters, the Library Cards, Nacho Average Team, the Smarty Pants and the Quizzard of Oz.\n- **Category**: state capitals, breakfast cereals, one-hit wonders, cloud formations and 90s cartoons.\nEvery player has a different score, team and category, so within each category every item is used exactly once.",
+    "clues": [
+      "The player who takes the questions on state capitals scores 67 points.",
+      "The player who plays for the Library Cards is lower than 70 points in score order.",
+      "The player who plays for the Smarty Pants falls somewhere between Vikram and 64 points in score order.",
+      "64 points is exactly one score step lower than Lou Ann, with no score in between.",
+      "Vikram falls somewhere between the player who takes the questions on breakfast cereals and the player who plays for the Wi-Fighters in score order.",
+      "The player who plays for the Smarty Pants is lower than Takeshi in score order.",
+      "The player who plays for the Quizzard of Oz is exactly one score step lower than the player who takes the questions on state capitals, with no score in between.",
+      "The player who takes the questions on one-hit wonders is exactly one score step lower than Darby, with no score in between.",
+      "The player who takes the questions on cloud formations and the player who plays for Nacho Average Team are exactly one score step apart in score order, in one direction or the other."
+    ]
+  }
+}

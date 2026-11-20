@@ -1,0 +1,358 @@
+{
+  "pid": "db7e42eec76d",
+  "title": "The Graveyard Shift at WPKX",
+  "theme": "radio",
+  "blurb": "Nobody at WPKX has met anyone on the overnight schedule, which is how the station likes it.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 10.3225,
+  "seed": 2026173184286,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173184286,
+    "theme": "radio"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "host",
+    "entity_noun_plural": "hosts",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "broadcasts in"
+      },
+      {
+        "name": "host",
+        "label": "Host",
+        "items": [
+          "Gideon Park",
+          "Bea Okonjo",
+          "Maribel Sosa",
+          "Rusty Lamarr",
+          "Arlo Finch"
+        ],
+        "ordered": false,
+        "noun": "host",
+        "subject": true
+      },
+      {
+        "name": "show",
+        "label": "Show",
+        "items": [
+          "The Sleepless Hour",
+          "Signal Fade",
+          "The Long Haul",
+          "Owls Calling",
+          "Coffee and Regrets"
+        ],
+        "ordered": false,
+        "noun": "show",
+        "verb": "presents"
+      },
+      {
+        "name": "genre",
+        "label": "Format",
+        "items": [
+          "forgotten soul",
+          "trucker country",
+          "lost surf rock",
+          "radio plays",
+          "obscure jazz"
+        ],
+        "ordered": false,
+        "noun": "format",
+        "verb": "plays"
+      },
+      {
+        "name": "sponsor",
+        "label": "Sponsor",
+        "items": [
+          "a taxidermist",
+          "a mattress warehouse",
+          "a storage facility",
+          "a bail bondsman",
+          "a chain of car washes"
+        ],
+        "ordered": false,
+        "noun": "sponsor",
+        "verb": "is sponsored by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "genre:obscure jazz",
+          "b": "slot:slot five",
+          "c": "slot:slot one"
+        },
+        {
+          "kind": "before",
+          "a": "slot:slot one",
+          "b": "show:Owls Calling"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "not_link",
+              "a": "genre:forgotten soul",
+              "b": "slot:slot five"
+            },
+            {
+              "kind": "not_link",
+              "a": "slot:slot four",
+              "b": "sponsor:a storage facility"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "genre:forgotten soul",
+          "b": "slot:slot one",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "slot:slot three",
+          "b": "host:Gideon Park",
+          "c": "sponsor:a bail bondsman"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "show:Coffee and Regrets",
+          "b": "genre:lost surf rock"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "host:Maribel Sosa",
+          "b": "sponsor:a mattress warehouse"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "genre:radio plays",
+          "b": "host:Maribel Sosa",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "genre:radio plays",
+          "b": "show:Signal Fade"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "host:Arlo Finch",
+          "b": "show:Signal Fade"
+        },
+        {
+          "kind": "parity",
+          "a": "host:Gideon Park",
+          "b": "show:Signal Fade",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "show:The Long Haul",
+          "b": "genre:forgotten soul",
+          "c": "genre:lost surf rock"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "sponsor:a taxidermist",
+          "b": "show:The Sleepless Hour"
+        },
+        {
+          "kind": "not_link",
+          "a": "genre:trucker country",
+          "b": "sponsor:a taxidermist"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "host:Maribel Sosa",
+              "b": "sponsor:a storage facility"
+            },
+            {
+              "kind": "gap",
+              "a": "host:Rusty Lamarr",
+              "b": "sponsor:a storage facility",
+              "k": 3,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "genre:forgotten soul",
+          "b": "host:Maribel Sosa"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "host": [
+      "Gideon Park",
+      "Arlo Finch",
+      "Bea Okonjo",
+      "Maribel Sosa",
+      "Rusty Lamarr"
+    ],
+    "show": [
+      "Coffee and Regrets",
+      "Owls Calling",
+      "Signal Fade",
+      "The Long Haul",
+      "The Sleepless Hour"
+    ],
+    "genre": [
+      "trucker country",
+      "radio plays",
+      "lost surf rock",
+      "obscure jazz",
+      "forgotten soul"
+    ],
+    "sponsor": [
+      "a chain of car washes",
+      "a storage facility",
+      "a taxidermist",
+      "a bail bondsman",
+      "a mattress warehouse"
+    ]
+  },
+  "stats": {
+    "atoms": 16,
+    "numbered_clues": 13,
+    "kinds": {
+      "between": 3,
+      "before": 4,
+      "or": 2,
+      "gap": 2,
+      "immediately_before": 1,
+      "adjacent": 2,
+      "parity": 1,
+      "not_link": 1
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 56,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 27,
+      "order": 24,
+      "disjunction": 4
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Nobody at WPKX has met anyone on the overnight schedule, which is how the station likes it.\nFive hosts are involved. Determine each host's slot, show, format and sponsor.\n- **Host**: Gideon Park, Bea Okonjo, Maribel Sosa, Rusty Lamarr and Arlo Finch.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Show**: The Sleepless Hour; Signal Fade; The Long Haul; Owls Calling; and Coffee and Regrets.\n- **Format**: forgotten soul, trucker country, lost surf rock, radio plays and obscure jazz.\n- **Sponsor**: a taxidermist, a mattress warehouse, a storage facility, a bail bondsman and a chain of car washes.\nEvery host has a different slot, show, format and sponsor, so within each category every item is used exactly once.",
+    "clues": [
+      "The host who plays obscure jazz falls somewhere between slot five and slot one in slot order. The host who presents Owls Calling is later than slot one in slot order.",
+      "At least one of the following holds, and possibly more than one: (a) The host who plays forgotten soul does not broadcast in slot five. (b) The host who is sponsored by a storage facility does not broadcast in slot four.",
+      "The host who plays forgotten soul and slot one are exactly four slots apart in slot order.",
+      "Slot three falls somewhere between Gideon Park and the host who is sponsored by a bail bondsman in slot order.",
+      "The host who presents Coffee and Regrets is earlier than the host who plays lost surf rock in slot order.",
+      "Maribel Sosa is exactly one slot earlier than the host who is sponsored by a mattress warehouse, with no slot in between.",
+      "The host who plays radio plays and Maribel Sosa are exactly two slots apart in slot order.",
+      "The host who plays radio plays and the host who presents Signal Fade are exactly one slot apart in slot order, in one direction or the other.",
+      "Arlo Finch is earlier than the host who presents Signal Fade in slot order. Gideon Park and the host who presents Signal Fade both sit at odd-numbered slots or both at even-numbered slots.",
+      "The host who presents The Long Haul falls somewhere between the host who plays forgotten soul and the host who plays lost surf rock in slot order.",
+      "The host who is sponsored by a taxidermist is earlier than the host who presents The Sleepless Hour in slot order. The host who plays trucker country is not sponsored by a taxidermist.",
+      "At least one of the following holds, and possibly more than one: (a) Maribel Sosa is earlier than the host who is sponsored by a storage facility in slot order. (b) Rusty Lamarr and the host who is sponsored by a storage facility are exactly three slots apart in slot order.",
+      "The host who plays forgotten soul and Maribel Sosa are exactly one slot apart in slot order, in one direction or the other."
+    ]
+  }
+}

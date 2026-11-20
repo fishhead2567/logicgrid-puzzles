@@ -1,0 +1,193 @@
+{
+  "pid": "12ace8926ec0",
+  "title": "Elective Sign-Up at Ridgeline High",
+  "theme": "electives",
+  "blurb": "A gym full of sign-up tables, a line out the door, and a counselor who gave up on alphabetical order an hour ago.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.1,
+  "seed": 2026172962554,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172962554,
+    "theme": "electives"
+  },
+  "schema": {
+    "spine": "month",
+    "entity_noun": "student",
+    "entity_noun_plural": "students",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "month",
+        "label": "Birthday month",
+        "items": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May"
+        ],
+        "ordered": true,
+        "noun": "birthday month",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "month",
+        "verb": "was born in"
+      },
+      {
+        "name": "student",
+        "label": "Student",
+        "items": [
+          "Darnell",
+          "Linnea",
+          "Omar",
+          "Mateo",
+          "Trey"
+        ],
+        "ordered": false,
+        "noun": "student",
+        "subject": true
+      },
+      {
+        "name": "elective",
+        "label": "Elective",
+        "items": [
+          "Spanish",
+          "digital art",
+          "robotics",
+          "wood shop",
+          "theater tech"
+        ],
+        "ordered": false,
+        "noun": "elective",
+        "verb": "signs up for"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "elective:Spanish",
+          "b": "month:February"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "student:Trey",
+          "b": "month:February"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "student:Mateo",
+          "b": "month:April"
+        },
+        {
+          "kind": "not_link",
+          "a": "month:April",
+          "b": "student:Omar"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "elective:Spanish",
+          "b": "student:Mateo"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "elective:robotics",
+          "b": "student:Omar"
+        },
+        {
+          "kind": "before",
+          "a": "student:Omar",
+          "b": "elective:wood shop"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "elective:digital art",
+          "b": "student:Linnea"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "month": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "student": [
+      "Trey",
+      "Omar",
+      "Mateo",
+      "Linnea",
+      "Darnell"
+    ],
+    "elective": [
+      "robotics",
+      "theater tech",
+      "digital art",
+      "Spanish",
+      "wood shop"
+    ]
+  },
+  "stats": {
+    "atoms": 8,
+    "numbered_clues": 5,
+    "kinds": {
+      "not_link": 2,
+      "immediately_before": 3,
+      "adjacent": 1,
+      "before": 2
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 28,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 13,
+      "order": 13
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "A gym full of sign-up tables, a line out the door, and a counselor who gave up on alphabetical order an hour ago.\nFive students are involved. Determine each student's birthday month and elective.\n- **Student**: Darnell, Linnea, Omar, Mateo and Trey.\n- **Birthday month** (listed from earlier to later): January, February, March, April and May.\n- **Elective**: Spanish, digital art, robotics, wood shop and theater tech.\nEvery student has a different birthday month and elective, so within each category every item is used exactly once.",
+    "clues": [
+      "The student who signs up for Spanish was not born in February. Trey is exactly one month earlier than February, with no birthday month in between.",
+      "Mateo is exactly one month earlier than April, with no birthday month in between. Omar was not born in April.",
+      "The student who signs up for Spanish and Mateo are exactly one month apart in birthday month order, in one direction or the other.",
+      "The student who signs up for robotics is earlier than Omar in birthday month order. Omar is earlier than the student who signs up for wood shop in birthday month order.",
+      "The student who signs up for digital art is exactly one month earlier than Linnea, with no birthday month in between."
+    ]
+  }
+}

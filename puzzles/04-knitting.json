@@ -1,0 +1,193 @@
+{
+  "pid": "fd2b2cc374e3",
+  "title": "The Thornwood Knitting Circle",
+  "theme": "knitting",
+  "blurb": "The Thornwood Knitting Circle meets weekly and has not agreed on anything since 1998.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.38,
+  "seed": 2026172907121,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172907121,
+    "theme": "knitting"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "knitter",
+    "entity_noun_plural": "knitters",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Day",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "ordered": true,
+        "noun": "day",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "knits on"
+      },
+      {
+        "name": "knitter",
+        "label": "Knitter",
+        "items": [
+          "Willem",
+          "Maddie",
+          "Ebba",
+          "Angus",
+          "Serafina"
+        ],
+        "ordered": false,
+        "noun": "knitter",
+        "subject": true
+      },
+      {
+        "name": "yarn",
+        "label": "Yarn",
+        "items": [
+          "mohair of great expense",
+          "nettle fiber",
+          "mill-end acrylic",
+          "undyed Shetland",
+          "recycled sari silk"
+        ],
+        "ordered": false,
+        "noun": "yarn",
+        "verb": "works in"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Tuesday",
+          "b": "knitter:Ebba"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Friday",
+          "b": "knitter:Serafina"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Thursday",
+          "b": "knitter:Maddie"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "day:Monday",
+          "b": "yarn:recycled sari silk"
+        },
+        {
+          "kind": "not_link",
+          "a": "day:Monday",
+          "b": "yarn:mill-end acrylic"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "knitter:Ebba",
+          "b": "yarn:mohair of great expense"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "knitter:Angus",
+          "b": "yarn:nettle fiber"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "knitter": [
+      "Willem",
+      "Ebba",
+      "Angus",
+      "Maddie",
+      "Serafina"
+    ],
+    "yarn": [
+      "undyed Shetland",
+      "recycled sari silk",
+      "mohair of great expense",
+      "nettle fiber",
+      "mill-end acrylic"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 3,
+      "immediately_before": 3,
+      "not_link": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 16,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 8,
+      "order": 4
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The Thornwood Knitting Circle meets weekly and has not agreed on anything since 1998.\nFive knitters are involved. Determine each knitter's day and yarn.\n- **Knitter**: Willem, Maddie, Ebba, Angus and Serafina.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Yarn**: mohair of great expense, nettle fiber, mill-end acrylic, undyed Shetland and recycled sari silk.\nEvery knitter has a different day and yarn, so within each category every item is used exactly once.",
+    "clues": [
+      "Ebba knits on Tuesday.",
+      "Serafina knits on Friday.",
+      "Maddie knits on Thursday.",
+      "Monday is exactly one day earlier than the knitter who works in recycled sari silk, with no day in between. The knitter who works in mill-end acrylic does not knit on Monday.",
+      "Ebba is exactly one day earlier than the knitter who works in mohair of great expense, with no day in between.",
+      "Angus is exactly one day earlier than the knitter who works in nettle fiber, with no day in between."
+    ]
+  }
+}

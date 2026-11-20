@@ -1,0 +1,414 @@
+{
+  "pid": "5b4662f6245d",
+  "title": "The Foragers of Thorn Bottom",
+  "theme": "mushroom",
+  "blurb": "The Thorn Bottom foraging club keeps meticulous records, chiefly so that blame can be apportioned later.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 16.4264,
+  "seed": 2026173231800,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173231800,
+    "theme": "mushroom"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "forager",
+    "entity_noun_plural": "foragers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Day",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "ordered": true,
+        "noun": "day",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "forages on"
+      },
+      {
+        "name": "forager",
+        "label": "Forager",
+        "items": [
+          "Ramiro",
+          "Tobias",
+          "Ottokar",
+          "Solomon",
+          "Eilish",
+          "Guinevere"
+        ],
+        "ordered": false,
+        "noun": "forager",
+        "subject": true
+      },
+      {
+        "name": "find",
+        "label": "Find",
+        "items": [
+          "a cauliflower fungus",
+          "a chicken of the woods",
+          "a saffron milk cap",
+          "a hen of the woods",
+          "a horn of plenty",
+          "a penny bun"
+        ],
+        "ordered": false,
+        "noun": "find",
+        "verb": "finds"
+      },
+      {
+        "name": "wood",
+        "label": "Wood",
+        "items": [
+          "Nettlebed",
+          "the Old Deer Park",
+          "Hangman's Copse",
+          "the Larches",
+          "Scrag End",
+          "Bell Wood"
+        ],
+        "ordered": false,
+        "noun": "wood",
+        "verb": "searches"
+      },
+      {
+        "name": "basket",
+        "label": "Basket",
+        "items": [
+          "a wooden box",
+          "a string bag",
+          "a wicker trug",
+          "an upturned hat",
+          "a willow creel",
+          "a tin pail"
+        ],
+        "ordered": false,
+        "noun": "basket",
+        "verb": "carries"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "day:Saturday",
+          "b": "find:a cauliflower fungus",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "day:Monday",
+          "b": "forager:Solomon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "adjacent",
+            "a": "day:Wednesday",
+            "b": "forager:Guinevere"
+          },
+          "y": {
+            "kind": "adjacent",
+            "a": "basket:an upturned hat",
+            "b": "forager:Eilish"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "wood:the Larches",
+          "b": "day:Friday",
+          "c": "forager:Tobias"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "day:Friday",
+          "b": "wood:Nettlebed",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "day:Saturday",
+          "b": "find:a saffron milk cap",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "basket:a wicker trug",
+          "b": "find:a horn of plenty"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "forager:Ottokar",
+          "b": "wood:the Old Deer Park"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "link",
+            "a": "basket:a wicker trug",
+            "b": "wood:Hangman's Copse"
+          },
+          "y": {
+            "kind": "before",
+            "a": "wood:Scrag End",
+            "b": "basket:a string bag"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "wood:the Old Deer Park",
+          "b": "basket:a willow creel"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "not_link",
+            "a": "forager:Ottokar",
+            "b": "wood:Nettlebed"
+          },
+          "y": {
+            "kind": "link",
+            "a": "forager:Ramiro",
+            "b": "wood:Nettlebed"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "basket:a string bag",
+          "b": "wood:Bell Wood"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "find:a penny bun",
+          "b": "wood:Bell Wood"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "forager:Eilish",
+          "b": "wood:Bell Wood"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "find:a saffron milk cap",
+          "b": "wood:Scrag End"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "forager:Eilish",
+              "b": "wood:Scrag End"
+            },
+            {
+              "kind": "before",
+              "a": "forager:Guinevere",
+              "b": "basket:a tin pail"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "basket:a string bag",
+          "b": "forager:Eilish"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "find:a chicken of the woods",
+          "b": "forager:Ottokar"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "forager": [
+      "Tobias",
+      "Solomon",
+      "Ottokar",
+      "Guinevere",
+      "Eilish",
+      "Ramiro"
+    ],
+    "find": [
+      "a horn of plenty",
+      "a chicken of the woods",
+      "a cauliflower fungus",
+      "a saffron milk cap",
+      "a penny bun",
+      "a hen of the woods"
+    ],
+    "wood": [
+      "Hangman's Copse",
+      "the Old Deer Park",
+      "Nettlebed",
+      "the Larches",
+      "Scrag End",
+      "Bell Wood"
+    ],
+    "basket": [
+      "a wooden box",
+      "a wicker trug",
+      "a willow creel",
+      "a string bag",
+      "a tin pail",
+      "an upturned hat"
+    ]
+  },
+  "stats": {
+    "atoms": 18,
+    "numbered_clues": 17,
+    "kinds": {
+      "gap": 2,
+      "adjacent": 6,
+      "if_then": 3,
+      "between": 1,
+      "parity": 1,
+      "before": 2,
+      "not_link": 1,
+      "immediately_before": 1,
+      "or": 1
+    },
+    "positives": 0,
+    "compounds": 4
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 76,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 40,
+      "order": 25,
+      "disjunction": 9,
+      "trial": 1
+    },
+    "trial_eliminations": 1,
+    "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The Thorn Bottom foraging club keeps meticulous records, chiefly so that blame can be apportioned later.\nSix foragers are involved. Determine each forager's day, find, wood and basket.\n- **Forager**: Ramiro, Tobias, Ottokar, Solomon, Eilish and Guinevere.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday, Friday and Saturday.\n- **Find**: a cauliflower fungus, a chicken of the woods, a saffron milk cap, a hen of the woods, a horn of plenty and a penny bun.\n- **Wood**: Nettlebed, the Old Deer Park, Hangman's Copse, the Larches, Scrag End and Bell Wood.\n- **Basket**: a wooden box, a string bag, a wicker trug, an upturned hat, a willow creel and a tin pail.\nEvery forager has a different day, find, wood and basket, so within each category every item is used exactly once.",
+    "clues": [
+      "The forager who finds a cauliflower fungus and Saturday are exactly three days apart in day order.",
+      "Solomon and Monday are exactly one day apart in day order, in one direction or the other.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) Guinevere and Wednesday are exactly one day apart in day order, in one direction or the other. (b) The forager who carries an upturned hat and Eilish are exactly one day apart in day order, in one direction or the other.",
+      "The forager who searches the Larches falls somewhere between Friday and Tobias in day order.",
+      "Friday and the forager who searches Nettlebed both sit at odd-numbered days or both at even-numbered days.",
+      "The forager who finds a saffron milk cap and Saturday are exactly two days apart in day order.",
+      "The forager who carries a wicker trug and the forager who finds a horn of plenty are exactly one day apart in day order, in one direction or the other.",
+      "Ottokar and the forager who searches the Old Deer Park are exactly one day apart in day order, in one direction or the other.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The forager who carries a wicker trug searches Hangman's Copse. (b) The forager who searches Scrag End is earlier than the forager who carries a string bag in day order.",
+      "The forager who searches the Old Deer Park is earlier than the forager who carries a willow creel in day order.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) Ottokar does not search Nettlebed. (b) Ramiro searches Nettlebed.",
+      "The forager who carries a string bag does not search Bell Wood. The forager who finds a penny bun is exactly one day earlier than the forager who searches Bell Wood, with no day in between.",
+      "Eilish and the forager who searches Bell Wood are exactly one day apart in day order, in one direction or the other.",
+      "The forager who finds a saffron milk cap and the forager who searches Scrag End are exactly one day apart in day order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) Eilish and the forager who searches Scrag End are exactly one day apart in day order, in one direction or the other. (b) Guinevere is earlier than the forager who carries a tin pail in day order.",
+      "The forager who carries a string bag and Eilish are exactly one day apart in day order, in one direction or the other.",
+      "The forager who finds a chicken of the woods is earlier than Ottokar in day order."
+    ]
+  }
+}

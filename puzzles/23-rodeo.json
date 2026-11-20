@@ -1,0 +1,251 @@
+{
+  "pid": "44547aba2a58",
+  "title": "The Cutbank County Rodeo",
+  "theme": "rodeo",
+  "blurb": "Entry fees paid in cash at the gate, and a scoreboard that nobody trusts.",
+  "profile": "moderate",
+  "rating": 3,
+  "score": 5.355,
+  "seed": 2026173057582,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173057582,
+    "theme": "rodeo"
+  },
+  "schema": {
+    "spine": "fee",
+    "entity_noun": "rider",
+    "entity_noun_plural": "riders",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "fee",
+        "label": "Entry fee",
+        "items": [
+          "$2",
+          "$4",
+          "$6",
+          "$8",
+          "$10"
+        ],
+        "ordered": true,
+        "values": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "unit": "$",
+        "noun": "entry fee",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "fee step",
+        "verb": "pays"
+      },
+      {
+        "name": "rider",
+        "label": "Rider",
+        "items": [
+          "Travis Mundy",
+          "Buck Jessup",
+          "Cody Vance",
+          "Dalton Reese",
+          "Earlene Tate"
+        ],
+        "ordered": false,
+        "noun": "rider",
+        "subject": true
+      },
+      {
+        "name": "stock",
+        "label": "Stock drawn",
+        "items": [
+          "Little Sister",
+          "Tumbleweed",
+          "Brimstone",
+          "Sunday Sermon",
+          "Widowmaker"
+        ],
+        "ordered": false,
+        "noun": "animal",
+        "verb": "draws"
+      },
+      {
+        "name": "outcome",
+        "label": "Outcome",
+        "items": [
+          "a no-score",
+          "a slap of the free hand",
+          "a re-ride",
+          "a broken barrier",
+          "a blown stirrup"
+        ],
+        "ordered": false,
+        "noun": "outcome",
+        "verb": "finishes with"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "rider:Earlene Tate",
+          "b": "stock:Tumbleweed"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "rider:Travis Mundy",
+          "b": "stock:Brimstone"
+        },
+        {
+          "kind": "not_link",
+          "a": "outcome:a no-score",
+          "b": "stock:Brimstone"
+        },
+        {
+          "kind": "link",
+          "a": "rider:Travis Mundy",
+          "b": "stock:Widowmaker"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "fee:$2",
+          "b": "stock:Sunday Sermon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "fee:$2",
+          "b": "outcome:a broken barrier"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "rider:Dalton Reese",
+          "b": "fee:$6"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "outcome:a re-ride",
+          "b": "rider:Travis Mundy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "outcome:a slap of the free hand",
+          "b": "stock:Brimstone"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "rider:Cody Vance",
+          "b": "outcome:a broken barrier"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "fee": [
+      "$2",
+      "$4",
+      "$6",
+      "$8",
+      "$10"
+    ],
+    "rider": [
+      "Cody Vance",
+      "Dalton Reese",
+      "Earlene Tate",
+      "Travis Mundy",
+      "Buck Jessup"
+    ],
+    "stock": [
+      "Little Sister",
+      "Sunday Sermon",
+      "Tumbleweed",
+      "Widowmaker",
+      "Brimstone"
+    ],
+    "outcome": [
+      "a no-score",
+      "a broken barrier",
+      "a re-ride",
+      "a slap of the free hand",
+      "a blown stirrup"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 8,
+    "kinds": {
+      "link": 2,
+      "before": 2,
+      "not_link": 2,
+      "immediately_before": 3,
+      "adjacent": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 39,
+    "tier_counts": {
+      "direct": 7,
+      "bijection": 18,
+      "order": 14
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Entry fees paid in cash at the gate, and a scoreboard that nobody trusts.\nFive riders are involved. Determine each rider's entry fee, animal and outcome.\n- **Rider**: Travis Mundy, Buck Jessup, Cody Vance, Dalton Reese and Earlene Tate.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Stock drawn**: Little Sister, Tumbleweed, Brimstone, Sunday Sermon and Widowmaker.\n- **Outcome**: a no-score, a slap of the free hand, a re-ride, a broken barrier and a blown stirrup.\nEvery rider has a different entry fee, animal and outcome, so within each category every item is used exactly once.",
+    "clues": [
+      "Earlene Tate draws Tumbleweed.",
+      "Travis Mundy is cheaper than the rider who draws Brimstone in entry fee order. The rider who finishes with a no-score does not draw Brimstone. Travis Mundy draws Widowmaker.",
+      "The rider who draws Sunday Sermon does not pay $2.",
+      "$2 is exactly one fee step cheaper than the rider who finishes with a broken barrier, with no entry fee in between.",
+      "Dalton Reese is exactly one fee step cheaper than $6, with no entry fee in between.",
+      "The rider who finishes with a re-ride is exactly one fee step cheaper than Travis Mundy, with no entry fee in between.",
+      "The rider who finishes with a slap of the free hand and the rider who draws Brimstone are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "Cody Vance is cheaper than the rider who finishes with a broken barrier in entry fee order."
+    ]
+  }
+}

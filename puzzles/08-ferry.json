@@ -1,0 +1,188 @@
+{
+  "pid": "5c695503658f",
+  "title": "The Crossings to Inverlaig",
+  "theme": "ferry",
+  "blurb": "The Inverlaig ferry runs a full day of crossings in theory, and a variable number in practice.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.38,
+  "seed": 2026172938797,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172938797,
+    "theme": "ferry"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "skipper",
+    "entity_noun_plural": "skippers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "sails at"
+      },
+      {
+        "name": "skipper",
+        "label": "Skipper",
+        "items": [
+          "Fearghas",
+          "Eilidh",
+          "Ruaridh",
+          "Calla",
+          "Murdo"
+        ],
+        "ordered": false,
+        "noun": "skipper",
+        "subject": true
+      },
+      {
+        "name": "cargo",
+        "label": "Notable cargo",
+        "items": [
+          "a refrigerated van",
+          "a brass band",
+          "a consignment of bees",
+          "a church organ",
+          "a wedding party"
+        ],
+        "ordered": false,
+        "noun": "cargo",
+        "verb": "carries"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "skipper:Calla",
+          "b": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "cargo:a wedding party",
+          "b": "skipper:Fearghas"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "cargo:a refrigerated van",
+          "b": "skipper:Ruaridh"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "time:8am",
+          "b": "cargo:a consignment of bees"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "skipper:Murdo",
+          "b": "time:9am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "skipper:Fearghas",
+          "b": "cargo:a brass band"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "skipper": [
+      "Murdo",
+      "Eilidh",
+      "Ruaridh",
+      "Fearghas",
+      "Calla"
+    ],
+    "cargo": [
+      "a church organ",
+      "a consignment of bees",
+      "a refrigerated van",
+      "a wedding party",
+      "a brass band"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 6,
+    "kinds": {
+      "link": 3,
+      "immediately_before": 2,
+      "before": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 29,
+    "tier_counts": {
+      "direct": 8,
+      "bijection": 16,
+      "order": 5
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The Inverlaig ferry runs a full day of crossings in theory, and a variable number in practice.\nFive skippers are involved. Determine each skipper's start time and cargo.\n- **Skipper**: Fearghas, Eilidh, Ruaridh, Calla and Murdo.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Notable cargo**: a refrigerated van, a brass band, a consignment of bees, a church organ and a wedding party.\nEvery skipper has a different start time and cargo, so within each category every item is used exactly once.",
+    "clues": [
+      "Calla sails at noon.",
+      "Fearghas carries a wedding party.",
+      "Ruaridh carries a refrigerated van.",
+      "8am is exactly one hour earlier than the skipper who carries a consignment of bees, with no start time in between.",
+      "Murdo is earlier than 9am in start time order.",
+      "Fearghas is exactly one hour earlier than the skipper who carries a brass band, with no start time in between."
+    ]
+  }
+}

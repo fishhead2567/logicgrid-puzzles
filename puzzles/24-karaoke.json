@@ -1,0 +1,256 @@
+{
+  "pid": "b9cd504a1392",
+  "title": "Tuesday Night at the Rusty Anchor",
+  "theme": "karaoke",
+  "blurb": "The Rusty Anchor runs karaoke on Tuesdays. Attendance is loyal; talent is not.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026173065501,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173065501,
+    "theme": "karaoke"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "singer",
+    "entity_noun_plural": "singers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "sings in"
+      },
+      {
+        "name": "singer",
+        "label": "Singer",
+        "items": [
+          "Bogdan",
+          "Caitriona",
+          "Vikram",
+          "Mercy",
+          "Pernilla"
+        ],
+        "ordered": false,
+        "noun": "singer",
+        "subject": true
+      },
+      {
+        "name": "drink",
+        "label": "Drink",
+        "items": [
+          "a hard cider in a plastic cup",
+          "a double bourbon",
+          "a rum and coke",
+          "a pitcher of light beer",
+          "tap water"
+        ],
+        "ordered": false,
+        "noun": "drink",
+        "verb": "orders"
+      },
+      {
+        "name": "reception",
+        "label": "Reception",
+        "items": [
+          "one heckler",
+          "a singalong",
+          "the manager cutting the power",
+          "a request for an encore nobody wanted",
+          "scattered applause"
+        ],
+        "ordered": false,
+        "noun": "reception",
+        "verb": "gets"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "reception:the manager cutting the power",
+          "b": "slot:slot four",
+          "c": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "slot:slot one",
+          "b": "drink:a double bourbon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "singer:Mercy",
+          "b": "slot:slot four"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "drink:a pitcher of light beer",
+          "b": "reception:the manager cutting the power"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "drink:a rum and coke",
+          "b": "reception:one heckler"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "reception:a request for an encore nobody wanted",
+          "b": "singer:Mercy",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "drink:a double bourbon",
+          "b": "singer:Vikram"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "singer:Bogdan",
+          "b": "drink:a double bourbon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "reception:one heckler",
+          "b": "singer:Pernilla"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "drink:tap water",
+          "b": "reception:a singalong"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "singer": [
+      "Bogdan",
+      "Caitriona",
+      "Vikram",
+      "Pernilla",
+      "Mercy"
+    ],
+    "drink": [
+      "a pitcher of light beer",
+      "a double bourbon",
+      "a rum and coke",
+      "tap water",
+      "a hard cider in a plastic cup"
+    ],
+    "reception": [
+      "scattered applause",
+      "one heckler",
+      "the manager cutting the power",
+      "a request for an encore nobody wanted",
+      "a singalong"
+    ]
+  },
+  "stats": {
+    "atoms": 10,
+    "numbered_clues": 10,
+    "kinds": {
+      "between": 1,
+      "immediately_before": 2,
+      "adjacent": 4,
+      "before": 2,
+      "parity": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 41,
+    "tier_counts": {
+      "bijection": 21,
+      "order": 20
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Rusty Anchor runs karaoke on Tuesdays. Attendance is loyal; talent is not.\nFive singers are involved. Determine each singer's slot, drink and reception.\n- **Singer**: Bogdan, Caitriona, Vikram, Mercy and Pernilla.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Drink**: a hard cider in a plastic cup; a double bourbon; a rum and coke; a pitcher of light beer; and tap water.\n- **Reception**: one heckler, a singalong, the manager cutting the power, a request for an encore nobody wanted and scattered applause.\nEvery singer has a different slot, drink and reception, so within each category every item is used exactly once.",
+    "clues": [
+      "The singer who gets the manager cutting the power falls somewhere between slot four and slot two in slot order.",
+      "Slot one is exactly one slot earlier than the singer who orders a double bourbon, with no slot in between.",
+      "Mercy and slot four are exactly one slot apart in slot order, in one direction or the other.",
+      "The singer who orders a pitcher of light beer is earlier than the singer who gets the manager cutting the power in slot order.",
+      "The singer who orders a rum and coke and the singer who gets one heckler are exactly one slot apart in slot order, in one direction or the other.",
+      "One of the singer who gets a request for an encore nobody wanted and Mercy sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "The singer who orders a double bourbon and Vikram are exactly one slot apart in slot order, in one direction or the other.",
+      "Bogdan is exactly one slot earlier than the singer who orders a double bourbon, with no slot in between.",
+      "The singer who gets one heckler is earlier than Pernilla in slot order.",
+      "The singer who orders tap water and the singer who gets a singalong are exactly one slot apart in slot order, in one direction or the other."
+    ]
+  }
+}

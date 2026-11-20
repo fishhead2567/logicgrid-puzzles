@@ -1,0 +1,221 @@
+{
+  "pid": "28f365a69c47",
+  "title": "The Case of the Missing Trowel",
+  "theme": "detective",
+  "blurb": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.13,
+  "seed": 2026172986311,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172986311,
+    "theme": "detective"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "investigator",
+    "entity_noun_plural": "investigators",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "reports at"
+      },
+      {
+        "name": "sleuth",
+        "label": "Investigator",
+        "items": [
+          "Fergus",
+          "Ariadne",
+          "Hortensia",
+          "Leopold"
+        ],
+        "ordered": false,
+        "noun": "investigator",
+        "subject": true
+      },
+      {
+        "name": "theory",
+        "label": "Theory",
+        "items": [
+          "a conspiracy of two",
+          "a magpie",
+          "an inside job",
+          "the postman"
+        ],
+        "ordered": false,
+        "noun": "theory",
+        "verb": "favours"
+      },
+      {
+        "name": "alibi",
+        "label": "Alibi",
+        "items": [
+          "no alibi whatsoever",
+          "the dentist",
+          "watching the snooker",
+          "a bus replacement service"
+        ],
+        "ordered": false,
+        "noun": "alibi",
+        "verb": "claims"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "alibi:a bus replacement service",
+          "b": "sleuth:Ariadne"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "time:8am",
+          "b": "sleuth:Hortensia"
+        },
+        {
+          "kind": "between",
+          "a": "alibi:watching the snooker",
+          "b": "time:11am",
+          "c": "time:8am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "alibi:a bus replacement service",
+          "b": "time:9am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "theory:the postman",
+          "b": "time:11am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "sleuth:Fergus",
+          "b": "theory:a magpie",
+          "c": "theory:the postman"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "alibi:a bus replacement service",
+          "b": "theory:an inside job"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "alibi:the dentist",
+          "b": "sleuth:Fergus"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am"
+    ],
+    "sleuth": [
+      "Ariadne",
+      "Hortensia",
+      "Fergus",
+      "Leopold"
+    ],
+    "theory": [
+      "the postman",
+      "an inside job",
+      "a conspiracy of two",
+      "a magpie"
+    ],
+    "alibi": [
+      "a bus replacement service",
+      "the dentist",
+      "watching the snooker",
+      "no alibi whatsoever"
+    ]
+  },
+  "stats": {
+    "atoms": 8,
+    "numbered_clues": 7,
+    "kinds": {
+      "link": 1,
+      "immediately_before": 2,
+      "between": 2,
+      "adjacent": 2,
+      "before": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 23,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 11,
+      "order": 11
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  },
+  "text": {
+    "intro": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.\nFour investigators are involved. Determine each investigator's start time, theory and alibi.\n- **Investigator**: Fergus, Ariadne, Hortensia and Leopold.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am and 11am.\n- **Theory**: a conspiracy of two, a magpie, an inside job and the postman.\n- **Alibi**: no alibi whatsoever, the dentist, watching the snooker and a bus replacement service.\nEvery investigator has a different start time, theory and alibi, so within each category every item is used exactly once.",
+    "clues": [
+      "Ariadne claims a bus replacement service.",
+      "8am is exactly one hour earlier than Hortensia, with no start time in between. The investigator who claims watching the snooker falls somewhere between 11am and 8am in start time order.",
+      "The investigator who claims a bus replacement service and 9am are exactly one hour apart in start time order, in one direction or the other.",
+      "The investigator who favours the postman is earlier than 11am in start time order.",
+      "Fergus falls somewhere between the investigator who favours a magpie and the investigator who favours the postman in start time order.",
+      "The investigator who claims a bus replacement service and the investigator who favours an inside job are exactly one hour apart in start time order, in one direction or the other.",
+      "The investigator who claims the dentist is exactly one hour earlier than Fergus, with no start time in between."
+    ]
+  }
+}

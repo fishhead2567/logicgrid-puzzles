@@ -1,0 +1,287 @@
+{
+  "pid": "8ff2c5f8c382",
+  "title": "The Lakeshore Esports Bracket",
+  "theme": "esports",
+  "blurb": "The school esports club booked the library after hours: a double-elimination bracket, and a very long argument about seeding.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.355,
+  "seed": 2026172978392,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172978392,
+    "theme": "esports"
+  },
+  "schema": {
+    "spine": "round",
+    "entity_noun": "player",
+    "entity_noun_plural": "players",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "round",
+        "label": "Exit round",
+        "items": [
+          "round one",
+          "round two",
+          "round three",
+          "round four",
+          "round five"
+        ],
+        "ordered": true,
+        "noun": "exit round",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "round",
+        "verb": "is knocked out in"
+      },
+      {
+        "name": "player",
+        "label": "Player",
+        "items": [
+          "Tyrell",
+          "Gus Villalobos",
+          "Saoirse",
+          "Oksana",
+          "Mina"
+        ],
+        "ordered": false,
+        "noun": "player",
+        "subject": true
+      },
+      {
+        "name": "gear",
+        "label": "Gear",
+        "items": [
+          "a borrowed controller",
+          "a split keyboard",
+          "an arcade stick",
+          "a wireless headset",
+          "the club's old mouse"
+        ],
+        "ordered": false,
+        "noun": "gear",
+        "verb": "plays with"
+      },
+      {
+        "name": "tag",
+        "label": "Tag",
+        "items": [
+          "BlueHeron",
+          "Nine Lives",
+          "Sparrow",
+          "Pocketwatch",
+          "Marmalade"
+        ],
+        "ordered": false,
+        "noun": "tag",
+        "verb": "goes by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "player:Tyrell",
+          "b": "round:round five"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "gear:an arcade stick",
+          "b": "tag:BlueHeron"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "round:round two",
+          "b": "tag:Sparrow"
+        },
+        {
+          "kind": "not_link",
+          "a": "round:round five",
+          "b": "tag:Sparrow"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "player:Gus Villalobos",
+          "b": "round:round two"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "gear:the club's old mouse",
+          "b": "tag:Marmalade"
+        },
+        {
+          "kind": "not_link",
+          "a": "round:round five",
+          "b": "tag:Marmalade"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "gear:a split keyboard",
+          "b": "round:round three"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "round:round two",
+          "b": "player:Saoirse"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "gear:the club's old mouse",
+          "b": "tag:Sparrow"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "player:Mina",
+          "b": "gear:a wireless headset"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "player:Saoirse",
+          "b": "gear:an arcade stick"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "player:Tyrell",
+          "b": "tag:Nine Lives"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "player:Gus Villalobos",
+          "b": "tag:Nine Lives"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "round": [
+      "round one",
+      "round two",
+      "round three",
+      "round four",
+      "round five"
+    ],
+    "player": [
+      "Oksana",
+      "Mina",
+      "Saoirse",
+      "Gus Villalobos",
+      "Tyrell"
+    ],
+    "gear": [
+      "the club's old mouse",
+      "a split keyboard",
+      "a wireless headset",
+      "an arcade stick",
+      "a borrowed controller"
+    ],
+    "tag": [
+      "Nine Lives",
+      "Marmalade",
+      "Sparrow",
+      "BlueHeron",
+      "Pocketwatch"
+    ]
+  },
+  "stats": {
+    "atoms": 14,
+    "numbered_clues": 12,
+    "kinds": {
+      "link": 2,
+      "not_link": 7,
+      "adjacent": 1,
+      "immediately_before": 3,
+      "before": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 44,
+    "tier_counts": {
+      "direct": 9,
+      "bijection": 26,
+      "order": 9
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The school esports club booked the library after hours: a double-elimination bracket, and a very long argument about seeding.\nFive players are involved. Determine each player's exit round, gear and tag.\n- **Player**: Tyrell, Gus Villalobos, Saoirse, Oksana and Mina.\n- **Exit round** (listed from earlier to later): round one, round two, round three, round four and round five.\n- **Gear**: a borrowed controller, a split keyboard, an arcade stick, a wireless headset and the club's old mouse.\n- **Tag**: BlueHeron, Nine Lives, Sparrow, Pocketwatch and Marmalade.\nEvery player has a different exit round, gear and tag, so within each category every item is used exactly once.",
+    "clues": [
+      "Tyrell is knocked out in round five.",
+      "The player who plays with an arcade stick goes by BlueHeron.",
+      "The player who goes by Sparrow is not knocked out in round two. The player who goes by Sparrow is not knocked out in round five.",
+      "Gus Villalobos is not knocked out in round two.",
+      "The player who plays with the club's old mouse does not go by Marmalade. The player who goes by Marmalade is not knocked out in round five.",
+      "The player who plays with a split keyboard and round three are exactly one round apart in exit round order, in one direction or the other.",
+      "Round two is exactly one round earlier than Saoirse, with no exit round in between.",
+      "The player who plays with the club's old mouse is earlier than the player who goes by Sparrow in exit round order.",
+      "Mina is exactly one round earlier than the player who plays with a wireless headset, with no exit round in between.",
+      "Saoirse is exactly one round earlier than the player who plays with an arcade stick, with no exit round in between.",
+      "Tyrell does not go by Nine Lives.",
+      "Gus Villalobos does not go by Nine Lives."
+    ]
+  }
+}

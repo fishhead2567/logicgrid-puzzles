@@ -1,0 +1,305 @@
+{
+  "pid": "8f3fab3099e7",
+  "title": "The Firehouse Chili Cook-Off",
+  "theme": "chili_cookoff",
+  "blurb": "The volunteer fire department holds a chili cook-off every fall, and the judging has never once ended quietly.",
+  "profile": "hard",
+  "rating": 5,
+  "score": 9.1244,
+  "seed": 2026173168448,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173168448,
+    "theme": "chili_cookoff"
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "cook",
+    "entity_noun_plural": "cooks",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "cook",
+        "label": "Cook",
+        "items": [
+          "Verna",
+          "Bobbi Jo",
+          "Gracie Mapp",
+          "Hollis",
+          "Luis Ortega"
+        ],
+        "ordered": false,
+        "noun": "cook",
+        "subject": true
+      },
+      {
+        "name": "secret",
+        "label": "Secret",
+        "items": [
+          "a square of dark chocolate",
+          "fire-roasted corn",
+          "root beer",
+          "a splash of cider vinegar",
+          "nothing but salt"
+        ],
+        "ordered": false,
+        "noun": "secret",
+        "verb": "swears by"
+      },
+      {
+        "name": "topping",
+        "label": "Topping",
+        "items": [
+          "oyster crackers",
+          "scallions",
+          "crushed corn chips",
+          "shredded cheddar",
+          "sour cream"
+        ],
+        "ordered": false,
+        "noun": "topping",
+        "verb": "tops it with"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "cook:Gracie Mapp",
+          "b": "place:fifth"
+        },
+        {
+          "kind": "before",
+          "a": "topping:oyster crackers",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:second",
+          "b": "secret:a splash of cider vinegar"
+        },
+        {
+          "kind": "not_link",
+          "a": "cook:Luis Ortega",
+          "b": "place:second"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "cook:Bobbi Jo",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "place:second",
+          "b": "topping:shredded cheddar",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "place:fourth",
+          "b": "secret:a square of dark chocolate"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "place:third",
+          "b": "secret:fire-roasted corn",
+          "c": "secret:root beer"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:first",
+          "b": "topping:oyster crackers"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "cook:Verna",
+              "b": "topping:scallions"
+            },
+            {
+              "kind": "before",
+              "a": "cook:Hollis",
+              "b": "topping:oyster crackers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "cook:Luis Ortega",
+          "b": "topping:scallions"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "cook:Bobbi Jo",
+          "b": "topping:crushed corn chips",
+          "c": "topping:oyster crackers"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "cook:Bobbi Jo",
+          "b": "secret:a square of dark chocolate"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "secret:root beer",
+          "b": "topping:scallions",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "cook": [
+      "Luis Ortega",
+      "Hollis",
+      "Bobbi Jo",
+      "Gracie Mapp",
+      "Verna"
+    ],
+    "secret": [
+      "nothing but salt",
+      "root beer",
+      "a splash of cider vinegar",
+      "fire-roasted corn",
+      "a square of dark chocolate"
+    ],
+    "topping": [
+      "crushed corn chips",
+      "shredded cheddar",
+      "sour cream",
+      "oyster crackers",
+      "scallions"
+    ]
+  },
+  "stats": {
+    "atoms": 14,
+    "numbered_clues": 12,
+    "kinds": {
+      "adjacent": 3,
+      "before": 4,
+      "not_link": 2,
+      "parity": 1,
+      "between": 2,
+      "or": 1,
+      "gap": 1
+    },
+    "positives": 0,
+    "compounds": 1
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 41,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 17,
+      "order": 20,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The volunteer fire department holds a chili cook-off every fall, and the judging has never once ended quietly.\nFive cooks are involved. Determine each cook's placing, secret and topping.\n- **Cook**: Verna, Bobbi Jo, Gracie Mapp, Hollis and Luis Ortega.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Secret**: a square of dark chocolate, fire-roasted corn, root beer, a splash of cider vinegar and nothing but salt.\n- **Topping**: oyster crackers, scallions, crushed corn chips, shredded cheddar and sour cream.\nEvery cook has a different placing, secret and topping, so within each category every item is used exactly once.",
+    "clues": [
+      "Gracie Mapp and fifth are exactly one place apart in placing order, in one direction or the other. The cook who tops it with oyster crackers is better than fifth in placing order.",
+      "The cook who swears by a splash of cider vinegar is worse than second in placing order. Luis Ortega does not place second.",
+      "Bobbi Jo and fourth are exactly one place apart in placing order, in one direction or the other.",
+      "Second and the cook who tops it with shredded cheddar both sit at odd-numbered places or both at even-numbered places.",
+      "The cook who swears by a square of dark chocolate and fourth are exactly one place apart in placing order, in one direction or the other.",
+      "Third falls somewhere between the cook who swears by fire-roasted corn and the cook who swears by root beer in placing order.",
+      "The cook who tops it with oyster crackers is worse than first in placing order.",
+      "At least one of the following holds, and possibly more than one: (a) Verna and the cook who tops it with scallions are exactly one place apart in placing order, in one direction or the other. (b) Hollis is better than the cook who tops it with oyster crackers in placing order.",
+      "Luis Ortega is better than the cook who tops it with scallions in placing order.",
+      "Bobbi Jo falls somewhere between the cook who tops it with crushed corn chips and the cook who tops it with oyster crackers in placing order.",
+      "Bobbi Jo does not swear by a square of dark chocolate.",
+      "The cook who swears by root beer and the cook who tops it with scallions are exactly three places apart in placing order."
+    ]
+  }
+}

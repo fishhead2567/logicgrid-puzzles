@@ -1,0 +1,379 @@
+{
+  "pid": "ef46a88409d6",
+  "title": "Field Day on Cedar Butte",
+  "theme": "hamradio",
+  "blurb": "A club field day spread over a week, one operator a night, and a generator that has its own opinions.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 10.4962,
+  "seed": 2026173192205,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173192205,
+    "theme": "hamradio"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "operator",
+    "entity_noun_plural": "operators",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Night",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "ordered": true,
+        "noun": "night",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "operates on"
+      },
+      {
+        "name": "operator",
+        "label": "Operator",
+        "items": [
+          "Marcus",
+          "Ingrid",
+          "Lorna",
+          "Hank",
+          "Trish"
+        ],
+        "ordered": false,
+        "noun": "operator",
+        "subject": true
+      },
+      {
+        "name": "band",
+        "label": "Band",
+        "items": [
+          "15 meters",
+          "6 meters",
+          "80 meters",
+          "10 meters",
+          "20 meters"
+        ],
+        "ordered": false,
+        "noun": "band",
+        "verb": "works"
+      },
+      {
+        "name": "mode",
+        "label": "Mode",
+        "items": [
+          "RTTY",
+          "CW",
+          "AM",
+          "slow-scan television",
+          "SSB"
+        ],
+        "ordered": false,
+        "noun": "mode",
+        "verb": "operates"
+      },
+      {
+        "name": "trouble",
+        "label": "Trouble",
+        "items": [
+          "a snapped dipole leg",
+          "a dead battery",
+          "sixty-cycle hum",
+          "a static crash",
+          "a drifting VFO"
+        ],
+        "ordered": false,
+        "noun": "trouble",
+        "verb": "is defeated by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "trouble:a static crash",
+          "b": "day:Thursday",
+          "c": "day:Tuesday"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "adjacent",
+            "a": "day:Thursday",
+            "b": "operator:Lorna"
+          },
+          "y": {
+            "kind": "immediately_before",
+            "a": "mode:CW",
+            "b": "day:Friday"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "mode:AM",
+          "b": "trouble:a snapped dipole leg"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "trouble:a snapped dipole leg",
+          "b": "day:Tuesday"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "day:Monday",
+          "b": "operator:Marcus",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "day:Wednesday",
+          "b": "mode:CW"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "band:15 meters",
+              "b": "day:Monday"
+            },
+            {
+              "kind": "immediately_before",
+              "a": "band:10 meters",
+              "b": "mode:slow-scan television"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "day:Wednesday",
+          "b": "trouble:a drifting VFO"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "band:10 meters",
+          "b": "operator:Ingrid",
+          "k": 3,
+          "rel": "eq"
+        },
+        {
+          "kind": "gap",
+          "a": "mode:SSB",
+          "b": "operator:Ingrid",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "operator:Trish",
+          "b": "trouble:a static crash",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "before",
+            "a": "band:80 meters",
+            "b": "mode:SSB"
+          },
+          "y": {
+            "kind": "not_link",
+            "a": "band:20 meters",
+            "b": "mode:RTTY"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "band:6 meters",
+          "b": "trouble:sixty-cycle hum"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "mode:SSB",
+          "b": "band:20 meters",
+          "c": "band:80 meters"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "adjacent",
+            "a": "band:15 meters",
+            "b": "operator:Ingrid"
+          },
+          "y": {
+            "kind": "gap",
+            "a": "mode:RTTY",
+            "b": "operator:Hank",
+            "k": 2,
+            "rel": "eq"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "operator:Trish",
+          "b": "trouble:sixty-cycle hum"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "operator": [
+      "Trish",
+      "Lorna",
+      "Hank",
+      "Marcus",
+      "Ingrid"
+    ],
+    "band": [
+      "20 meters",
+      "10 meters",
+      "6 meters",
+      "80 meters",
+      "15 meters"
+    ],
+    "mode": [
+      "RTTY",
+      "SSB",
+      "slow-scan television",
+      "CW",
+      "AM"
+    ],
+    "trouble": [
+      "a snapped dipole leg",
+      "sixty-cycle hum",
+      "a static crash",
+      "a drifting VFO",
+      "a dead battery"
+    ]
+  },
+  "stats": {
+    "atoms": 16,
+    "numbered_clues": 14,
+    "kinds": {
+      "between": 2,
+      "not_both": 3,
+      "not_link": 1,
+      "immediately_before": 2,
+      "gap": 4,
+      "or": 1,
+      "adjacent": 3
+    },
+    "positives": 0,
+    "compounds": 4
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 52,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 26,
+      "order": 21,
+      "disjunction": 4
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "A club field day spread over a week, one operator a night, and a generator that has its own opinions.\nFive operators are involved. Determine each operator's night, band, mode and trouble.\n- **Operator**: Marcus, Ingrid, Lorna, Hank and Trish.\n- **Night** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Band**: 15 meters, 6 meters, 80 meters, 10 meters and 20 meters.\n- **Mode**: RTTY, CW, AM, slow-scan television and SSB.\n- **Trouble**: a snapped dipole leg, a dead battery, sixty-cycle hum, a static crash and a drifting VFO.\nEvery operator has a different night, band, mode and trouble, so within each category every item is used exactly once.",
+    "clues": [
+      "The operator who is defeated by a static crash falls somewhere between Thursday and Tuesday in night order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) Lorna and Thursday are exactly one day apart in night order, in one direction or the other. (b) The operator who operates CW is exactly one day earlier than Friday, with no night in between.",
+      "The operator who operates AM is not defeated by a snapped dipole leg. The operator who is defeated by a snapped dipole leg is exactly one day earlier than Tuesday, with no night in between.",
+      "Marcus and Monday are exactly three days apart in night order.",
+      "Wednesday is exactly one day earlier than the operator who operates CW, with no night in between.",
+      "At least one of the following holds, and possibly more than one: (a) The operator who works 15 meters and Monday are exactly one day apart in night order, in one direction or the other. (b) The operator who works 10 meters is exactly one day earlier than the operator who operates slow-scan television, with no night in between.",
+      "The operator who is defeated by a drifting VFO and Wednesday are exactly one day apart in night order, in one direction or the other.",
+      "The operator who works 10 meters and Ingrid are exactly three days apart in night order. The operator who operates SSB and Ingrid are exactly three days apart in night order.",
+      "Trish and the operator who is defeated by a static crash are exactly two days apart in night order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The operator who works 80 meters is earlier than the operator who operates SSB in night order. (b) The operator who works 20 meters does not operate RTTY.",
+      "The operator who works 6 meters and the operator who is defeated by sixty-cycle hum are exactly one day apart in night order, in one direction or the other.",
+      "The operator who operates SSB falls somewhere between the operator who works 20 meters and the operator who works 80 meters in night order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The operator who works 15 meters and Ingrid are exactly one day apart in night order, in one direction or the other. (b) The operator who operates RTTY and Hank are exactly two days apart in night order.",
+      "Trish and the operator who is defeated by sixty-cycle hum are exactly one day apart in night order, in one direction or the other."
+    ]
+  }
+}

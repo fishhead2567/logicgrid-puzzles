@@ -1,0 +1,265 @@
+{
+  "pid": "a08194eea68e",
+  "title": "The Hollow Creek Pie Judging",
+  "theme": "county_fair",
+  "blurb": "The Hollow Creek county fair runs its pie judging with more ceremony than the state legislature.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026173025906,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173025906,
+    "theme": "county_fair"
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "baker",
+    "entity_noun_plural": "bakers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "baker",
+        "label": "Baker",
+        "items": [
+          "Bramwell",
+          "Thaddeus",
+          "Odette",
+          "Winnie",
+          "Marigold"
+        ],
+        "ordered": false,
+        "noun": "baker",
+        "subject": true
+      },
+      {
+        "name": "county",
+        "label": "Home county",
+        "items": [
+          "Little Pell",
+          "Ardmore",
+          "Fenwick",
+          "Quarry Hill",
+          "Sweetwater"
+        ],
+        "ordered": false,
+        "noun": "county",
+        "verb": "comes from"
+      },
+      {
+        "name": "crust",
+        "label": "Crust",
+        "items": [
+          "a double crust",
+          "a crumb topping",
+          "a fluted rim",
+          "a cut-out star top",
+          "a braided edge"
+        ],
+        "ordered": false,
+        "noun": "crust",
+        "verb": "uses"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "crust:a crumb topping",
+          "b": "place:third"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "baker:Odette",
+          "b": "place:second"
+        },
+        {
+          "kind": "adjacent",
+          "a": "baker:Thaddeus",
+          "b": "place:second"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "county:Fenwick",
+          "b": "place:second"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "county:Sweetwater",
+          "b": "place:fourth"
+        },
+        {
+          "kind": "not_link",
+          "a": "baker:Thaddeus",
+          "b": "county:Sweetwater"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:fourth",
+          "b": "county:Quarry Hill"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "baker:Bramwell",
+          "b": "crust:a cut-out star top"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "county:Little Pell",
+          "b": "crust:a cut-out star top"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "crust:a double crust",
+          "b": "baker:Winnie"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "baker:Thaddeus",
+          "b": "crust:a double crust"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "county:Fenwick",
+          "b": "crust:a fluted rim"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "baker": [
+      "Thaddeus",
+      "Marigold",
+      "Odette",
+      "Bramwell",
+      "Winnie"
+    ],
+    "county": [
+      "Fenwick",
+      "Ardmore",
+      "Sweetwater",
+      "Little Pell",
+      "Quarry Hill"
+    ],
+    "crust": [
+      "a braided edge",
+      "a double crust",
+      "a crumb topping",
+      "a fluted rim",
+      "a cut-out star top"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 1,
+      "adjacent": 6,
+      "not_link": 2,
+      "before": 2,
+      "immediately_before": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 36,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 20,
+      "order": 13
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Hollow Creek county fair runs its pie judging with more ceremony than the state legislature.\nFive bakers are involved. Determine each baker's placing, county and crust.\n- **Baker**: Bramwell, Thaddeus, Odette, Winnie and Marigold.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Home county**: Little Pell, Ardmore, Fenwick, Quarry Hill and Sweetwater.\n- **Crust**: a double crust, a crumb topping, a fluted rim, a cut-out star top and a braided edge.\nEvery baker has a different placing, county and crust, so within each category every item is used exactly once.",
+    "clues": [
+      "The baker who uses a crumb topping places third.",
+      "Odette and second are exactly one place apart in placing order, in one direction or the other. Thaddeus and second are exactly one place apart in placing order, in one direction or the other.",
+      "The baker who comes from Fenwick and second are exactly one place apart in placing order, in one direction or the other.",
+      "The baker who comes from Sweetwater and fourth are exactly one place apart in placing order, in one direction or the other. Thaddeus does not come from Sweetwater.",
+      "The baker who comes from Quarry Hill is worse than fourth in placing order.",
+      "Bramwell and the baker who uses a cut-out star top are exactly one place apart in placing order, in one direction or the other.",
+      "The baker who comes from Little Pell is exactly one place better than the baker who uses a cut-out star top, with no placing in between.",
+      "The baker who uses a double crust is better than Winnie in placing order.",
+      "Thaddeus and the baker who uses a double crust are exactly one place apart in placing order, in one direction or the other.",
+      "The baker who comes from Fenwick does not use a fluted rim."
+    ]
+  }
+}

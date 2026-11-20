@@ -1,0 +1,351 @@
+{
+  "pid": "86a9570178fb",
+  "title": "Plot Wars on the Ashcombe Allotments",
+  "theme": "allotment",
+  "blurb": "The Ashcombe allotment committee has been locked in a slow war over compost, shade and the correct way to stake a bean.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 10.1105,
+  "seed": 2026173176367,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173176367,
+    "theme": "allotment"
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "plot-holder",
+    "entity_noun_plural": "plot-holders",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "holder",
+        "label": "Plot-holder",
+        "items": [
+          "Ewan",
+          "Senga",
+          "Obadiah",
+          "Alphonse",
+          "Kasimir"
+        ],
+        "ordered": false,
+        "noun": "plot-holder",
+        "subject": true
+      },
+      {
+        "name": "crop",
+        "label": "Prize crop",
+        "items": [
+          "a cauliflower",
+          "a runner bean",
+          "a row of leeks",
+          "a rhubarb crown",
+          "a marrow"
+        ],
+        "ordered": false,
+        "noun": "crop",
+        "verb": "grows"
+      },
+      {
+        "name": "plot",
+        "label": "Plot",
+        "items": [
+          "plot 31",
+          "plot 11",
+          "plot 7",
+          "plot 2",
+          "plot 19"
+        ],
+        "ordered": false,
+        "noun": "plot",
+        "verb": "works"
+      },
+      {
+        "name": "shed",
+        "label": "Shed",
+        "items": [
+          "a tar-paper shed",
+          "a corrugated lean-to",
+          "a greenhouse",
+          "an upturned boat",
+          "a brick bothy"
+        ],
+        "ordered": false,
+        "noun": "shed",
+        "verb": "keeps"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "place:second",
+              "b": "shed:an upturned boat"
+            },
+            {
+              "kind": "gap",
+              "a": "place:fourth",
+              "b": "plot:plot 31",
+              "k": 2,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "holder:Obadiah",
+          "b": "place:second",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "holder:Kasimir",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "place:first",
+          "b": "shed:an upturned boat"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "place:second",
+          "b": "shed:a tar-paper shed"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "crop:a marrow",
+          "b": "place:fourth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "crop:a rhubarb crown",
+          "b": "holder:Ewan"
+        },
+        {
+          "kind": "between",
+          "a": "crop:a cauliflower",
+          "b": "holder:Ewan",
+          "c": "place:first"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "place:third",
+          "b": "plot:plot 19"
+        },
+        {
+          "kind": "between",
+          "a": "holder:Senga",
+          "b": "plot:plot 19",
+          "c": "plot:plot 2"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "holder:Senga",
+              "b": "shed:a corrugated lean-to"
+            },
+            {
+              "kind": "parity",
+              "a": "crop:a row of leeks",
+              "b": "shed:a brick bothy",
+              "same": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "crop:a marrow",
+          "b": "shed:a brick bothy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "plot:plot 7",
+          "b": "shed:a corrugated lean-to"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "crop:a runner bean",
+          "b": "plot:plot 31"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "holder:Obadiah",
+          "b": "shed:a greenhouse",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "holder": [
+      "Alphonse",
+      "Senga",
+      "Obadiah",
+      "Ewan",
+      "Kasimir"
+    ],
+    "crop": [
+      "a runner bean",
+      "a cauliflower",
+      "a marrow",
+      "a row of leeks",
+      "a rhubarb crown"
+    ],
+    "plot": [
+      "plot 2",
+      "plot 31",
+      "plot 11",
+      "plot 7",
+      "plot 19"
+    ],
+    "shed": [
+      "a greenhouse",
+      "an upturned boat",
+      "a tar-paper shed",
+      "a brick bothy",
+      "a corrugated lean-to"
+    ]
+  },
+  "stats": {
+    "atoms": 15,
+    "numbered_clues": 13,
+    "kinds": {
+      "or": 2,
+      "parity": 1,
+      "adjacent": 4,
+      "immediately_before": 2,
+      "before": 2,
+      "not_link": 1,
+      "between": 2,
+      "gap": 1
+    },
+    "positives": 0,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 48,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 23,
+      "order": 21,
+      "disjunction": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Ashcombe allotment committee has been locked in a slow war over compost, shade and the correct way to stake a bean.\nFive plot-holders are involved. Determine each plot-holder's placing, crop, plot and shed.\n- **Plot-holder**: Ewan, Senga, Obadiah, Alphonse and Kasimir.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Prize crop**: a cauliflower, a runner bean, a row of leeks, a rhubarb crown and a marrow.\n- **Plot**: plot 31, plot 11, plot 7, plot 2 and plot 19.\n- **Shed**: a tar-paper shed, a corrugated lean-to, a greenhouse, an upturned boat and a brick bothy.\nEvery plot-holder has a different placing, crop, plot and shed, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) The plot-holder who keeps an upturned boat and second are exactly one place apart in placing order, in one direction or the other. (b) The plot-holder who works plot 31 and fourth are exactly two places apart in placing order.",
+      "One of Obadiah and second sits at an odd-numbered placing and the other at an even-numbered placing.",
+      "Kasimir and fourth are exactly one place apart in placing order, in one direction or the other.",
+      "First is exactly one place better than the plot-holder who keeps an upturned boat, with no placing in between.",
+      "Second is exactly one place better than the plot-holder who keeps a tar-paper shed, with no placing in between.",
+      "The plot-holder who grows a marrow is better than fourth in placing order.",
+      "Ewan does not grow a rhubarb crown. The plot-holder who grows a cauliflower falls somewhere between Ewan and first in placing order.",
+      "The plot-holder who works plot 19 is worse than third in placing order. Senga falls somewhere between the plot-holder who works plot 19 and the plot-holder who works plot 2 in placing order.",
+      "At least one of the following holds, and possibly more than one: (a) Senga and the plot-holder who keeps a corrugated lean-to are exactly one place apart in placing order, in one direction or the other. (b) The plot-holder who grows a row of leeks and the plot-holder who keeps a brick bothy both sit at odd-numbered places or both at even-numbered places.",
+      "The plot-holder who grows a marrow and the plot-holder who keeps a brick bothy are exactly one place apart in placing order, in one direction or the other.",
+      "The plot-holder who works plot 7 and the plot-holder who keeps a corrugated lean-to are exactly one place apart in placing order, in one direction or the other.",
+      "The plot-holder who grows a runner bean and the plot-holder who works plot 31 are exactly one place apart in placing order, in one direction or the other.",
+      "Obadiah and the plot-holder who keeps a greenhouse are exactly two places apart in placing order."
+    ]
+  }
+}

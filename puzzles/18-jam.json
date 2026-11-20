@@ -1,0 +1,209 @@
+{
+  "pid": "67d2c52efd4d",
+  "title": "Preserves, and the Preservation of Grudges",
+  "theme": "jam",
+  "blurb": "The preserves tent is the most competitive building at the show, and the only one with a locked door.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.86,
+  "seed": 2026173017987,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026173017987,
+    "theme": "jam"
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "entrant",
+    "entity_noun_plural": "entrants",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Price",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9",
+          "$11"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "unit": "$",
+        "noun": "price",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "charges"
+      },
+      {
+        "name": "entrant",
+        "label": "Entrant",
+        "items": [
+          "Emeka",
+          "Drusilla",
+          "Stanislaw",
+          "Harriet",
+          "Ottilie"
+        ],
+        "ordered": false,
+        "noun": "entrant",
+        "subject": true
+      },
+      {
+        "name": "jar",
+        "label": "Jar",
+        "items": [
+          "a tall french jar",
+          "a jar with a cloth lid",
+          "a recycled honey jar",
+          "an unlabelled jar",
+          "a hexagonal jar"
+        ],
+        "ordered": false,
+        "noun": "jar",
+        "verb": "uses"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "entrant:Harriet",
+          "b": "jar:a jar with a cloth lid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "entrant:Stanislaw",
+          "b": "price:$11",
+          "c": "price:$7"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "price:$3",
+          "b": "entrant:Ottilie"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "jar:an unlabelled jar",
+          "b": "price:$5"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "jar:a tall french jar",
+          "b": "price:$11"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "jar:a hexagonal jar",
+          "b": "entrant:Emeka"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "jar:a tall french jar",
+          "b": "entrant:Harriet"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9",
+      "$11"
+    ],
+    "entrant": [
+      "Drusilla",
+      "Ottilie",
+      "Emeka",
+      "Stanislaw",
+      "Harriet"
+    ],
+    "jar": [
+      "an unlabelled jar",
+      "a hexagonal jar",
+      "a recycled honey jar",
+      "a tall french jar",
+      "a jar with a cloth lid"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 7,
+    "kinds": {
+      "link": 1,
+      "between": 1,
+      "before": 2,
+      "immediately_before": 3
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 18,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 8,
+      "order": 9
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The preserves tent is the most competitive building at the show, and the only one with a locked door.\nFive entrants are involved. Determine each entrant's price and jar.\n- **Entrant**: Emeka, Drusilla, Stanislaw, Harriet and Ottilie.\n- **Price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Jar**: a tall french jar, a jar with a cloth lid, a recycled honey jar, an unlabelled jar and a hexagonal jar.\nEvery entrant has a different price and jar, so within each category every item is used exactly once.",
+    "clues": [
+      "Harriet uses a jar with a cloth lid.",
+      "Stanislaw falls somewhere between $11 and $7 in price order.",
+      "Ottilie is dearer than $3 in price order.",
+      "The entrant who uses an unlabelled jar is exactly one price step cheaper than $5, with no price in between.",
+      "The entrant who uses a tall french jar is exactly one price step cheaper than $11, with no price in between.",
+      "The entrant who uses a hexagonal jar is cheaper than Emeka in price order.",
+      "The entrant who uses a tall french jar is exactly one price step cheaper than Harriet, with no price in between."
+    ]
+  }
+}

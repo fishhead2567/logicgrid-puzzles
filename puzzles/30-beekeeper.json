@@ -1,0 +1,270 @@
+{
+  "pid": "0d7d0fe6c620",
+  "title": "The Honey Show Scandal",
+  "theme": "beekeeper",
+  "blurb": "The annual honey show has been judged, and at least two people are writing letters about it.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026173113015,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173113015,
+    "theme": "beekeeper"
+  },
+  "schema": {
+    "spine": "fee",
+    "entity_noun": "beekeeper",
+    "entity_noun_plural": "beekeepers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "fee",
+        "label": "Entry fee",
+        "items": [
+          "$2",
+          "$4",
+          "$6",
+          "$8",
+          "$10"
+        ],
+        "ordered": true,
+        "values": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "unit": "$",
+        "noun": "entry fee",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "fee step",
+        "verb": "pays"
+      },
+      {
+        "name": "keeper",
+        "label": "Beekeeper",
+        "items": [
+          "Wilhelmina",
+          "Breda",
+          "Mungo",
+          "Priya",
+          "Fausto"
+        ],
+        "ordered": false,
+        "noun": "beekeeper",
+        "subject": true
+      },
+      {
+        "name": "honey",
+        "label": "Honey",
+        "items": [
+          "borage honey",
+          "ivy honey",
+          "lime blossom honey",
+          "sea lavender honey",
+          "chestnut honey"
+        ],
+        "ordered": false,
+        "noun": "honey",
+        "verb": "enters"
+      },
+      {
+        "name": "hive",
+        "label": "Hive type",
+        "items": [
+          "a long deep hive",
+          "a Langstroth hive",
+          "a national hive",
+          "a Warre hive",
+          "a WBC hive"
+        ],
+        "ordered": false,
+        "noun": "hive",
+        "verb": "keeps"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "fee:$2",
+          "b": "keeper:Wilhelmina"
+        },
+        {
+          "kind": "between",
+          "a": "keeper:Fausto",
+          "b": "fee:$10",
+          "c": "fee:$2"
+        },
+        {
+          "kind": "link",
+          "a": "fee:$2",
+          "b": "hive:a WBC hive"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "hive:a Warre hive",
+          "b": "fee:$2",
+          "c": "fee:$6"
+        },
+        {
+          "kind": "not_link",
+          "a": "fee:$6",
+          "b": "honey:chestnut honey"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "fee:$8",
+          "b": "hive:a long deep hive"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "fee:$6",
+          "b": "honey:ivy honey"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "honey:sea lavender honey",
+          "b": "keeper:Priya"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "hive:a WBC hive",
+          "b": "honey:lime blossom honey"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "honey:ivy honey",
+          "b": "keeper:Mungo"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "hive:a Langstroth hive",
+          "b": "keeper:Priya"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "honey:chestnut honey",
+          "b": "keeper:Breda",
+          "c": "keeper:Wilhelmina"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "fee": [
+      "$2",
+      "$4",
+      "$6",
+      "$8",
+      "$10"
+    ],
+    "keeper": [
+      "Mungo",
+      "Wilhelmina",
+      "Fausto",
+      "Priya",
+      "Breda"
+    ],
+    "honey": [
+      "borage honey",
+      "lime blossom honey",
+      "sea lavender honey",
+      "chestnut honey",
+      "ivy honey"
+    ],
+    "hive": [
+      "a WBC hive",
+      "a Warre hive",
+      "a Langstroth hive",
+      "a national hive",
+      "a long deep hive"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 9,
+    "kinds": {
+      "immediately_before": 3,
+      "between": 3,
+      "link": 1,
+      "not_link": 3,
+      "adjacent": 2
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 35,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 18,
+      "order": 13
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The annual honey show has been judged, and at least two people are writing letters about it.\nFive beekeepers are involved. Determine each beekeeper's entry fee, honey and hive.\n- **Beekeeper**: Wilhelmina, Breda, Mungo, Priya and Fausto.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Honey**: borage honey, ivy honey, lime blossom honey, sea lavender honey and chestnut honey.\n- **Hive type**: a long deep hive, a Langstroth hive, a national hive, a Warre hive and a WBC hive.\nEvery beekeeper has a different entry fee, honey and hive, so within each category every item is used exactly once.",
+    "clues": [
+      "$2 is exactly one fee step cheaper than Wilhelmina, with no entry fee in between. Fausto falls somewhere between $10 and $2 in entry fee order. The beekeeper who keeps a WBC hive pays $2.",
+      "The beekeeper who keeps a Warre hive falls somewhere between $2 and $6 in entry fee order. The beekeeper who enters chestnut honey does not pay $6.",
+      "$8 is exactly one fee step cheaper than the beekeeper who keeps a long deep hive, with no entry fee in between.",
+      "The beekeeper who enters ivy honey does not pay $6.",
+      "The beekeeper who enters sea lavender honey and Priya are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "The beekeeper who keeps a WBC hive and the beekeeper who enters lime blossom honey are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "Mungo does not enter ivy honey.",
+      "The beekeeper who keeps a Langstroth hive is exactly one fee step cheaper than Priya, with no entry fee in between.",
+      "The beekeeper who enters chestnut honey falls somewhere between Breda and Wilhelmina in entry fee order."
+    ]
+  }
+}

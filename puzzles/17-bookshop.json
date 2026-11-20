@@ -1,0 +1,194 @@
+{
+  "pid": "e29ceb1e5111",
+  "title": "Mrs Pell's Impossible Shelves",
+  "theme": "bookshop",
+  "blurb": "Mrs Pell's secondhand bookshop shelves by a system she alone understands, and she has gone to Margate for a fortnight.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.86,
+  "seed": 2026173010068,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026173010068,
+    "theme": "bookshop"
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "volume",
+    "entity_noun_plural": "volumes",
+    "entity_animate": false,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "sits on"
+      },
+      {
+        "name": "book",
+        "label": "Volume",
+        "items": [
+          "a guide to fungi",
+          "a treatise on clocks",
+          "a book of sea shanties",
+          "a water-stained atlas",
+          "a Latin primer"
+        ],
+        "ordered": false,
+        "noun": "volume",
+        "subject": true
+      },
+      {
+        "name": "price_tag",
+        "label": "Pencilled price",
+        "items": [
+          "half a crown",
+          "seven and six",
+          "four shillings",
+          "ninepence",
+          "a guinea"
+        ],
+        "ordered": false,
+        "noun": "price",
+        "verb": "is priced at"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "book:a guide to fungi",
+          "b": "shelf:the fifth shelf"
+        },
+        {
+          "kind": "link",
+          "a": "book:a water-stained atlas",
+          "b": "shelf:the fifth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "price_tag:four shillings",
+          "b": "shelf:the third shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "book:a Latin primer",
+          "b": "shelf:the second shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "book:a guide to fungi",
+          "b": "price_tag:seven and six"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "price_tag:a guinea",
+          "b": "book:a book of sea shanties"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "book:a book of sea shanties",
+          "b": "price_tag:ninepence"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "book": [
+      "a Latin primer",
+      "a book of sea shanties",
+      "a treatise on clocks",
+      "a guide to fungi",
+      "a water-stained atlas"
+    ],
+    "price_tag": [
+      "a guinea",
+      "four shillings",
+      "ninepence",
+      "half a crown",
+      "seven and six"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 6,
+    "kinds": {
+      "adjacent": 1,
+      "link": 1,
+      "immediately_before": 4,
+      "before": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 23,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 11,
+      "order": 11
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "Mrs Pell's secondhand bookshop shelves by a system she alone understands, and she has gone to Margate for a fortnight.\nFive volumes are involved. Determine each volume's shelf and price.\n- **Volume**: a guide to fungi, a treatise on clocks, a book of sea shanties, a water-stained atlas and a Latin primer.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf and the fifth shelf.\n- **Pencilled price**: half a crown; seven and six; four shillings; ninepence; and a guinea.\nEvery volume has a different shelf and price, so within each category every item is used exactly once.",
+    "clues": [
+      "A guide to fungi and the fifth shelf are exactly one shelf apart in shelf order, in one direction or the other. A water-stained atlas sits on the fifth shelf.",
+      "The volume that is priced at four shillings is exactly one shelf lower than the third shelf, with no shelf in between.",
+      "A Latin primer is lower than the second shelf in shelf order.",
+      "A guide to fungi is exactly one shelf lower than the volume that is priced at seven and six, with no shelf in between.",
+      "The volume that is priced at a guinea is exactly one shelf lower than a book of sea shanties, with no shelf in between.",
+      "A book of sea shanties is exactly one shelf lower than the volume that is priced at ninepence, with no shelf in between."
+    ]
+  }
+}

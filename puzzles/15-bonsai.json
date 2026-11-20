@@ -1,0 +1,192 @@
+{
+  "pid": "6bf2861e1a74",
+  "title": "The Autumn Show at Kiyosumi",
+  "theme": "bonsai",
+  "blurb": "Trees on stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.62,
+  "seed": 2026172994230,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172994230,
+    "theme": "bonsai"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "exhibitor",
+    "entity_noun_plural": "exhibitors",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Judged score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "judged score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "is awarded"
+      },
+      {
+        "name": "exhibitor",
+        "label": "Exhibitor",
+        "items": [
+          "Noriko Hase",
+          "Keiko Tanabe",
+          "Takumi Ishii",
+          "Jun Kawabe",
+          "Hiroshi Mita"
+        ],
+        "ordered": false,
+        "noun": "exhibitor",
+        "subject": true
+      },
+      {
+        "name": "flaw",
+        "label": "Flaw noted",
+        "items": [
+          "a weak nebari",
+          "a bar branch",
+          "reverse taper",
+          "visible wiring scars",
+          "an eye-poking branch"
+        ],
+        "ordered": false,
+        "noun": "flaw",
+        "verb": "is marked down for"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "flaw:reverse taper",
+          "b": "points:64 points"
+        },
+        {
+          "kind": "link",
+          "a": "exhibitor:Noriko Hase",
+          "b": "points:64 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "flaw:a weak nebari",
+          "b": "points:73 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "exhibitor:Takumi Ishii",
+          "b": "flaw:a weak nebari"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "flaw:an eye-poking branch",
+          "b": "exhibitor:Hiroshi Mita"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "exhibitor:Jun Kawabe",
+          "b": "flaw:a weak nebari",
+          "c": "flaw:visible wiring scars"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "exhibitor": [
+      "Keiko Tanabe",
+      "Noriko Hase",
+      "Jun Kawabe",
+      "Hiroshi Mita",
+      "Takumi Ishii"
+    ],
+    "flaw": [
+      "visible wiring scars",
+      "reverse taper",
+      "an eye-poking branch",
+      "a weak nebari",
+      "a bar branch"
+    ]
+  },
+  "stats": {
+    "atoms": 6,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 2,
+      "adjacent": 2,
+      "immediately_before": 1,
+      "between": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 25,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 14,
+      "order": 9
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "Trees on stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.\nFive exhibitors are involved. Determine each exhibitor's judged score and flaw.\n- **Exhibitor**: Noriko Hase, Keiko Tanabe, Takumi Ishii, Jun Kawabe and Hiroshi Mita.\n- **Judged score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Flaw noted**: a weak nebari, a bar branch, reverse taper, visible wiring scars and an eye-poking branch.\nEvery exhibitor has a different judged score and flaw, so within each category every item is used exactly once.",
+    "clues": [
+      "The exhibitor who is marked down for reverse taper is awarded 64 points. Noriko Hase is awarded 64 points.",
+      "The exhibitor who is marked down for a weak nebari and 73 points are exactly one score step apart in judged score order, in one direction or the other.",
+      "Takumi Ishii and the exhibitor who is marked down for a weak nebari are exactly one score step apart in judged score order, in one direction or the other.",
+      "The exhibitor who is marked down for an eye-poking branch is exactly one score step lower than Hiroshi Mita, with no judged score in between.",
+      "Jun Kawabe falls somewhere between the exhibitor who is marked down for a weak nebari and the exhibitor who is marked down for visible wiring scars in judged score order."
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "pid": "cb6cea28f93e",
+  "title": "The Saltmarsh Light Rotation",
+  "theme": "lighthouse",
+  "blurb": "The lighthouses along the Saltmarsh coast share a single relief keeper roster, and the logbooks have become a scholarly mess.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.27,
+  "seed": 2026172930878,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172930878,
+    "theme": "lighthouse"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "keeper",
+    "entity_noun_plural": "keepers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Day",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "ordered": true,
+        "noun": "day",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "works on"
+      },
+      {
+        "name": "keeper",
+        "label": "Keeper",
+        "items": [
+          "Hollis",
+          "Barnaby",
+          "Lucian",
+          "Clementine"
+        ],
+        "ordered": false,
+        "noun": "keeper",
+        "subject": true
+      },
+      {
+        "name": "light",
+        "label": "Lighthouse",
+        "items": [
+          "Gannet Rock",
+          "Cold Harbour",
+          "Mawes Point",
+          "Pelter Head"
+        ],
+        "ordered": false,
+        "noun": "lighthouse",
+        "verb": "is stationed at"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Monday",
+          "b": "keeper:Clementine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "day:Monday",
+          "b": "light:Gannet Rock"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "day:Thursday",
+          "b": "light:Mawes Point"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "light:Pelter Head",
+          "b": "keeper:Barnaby"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "keeper:Lucian",
+          "b": "light:Cold Harbour"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "keeper": [
+      "Clementine",
+      "Hollis",
+      "Lucian",
+      "Barnaby"
+    ],
+    "light": [
+      "Gannet Rock",
+      "Mawes Point",
+      "Pelter Head",
+      "Cold Harbour"
+    ]
+  },
+  "stats": {
+    "atoms": 5,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 2,
+      "not_link": 1,
+      "immediately_before": 2
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 20,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 11,
+      "order": 6
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "The lighthouses along the Saltmarsh coast share a single relief keeper roster, and the logbooks have become a scholarly mess.\nFour keepers are involved. Determine each keeper's day and lighthouse.\n- **Keeper**: Hollis, Barnaby, Lucian and Clementine.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday and Thursday.\n- **Lighthouse**: Gannet Rock, Cold Harbour, Mawes Point and Pelter Head.\nEvery keeper has a different day and lighthouse, so within each category every item is used exactly once.",
+    "clues": [
+      "Clementine works on Monday.",
+      "The keeper who is stationed at Gannet Rock works on Monday.",
+      "The keeper who is stationed at Mawes Point does not work on Thursday.",
+      "The keeper who is stationed at Pelter Head is exactly one day earlier than Barnaby, with no day in between.",
+      "Lucian is exactly one day earlier than the keeper who is stationed at Cold Harbour, with no day in between."
+    ]
+  }
+}

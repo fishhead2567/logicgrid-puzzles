@@ -1,0 +1,178 @@
+{
+  "pid": "74c39b1cc634",
+  "title": "The Dream Garage",
+  "theme": "dream_cars",
+  "blurb": "Kids turned loose at the auto show, each one certain they have found the only car worth owning.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.27,
+  "seed": 2026172922959,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172922959,
+    "theme": "dream_cars"
+  },
+  "schema": {
+    "spine": "speed",
+    "entity_noun": "kid",
+    "entity_noun_plural": "kids",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "speed",
+        "label": "Top speed",
+        "items": [
+          "120 mph",
+          "130 mph",
+          "140 mph",
+          "150 mph"
+        ],
+        "ordered": true,
+        "values": [
+          120,
+          130,
+          140,
+          150
+        ],
+        "unit_suffix": " mph",
+        "noun": "top speed",
+        "cmp_less": "slower",
+        "cmp_more": "faster",
+        "step_noun": "speed step",
+        "verb": "wants a car that does"
+      },
+      {
+        "name": "kid",
+        "label": "Kid",
+        "items": [
+          "Imani",
+          "Svetlana",
+          "Jalen",
+          "Cormac"
+        ],
+        "ordered": false,
+        "noun": "kid",
+        "subject": true
+      },
+      {
+        "name": "make",
+        "label": "Make",
+        "items": [
+          "a Comet GT",
+          "a Trailhawk Pickup",
+          "a Meridian Sedan",
+          "a Vulcan 500"
+        ],
+        "ordered": false,
+        "noun": "make",
+        "verb": "is set on"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "make:a Vulcan 500",
+          "b": "speed:120 mph"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Cormac",
+          "b": "make:a Trailhawk Pickup"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "kid:Svetlana",
+          "b": "speed:130 mph"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "make:a Trailhawk Pickup",
+          "b": "speed:150 mph"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "make:a Comet GT",
+          "b": "kid:Imani"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "speed": [
+      "120 mph",
+      "130 mph",
+      "140 mph",
+      "150 mph"
+    ],
+    "kid": [
+      "Svetlana",
+      "Jalen",
+      "Cormac",
+      "Imani"
+    ],
+    "make": [
+      "a Vulcan 500",
+      "a Comet GT",
+      "a Trailhawk Pickup",
+      "a Meridian Sedan"
+    ]
+  },
+  "stats": {
+    "atoms": 5,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 2,
+      "before": 2,
+      "adjacent": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 16,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 9,
+      "order": 4
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 8
+  },
+  "text": {
+    "intro": "Kids turned loose at the auto show, each one certain they have found the only car worth owning.\nFour kids are involved. Determine each kid's top speed and make.\n- **Kid**: Imani, Svetlana, Jalen and Cormac.\n- **Top speed** (listed from slower to faster): 120 mph, 130 mph, 140 mph and 150 mph.\n- **Make**: a Comet GT, a Trailhawk Pickup, a Meridian Sedan and a Vulcan 500.\nEvery kid has a different top speed and make, so within each category every item is used exactly once.",
+    "clues": [
+      "The kid who is set on a Vulcan 500 wants a car that does 120 mph.",
+      "Cormac is set on a Trailhawk Pickup.",
+      "Svetlana is slower than 130 mph in top speed order.",
+      "The kid who is set on a Trailhawk Pickup and 150 mph are exactly one speed step apart in top speed order, in one direction or the other.",
+      "The kid who is set on a Comet GT is slower than Imani in top speed order."
+    ]
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "pid": "6d3e215e8024",
+  "title": "A Benchful of Clocks, and No Agreement",
+  "theme": "clockmaker",
+  "blurb": "Mr Halloran repairs clocks. Those on the bench are all insisting on a different hour.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 6.01,
+  "seed": 2026173073420,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173073420,
+    "theme": "clockmaker"
+  },
+  "schema": {
+    "spine": "shelf",
+    "entity_noun": "clock",
+    "entity_noun_plural": "clocks",
+    "entity_animate": false,
+    "categories": [
+      {
+        "name": "shelf",
+        "label": "Shelf",
+        "items": [
+          "the bottom shelf",
+          "the second shelf",
+          "the third shelf",
+          "the fourth shelf",
+          "the fifth shelf"
+        ],
+        "ordered": true,
+        "noun": "shelf",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "shelf",
+        "verb": "sits on"
+      },
+      {
+        "name": "clock",
+        "label": "Clock",
+        "items": [
+          "a ship's chronometer",
+          "a carriage clock",
+          "a longcase clock",
+          "a cuckoo clock",
+          "an anniversary clock"
+        ],
+        "ordered": false,
+        "noun": "clock",
+        "subject": true
+      },
+      {
+        "name": "owner",
+        "label": "Owner",
+        "items": [
+          "Mr Dziedzic",
+          "Dr Vasquez",
+          "Father Brennan",
+          "Ms Trevino",
+          "Mrs Oyelaran"
+        ],
+        "ordered": false,
+        "noun": "owner",
+        "verb": "belongs to"
+      },
+      {
+        "name": "fault",
+        "label": "Fault",
+        "items": [
+          "a bent pendulum rod",
+          "a snapped mainspring",
+          "a cracked suspension spring",
+          "a gummed-up pivot",
+          "a worn escape wheel"
+        ],
+        "ordered": false,
+        "noun": "fault",
+        "verb": "suffers from"
+      },
+      {
+        "name": "chime",
+        "label": "Chime",
+        "items": [
+          "Westminster",
+          "a single strike",
+          "no chime at all",
+          "a ship's bell",
+          "a bell and gong"
+        ],
+        "ordered": false,
+        "noun": "chime",
+        "verb": "sounds"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "fault:a bent pendulum rod",
+          "b": "shelf:the third shelf"
+        },
+        {
+          "kind": "before",
+          "a": "fault:a snapped mainspring",
+          "b": "shelf:the third shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "chime:no chime at all",
+          "b": "shelf:the second shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "owner:Dr Vasquez",
+          "b": "shelf:the fourth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "clock:a cuckoo clock",
+          "b": "shelf:the third shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "chime:a ship's bell",
+          "b": "fault:a gummed-up pivot",
+          "c": "shelf:the fourth shelf"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "chime:a single strike",
+          "b": "owner:Mr Dziedzic"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "chime:Westminster",
+          "b": "fault:a worn escape wheel",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "fault:a snapped mainspring",
+          "b": "owner:Ms Trevino",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "fault:a snapped mainspring",
+          "b": "clock:an anniversary clock",
+          "c": "owner:Mr Dziedzic"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "clock:a carriage clock",
+          "b": "chime:a single strike"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "clock:a longcase clock",
+          "b": "owner:Father Brennan",
+          "k": 4,
+          "rel": "eq"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "shelf": [
+      "the bottom shelf",
+      "the second shelf",
+      "the third shelf",
+      "the fourth shelf",
+      "the fifth shelf"
+    ],
+    "clock": [
+      "an anniversary clock",
+      "a cuckoo clock",
+      "a carriage clock",
+      "a ship's chronometer",
+      "a longcase clock"
+    ],
+    "owner": [
+      "Father Brennan",
+      "Mrs Oyelaran",
+      "Dr Vasquez",
+      "Ms Trevino",
+      "Mr Dziedzic"
+    ],
+    "fault": [
+      "a gummed-up pivot",
+      "a snapped mainspring",
+      "a bent pendulum rod",
+      "a cracked suspension spring",
+      "a worn escape wheel"
+    ],
+    "chime": [
+      "Westminster",
+      "no chime at all",
+      "a ship's bell",
+      "a single strike",
+      "a bell and gong"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 11,
+    "kinds": {
+      "link": 2,
+      "before": 2,
+      "adjacent": 1,
+      "immediately_before": 2,
+      "between": 2,
+      "gap": 3
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 47,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 24,
+      "order": 21
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Mr Halloran repairs clocks. Those on the bench are all insisting on a different hour.\nFive clocks are involved. Determine each clock's shelf, owner, fault and chime.\n- **Clock**: a ship's chronometer, a carriage clock, a longcase clock, a cuckoo clock and an anniversary clock.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf, the fourth shelf and the fifth shelf.\n- **Owner**: Mr Dziedzic, Dr Vasquez, Father Brennan, Ms Trevino and Mrs Oyelaran.\n- **Fault**: a bent pendulum rod, a snapped mainspring, a cracked suspension spring, a gummed-up pivot and a worn escape wheel.\n- **Chime**: Westminster; a single strike; no chime at all; a ship's bell; and a bell and gong.\nEvery clock has a different shelf, owner, fault and chime, so within each category every item is used exactly once.",
+    "clues": [
+      "The clock that suffers from a bent pendulum rod sits on the third shelf. The clock that suffers from a snapped mainspring is lower than the third shelf in shelf order.",
+      "The clock that sounds no chime at all sits on the second shelf.",
+      "The clock that belongs to Dr Vasquez and the fourth shelf are exactly one shelf apart in shelf order, in one direction or the other.",
+      "A cuckoo clock is exactly one shelf lower than the third shelf, with no shelf in between.",
+      "The clock that sounds a ship's bell falls somewhere between the clock that suffers from a gummed-up pivot and the fourth shelf in shelf order.",
+      "The clock that sounds a single strike is exactly one shelf lower than the clock that belongs to Mr Dziedzic, with no shelf in between.",
+      "The clock that sounds Westminster and the clock that suffers from a worn escape wheel are exactly four shelves apart in shelf order.",
+      "The clock that suffers from a snapped mainspring and the clock that belongs to Ms Trevino are exactly two shelves apart in shelf order.",
+      "The clock that suffers from a snapped mainspring falls somewhere between an anniversary clock and the clock that belongs to Mr Dziedzic in shelf order.",
+      "A carriage clock is lower than the clock that sounds a single strike in shelf order.",
+      "A longcase clock and the clock that belongs to Father Brennan are exactly four shelves apart in shelf order."
+    ]
+  }
+}

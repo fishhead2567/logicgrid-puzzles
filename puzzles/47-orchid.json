@@ -1,0 +1,446 @@
+{
+  "pid": "e2628b62a37f",
+  "title": "The Orchid House Reckoning",
+  "theme": "orchid",
+  "blurb": "The orchid house at Ladd Park is shared by its growers, each convinced the others are overwatering.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 16.1239,
+  "seed": 2026173247638,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173247638,
+    "theme": "orchid"
+  },
+  "schema": {
+    "spine": "month",
+    "entity_noun": "grower",
+    "entity_noun_plural": "growers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "month",
+        "label": "Harvest month",
+        "items": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June"
+        ],
+        "ordered": true,
+        "noun": "harvest month",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "month",
+        "verb": "harvests in"
+      },
+      {
+        "name": "grower",
+        "label": "Grower",
+        "items": [
+          "Colleen",
+          "Taavi",
+          "Leocadia",
+          "Sig",
+          "Nkiruka",
+          "Ambrose"
+        ],
+        "ordered": false,
+        "noun": "grower",
+        "subject": true
+      },
+      {
+        "name": "orchid",
+        "label": "Orchid",
+        "items": [
+          "a ghost orchid",
+          "a bucket orchid",
+          "a moth orchid",
+          "a slipper orchid",
+          "a dancing lady",
+          "a vanilla vine"
+        ],
+        "ordered": false,
+        "noun": "orchid",
+        "verb": "grows"
+      },
+      {
+        "name": "mix",
+        "label": "Potting mix",
+        "items": [
+          "bark chip",
+          "lava rock",
+          "perlite and charcoal",
+          "sphagnum moss",
+          "coconut husk",
+          "bare root on cork"
+        ],
+        "ordered": false,
+        "noun": "potting mix",
+        "verb": "pots in"
+      },
+      {
+        "name": "pest",
+        "label": "Pest",
+        "items": [
+          "red spider mite",
+          "thrips",
+          "a persistent slug",
+          "scale insects",
+          "mealybug",
+          "fungus gnats"
+        ],
+        "ordered": false,
+        "noun": "pest",
+        "verb": "is troubled by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "month:March",
+          "b": "pest:fungus gnats",
+          "k": 2,
+          "rel": "eq"
+        },
+        {
+          "kind": "before",
+          "a": "month:March",
+          "b": "orchid:a ghost orchid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "before",
+            "a": "month:March",
+            "b": "orchid:a ghost orchid"
+          },
+          "y": {
+            "kind": "link",
+            "a": "month:April",
+            "b": "orchid:a dancing lady"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "adjacent",
+            "a": "mix:perlite and charcoal",
+            "b": "month:March"
+          },
+          "y": {
+            "kind": "parity",
+            "a": "grower:Sig",
+            "b": "month:April",
+            "same": false
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "month:February",
+          "b": "mix:bare root on cork",
+          "c": "mix:bark chip"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "month:April",
+          "b": "pest:red spider mite",
+          "c": "pest:scale insects"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "month:March",
+              "b": "orchid:a slipper orchid"
+            },
+            {
+              "kind": "gap",
+              "a": "mix:perlite and charcoal",
+              "b": "orchid:a bucket orchid",
+              "k": 2,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "month:February",
+          "b": "orchid:a slipper orchid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "mix:lava rock",
+          "b": "month:April"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "grower:Ambrose",
+          "b": "mix:sphagnum moss",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "grower:Nkiruka",
+          "b": "orchid:a vanilla vine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "orchid:a dancing lady",
+          "b": "pest:mealybug"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "mix:coconut husk",
+          "b": "pest:red spider mite",
+          "k": 5,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "grower:Taavi",
+          "b": "mix:bark chip"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "grower:Leocadia",
+          "b": "pest:a persistent slug"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "grower:Ambrose",
+              "b": "pest:red spider mite"
+            },
+            {
+              "kind": "gap",
+              "a": "grower:Leocadia",
+              "b": "mix:lava rock",
+              "k": 3,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "mix:sphagnum moss",
+          "b": "grower:Colleen"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "grower:Leocadia",
+          "b": "pest:fungus gnats"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "grower:Ambrose",
+          "b": "orchid:a moth orchid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "grower:Ambrose",
+          "b": "mix:coconut husk",
+          "c": "pest:mealybug"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "month": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June"
+    ],
+    "grower": [
+      "Taavi",
+      "Leocadia",
+      "Colleen",
+      "Ambrose",
+      "Sig",
+      "Nkiruka"
+    ],
+    "orchid": [
+      "a slipper orchid",
+      "a bucket orchid",
+      "a moth orchid",
+      "a ghost orchid",
+      "a vanilla vine",
+      "a dancing lady"
+    ],
+    "mix": [
+      "bare root on cork",
+      "sphagnum moss",
+      "bark chip",
+      "perlite and charcoal",
+      "lava rock",
+      "coconut husk"
+    ],
+    "pest": [
+      "red spider mite",
+      "mealybug",
+      "a persistent slug",
+      "thrips",
+      "fungus gnats",
+      "scale insects"
+    ]
+  },
+  "stats": {
+    "atoms": 20,
+    "numbered_clues": 19,
+    "kinds": {
+      "gap": 3,
+      "before": 2,
+      "not_both": 1,
+      "if_then": 1,
+      "between": 3,
+      "or": 2,
+      "adjacent": 4,
+      "not_link": 3,
+      "immediately_before": 1
+    },
+    "positives": 0,
+    "compounds": 4
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 89,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 43,
+      "order": 36,
+      "disjunction": 6,
+      "trial": 1
+    },
+    "trial_eliminations": 1,
+    "unknown_cells": 24
+  },
+  "text": {
+    "intro": "The orchid house at Ladd Park is shared by its growers, each convinced the others are overwatering.\nSix growers are involved. Determine each grower's harvest month, orchid, potting mix and pest.\n- **Grower**: Colleen, Taavi, Leocadia, Sig, Nkiruka and Ambrose.\n- **Harvest month** (listed from earlier to later): January, February, March, April, May and June.\n- **Orchid**: a ghost orchid, a bucket orchid, a moth orchid, a slipper orchid, a dancing lady and a vanilla vine.\n- **Potting mix**: bark chip; lava rock; perlite and charcoal; sphagnum moss; coconut husk; and bare root on cork.\n- **Pest**: red spider mite, thrips, a persistent slug, scale insects, mealybug and fungus gnats.\nEvery grower has a different harvest month, orchid, potting mix and pest, so within each category every item is used exactly once.",
+    "clues": [
+      "The grower who is troubled by fungus gnats and March are exactly two months apart in harvest month order. The grower who grows a ghost orchid is later than March in harvest month order.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The grower who grows a ghost orchid is later than March in harvest month order. (b) The grower who grows a dancing lady harvests in April.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The grower who pots in perlite and charcoal and March are exactly one month apart in harvest month order, in one direction or the other. (b) One of Sig and April sits at an odd-numbered harvest month and the other at an even-numbered harvest month.",
+      "February falls somewhere between the grower who pots in bare root on cork and the grower who pots in bark chip in harvest month order.",
+      "April falls somewhere between the grower who is troubled by red spider mite and the grower who is troubled by scale insects in harvest month order.",
+      "At least one of the following holds, and possibly more than one: (a) The grower who grows a slipper orchid and March are exactly one month apart in harvest month order, in one direction or the other. (b) The grower who pots in perlite and charcoal and the grower who grows a bucket orchid are exactly two months apart in harvest month order.",
+      "The grower who grows a slipper orchid and February are exactly one month apart in harvest month order, in one direction or the other.",
+      "The grower who pots in lava rock does not harvest in April.",
+      "Ambrose and the grower who pots in sphagnum moss are exactly two months apart in harvest month order.",
+      "Nkiruka and the grower who grows a vanilla vine are exactly one month apart in harvest month order, in one direction or the other.",
+      "The grower who grows a dancing lady is not troubled by mealybug.",
+      "The grower who pots in coconut husk and the grower who is troubled by red spider mite are exactly five months apart in harvest month order.",
+      "Taavi is earlier than the grower who pots in bark chip in harvest month order.",
+      "Leocadia and the grower who is troubled by a persistent slug are exactly one month apart in harvest month order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) Ambrose and the grower who is troubled by red spider mite are exactly one month apart in harvest month order, in one direction or the other. (b) Leocadia and the grower who pots in lava rock are exactly three months apart in harvest month order.",
+      "The grower who pots in sphagnum moss is exactly one month earlier than Colleen, with no harvest month in between.",
+      "Leocadia is not troubled by fungus gnats.",
+      "Ambrose and the grower who grows a moth orchid are exactly one month apart in harvest month order, in one direction or the other.",
+      "Ambrose falls somewhere between the grower who pots in coconut husk and the grower who is troubled by mealybug in harvest month order."
+    ]
+  }
+}
