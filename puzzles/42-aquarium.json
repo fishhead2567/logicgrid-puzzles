@@ -1,0 +1,370 @@
+{
+  "pid": "d39c10c8426f",
+  "title": "The Night Shift at Coldwater Hall",
+  "theme": "aquarium",
+  "blurb": "Coldwater Hall Aquarium keeps a night rota of tanks, and one keeper who is definitely feeding the wrong things.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 10.2083,
+  "seed": 2026173108040,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173108040,
+    "theme": "aquarium"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "keeper",
+    "entity_noun_plural": "keepers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "works"
+      },
+      {
+        "name": "keeper",
+        "label": "Keeper",
+        "items": [
+          "Agnetha",
+          "Oskar",
+          "Fitzwilliam",
+          "Marisol",
+          "Bartolo"
+        ],
+        "ordered": false,
+        "noun": "keeper",
+        "subject": true
+      },
+      {
+        "name": "tank",
+        "label": "Tank",
+        "items": [
+          "the touch pool",
+          "the kelp tank",
+          "the jellyfish column",
+          "the deep reef",
+          "the octopus enclosure"
+        ],
+        "ordered": false,
+        "noun": "tank",
+        "verb": "tends"
+      },
+      {
+        "name": "feed",
+        "label": "Feed",
+        "items": [
+          "brine shrimp",
+          "nori sheets",
+          "mussel meat",
+          "a gelatine cube of unclear provenance",
+          "chopped squid"
+        ],
+        "ordered": false,
+        "noun": "feed",
+        "verb": "feeds"
+      },
+      {
+        "name": "incident",
+        "label": "Logged incident",
+        "items": [
+          "a failed chiller",
+          "an unexplained pH swing",
+          "a cracked viewing pane",
+          "an algal bloom",
+          "a blocked skimmer"
+        ],
+        "ordered": false,
+        "noun": "incident",
+        "verb": "logs"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "slot:slot two",
+          "b": "tank:the touch pool",
+          "same": true
+        },
+        {
+          "kind": "not_link",
+          "a": "feed:nori sheets",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "slot:slot two",
+          "b": "tank:the octopus enclosure",
+          "k": 3,
+          "rel": "eq"
+        },
+        {
+          "kind": "not_link",
+          "a": "feed:chopped squid",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "slot:slot four",
+          "b": "keeper:Fitzwilliam"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "incident:an unexplained pH swing",
+          "b": "slot:slot four"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "incident:a cracked viewing pane",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "gap",
+              "a": "feed:brine shrimp",
+              "b": "slot:slot one",
+              "k": 4,
+              "rel": "eq"
+            },
+            {
+              "kind": "link",
+              "a": "feed:brine shrimp",
+              "b": "incident:a cracked viewing pane"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "immediately_before",
+              "a": "keeper:Marisol",
+              "b": "slot:slot three"
+            },
+            {
+              "kind": "link",
+              "a": "incident:a blocked skimmer",
+              "b": "keeper:Marisol"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "feed:mussel meat",
+          "b": "keeper:Marisol",
+          "c": "slot:slot five"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "feed:chopped squid",
+          "b": "incident:a cracked viewing pane",
+          "c": "incident:a failed chiller"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "incident:an algal bloom",
+          "b": "keeper:Bartolo"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "keeper:Oskar",
+          "b": "tank:the kelp tank"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "link",
+            "a": "feed:brine shrimp",
+            "b": "tank:the deep reef"
+          },
+          "y": {
+            "kind": "link",
+            "a": "feed:chopped squid",
+            "b": "incident:an unexplained pH swing"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "tank:the jellyfish column",
+          "b": "incident:a failed chiller",
+          "c": "keeper:Bartolo"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "feed:chopped squid",
+          "b": "keeper:Oskar"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "keeper": [
+      "Agnetha",
+      "Marisol",
+      "Bartolo",
+      "Oskar",
+      "Fitzwilliam"
+    ],
+    "tank": [
+      "the deep reef",
+      "the touch pool",
+      "the kelp tank",
+      "the jellyfish column",
+      "the octopus enclosure"
+    ],
+    "feed": [
+      "nori sheets",
+      "a gelatine cube of unclear provenance",
+      "chopped squid",
+      "mussel meat",
+      "brine shrimp"
+    ],
+    "incident": [
+      "a cracked viewing pane",
+      "an algal bloom",
+      "an unexplained pH swing",
+      "a blocked skimmer",
+      "a failed chiller"
+    ]
+  },
+  "stats": {
+    "atoms": 16,
+    "numbered_clues": 14,
+    "kinds": {
+      "parity": 1,
+      "not_link": 3,
+      "gap": 1,
+      "before": 4,
+      "or": 2,
+      "between": 3,
+      "adjacent": 1,
+      "not_both": 1
+    },
+    "positives": 0,
+    "compounds": 3
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 52,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 26,
+      "order": 20,
+      "disjunction": 3
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Coldwater Hall Aquarium keeps a night rota of tanks, and one keeper who is definitely feeding the wrong things.\nFive keepers are involved. Determine each keeper's slot, tank, feed and incident.\n- **Keeper**: Agnetha, Oskar, Fitzwilliam, Marisol and Bartolo.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Tank**: the touch pool, the kelp tank, the jellyfish column, the deep reef and the octopus enclosure.\n- **Feed**: brine shrimp, nori sheets, mussel meat, a gelatine cube of unclear provenance and chopped squid.\n- **Logged incident**: a failed chiller, an unexplained pH swing, a cracked viewing pane, an algal bloom and a blocked skimmer.\nEvery keeper has a different slot, tank, feed and incident, so within each category every item is used exactly once.",
+    "clues": [
+      "Slot two and the keeper who tends the touch pool both sit at odd-numbered slots or both at even-numbered slots. The keeper who feeds nori sheets does not work slot two.",
+      "The keeper who tends the octopus enclosure and slot two are exactly three slots apart in slot order. The keeper who feeds chopped squid does not work slot two.",
+      "Fitzwilliam is later than slot four in slot order.",
+      "The keeper who logs an unexplained pH swing is earlier than slot four in slot order.",
+      "The keeper who logs a cracked viewing pane is earlier than slot two in slot order.",
+      "At least one of the following holds, and possibly more than one: (a) The keeper who feeds brine shrimp and slot one are exactly four slots apart in slot order. (b) The keeper who feeds brine shrimp logs a cracked viewing pane.",
+      "At least one of the following holds, and possibly more than one: (a) Marisol is exactly one slot earlier than slot three, with no slot in between. (b) Marisol logs a blocked skimmer.",
+      "The keeper who feeds mussel meat falls somewhere between Marisol and slot five in slot order.",
+      "The keeper who feeds chopped squid falls somewhere between the keeper who logs a cracked viewing pane and the keeper who logs a failed chiller in slot order.",
+      "The keeper who logs an algal bloom is earlier than Bartolo in slot order.",
+      "Oskar and the keeper who tends the kelp tank are exactly one slot apart in slot order, in one direction or the other.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The keeper who feeds brine shrimp tends the deep reef. (b) The keeper who feeds chopped squid logs an unexplained pH swing.",
+      "The keeper who tends the jellyfish column falls somewhere between the keeper who logs a failed chiller and Bartolo in slot order.",
+      "Oskar does not feed chopped squid."
+    ]
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "pid": "ec9f9d6b3ee4",
+  "title": "The Tuesday Pickleball Ladder",
+  "theme": "pickleball",
+  "blurb": "The rec center runs a pickleball ladder on Tuesdays. Courts go by start time, and the sign-up sheet gets rewritten more than once.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026172941741,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172941741,
+    "theme": "pickleball"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "player",
+    "entity_noun_plural": "players",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "plays at"
+      },
+      {
+        "name": "player",
+        "label": "Player",
+        "items": [
+          "Ramesh",
+          "Buzz Kovacs",
+          "Arlene",
+          "Pete Ng",
+          "Yolanda"
+        ],
+        "ordered": false,
+        "noun": "player",
+        "subject": true
+      },
+      {
+        "name": "paddle",
+        "label": "Paddle",
+        "items": [
+          "a carbon-fiber paddle",
+          "a bright orange paddle",
+          "a paddle with a taped grip",
+          "an oversize paddle",
+          "a hand-me-down paddle"
+        ],
+        "ordered": false,
+        "noun": "paddle",
+        "verb": "plays with"
+      },
+      {
+        "name": "gripe",
+        "label": "Gripe",
+        "items": [
+          "the noisy court next door",
+          "the sun",
+          "a bad knee",
+          "a wet court",
+          "nobody at all"
+        ],
+        "ordered": false,
+        "noun": "gripe",
+        "verb": "blames"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "time:10am",
+          "b": "player:Buzz Kovacs",
+          "c": "player:Pete Ng"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "time:11am",
+          "b": "paddle:a hand-me-down paddle",
+          "c": "paddle:an oversize paddle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "paddle:a paddle with a taped grip",
+          "b": "time:8am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "time:8am",
+          "b": "gripe:the noisy court next door"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "gripe:a wet court",
+          "b": "time:noon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "gripe:the noisy court next door",
+          "b": "player:Pete Ng"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "paddle:a paddle with a taped grip",
+          "b": "player:Buzz Kovacs",
+          "c": "player:Ramesh"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "player:Arlene",
+          "b": "gripe:the sun"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "paddle:a hand-me-down paddle",
+          "b": "gripe:the sun"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "gripe:a wet court",
+          "b": "paddle:a carbon-fiber paddle"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "gripe:a bad knee",
+          "b": "player:Pete Ng",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "paddle:a paddle with a taped grip",
+          "b": "gripe:nobody at all"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "player": [
+      "Buzz Kovacs",
+      "Yolanda",
+      "Arlene",
+      "Pete Ng",
+      "Ramesh"
+    ],
+    "paddle": [
+      "a bright orange paddle",
+      "a paddle with a taped grip",
+      "a hand-me-down paddle",
+      "a carbon-fiber paddle",
+      "an oversize paddle"
+    ],
+    "gripe": [
+      "a wet court",
+      "the noisy court next door",
+      "nobody at all",
+      "the sun",
+      "a bad knee"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 12,
+    "kinds": {
+      "between": 3,
+      "adjacent": 1,
+      "immediately_before": 4,
+      "not_link": 3,
+      "parity": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 39,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 14,
+      "order": 22
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The rec center runs a pickleball ladder on Tuesdays. Courts go by start time, and the sign-up sheet gets rewritten more than once.\nFive players are involved. Determine each player's start time, paddle and gripe.\n- **Player**: Ramesh, Buzz Kovacs, Arlene, Pete Ng and Yolanda.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Paddle**: a carbon-fiber paddle, a bright orange paddle, a paddle with a taped grip, an oversize paddle and a hand-me-down paddle.\n- **Gripe**: the noisy court next door, the sun, a bad knee, a wet court and nobody at all.\nEvery player has a different start time, paddle and gripe, so within each category every item is used exactly once.",
+    "clues": [
+      "10am falls somewhere between Buzz Kovacs and Pete Ng in start time order.",
+      "11am falls somewhere between the player who plays with a hand-me-down paddle and the player who plays with an oversize paddle in start time order.",
+      "The player who plays with a paddle with a taped grip and 8am are exactly one hour apart in start time order, in one direction or the other.",
+      "8am is exactly one hour earlier than the player who blames the noisy court next door, with no start time in between.",
+      "The player who blames a wet court does not play at noon.",
+      "Pete Ng does not blame the noisy court next door.",
+      "The player who plays with a paddle with a taped grip falls somewhere between Buzz Kovacs and Ramesh in start time order.",
+      "Arlene is exactly one hour earlier than the player who blames the sun, with no start time in between.",
+      "The player who plays with a hand-me-down paddle is exactly one hour earlier than the player who blames the sun, with no start time in between.",
+      "The player who blames a wet court does not play with a carbon-fiber paddle.",
+      "One of the player who blames a bad knee and Pete Ng sits at an odd-numbered start time and the other at an even-numbered start time.",
+      "The player who plays with a paddle with a taped grip is exactly one hour earlier than the player who blames nobody at all, with no start time in between."
+    ]
+  }
+}

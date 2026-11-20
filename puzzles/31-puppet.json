@@ -1,0 +1,373 @@
+{
+  "pid": "6203e2561060",
+  "title": "A Fortnight at the Little Vesper Theatre",
+  "theme": "puppet",
+  "blurb": "The Little Vesper Theatre seats forty people and employs a company of puppeteers who will not be in the same room together.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 11.0546,
+  "seed": 2026173020931,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173020931,
+    "theme": "puppet"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "puppeteer",
+    "entity_noun_plural": "puppeteers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "performs in"
+      },
+      {
+        "name": "puppeteer",
+        "label": "Puppeteer",
+        "items": [
+          "Bowen",
+          "Lorcan",
+          "Mirabel",
+          "Josefa",
+          "Stellan"
+        ],
+        "ordered": false,
+        "noun": "puppeteer",
+        "subject": true
+      },
+      {
+        "name": "puppet",
+        "label": "Lead puppet",
+        "items": [
+          "a tin soldier",
+          "a one-eyed cat",
+          "a shepherd boy",
+          "a drowned sailor",
+          "a paper crane"
+        ],
+        "ordered": false,
+        "noun": "puppet",
+        "verb": "works"
+      },
+      {
+        "name": "play",
+        "label": "Play",
+        "items": [
+          "The Clockwork Orchard",
+          "Marrowbone",
+          "Hollowmas",
+          "Six Spoons",
+          "The Glass Tide"
+        ],
+        "ordered": false,
+        "noun": "play",
+        "verb": "stages"
+      },
+      {
+        "name": "music",
+        "label": "Accompaniment",
+        "items": [
+          "a glass harmonica",
+          "a prepared piano",
+          "two kettle drums",
+          "a bowed psaltery",
+          "a hurdy-gurdy"
+        ],
+        "ordered": false,
+        "noun": "accompaniment",
+        "verb": "is accompanied by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "gap",
+              "a": "puppeteer:Stellan",
+              "b": "slot:slot five",
+              "k": 3,
+              "rel": "eq"
+            },
+            {
+              "kind": "link",
+              "a": "puppeteer:Lorcan",
+              "b": "slot:slot three"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "slot:slot four",
+          "b": "puppeteer:Bowen"
+        },
+        {
+          "kind": "before",
+          "a": "puppet:a one-eyed cat",
+          "b": "slot:slot four"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "puppeteer:Josefa",
+          "b": "slot:slot two"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "play:Hollowmas",
+              "b": "puppet:a one-eyed cat"
+            },
+            {
+              "kind": "before",
+              "a": "slot:slot three",
+              "b": "play:The Glass Tide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "play:Six Spoons",
+          "b": "slot:slot three"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "music:a prepared piano",
+              "b": "play:Marrowbone"
+            },
+            {
+              "kind": "before",
+              "a": "slot:slot one",
+              "b": "music:a bowed psaltery"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "puppeteer:Stellan",
+          "b": "play:The Glass Tide"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "play:Six Spoons",
+          "b": "puppeteer:Mirabel",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "puppeteer:Josefa",
+              "b": "play:Hollowmas"
+            },
+            {
+              "kind": "gap",
+              "a": "puppet:a paper crane",
+              "b": "puppeteer:Josefa",
+              "k": 2,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "music:a bowed psaltery",
+          "b": "puppet:a shepherd boy",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "play:Marrowbone",
+          "b": "music:two kettle drums"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "music:a hurdy-gurdy",
+          "b": "puppeteer:Josefa"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "music:a prepared piano",
+          "b": "puppeteer:Mirabel"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "puppeteer:Lorcan",
+          "b": "puppet:a shepherd boy",
+          "c": "puppet:a tin soldier"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "puppeteer": [
+      "Mirabel",
+      "Stellan",
+      "Josefa",
+      "Lorcan",
+      "Bowen"
+    ],
+    "puppet": [
+      "a paper crane",
+      "a shepherd boy",
+      "a one-eyed cat",
+      "a drowned sailor",
+      "a tin soldier"
+    ],
+    "play": [
+      "Hollowmas",
+      "Six Spoons",
+      "The Glass Tide",
+      "Marrowbone",
+      "The Clockwork Orchard"
+    ],
+    "music": [
+      "a glass harmonica",
+      "a prepared piano",
+      "a bowed psaltery",
+      "a hurdy-gurdy",
+      "two kettle drums"
+    ]
+  },
+  "stats": {
+    "atoms": 15,
+    "numbered_clues": 14,
+    "kinds": {
+      "or": 4,
+      "before": 2,
+      "adjacent": 3,
+      "immediately_before": 3,
+      "parity": 2,
+      "between": 1
+    },
+    "positives": 0,
+    "compounds": 4
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 50,
+    "tier_counts": {
+      "bijection": 20,
+      "order": 22,
+      "disjunction": 8
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Little Vesper Theatre seats forty people and employs a company of puppeteers who will not be in the same room together.\nFive puppeteers are involved. Determine each puppeteer's slot, puppet, play and accompaniment.\n- **Puppeteer**: Bowen, Lorcan, Mirabel, Josefa and Stellan.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Lead puppet**: a tin soldier, a one-eyed cat, a shepherd boy, a drowned sailor and a paper crane.\n- **Play**: The Clockwork Orchard, Marrowbone, Hollowmas, Six Spoons and The Glass Tide.\n- **Accompaniment**: a glass harmonica, a prepared piano, two kettle drums, a bowed psaltery and a hurdy-gurdy.\nEvery puppeteer has a different slot, puppet, play and accompaniment, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) Stellan and slot five are exactly three slots apart in slot order. (b) Lorcan performs in slot three.",
+      "Bowen is later than slot four in slot order. The puppeteer who works a one-eyed cat is earlier than slot four in slot order.",
+      "Josefa and slot two are exactly one slot apart in slot order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) The puppeteer who stages Hollowmas is earlier than the puppeteer who works a one-eyed cat in slot order. (b) The puppeteer who stages The Glass Tide is later than slot three in slot order.",
+      "The puppeteer who stages Six Spoons is exactly one slot earlier than slot three, with no slot in between.",
+      "At least one of the following holds, and possibly more than one: (a) The puppeteer who is accompanied by a prepared piano and the puppeteer who stages Marrowbone are exactly one slot apart in slot order, in one direction or the other. (b) The puppeteer who is accompanied by a bowed psaltery is later than slot one in slot order.",
+      "Stellan is exactly one slot earlier than the puppeteer who stages The Glass Tide, with no slot in between.",
+      "One of the puppeteer who stages Six Spoons and Mirabel sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "At least one of the following holds, and possibly more than one: (a) Josefa is earlier than the puppeteer who stages Hollowmas in slot order. (b) The puppeteer who works a paper crane and Josefa are exactly two slots apart in slot order.",
+      "One of the puppeteer who is accompanied by a bowed psaltery and the puppeteer who works a shepherd boy sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "The puppeteer who stages Marrowbone is exactly one slot earlier than the puppeteer who is accompanied by two kettle drums, with no slot in between.",
+      "The puppeteer who is accompanied by a hurdy-gurdy and Josefa are exactly one slot apart in slot order, in one direction or the other.",
+      "The puppeteer who is accompanied by a prepared piano and Mirabel are exactly one slot apart in slot order, in one direction or the other.",
+      "Lorcan falls somewhere between the puppeteer who works a shepherd boy and the puppeteer who works a tin soldier in slot order."
+    ]
+  }
+}

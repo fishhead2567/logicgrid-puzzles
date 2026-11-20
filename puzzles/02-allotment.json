@@ -1,0 +1,200 @@
+{
+  "pid": "72f1fc6b9311",
+  "title": "Plot Wars on the Ashcombe Allotments",
+  "theme": "allotment",
+  "blurb": "The Ashcombe allotment committee has been locked in a slow war over compost, shade and the correct way to stake a bean.",
+  "profile": "gentle",
+  "rating": 2,
+  "score": 4.38,
+  "seed": 2026172791280,
+  "spec": {
+    "difficulty": "gentle",
+    "seed": 2026172791280,
+    "theme": "allotment"
+  },
+  "schema": {
+    "spine": "place",
+    "entity_noun": "plot-holder",
+    "entity_noun_plural": "plot-holders",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "place",
+        "label": "Placing",
+        "items": [
+          "first",
+          "second",
+          "third",
+          "fourth",
+          "fifth"
+        ],
+        "ordered": true,
+        "noun": "placing",
+        "cmp_less": "better",
+        "cmp_more": "worse",
+        "step_noun": "place",
+        "verb": "places"
+      },
+      {
+        "name": "holder",
+        "label": "Plot-holder",
+        "items": [
+          "Ewan",
+          "Senga",
+          "Philippa",
+          "Kasimir",
+          "Obadiah"
+        ],
+        "ordered": false,
+        "noun": "plot-holder",
+        "subject": true
+      },
+      {
+        "name": "crop",
+        "label": "Prize crop",
+        "items": [
+          "a pumpkin",
+          "a row of leeks",
+          "a marrow",
+          "a runner bean",
+          "a bed of beetroot"
+        ],
+        "ordered": false,
+        "noun": "crop",
+        "verb": "grows"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "crop:a marrow",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "crop:a bed of beetroot",
+          "b": "place:second"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "crop:a row of leeks",
+          "b": "holder:Obadiah"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "holder:Senga",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "crop:a pumpkin",
+          "b": "place:fifth"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "holder:Philippa",
+          "b": "crop:a runner bean"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "crop:a bed of beetroot",
+          "b": "holder:Kasimir"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "place": [
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth"
+    ],
+    "holder": [
+      "Obadiah",
+      "Philippa",
+      "Kasimir",
+      "Senga",
+      "Ewan"
+    ],
+    "crop": [
+      "a row of leeks",
+      "a bed of beetroot",
+      "a runner bean",
+      "a pumpkin",
+      "a marrow"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 7,
+    "kinds": {
+      "link": 3,
+      "immediately_before": 2,
+      "adjacent": 1,
+      "before": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 19,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 11,
+      "order": 5
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The Ashcombe allotment committee has been locked in a slow war over compost, shade and the correct way to stake a bean.\nFive plot-holders are involved. Determine each plot-holder's placing and crop.\n- **Plot-holder**: Ewan, Senga, Philippa, Kasimir and Obadiah.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Prize crop**: a pumpkin, a row of leeks, a marrow, a runner bean and a bed of beetroot.\nEvery plot-holder has a different placing and crop, so within each category every item is used exactly once.",
+    "clues": [
+      "The plot-holder who grows a marrow places fifth.",
+      "The plot-holder who grows a bed of beetroot places second.",
+      "Obadiah grows a row of leeks.",
+      "Senga is exactly one place better than fifth, with no placing in between.",
+      "The plot-holder who grows a pumpkin and fifth are exactly one place apart in placing order, in one direction or the other.",
+      "Philippa is better than the plot-holder who grows a runner bean in placing order.",
+      "The plot-holder who grows a bed of beetroot is exactly one place better than Kasimir, with no placing in between."
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "pid": "87cac5acc3ac",
+  "title": "The Orchid House Reckoning",
+  "theme": "orchid",
+  "blurb": "The orchid house at Fenn Park is shared by its growers, each convinced the others are overwatering.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026173005093,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173005093,
+    "theme": "orchid"
+  },
+  "schema": {
+    "spine": "month",
+    "entity_noun": "grower",
+    "entity_noun_plural": "growers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "month",
+        "label": "Harvest month",
+        "items": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May"
+        ],
+        "ordered": true,
+        "noun": "harvest month",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "month",
+        "verb": "harvests in"
+      },
+      {
+        "name": "grower",
+        "label": "Grower",
+        "items": [
+          "Rowena",
+          "Ambrose",
+          "Sigismund",
+          "Nkiruka",
+          "Columbine"
+        ],
+        "ordered": false,
+        "noun": "grower",
+        "subject": true
+      },
+      {
+        "name": "orchid",
+        "label": "Orchid",
+        "items": [
+          "a ghost orchid",
+          "a moth orchid",
+          "a jewel orchid",
+          "a dancing lady",
+          "a slipper orchid"
+        ],
+        "ordered": false,
+        "noun": "orchid",
+        "verb": "grows"
+      },
+      {
+        "name": "pest",
+        "label": "Pest",
+        "items": [
+          "thrips",
+          "a persistent slug",
+          "fungus gnats",
+          "scale insects",
+          "red spider mite"
+        ],
+        "ordered": false,
+        "noun": "pest",
+        "verb": "is troubled by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "month:April",
+          "b": "orchid:a slipper orchid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "grower:Ambrose",
+          "b": "month:January",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "pest:thrips",
+          "b": "month:February"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "orchid:a moth orchid",
+          "b": "pest:fungus gnats",
+          "c": "pest:red spider mite"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "orchid:a slipper orchid",
+          "b": "pest:a persistent slug"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "orchid:a moth orchid",
+          "b": "grower:Columbine"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "grower:Sigismund",
+          "b": "orchid:a jewel orchid",
+          "c": "orchid:a slipper orchid"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "grower:Sigismund",
+          "b": "orchid:a dancing lady",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "grower:Nkiruka",
+          "b": "pest:a persistent slug",
+          "c": "pest:red spider mite"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "month": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May"
+    ],
+    "grower": [
+      "Rowena",
+      "Sigismund",
+      "Nkiruka",
+      "Ambrose",
+      "Columbine"
+    ],
+    "orchid": [
+      "a jewel orchid",
+      "a ghost orchid",
+      "a slipper orchid",
+      "a moth orchid",
+      "a dancing lady"
+    ],
+    "pest": [
+      "thrips",
+      "red spider mite",
+      "scale insects",
+      "a persistent slug",
+      "fungus gnats"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 9,
+    "kinds": {
+      "adjacent": 1,
+      "gap": 2,
+      "immediately_before": 3,
+      "between": 3
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 34,
+    "tier_counts": {
+      "bijection": 11,
+      "order": 23
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The orchid house at Fenn Park is shared by its growers, each convinced the others are overwatering.\nFive growers are involved. Determine each grower's harvest month, orchid and pest.\n- **Grower**: Rowena, Ambrose, Sigismund, Nkiruka and Columbine.\n- **Harvest month** (listed from earlier to later): January, February, March, April and May.\n- **Orchid**: a ghost orchid, a moth orchid, a jewel orchid, a dancing lady and a slipper orchid.\n- **Pest**: thrips, a persistent slug, fungus gnats, scale insects and red spider mite.\nEvery grower has a different harvest month, orchid and pest, so within each category every item is used exactly once.",
+    "clues": [
+      "The grower who grows a slipper orchid and April are exactly one month apart in harvest month order, in one direction or the other.",
+      "Ambrose and January are exactly three months apart in harvest month order.",
+      "The grower who is troubled by thrips is exactly one month earlier than February, with no harvest month in between.",
+      "The grower who grows a moth orchid falls somewhere between the grower who is troubled by fungus gnats and the grower who is troubled by red spider mite in harvest month order.",
+      "The grower who grows a slipper orchid is exactly one month earlier than the grower who is troubled by a persistent slug, with no harvest month in between.",
+      "The grower who grows a moth orchid is exactly one month earlier than Columbine, with no harvest month in between.",
+      "Sigismund falls somewhere between the grower who grows a jewel orchid and the grower who grows a slipper orchid in harvest month order.",
+      "Sigismund and the grower who grows a dancing lady are exactly three months apart in harvest month order.",
+      "Nkiruka falls somewhere between the grower who is troubled by a persistent slug and the grower who is troubled by red spider mite in harvest month order."
+    ]
+  }
+}

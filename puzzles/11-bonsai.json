@@ -1,0 +1,207 @@
+{
+  "pid": "06058ad8d8c5",
+  "title": "The Autumn Show at Kiyosumi",
+  "theme": "bonsai",
+  "blurb": "Trees on stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 5.1,
+  "seed": 2026172862551,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172862551,
+    "theme": "bonsai"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "exhibitor",
+    "entity_noun_plural": "exhibitors",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Judged score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "judged score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "is awarded"
+      },
+      {
+        "name": "exhibitor",
+        "label": "Exhibitor",
+        "items": [
+          "Noriko Hase",
+          "Keiko Tanabe",
+          "Hiroshi Mita",
+          "Emi Tsuchida",
+          "Jun Kawabe"
+        ],
+        "ordered": false,
+        "noun": "exhibitor",
+        "subject": true
+      },
+      {
+        "name": "species",
+        "label": "Species",
+        "items": [
+          "a hinoki cypress",
+          "a zelkova",
+          "a satsuki azalea",
+          "a Chinese quince",
+          "a trident maple"
+        ],
+        "ordered": false,
+        "noun": "species",
+        "verb": "has grown"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "species:a Chinese quince",
+          "b": "points:64 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "points:70 points",
+          "b": "species:a satsuki azalea"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "exhibitor:Hiroshi Mita",
+          "b": "points:67 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "exhibitor:Emi Tsuchida",
+          "b": "points:73 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "exhibitor:Jun Kawabe",
+          "b": "species:a hinoki cypress"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "exhibitor:Keiko Tanabe",
+          "b": "species:a Chinese quince"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "exhibitor:Emi Tsuchida",
+          "b": "species:a hinoki cypress",
+          "c": "species:a zelkova"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "exhibitor": [
+      "Hiroshi Mita",
+      "Keiko Tanabe",
+      "Jun Kawabe",
+      "Emi Tsuchida",
+      "Noriko Hase"
+    ],
+    "species": [
+      "a Chinese quince",
+      "a hinoki cypress",
+      "a satsuki azalea",
+      "a trident maple",
+      "a zelkova"
+    ]
+  },
+  "stats": {
+    "atoms": 7,
+    "numbered_clues": 7,
+    "kinds": {
+      "before": 2,
+      "adjacent": 4,
+      "between": 1
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 21,
+    "tier_counts": {
+      "bijection": 10,
+      "order": 11
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "Trees on stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.\nFive exhibitors are involved. Determine each exhibitor's judged score and species.\n- **Exhibitor**: Noriko Hase, Keiko Tanabe, Hiroshi Mita, Emi Tsuchida and Jun Kawabe.\n- **Judged score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Species**: a hinoki cypress, a zelkova, a satsuki azalea, a Chinese quince and a trident maple.\nEvery exhibitor has a different judged score and species, so within each category every item is used exactly once.",
+    "clues": [
+      "The exhibitor who has grown a Chinese quince is lower than 64 points in judged score order.",
+      "The exhibitor who has grown a satsuki azalea and 70 points are exactly one score step apart in judged score order, in one direction or the other.",
+      "Hiroshi Mita is lower than 67 points in judged score order.",
+      "Emi Tsuchida and 73 points are exactly one score step apart in judged score order, in one direction or the other.",
+      "Jun Kawabe and the exhibitor who has grown a hinoki cypress are exactly one score step apart in judged score order, in one direction or the other.",
+      "Keiko Tanabe and the exhibitor who has grown a Chinese quince are exactly one score step apart in judged score order, in one direction or the other.",
+      "Emi Tsuchida falls somewhere between the exhibitor who has grown a hinoki cypress and the exhibitor who has grown a zelkova in judged score order."
+    ]
+  }
+}

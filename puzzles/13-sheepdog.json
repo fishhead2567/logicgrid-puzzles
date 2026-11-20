@@ -1,0 +1,203 @@
+{
+  "pid": "fdaf2f3e832b",
+  "title": "The Clun Forest Trials",
+  "theme": "sheepdog",
+  "blurb": "A hillside, a flock with its own ideas, and a judge who deducts for a wide outrun with the enthusiasm of someone settling an old score.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.62,
+  "seed": 2026172878389,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172878389,
+    "theme": "sheepdog"
+  },
+  "schema": {
+    "spine": "points",
+    "entity_noun": "handler",
+    "entity_noun_plural": "handlers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "points",
+        "label": "Score",
+        "items": [
+          "61 points",
+          "64 points",
+          "67 points",
+          "70 points",
+          "73 points"
+        ],
+        "ordered": true,
+        "values": [
+          61,
+          64,
+          67,
+          70,
+          73
+        ],
+        "unit_suffix": " points",
+        "noun": "score",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "score step",
+        "verb": "scores"
+      },
+      {
+        "name": "handler",
+        "label": "Handler",
+        "items": [
+          "Idris",
+          "Nerys",
+          "Tarrant",
+          "Eiddwen",
+          "Huw Pryce"
+        ],
+        "ordered": false,
+        "noun": "handler",
+        "subject": true
+      },
+      {
+        "name": "dog",
+        "label": "Dog",
+        "items": [
+          "Gyp",
+          "Moss",
+          "Tweed",
+          "Nell",
+          "Craig"
+        ],
+        "ordered": false,
+        "noun": "dog",
+        "verb": "runs"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "dog:Moss",
+          "b": "points:70 points"
+        },
+        {
+          "kind": "between",
+          "a": "dog:Nell",
+          "b": "points:61 points",
+          "c": "points:70 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "dog:Gyp",
+          "b": "points:73 points"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "handler:Huw Pryce",
+          "b": "points:73 points"
+        },
+        {
+          "kind": "not_link",
+          "a": "handler:Huw Pryce",
+          "b": "points:61 points"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "points:64 points",
+          "b": "handler:Tarrant"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "dog:Craig",
+          "b": "handler:Idris",
+          "c": "handler:Nerys"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "dog:Craig",
+          "b": "handler:Nerys"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "points": [
+      "61 points",
+      "64 points",
+      "67 points",
+      "70 points",
+      "73 points"
+    ],
+    "handler": [
+      "Idris",
+      "Huw Pryce",
+      "Tarrant",
+      "Nerys",
+      "Eiddwen"
+    ],
+    "dog": [
+      "Tweed",
+      "Nell",
+      "Craig",
+      "Moss",
+      "Gyp"
+    ]
+  },
+  "stats": {
+    "atoms": 8,
+    "numbered_clues": 5,
+    "kinds": {
+      "link": 2,
+      "between": 2,
+      "not_link": 2,
+      "immediately_before": 2
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 21,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 11,
+      "order": 6
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "A hillside, a flock with its own ideas, and a judge who deducts for a wide outrun with the enthusiasm of someone settling an old score.\nFive handlers are involved. Determine each handler's score and dog.\n- **Handler**: Idris, Nerys, Tarrant, Eiddwen and Huw Pryce.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Dog**: Gyp, Moss, Tweed, Nell and Craig.\nEvery handler has a different score and dog, so within each category every item is used exactly once.",
+    "clues": [
+      "The handler who runs Moss scores 70 points. The handler who runs Nell falls somewhere between 61 points and 70 points in score order.",
+      "The handler who runs Gyp scores 73 points.",
+      "Huw Pryce does not score 73 points. Huw Pryce does not score 61 points.",
+      "64 points is exactly one score step lower than Tarrant, with no score in between.",
+      "The handler who runs Craig falls somewhere between Idris and Nerys in score order. The handler who runs Craig is exactly one score step lower than Nerys, with no score in between."
+    ]
+  }
+}

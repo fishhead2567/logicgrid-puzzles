@@ -1,0 +1,219 @@
+{
+  "pid": "4b4eac547a7e",
+  "title": "The Blind Tasting at Pemberton's",
+  "theme": "tea",
+  "blurb": "Pemberton's holds a blind tasting each spring. The tasters are blind to the tea; the tea is not blind to them.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.73,
+  "seed": 2026172846713,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172846713,
+    "theme": "tea"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "taster",
+    "entity_noun_plural": "tasters",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "tastes at"
+      },
+      {
+        "name": "taster",
+        "label": "Taster",
+        "items": [
+          "Ignatia",
+          "Yolanda",
+          "Marguerite",
+          "Rolf"
+        ],
+        "ordered": false,
+        "noun": "taster",
+        "subject": true
+      },
+      {
+        "name": "tea",
+        "label": "Tea",
+        "items": [
+          "a pressed pu-erh",
+          "a Nilgiri frost",
+          "a roasted oolong",
+          "a Keemun"
+        ],
+        "ordered": false,
+        "noun": "tea",
+        "verb": "samples"
+      },
+      {
+        "name": "note",
+        "label": "Tasting note",
+        "items": [
+          "stewed apricot",
+          "hay and honey",
+          "wet slate",
+          "bruised peach"
+        ],
+        "ordered": false,
+        "noun": "note",
+        "verb": "reports"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "taster:Ignatia",
+          "b": "time:10am"
+        },
+        {
+          "kind": "link",
+          "a": "taster:Ignatia",
+          "b": "tea:a roasted oolong"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "note:wet slate",
+          "b": "tea:a Keemun"
+        },
+        {
+          "kind": "link",
+          "a": "note:wet slate",
+          "b": "taster:Yolanda"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "note:hay and honey",
+          "b": "time:10am"
+        },
+        {
+          "kind": "adjacent",
+          "a": "taster:Marguerite",
+          "b": "time:10am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "note:wet slate",
+          "b": "time:8am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "time:9am",
+          "b": "tea:a Keemun",
+          "c": "tea:a pressed pu-erh"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "note:stewed apricot",
+          "b": "tea:a Nilgiri frost"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am"
+    ],
+    "taster": [
+      "Rolf",
+      "Marguerite",
+      "Yolanda",
+      "Ignatia"
+    ],
+    "tea": [
+      "a pressed pu-erh",
+      "a Nilgiri frost",
+      "a Keemun",
+      "a roasted oolong"
+    ],
+    "note": [
+      "stewed apricot",
+      "hay and honey",
+      "wet slate",
+      "bruised peach"
+    ]
+  },
+  "stats": {
+    "atoms": 9,
+    "numbered_clues": 6,
+    "kinds": {
+      "adjacent": 3,
+      "link": 3,
+      "before": 1,
+      "not_link": 1,
+      "between": 1
+    },
+    "positives": 3,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 27,
+    "tier_counts": {
+      "direct": 9,
+      "bijection": 11,
+      "order": 7
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 12
+  },
+  "text": {
+    "intro": "Pemberton's holds a blind tasting each spring. The tasters are blind to the tea; the tea is not blind to them.\nFour tasters are involved. Determine each taster's start time, tea and note.\n- **Taster**: Ignatia, Yolanda, Marguerite and Rolf.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am and 11am.\n- **Tea**: a pressed pu-erh, a Nilgiri frost, a roasted oolong and a Keemun.\n- **Tasting note**: stewed apricot; hay and honey; wet slate; and bruised peach.\nEvery taster has a different start time, tea and note, so within each category every item is used exactly once.",
+    "clues": [
+      "Ignatia and 10am are exactly one hour apart in start time order, in one direction or the other. Ignatia samples a roasted oolong.",
+      "The taster who reports wet slate samples a Keemun. Yolanda reports wet slate.",
+      "The taster who reports hay and honey is earlier than 10am in start time order. Marguerite and 10am are exactly one hour apart in start time order, in one direction or the other.",
+      "The taster who reports wet slate does not taste at 8am.",
+      "9am falls somewhere between the taster who samples a Keemun and the taster who samples a pressed pu-erh in start time order.",
+      "The taster who reports stewed apricot and the taster who samples a Nilgiri frost are exactly one hour apart in start time order, in one direction or the other."
+    ]
+  }
+}

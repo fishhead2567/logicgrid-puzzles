@@ -1,0 +1,368 @@
+{
+  "pid": "c441644112c8",
+  "title": "The Ashfold Knitting Circle",
+  "theme": "knitting",
+  "blurb": "The Ashfold Knitting Circle meets weekly and has not agreed on anything since 1998.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 10.3003,
+  "seed": 2026173068445,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173068445,
+    "theme": "knitting"
+  },
+  "schema": {
+    "spine": "day",
+    "entity_noun": "knitter",
+    "entity_noun_plural": "knitters",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "day",
+        "label": "Day",
+        "items": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "ordered": true,
+        "noun": "day",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "day",
+        "verb": "knits on"
+      },
+      {
+        "name": "knitter",
+        "label": "Knitter",
+        "items": [
+          "Wilhelm",
+          "Nkechi",
+          "Angus",
+          "Lionel",
+          "Maudie"
+        ],
+        "ordered": false,
+        "noun": "knitter",
+        "subject": true
+      },
+      {
+        "name": "project",
+        "label": "Project",
+        "items": [
+          "a fisherman's gansey",
+          "a Fair Isle tam",
+          "a shawl of impossible lace",
+          "a dog coat",
+          "a tea cosy shaped like a hen"
+        ],
+        "ordered": false,
+        "noun": "project",
+        "verb": "is making"
+      },
+      {
+        "name": "yarn",
+        "label": "Yarn",
+        "items": [
+          "undyed Shetland",
+          "recycled sari silk",
+          "mohair of great expense",
+          "oily Guernsey wool",
+          "mill-end acrylic"
+        ],
+        "ordered": false,
+        "noun": "yarn",
+        "verb": "works in"
+      },
+      {
+        "name": "snag",
+        "label": "Setback",
+        "items": [
+          "a cat",
+          "a broken circular needle",
+          "losing the pattern entirely",
+          "running out of dye lot",
+          "a misread chart"
+        ],
+        "ordered": false,
+        "noun": "setback",
+        "verb": "is set back by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "snag:running out of dye lot",
+          "b": "yarn:undyed Shetland"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "link",
+            "a": "knitter:Nkechi",
+            "b": "project:a tea cosy shaped like a hen"
+          },
+          "y": {
+            "kind": "not_link",
+            "a": "day:Thursday",
+            "b": "project:a Fair Isle tam"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_both",
+          "x": {
+            "kind": "before",
+            "a": "day:Monday",
+            "b": "snag:losing the pattern entirely"
+          },
+          "y": {
+            "kind": "before",
+            "a": "knitter:Lionel",
+            "b": "snag:a broken circular needle"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "day:Thursday",
+          "b": "project:a Fair Isle tam"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "project:a tea cosy shaped like a hen",
+          "b": "day:Thursday"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "day:Wednesday",
+          "b": "snag:running out of dye lot"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "day:Thursday",
+          "b": "yarn:recycled sari silk",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "project:a Fair Isle tam",
+          "b": "yarn:mohair of great expense"
+        }
+      ]
+    },
+    {
+      "style": "and",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "knitter:Nkechi",
+          "b": "yarn:oily Guernsey wool"
+        },
+        {
+          "kind": "not_link",
+          "a": "knitter:Nkechi",
+          "b": "snag:a misread chart"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "knitter:Maudie",
+          "b": "yarn:mohair of great expense"
+        },
+        {
+          "kind": "gap",
+          "a": "knitter:Maudie",
+          "b": "snag:a broken circular needle",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "project:a shawl of impossible lace",
+          "b": "snag:running out of dye lot",
+          "c": "yarn:oily Guernsey wool"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "knitter:Nkechi",
+          "b": "yarn:mill-end acrylic",
+          "same": true
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "project:a dog coat",
+          "b": "knitter:Lionel"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "knitter:Nkechi",
+              "b": "project:a tea cosy shaped like a hen"
+            },
+            {
+              "kind": "parity",
+              "a": "knitter:Angus",
+              "b": "project:a shawl of impossible lace",
+              "same": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "day": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "knitter": [
+      "Maudie",
+      "Lionel",
+      "Wilhelm",
+      "Angus",
+      "Nkechi"
+    ],
+    "project": [
+      "a dog coat",
+      "a shawl of impossible lace",
+      "a tea cosy shaped like a hen",
+      "a fisherman's gansey",
+      "a Fair Isle tam"
+    ],
+    "yarn": [
+      "oily Guernsey wool",
+      "recycled sari silk",
+      "mohair of great expense",
+      "undyed Shetland",
+      "mill-end acrylic"
+    ],
+    "snag": [
+      "losing the pattern entirely",
+      "a misread chart",
+      "a broken circular needle",
+      "running out of dye lot",
+      "a cat"
+    ]
+  },
+  "stats": {
+    "atoms": 16,
+    "numbered_clues": 14,
+    "kinds": {
+      "link": 1,
+      "not_both": 2,
+      "adjacent": 2,
+      "immediately_before": 2,
+      "gap": 2,
+      "not_link": 4,
+      "between": 1,
+      "parity": 1,
+      "or": 1
+    },
+    "positives": 1,
+    "compounds": 3
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 54,
+    "tier_counts": {
+      "direct": 6,
+      "bijection": 27,
+      "order": 17,
+      "disjunction": 4
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Ashfold Knitting Circle meets weekly and has not agreed on anything since 1998.\nFive knitters are involved. Determine each knitter's day, project, yarn and setback.\n- **Knitter**: Wilhelm, Nkechi, Angus, Lionel and Maudie.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Project**: a fisherman's gansey, a Fair Isle tam, a shawl of impossible lace, a dog coat and a tea cosy shaped like a hen.\n- **Yarn**: undyed Shetland, recycled sari silk, mohair of great expense, oily Guernsey wool and mill-end acrylic.\n- **Setback**: a cat, a broken circular needle, losing the pattern entirely, running out of dye lot and a misread chart.\nEvery knitter has a different day, project, yarn and setback, so within each category every item is used exactly once.",
+    "clues": [
+      "The knitter who is set back by running out of dye lot works in undyed Shetland.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) Nkechi is making a tea cosy shaped like a hen. (b) The knitter who is making a Fair Isle tam does not knit on Thursday.",
+      "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The knitter who is set back by losing the pattern entirely is later than Monday in day order. (b) Lionel is earlier than the knitter who is set back by a broken circular needle in day order.",
+      "The knitter who is making a Fair Isle tam and Thursday are exactly one day apart in day order, in one direction or the other.",
+      "The knitter who is making a tea cosy shaped like a hen is exactly one day earlier than Thursday, with no day in between.",
+      "The knitter who is set back by running out of dye lot and Wednesday are exactly one day apart in day order, in one direction or the other.",
+      "The knitter who works in recycled sari silk and Thursday are exactly two days apart in day order.",
+      "The knitter who is making a Fair Isle tam does not work in mohair of great expense.",
+      "Nkechi does not work in oily Guernsey wool. Nkechi is not set back by a misread chart.",
+      "Maudie does not work in mohair of great expense. Maudie and the knitter who is set back by a broken circular needle are exactly two days apart in day order.",
+      "The knitter who is making a shawl of impossible lace falls somewhere between the knitter who is set back by running out of dye lot and the knitter who works in oily Guernsey wool in day order.",
+      "Nkechi and the knitter who works in mill-end acrylic both sit at odd-numbered days or both at even-numbered days.",
+      "The knitter who is making a dog coat is exactly one day earlier than Lionel, with no day in between.",
+      "At least one of the following holds, and possibly more than one: (a) Nkechi is making a tea cosy shaped like a hen. (b) Angus and the knitter who is making a shawl of impossible lace both sit at odd-numbered days or both at even-numbered days."
+    ]
+  }
+}

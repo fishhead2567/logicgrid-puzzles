@@ -1,0 +1,341 @@
+{
+  "pid": "85f8bfcd8a78",
+  "title": "The Wind Is Free, the Field Is Not",
+  "theme": "kite",
+  "blurb": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 9.7172,
+  "seed": 2026173036769,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173036769,
+    "theme": "kite"
+  },
+  "schema": {
+    "spine": "fee",
+    "entity_noun": "flier",
+    "entity_noun_plural": "fliers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "fee",
+        "label": "Entry fee",
+        "items": [
+          "$2",
+          "$4",
+          "$6",
+          "$8",
+          "$10"
+        ],
+        "ordered": true,
+        "values": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "unit": "$",
+        "noun": "entry fee",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "fee step",
+        "verb": "pays"
+      },
+      {
+        "name": "flier",
+        "label": "Flier",
+        "items": [
+          "Kipling",
+          "Aurelio",
+          "Blaise",
+          "Ifeoma",
+          "Tansy"
+        ],
+        "ordered": false,
+        "noun": "flier",
+        "subject": true
+      },
+      {
+        "name": "kite",
+        "label": "Kite",
+        "items": [
+          "a hand-painted dragon",
+          "a rokkaku fighter",
+          "a box kite",
+          "a paper sled kite",
+          "a seven-metre centipede"
+        ],
+        "ordered": false,
+        "noun": "kite",
+        "verb": "flies"
+      },
+      {
+        "name": "mishap",
+        "label": "Mishap",
+        "items": [
+          "a sudden lull",
+          "a tangled line",
+          "a lost tail",
+          "a power line scare",
+          "a trespassing dog"
+        ],
+        "ordered": false,
+        "noun": "mishap",
+        "verb": "is undone by"
+      },
+      {
+        "name": "line",
+        "label": "Line",
+        "items": [
+          "fishing monofilament",
+          "braided dacron",
+          "nylon twine",
+          "hemp cord",
+          "kevlar thread"
+        ],
+        "ordered": false,
+        "noun": "line",
+        "verb": "uses"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "fee:$2",
+          "b": "mishap:a power line scare"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "fee:$2",
+              "b": "flier:Blaise"
+            },
+            {
+              "kind": "link",
+              "a": "fee:$4",
+              "b": "flier:Tansy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "fee:$10",
+          "b": "kite:a paper sled kite"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "line:fishing monofilament",
+          "b": "fee:$10",
+          "c": "mishap:a lost tail"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "kite:a rokkaku fighter",
+          "b": "line:hemp cord"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "flier:Tansy",
+              "b": "kite:a paper sled kite"
+            },
+            {
+              "kind": "not_link",
+              "a": "flier:Tansy",
+              "b": "line:hemp cord"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "flier:Blaise",
+          "b": "kite:a hand-painted dragon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "mishap:a trespassing dog",
+          "b": "kite:a rokkaku fighter",
+          "c": "line:braided dacron"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "flier:Aurelio",
+          "b": "mishap:a lost tail"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "kite:a seven-metre centipede",
+          "b": "mishap:a trespassing dog"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "flier:Blaise",
+          "b": "mishap:a sudden lull"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "line:kevlar thread",
+          "b": "flier:Kipling",
+          "c": "flier:Tansy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "line:kevlar thread",
+          "b": "flier:Blaise"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "fee": [
+      "$2",
+      "$4",
+      "$6",
+      "$8",
+      "$10"
+    ],
+    "flier": [
+      "Aurelio",
+      "Tansy",
+      "Ifeoma",
+      "Blaise",
+      "Kipling"
+    ],
+    "kite": [
+      "a box kite",
+      "a rokkaku fighter",
+      "a seven-metre centipede",
+      "a paper sled kite",
+      "a hand-painted dragon"
+    ],
+    "mishap": [
+      "a power line scare",
+      "a lost tail",
+      "a tangled line",
+      "a trespassing dog",
+      "a sudden lull"
+    ],
+    "line": [
+      "hemp cord",
+      "nylon twine",
+      "kevlar thread",
+      "fishing monofilament",
+      "braided dacron"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 13,
+    "kinds": {
+      "link": 1,
+      "or": 2,
+      "adjacent": 3,
+      "between": 3,
+      "immediately_before": 4
+    },
+    "positives": 1,
+    "compounds": 2
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 61,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 29,
+      "order": 29,
+      "disjunction": 2
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Dunnage Kite Festival charges by the kite, which has produced some creative definitions of 'one kite'.\nFive fliers are involved. Determine each flier's entry fee, kite, mishap and line.\n- **Flier**: Kipling, Aurelio, Blaise, Ifeoma and Tansy.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Kite**: a hand-painted dragon, a rokkaku fighter, a box kite, a paper sled kite and a seven-metre centipede.\n- **Mishap**: a sudden lull, a tangled line, a lost tail, a power line scare and a trespassing dog.\n- **Line**: fishing monofilament, braided dacron, nylon twine, hemp cord and kevlar thread.\nEvery flier has a different entry fee, kite, mishap and line, so within each category every item is used exactly once.",
+    "clues": [
+      "The flier who is undone by a power line scare pays $2.",
+      "At least one of the following holds, and possibly more than one: (a) Blaise pays $2. (b) Tansy pays $4.",
+      "The flier who flies a paper sled kite and $10 are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "The flier who uses fishing monofilament falls somewhere between $10 and the flier who is undone by a lost tail in entry fee order.",
+      "The flier who flies a rokkaku fighter and the flier who uses hemp cord are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) Tansy and the flier who flies a paper sled kite are exactly one fee step apart in entry fee order, in one direction or the other. (b) Tansy does not use hemp cord.",
+      "Blaise is exactly one fee step cheaper than the flier who flies a hand-painted dragon, with no entry fee in between.",
+      "The flier who is undone by a trespassing dog falls somewhere between the flier who flies a rokkaku fighter and the flier who uses braided dacron in entry fee order.",
+      "Aurelio is exactly one fee step cheaper than the flier who is undone by a lost tail, with no entry fee in between.",
+      "The flier who flies a seven-metre centipede and the flier who is undone by a trespassing dog are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "Blaise is exactly one fee step cheaper than the flier who is undone by a sudden lull, with no entry fee in between.",
+      "The flier who uses kevlar thread falls somewhere between Kipling and Tansy in entry fee order.",
+      "The flier who uses kevlar thread is exactly one fee step cheaper than Blaise, with no entry fee in between."
+    ]
+  }
+}

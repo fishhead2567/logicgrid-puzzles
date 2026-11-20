@@ -1,0 +1,214 @@
+{
+  "pid": "63256e76ce23",
+  "title": "The Heavies at Kinloch Rannoch",
+  "theme": "highland",
+  "blurb": "The heavy events, measured to the foot, in a field where the wind counts for more than anybody admits.",
+  "profile": "easy",
+  "rating": 3,
+  "score": 4.62,
+  "seed": 2026172886308,
+  "spec": {
+    "difficulty": "easy",
+    "seed": 2026172886308,
+    "theme": "highland"
+  },
+  "schema": {
+    "spine": "throw",
+    "entity_noun": "thrower",
+    "entity_noun_plural": "throwers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "throw",
+        "label": "Best throw",
+        "items": [
+          "28 feet",
+          "32 feet",
+          "36 feet",
+          "40 feet",
+          "44 feet"
+        ],
+        "ordered": true,
+        "values": [
+          28,
+          32,
+          36,
+          40,
+          44
+        ],
+        "unit_suffix": " feet",
+        "noun": "best throw",
+        "cmp_less": "shorter",
+        "cmp_more": "longer",
+        "step_noun": "throw step",
+        "verb": "throws"
+      },
+      {
+        "name": "thrower",
+        "label": "Thrower",
+        "items": [
+          "Fiona Strachan",
+          "Duncan Rait",
+          "Angus Dunbar",
+          "Isla Kinnear",
+          "Lachlan Cree"
+        ],
+        "ordered": false,
+        "noun": "thrower",
+        "subject": true
+      },
+      {
+        "name": "tartan",
+        "label": "Tartan",
+        "items": [
+          "Mackenzie weathered",
+          "Buchanan",
+          "Cameron of Erracht",
+          "Fraser hunting",
+          "Lamont ancient"
+        ],
+        "ordered": false,
+        "noun": "tartan",
+        "verb": "wears"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "throw:28 feet",
+          "b": "thrower:Isla Kinnear"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "tartan:Lamont ancient",
+          "b": "thrower:Isla Kinnear"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "throw:32 feet",
+          "b": "tartan:Mackenzie weathered"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "throw:36 feet",
+          "b": "thrower:Fiona Strachan"
+        },
+        {
+          "kind": "adjacent",
+          "a": "tartan:Fraser hunting",
+          "b": "thrower:Fiona Strachan"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "throw:32 feet",
+          "b": "tartan:Cameron of Erracht"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "tartan:Mackenzie weathered",
+          "b": "thrower:Duncan Rait"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "tartan:Lamont ancient",
+          "b": "thrower:Angus Dunbar"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "throw": [
+      "28 feet",
+      "32 feet",
+      "36 feet",
+      "40 feet",
+      "44 feet"
+    ],
+    "thrower": [
+      "Isla Kinnear",
+      "Angus Dunbar",
+      "Lachlan Cree",
+      "Fiona Strachan",
+      "Duncan Rait"
+    ],
+    "tartan": [
+      "Lamont ancient",
+      "Buchanan",
+      "Cameron of Erracht",
+      "Mackenzie weathered",
+      "Fraser hunting"
+    ]
+  },
+  "stats": {
+    "atoms": 8,
+    "numbered_clues": 7,
+    "kinds": {
+      "link": 2,
+      "before": 1,
+      "not_link": 1,
+      "adjacent": 2,
+      "immediately_before": 2
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 27,
+    "tier_counts": {
+      "direct": 3,
+      "bijection": 17,
+      "order": 7
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 10
+  },
+  "text": {
+    "intro": "The heavy events, measured to the foot, in a field where the wind counts for more than anybody admits.\nFive throwers are involved. Determine each thrower's best throw and tartan.\n- **Thrower**: Fiona Strachan, Duncan Rait, Angus Dunbar, Isla Kinnear and Lachlan Cree.\n- **Best throw** (listed from shorter to longer): 28 feet, 32 feet, 36 feet, 40 feet and 44 feet.\n- **Tartan**: Mackenzie weathered, Buchanan, Cameron of Erracht, Fraser hunting and Lamont ancient.\nEvery thrower has a different best throw and tartan, so within each category every item is used exactly once.",
+    "clues": [
+      "Isla Kinnear throws 28 feet.",
+      "Isla Kinnear wears Lamont ancient.",
+      "The thrower who wears Mackenzie weathered is longer than 32 feet in best throw order.",
+      "Fiona Strachan does not throw 36 feet. The thrower who wears Fraser hunting and Fiona Strachan are exactly one throw step apart in best throw order, in one direction or the other.",
+      "32 feet is exactly one throw step shorter than the thrower who wears Cameron of Erracht, with no best throw in between.",
+      "The thrower who wears Mackenzie weathered is exactly one throw step shorter than Duncan Rait, with no best throw in between.",
+      "The thrower who wears Lamont ancient and Angus Dunbar are exactly one throw step apart in best throw order, in one direction or the other."
+    ]
+  }
+}

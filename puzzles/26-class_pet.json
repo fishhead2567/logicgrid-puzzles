@@ -1,0 +1,294 @@
+{
+  "pid": "429532d01139",
+  "title": "The Room 12 Class Pet Vote",
+  "theme": "class_pet",
+  "blurb": "Mr. Ocampo said the class could pick one pet. Nobody warned him that would mean campaign posters.",
+  "profile": "moderate",
+  "rating": 3,
+  "score": 5.355,
+  "seed": 2026172981336,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172981336,
+    "theme": "class_pet"
+  },
+  "schema": {
+    "spine": "votes",
+    "entity_noun": "kid",
+    "entity_noun_plural": "kids",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "votes",
+        "label": "Vote count",
+        "items": [
+          "4 votes",
+          "6 votes",
+          "8 votes",
+          "10 votes",
+          "12 votes"
+        ],
+        "ordered": true,
+        "values": [
+          4,
+          6,
+          8,
+          10,
+          12
+        ],
+        "unit_suffix": " votes",
+        "noun": "vote count",
+        "cmp_less": "lower",
+        "cmp_more": "higher",
+        "step_noun": "vote step",
+        "verb": "wins"
+      },
+      {
+        "name": "kid",
+        "label": "Kid",
+        "items": [
+          "Dashiell",
+          "Kwame",
+          "Sanjay",
+          "Tilly",
+          "Josefina"
+        ],
+        "ordered": false,
+        "noun": "kid",
+        "subject": true
+      },
+      {
+        "name": "pet",
+        "label": "Pet",
+        "items": [
+          "a dwarf hamster",
+          "a pair of fancy rats",
+          "a box turtle",
+          "a leopard gecko",
+          "a bearded dragon"
+        ],
+        "ordered": false,
+        "noun": "pet",
+        "verb": "nominates"
+      },
+      {
+        "name": "habitat",
+        "label": "Habitat",
+        "items": [
+          "a glass terrarium",
+          "a wire cage",
+          "a tall aviary",
+          "a wooden hutch",
+          "a felt-lined shoebox"
+        ],
+        "ordered": false,
+        "noun": "habitat",
+        "verb": "keeps it in"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "habitat:a tall aviary",
+          "b": "votes:8 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "kid:Tilly",
+          "b": "votes:4 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "kid:Josefina",
+          "b": "votes:10 votes"
+        },
+        {
+          "kind": "adjacent",
+          "a": "pet:a dwarf hamster",
+          "b": "votes:10 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "habitat:a glass terrarium",
+          "b": "votes:12 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "votes:6 votes",
+          "b": "pet:a leopard gecko"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "habitat:a wire cage",
+          "b": "votes:4 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "kid:Sanjay",
+          "b": "votes:10 votes"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "pet:a bearded dragon",
+          "b": "kid:Josefina",
+          "c": "kid:Tilly"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "habitat:a wooden hutch",
+          "b": "kid:Dashiell"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "pet:a pair of fancy rats",
+          "b": "habitat:a wire cage",
+          "c": "habitat:a wooden hutch"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "pet:a leopard gecko",
+          "b": "habitat:a felt-lined shoebox",
+          "c": "kid:Sanjay"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "habitat:a felt-lined shoebox",
+          "b": "pet:a leopard gecko"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "votes": [
+      "4 votes",
+      "6 votes",
+      "8 votes",
+      "10 votes",
+      "12 votes"
+    ],
+    "kid": [
+      "Tilly",
+      "Dashiell",
+      "Josefina",
+      "Kwame",
+      "Sanjay"
+    ],
+    "pet": [
+      "a box turtle",
+      "a bearded dragon",
+      "a leopard gecko",
+      "a pair of fancy rats",
+      "a dwarf hamster"
+    ],
+    "habitat": [
+      "a wooden hutch",
+      "a felt-lined shoebox",
+      "a tall aviary",
+      "a glass terrarium",
+      "a wire cage"
+    ]
+  },
+  "stats": {
+    "atoms": 13,
+    "numbered_clues": 12,
+    "kinds": {
+      "link": 2,
+      "not_link": 2,
+      "adjacent": 4,
+      "immediately_before": 1,
+      "before": 1,
+      "between": 3
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 39,
+    "tier_counts": {
+      "direct": 4,
+      "bijection": 20,
+      "order": 15
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Mr. Ocampo said the class could pick one pet. Nobody warned him that would mean campaign posters.\nFive kids are involved. Determine each kid's vote count, pet and habitat.\n- **Kid**: Dashiell, Kwame, Sanjay, Tilly and Josefina.\n- **Vote count** (listed from lower to higher): 4 votes, 6 votes, 8 votes, 10 votes and 12 votes.\n- **Pet**: a dwarf hamster, a pair of fancy rats, a box turtle, a leopard gecko and a bearded dragon.\n- **Habitat**: a glass terrarium, a wire cage, a tall aviary, a wooden hutch and a felt-lined shoebox.\nEvery kid has a different vote count, pet and habitat, so within each category every item is used exactly once.",
+    "clues": [
+      "The kid who keeps it in a tall aviary wins 8 votes.",
+      "Tilly wins 4 votes.",
+      "Josefina does not win 10 votes. The kid who nominates a dwarf hamster and 10 votes are exactly one vote step apart in vote count order, in one direction or the other.",
+      "The kid who keeps it in a glass terrarium is exactly one vote step lower than 12 votes, with no vote count in between.",
+      "The kid who nominates a leopard gecko is higher than 6 votes in vote count order.",
+      "The kid who keeps it in a wire cage does not win 4 votes.",
+      "Sanjay and 10 votes are exactly one vote step apart in vote count order, in one direction or the other.",
+      "The kid who nominates a bearded dragon falls somewhere between Josefina and Tilly in vote count order.",
+      "The kid who keeps it in a wooden hutch and Dashiell are exactly one vote step apart in vote count order, in one direction or the other.",
+      "The kid who nominates a pair of fancy rats falls somewhere between the kid who keeps it in a wire cage and the kid who keeps it in a wooden hutch in vote count order.",
+      "The kid who nominates a leopard gecko falls somewhere between the kid who keeps it in a felt-lined shoebox and Sanjay in vote count order.",
+      "The kid who keeps it in a felt-lined shoebox and the kid who nominates a leopard gecko are exactly one vote step apart in vote count order, in one direction or the other."
+    ]
+  }
+}

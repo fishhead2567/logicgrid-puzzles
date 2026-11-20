@@ -1,0 +1,432 @@
+{
+  "pid": "f46cbf697312",
+  "title": "Tuesday Night at the Dented Bell",
+  "theme": "karaoke",
+  "blurb": "The Dented Bell runs karaoke on Tuesdays. Attendance is loyal; talent is not.",
+  "profile": "expert",
+  "rating": 7,
+  "score": 16.6157,
+  "seed": 2026173115959,
+  "spec": {
+    "difficulty": "expert",
+    "seed": 2026173115959,
+    "theme": "karaoke"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "singer",
+    "entity_noun_plural": "singers",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "sings in"
+      },
+      {
+        "name": "singer",
+        "label": "Singer",
+        "items": [
+          "Mercy",
+          "Vikram",
+          "Bogdan",
+          "Caitriona",
+          "Annalise"
+        ],
+        "ordered": false,
+        "noun": "singer",
+        "subject": true
+      },
+      {
+        "name": "song",
+        "label": "Song",
+        "items": [
+          "a sea shanty",
+          "a power ballad",
+          "a rap performed entirely from memory",
+          "a disco standard",
+          "a maudlin folk song"
+        ],
+        "ordered": false,
+        "noun": "song",
+        "verb": "performs"
+      },
+      {
+        "name": "drink",
+        "label": "Drink",
+        "items": [
+          "a lime and soda",
+          "a double whisky",
+          "a rum and coke",
+          "a pint of mild",
+          "a cider in a plastic cup"
+        ],
+        "ordered": false,
+        "noun": "drink",
+        "verb": "orders"
+      },
+      {
+        "name": "reception",
+        "label": "Reception",
+        "items": [
+          "scattered applause",
+          "polite silence",
+          "one heckler",
+          "a singalong",
+          "a standing ovation"
+        ],
+        "ordered": false,
+        "noun": "reception",
+        "verb": "gets"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "slot:slot four",
+              "b": "song:a power ballad"
+            },
+            {
+              "kind": "immediately_before",
+              "a": "slot:slot one",
+              "b": "song:a disco standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "adjacent",
+            "a": "drink:a pint of mild",
+            "b": "reception:one heckler"
+          },
+          "y": {
+            "kind": "link",
+            "a": "drink:a double whisky",
+            "b": "slot:slot three"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "reception:a singalong",
+          "b": "slot:slot five",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "drink:a lime and soda",
+              "b": "song:a disco standard"
+            },
+            {
+              "kind": "not_link",
+              "a": "slot:slot four",
+              "b": "song:a power ballad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "singer:Annalise",
+          "b": "slot:slot two",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "song:a sea shanty",
+          "b": "singer:Annalise",
+          "c": "singer:Mercy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "link",
+              "a": "drink:a rum and coke",
+              "b": "singer:Caitriona"
+            },
+            {
+              "kind": "not_link",
+              "a": "drink:a double whisky",
+              "b": "singer:Bogdan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "if_then",
+          "x": {
+            "kind": "gap",
+            "a": "reception:scattered applause",
+            "b": "song:a rap performed entirely from memory",
+            "k": 4,
+            "rel": "eq"
+          },
+          "y": {
+            "kind": "before",
+            "a": "song:a sea shanty",
+            "b": "reception:polite silence"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "drink:a pint of mild",
+          "b": "singer:Mercy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "reception:scattered applause",
+          "b": "song:a disco standard"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "adjacent",
+            "a": "reception:one heckler",
+            "b": "singer:Caitriona"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "adjacent",
+              "a": "drink:a pint of mild",
+              "b": "reception:one heckler"
+            },
+            {
+              "kind": "gap",
+              "a": "drink:a rum and coke",
+              "b": "singer:Caitriona",
+              "k": 2,
+              "rel": "eq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "reception:a singalong",
+          "b": "song:a power ballad"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "singer:Vikram",
+          "b": "drink:a pint of mild"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "before",
+            "a": "song:a rap performed entirely from memory",
+            "b": "drink:a rum and coke"
+          }
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "reception:one heckler",
+          "b": "singer:Mercy"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not",
+          "inner": {
+            "kind": "adjacent",
+            "a": "drink:a double whisky",
+            "b": "reception:a singalong"
+          }
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "singer": [
+      "Annalise",
+      "Vikram",
+      "Caitriona",
+      "Mercy",
+      "Bogdan"
+    ],
+    "song": [
+      "a maudlin folk song",
+      "a disco standard",
+      "a sea shanty",
+      "a power ballad",
+      "a rap performed entirely from memory"
+    ],
+    "drink": [
+      "a double whisky",
+      "a lime and soda",
+      "a pint of mild",
+      "a cider in a plastic cup",
+      "a rum and coke"
+    ],
+    "reception": [
+      "scattered applause",
+      "a standing ovation",
+      "a singalong",
+      "polite silence",
+      "one heckler"
+    ]
+  },
+  "stats": {
+    "atoms": 17,
+    "numbered_clues": 17,
+    "kinds": {
+      "or": 4,
+      "if_then": 2,
+      "gap": 1,
+      "parity": 1,
+      "between": 1,
+      "before": 2,
+      "adjacent": 2,
+      "not": 3,
+      "not_link": 1
+    },
+    "positives": 0,
+    "compounds": 9
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 6,
+    "max_technique": "trial",
+    "steps": 57,
+    "tier_counts": {
+      "direct": 1,
+      "bijection": 27,
+      "order": 13,
+      "disjunction": 15,
+      "trial": 1
+    },
+    "trial_eliminations": 1,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "The Dented Bell runs karaoke on Tuesdays. Attendance is loyal; talent is not.\nFive singers are involved. Determine each singer's slot, song, drink and reception.\n- **Singer**: Mercy, Vikram, Bogdan, Caitriona and Annalise.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Song**: a sea shanty, a power ballad, a rap performed entirely from memory, a disco standard and a maudlin folk song.\n- **Drink**: a lime and soda; a double whisky; a rum and coke; a pint of mild; and a cider in a plastic cup.\n- **Reception**: scattered applause, polite silence, one heckler, a singalong and a standing ovation.\nEvery singer has a different slot, song, drink and reception, so within each category every item is used exactly once.",
+    "clues": [
+      "At least one of the following holds, and possibly more than one: (a) The singer who performs a power ballad is later than slot four in slot order. (b) Slot one is exactly one slot earlier than the singer who performs a disco standard, with no slot in between.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The singer who orders a pint of mild and the singer who gets one heckler are exactly one slot apart in slot order, in one direction or the other. (b) The singer who orders a double whisky sings in slot three.",
+      "The singer who gets a singalong and slot five are exactly two slots apart in slot order.",
+      "At least one of the following holds, and possibly more than one: (a) The singer who orders a lime and soda performs a disco standard. (b) The singer who performs a power ballad does not sing in slot four.",
+      "One of Annalise and slot two sits at an odd-numbered slot and the other at an even-numbered slot.",
+      "The singer who performs a sea shanty falls somewhere between Annalise and Mercy in slot order.",
+      "At least one of the following holds, and possibly more than one: (a) Caitriona orders a rum and coke. (b) Bogdan does not order a double whisky.",
+      "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The singer who gets scattered applause and the singer who performs a rap performed entirely from memory are exactly four slots apart in slot order. (b) The singer who performs a sea shanty is earlier than the singer who gets polite silence in slot order.",
+      "The singer who orders a pint of mild is earlier than Mercy in slot order.",
+      "The singer who gets scattered applause and the singer who performs a disco standard are exactly one slot apart in slot order, in one direction or the other.",
+      "The following is NOT true: The singer who gets one heckler and Caitriona are exactly one slot apart in slot order, in one direction or the other.",
+      "At least one of the following holds, and possibly more than one: (a) The singer who orders a pint of mild and the singer who gets one heckler are exactly one slot apart in slot order, in one direction or the other. (b) The singer who orders a rum and coke and Caitriona are exactly two slots apart in slot order.",
+      "The singer who gets a singalong and the singer who performs a power ballad are exactly one slot apart in slot order, in one direction or the other.",
+      "Vikram is earlier than the singer who orders a pint of mild in slot order.",
+      "The following is NOT true: The singer who performs a rap performed entirely from memory is earlier than the singer who orders a rum and coke in slot order.",
+      "Mercy does not get one heckler.",
+      "The following is NOT true: The singer who orders a double whisky and the singer who gets a singalong are exactly one slot apart in slot order, in one direction or the other."
+    ]
+  }
+}

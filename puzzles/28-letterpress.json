@@ -1,0 +1,275 @@
+{
+  "pid": "cd2ec448a3eb",
+  "title": "The Jobbing Shop on Dyer's Row",
+  "theme": "letterpress",
+  "blurb": "A jobbing print shop where every job has its quoted price, and one hell-box filling up faster than anybody will admit to.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.675,
+  "seed": 2026172997174,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172997174,
+    "theme": "letterpress"
+  },
+  "schema": {
+    "spine": "price",
+    "entity_noun": "compositor",
+    "entity_noun_plural": "compositors",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "price",
+        "label": "Quoted price",
+        "items": [
+          "$3",
+          "$5",
+          "$7",
+          "$9",
+          "$11"
+        ],
+        "ordered": true,
+        "values": [
+          3,
+          5,
+          7,
+          9,
+          11
+        ],
+        "unit": "$",
+        "noun": "quoted price",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "price step",
+        "verb": "quotes"
+      },
+      {
+        "name": "compositor",
+        "label": "Compositor",
+        "items": [
+          "Alfred Nunn",
+          "Winifred Oakes",
+          "Harriet Lisle",
+          "Verity Stallard",
+          "Ned Ashby"
+        ],
+        "ordered": false,
+        "noun": "compositor",
+        "subject": true
+      },
+      {
+        "name": "face",
+        "label": "Typeface",
+        "items": [
+          "Bodoni",
+          "Perpetua",
+          "Gill Sans",
+          "Caslon",
+          "Garamond"
+        ],
+        "ordered": false,
+        "noun": "typeface",
+        "verb": "sets in"
+      },
+      {
+        "name": "job",
+        "label": "Job",
+        "items": [
+          "a seed catalogue",
+          "a parish newsletter",
+          "a regatta programme",
+          "a wedding order of service",
+          "an auction bill"
+        ],
+        "ordered": false,
+        "noun": "job",
+        "verb": "is setting"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "face:Gill Sans",
+          "b": "price:$5"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "price:$9",
+          "b": "job:a wedding order of service"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "compositor:Harriet Lisle",
+          "b": "price:$11"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "compositor:Winifred Oakes",
+          "b": "price:$7"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "face:Caslon",
+          "b": "price:$9"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "compositor:Ned Ashby",
+          "b": "face:Caslon",
+          "c": "face:Perpetua"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "job:a parish newsletter",
+          "b": "face:Garamond",
+          "c": "face:Gill Sans"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "compositor:Verity Stallard",
+          "b": "face:Bodoni"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "job:a seed catalogue",
+          "b": "compositor:Ned Ashby"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "face:Caslon",
+          "b": "job:a wedding order of service"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "face:Caslon",
+          "b": "job:an auction bill"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "price": [
+      "$3",
+      "$5",
+      "$7",
+      "$9",
+      "$11"
+    ],
+    "compositor": [
+      "Verity Stallard",
+      "Winifred Oakes",
+      "Harriet Lisle",
+      "Ned Ashby",
+      "Alfred Nunn"
+    ],
+    "face": [
+      "Gill Sans",
+      "Bodoni",
+      "Caslon",
+      "Garamond",
+      "Perpetua"
+    ],
+    "job": [
+      "a regatta programme",
+      "a parish newsletter",
+      "a seed catalogue",
+      "an auction bill",
+      "a wedding order of service"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 11,
+    "kinds": {
+      "adjacent": 3,
+      "immediately_before": 4,
+      "not_link": 2,
+      "between": 2
+    },
+    "positives": 0,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 38,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 16,
+      "order": 20
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "A jobbing print shop where every job has its quoted price, and one hell-box filling up faster than anybody will admit to.\nFive compositors are involved. Determine each compositor's quoted price, typeface and job.\n- **Compositor**: Alfred Nunn, Winifred Oakes, Harriet Lisle, Verity Stallard and Ned Ashby.\n- **Quoted price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Typeface**: Bodoni, Perpetua, Gill Sans, Caslon and Garamond.\n- **Job**: a seed catalogue, a parish newsletter, a regatta programme, a wedding order of service and an auction bill.\nEvery compositor has a different quoted price, typeface and job, so within each category every item is used exactly once.",
+    "clues": [
+      "The compositor who sets in Gill Sans and $5 are exactly one price step apart in quoted price order, in one direction or the other.",
+      "$9 is exactly one price step cheaper than the compositor who is setting a wedding order of service, with no quoted price in between.",
+      "Harriet Lisle does not quote $11.",
+      "Winifred Oakes is exactly one price step cheaper than $7, with no quoted price in between.",
+      "The compositor who sets in Caslon and $9 are exactly one price step apart in quoted price order, in one direction or the other.",
+      "Ned Ashby falls somewhere between the compositor who sets in Caslon and the compositor who sets in Perpetua in quoted price order.",
+      "The compositor who is setting a parish newsletter falls somewhere between the compositor who sets in Garamond and the compositor who sets in Gill Sans in quoted price order.",
+      "Verity Stallard is exactly one price step cheaper than the compositor who sets in Bodoni, with no quoted price in between.",
+      "The compositor who is setting a seed catalogue is exactly one price step cheaper than Ned Ashby, with no quoted price in between.",
+      "The compositor who sets in Caslon is not setting a wedding order of service.",
+      "The compositor who sets in Caslon and the compositor who is setting an auction bill are exactly one price step apart in quoted price order, in one direction or the other."
+    ]
+  }
+}

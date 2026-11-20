@@ -1,0 +1,276 @@
+{
+  "pid": "75291c4e810a",
+  "title": "The Case of the Missing Trowel",
+  "theme": "detective",
+  "blurb": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.",
+  "profile": "moderate",
+  "rating": 3,
+  "score": 5.355,
+  "seed": 2026173013012,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026173013012,
+    "theme": "detective"
+  },
+  "schema": {
+    "spine": "time",
+    "entity_noun": "investigator",
+    "entity_noun_plural": "investigators",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "time",
+        "label": "Start time",
+        "items": [
+          "8am",
+          "9am",
+          "10am",
+          "11am",
+          "noon"
+        ],
+        "ordered": true,
+        "noun": "start time",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "hour",
+        "verb": "reports at"
+      },
+      {
+        "name": "sleuth",
+        "label": "Investigator",
+        "items": [
+          "Ariadne",
+          "Fergus",
+          "Leopold",
+          "Ngozi",
+          "Immaculata"
+        ],
+        "ordered": false,
+        "noun": "investigator",
+        "subject": true
+      },
+      {
+        "name": "clue",
+        "label": "Clue produced",
+        "items": [
+          "a dropped glove",
+          "a smell of creosote",
+          "an anonymous note",
+          "a tyre mark",
+          "a bootprint"
+        ],
+        "ordered": false,
+        "noun": "clue",
+        "verb": "produces"
+      },
+      {
+        "name": "alibi",
+        "label": "Alibi",
+        "items": [
+          "the dentist",
+          "a locked greenhouse",
+          "a long bath",
+          "choir practice",
+          "a bus replacement service"
+        ],
+        "ordered": false,
+        "noun": "alibi",
+        "verb": "claims"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "sleuth:Leopold",
+          "b": "time:10am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "clue:a smell of creosote",
+          "b": "sleuth:Ngozi",
+          "k": 2,
+          "rel": "eq"
+        },
+        {
+          "kind": "link",
+          "a": "alibi:the dentist",
+          "b": "sleuth:Ngozi"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "sleuth:Immaculata",
+          "b": "time:9am",
+          "k": 3,
+          "rel": "eq"
+        },
+        {
+          "kind": "gap",
+          "a": "clue:a dropped glove",
+          "b": "time:9am",
+          "k": 2,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "alibi:choir practice",
+          "b": "time:8am",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "parity",
+          "a": "clue:a tyre mark",
+          "b": "time:9am",
+          "same": false
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "clue:a tyre mark",
+          "b": "time:8am"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "alibi:a locked greenhouse",
+          "b": "clue:an anonymous note"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "alibi:the dentist",
+          "b": "sleuth:Fergus"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "clue:a smell of creosote",
+          "b": "alibi:a bus replacement service",
+          "c": "alibi:the dentist"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "alibi:the dentist",
+          "b": "clue:an anonymous note"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "time": [
+      "8am",
+      "9am",
+      "10am",
+      "11am",
+      "noon"
+    ],
+    "sleuth": [
+      "Ngozi",
+      "Fergus",
+      "Leopold",
+      "Ariadne",
+      "Immaculata"
+    ],
+    "clue": [
+      "a bootprint",
+      "an anonymous note",
+      "a smell of creosote",
+      "a dropped glove",
+      "a tyre mark"
+    ],
+    "alibi": [
+      "the dentist",
+      "a long bath",
+      "a locked greenhouse",
+      "choir practice",
+      "a bus replacement service"
+    ]
+  },
+  "stats": {
+    "atoms": 12,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 2,
+      "gap": 4,
+      "parity": 1,
+      "not_link": 3,
+      "immediately_before": 1,
+      "between": 1
+    },
+    "positives": 2,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 39,
+    "tier_counts": {
+      "direct": 7,
+      "bijection": 21,
+      "order": 11
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.\nFive investigators are involved. Determine each investigator's start time, clue and alibi.\n- **Investigator**: Ariadne, Fergus, Leopold, Ngozi and Immaculata.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Clue produced**: a dropped glove, a smell of creosote, an anonymous note, a tyre mark and a bootprint.\n- **Alibi**: the dentist, a locked greenhouse, a long bath, choir practice and a bus replacement service.\nEvery investigator has a different start time, clue and alibi, so within each category every item is used exactly once.",
+    "clues": [
+      "Leopold reports at 10am.",
+      "The investigator who produces a smell of creosote and Ngozi are exactly two hours apart in start time order. Ngozi claims the dentist.",
+      "Immaculata and 9am are exactly three hours apart in start time order. The investigator who produces a dropped glove and 9am are exactly two hours apart in start time order.",
+      "The investigator who claims choir practice and 8am are exactly three hours apart in start time order.",
+      "One of the investigator who produces a tyre mark and 9am sits at an odd-numbered start time and the other at an even-numbered start time.",
+      "The investigator who produces a tyre mark does not report at 8am.",
+      "The investigator who claims a locked greenhouse does not produce an anonymous note.",
+      "The investigator who claims the dentist is exactly one hour earlier than Fergus, with no start time in between.",
+      "The investigator who produces a smell of creosote falls somewhere between the investigator who claims a bus replacement service and the investigator who claims the dentist in start time order.",
+      "The investigator who claims the dentist does not produce an anonymous note."
+    ]
+  }
+}

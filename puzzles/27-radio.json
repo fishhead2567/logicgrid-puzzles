@@ -1,0 +1,265 @@
+{
+  "pid": "6d43b4e36892",
+  "title": "The Graveyard Shift at WPKX",
+  "theme": "radio",
+  "blurb": "Nobody at WPKX has met anyone on the overnight schedule, which is how the station likes it.",
+  "profile": "moderate",
+  "rating": 4,
+  "score": 5.515,
+  "seed": 2026172989255,
+  "spec": {
+    "difficulty": "moderate",
+    "seed": 2026172989255,
+    "theme": "radio"
+  },
+  "schema": {
+    "spine": "slot",
+    "entity_noun": "host",
+    "entity_noun_plural": "hosts",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "slot",
+        "label": "Running order",
+        "items": [
+          "slot one",
+          "slot two",
+          "slot three",
+          "slot four",
+          "slot five"
+        ],
+        "ordered": true,
+        "noun": "slot",
+        "cmp_less": "earlier",
+        "cmp_more": "later",
+        "step_noun": "slot",
+        "verb": "broadcasts in"
+      },
+      {
+        "name": "host",
+        "label": "Host",
+        "items": [
+          "Dustin Crowe",
+          "Arlo Finch",
+          "Nadia Vell",
+          "Maribel Sosa",
+          "Rusty Lamarr"
+        ],
+        "ordered": false,
+        "noun": "host",
+        "subject": true
+      },
+      {
+        "name": "genre",
+        "label": "Format",
+        "items": [
+          "lost surf rock",
+          "listener call-ins",
+          "church organ recordings",
+          "obscure jazz",
+          "forgotten soul"
+        ],
+        "ordered": false,
+        "noun": "format",
+        "verb": "plays"
+      },
+      {
+        "name": "sponsor",
+        "label": "Sponsor",
+        "items": [
+          "a discount dentist",
+          "a storage facility",
+          "a taxidermist",
+          "a psychic hotline",
+          "a mattress warehouse"
+        ],
+        "ordered": false,
+        "noun": "sponsor",
+        "verb": "is sponsored by"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "genre:obscure jazz",
+          "b": "slot:slot five"
+        },
+        {
+          "kind": "between",
+          "a": "sponsor:a storage facility",
+          "b": "slot:slot five",
+          "c": "slot:slot three"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "host:Arlo Finch",
+          "b": "slot:slot four"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "sponsor:a mattress warehouse",
+          "b": "slot:slot five"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "host:Nadia Vell",
+          "b": "slot:slot five"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "slot:slot two",
+          "b": "sponsor:a discount dentist"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "sponsor:a taxidermist",
+          "b": "genre:forgotten soul"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "genre:church organ recordings",
+          "b": "host:Maribel Sosa"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "genre:listener call-ins",
+          "b": "sponsor:a taxidermist"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "gap",
+          "a": "genre:lost surf rock",
+          "b": "sponsor:a discount dentist",
+          "k": 3,
+          "rel": "eq"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "immediately_before",
+          "a": "sponsor:a taxidermist",
+          "b": "host:Dustin Crowe"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "slot": [
+      "slot one",
+      "slot two",
+      "slot three",
+      "slot four",
+      "slot five"
+    ],
+    "host": [
+      "Maribel Sosa",
+      "Rusty Lamarr",
+      "Dustin Crowe",
+      "Nadia Vell",
+      "Arlo Finch"
+    ],
+    "genre": [
+      "listener call-ins",
+      "church organ recordings",
+      "forgotten soul",
+      "lost surf rock",
+      "obscure jazz"
+    ],
+    "sponsor": [
+      "a discount dentist",
+      "a taxidermist",
+      "a mattress warehouse",
+      "a storage facility",
+      "a psychic hotline"
+    ]
+  },
+  "stats": {
+    "atoms": 11,
+    "numbered_clues": 10,
+    "kinds": {
+      "link": 1,
+      "between": 1,
+      "adjacent": 4,
+      "before": 1,
+      "immediately_before": 2,
+      "not_link": 1,
+      "gap": 1
+    },
+    "positives": 1,
+    "compounds": 0
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 3,
+    "max_technique": "order",
+    "steps": 42,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 22,
+      "order": 18
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 15
+  },
+  "text": {
+    "intro": "Nobody at WPKX has met anyone on the overnight schedule, which is how the station likes it.\nFive hosts are involved. Determine each host's slot, format and sponsor.\n- **Host**: Dustin Crowe, Arlo Finch, Nadia Vell, Maribel Sosa and Rusty Lamarr.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Format**: lost surf rock, listener call-ins, church organ recordings, obscure jazz and forgotten soul.\n- **Sponsor**: a discount dentist, a storage facility, a taxidermist, a psychic hotline and a mattress warehouse.\nEvery host has a different slot, format and sponsor, so within each category every item is used exactly once.",
+    "clues": [
+      "The host who plays obscure jazz broadcasts in slot five. The host who is sponsored by a storage facility falls somewhere between slot five and slot three in slot order.",
+      "Arlo Finch and slot four are exactly one slot apart in slot order, in one direction or the other.",
+      "The host who is sponsored by a mattress warehouse is earlier than slot five in slot order.",
+      "Nadia Vell and slot five are exactly one slot apart in slot order, in one direction or the other.",
+      "The host who is sponsored by a discount dentist and slot two are exactly one slot apart in slot order, in one direction or the other.",
+      "The host who is sponsored by a taxidermist is exactly one slot earlier than the host who plays forgotten soul, with no slot in between.",
+      "The host who plays church organ recordings and Maribel Sosa are exactly one slot apart in slot order, in one direction or the other.",
+      "The host who plays listener call-ins is not sponsored by a taxidermist.",
+      "The host who plays lost surf rock and the host who is sponsored by a discount dentist are exactly three slots apart in slot order.",
+      "The host who is sponsored by a taxidermist is exactly one slot earlier than Dustin Crowe, with no slot in between."
+    ]
+  }
+}

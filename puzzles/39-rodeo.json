@@ -1,0 +1,363 @@
+{
+  "pid": "083e2f657f70",
+  "title": "The Cutbank County Rodeo",
+  "theme": "rodeo",
+  "blurb": "Entry fees paid in cash at the gate, and a scoreboard that nobody trusts.",
+  "profile": "hard",
+  "rating": 6,
+  "score": 10.62,
+  "seed": 2026173084283,
+  "spec": {
+    "difficulty": "hard",
+    "seed": 2026173084283,
+    "theme": "rodeo"
+  },
+  "schema": {
+    "spine": "fee",
+    "entity_noun": "rider",
+    "entity_noun_plural": "riders",
+    "entity_animate": true,
+    "categories": [
+      {
+        "name": "fee",
+        "label": "Entry fee",
+        "items": [
+          "$2",
+          "$4",
+          "$6",
+          "$8",
+          "$10"
+        ],
+        "ordered": true,
+        "values": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "unit": "$",
+        "noun": "entry fee",
+        "cmp_less": "cheaper",
+        "cmp_more": "dearer",
+        "step_noun": "fee step",
+        "verb": "pays"
+      },
+      {
+        "name": "rider",
+        "label": "Rider",
+        "items": [
+          "Travis Mundy",
+          "Dalton Reese",
+          "Cody Vance",
+          "Marla Hobbs",
+          "Buck Jessup"
+        ],
+        "ordered": false,
+        "noun": "rider",
+        "subject": true
+      },
+      {
+        "name": "event",
+        "label": "Event",
+        "items": [
+          "tie-down roping",
+          "bareback",
+          "barrel racing",
+          "team roping",
+          "bull riding"
+        ],
+        "ordered": false,
+        "noun": "event",
+        "verb": "enters"
+      },
+      {
+        "name": "stock",
+        "label": "Stock drawn",
+        "items": [
+          "Tumbleweed",
+          "Widowmaker",
+          "Little Sister",
+          "Brimstone",
+          "Sunday Sermon"
+        ],
+        "ordered": false,
+        "noun": "animal",
+        "verb": "draws"
+      },
+      {
+        "name": "outcome",
+        "label": "Outcome",
+        "items": [
+          "a broken barrier",
+          "a no-score",
+          "a blown stirrup",
+          "a slap of the free hand",
+          "a clean ride"
+        ],
+        "ordered": false,
+        "noun": "outcome",
+        "verb": "finishes with"
+      }
+    ]
+  },
+  "clues": [
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "link",
+          "a": "event:bareback",
+          "b": "fee:$10"
+        },
+        {
+          "kind": "between",
+          "a": "outcome:a no-score",
+          "b": "fee:$10",
+          "c": "stock:Sunday Sermon"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "fee:$6",
+          "b": "rider:Dalton Reese"
+        },
+        {
+          "kind": "immediately_before",
+          "a": "rider:Travis Mundy",
+          "b": "fee:$6"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "event:team roping",
+          "b": "fee:$4"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "immediately_before",
+              "a": "fee:$6",
+              "b": "event:tie-down roping"
+            },
+            {
+              "kind": "link",
+              "a": "event:tie-down roping",
+              "b": "rider:Cody Vance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "fee:$6",
+              "b": "outcome:a no-score"
+            },
+            {
+              "kind": "before",
+              "a": "outcome:a slap of the free hand",
+              "b": "stock:Little Sister"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "or",
+          "options": [
+            {
+              "kind": "before",
+              "a": "fee:$6",
+              "b": "outcome:a no-score"
+            },
+            {
+              "kind": "link",
+              "a": "fee:$6",
+              "b": "outcome:a slap of the free hand"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "not_link",
+          "a": "outcome:a no-score",
+          "b": "rider:Dalton Reese"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "outcome:a broken barrier",
+          "b": "stock:Widowmaker"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "rider:Cody Vance",
+          "b": "stock:Tumbleweed"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "stock:Tumbleweed",
+          "b": "outcome:a blown stirrup",
+          "c": "outcome:a clean ride"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "between",
+          "a": "outcome:a slap of the free hand",
+          "b": "rider:Cody Vance",
+          "c": "rider:Marla Hobbs"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "adjacent",
+          "a": "event:bull riding",
+          "b": "stock:Brimstone"
+        }
+      ]
+    },
+    {
+      "style": "sentences",
+      "atoms": [
+        {
+          "kind": "before",
+          "a": "event:team roping",
+          "b": "outcome:a blown stirrup"
+        }
+      ]
+    }
+  ],
+  "solution": {
+    "fee": [
+      "$2",
+      "$4",
+      "$6",
+      "$8",
+      "$10"
+    ],
+    "rider": [
+      "Cody Vance",
+      "Travis Mundy",
+      "Buck Jessup",
+      "Dalton Reese",
+      "Marla Hobbs"
+    ],
+    "event": [
+      "team roping",
+      "bull riding",
+      "barrel racing",
+      "tie-down roping",
+      "bareback"
+    ],
+    "stock": [
+      "Sunday Sermon",
+      "Tumbleweed",
+      "Brimstone",
+      "Little Sister",
+      "Widowmaker"
+    ],
+    "outcome": [
+      "a clean ride",
+      "a no-score",
+      "a slap of the free hand",
+      "a broken barrier",
+      "a blown stirrup"
+    ]
+  },
+  "stats": {
+    "atoms": 15,
+    "numbered_clues": 13,
+    "kinds": {
+      "link": 1,
+      "between": 3,
+      "adjacent": 3,
+      "immediately_before": 1,
+      "before": 3,
+      "or": 3,
+      "not_link": 1
+    },
+    "positives": 1,
+    "compounds": 3
+  },
+  "solve": {
+    "solved": true,
+    "max_tier": 4,
+    "max_technique": "disjunction",
+    "steps": 57,
+    "tier_counts": {
+      "direct": 2,
+      "bijection": 27,
+      "order": 22,
+      "disjunction": 6
+    },
+    "trial_eliminations": 0,
+    "unknown_cells": 20
+  },
+  "text": {
+    "intro": "Entry fees paid in cash at the gate, and a scoreboard that nobody trusts.\nFive riders are involved. Determine each rider's entry fee, event, animal and outcome.\n- **Rider**: Travis Mundy, Dalton Reese, Cody Vance, Marla Hobbs and Buck Jessup.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Event**: tie-down roping, bareback, barrel racing, team roping and bull riding.\n- **Stock drawn**: Tumbleweed, Widowmaker, Little Sister, Brimstone and Sunday Sermon.\n- **Outcome**: a broken barrier, a no-score, a blown stirrup, a slap of the free hand and a clean ride.\nEvery rider has a different entry fee, event, animal and outcome, so within each category every item is used exactly once.",
+    "clues": [
+      "The rider who enters bareback pays $10. The rider who finishes with a no-score falls somewhere between $10 and the rider who draws Sunday Sermon in entry fee order.",
+      "Dalton Reese and $6 are exactly one fee step apart in entry fee order, in one direction or the other. Travis Mundy is exactly one fee step cheaper than $6, with no entry fee in between.",
+      "The rider who enters team roping is cheaper than $4 in entry fee order.",
+      "At least one of the following holds, and possibly more than one: (a) $6 is exactly one fee step cheaper than the rider who enters tie-down roping, with no entry fee in between. (b) Cody Vance enters tie-down roping.",
+      "At least one of the following holds, and possibly more than one: (a) The rider who finishes with a no-score is dearer than $6 in entry fee order. (b) The rider who finishes with a slap of the free hand is cheaper than the rider who draws Little Sister in entry fee order.",
+      "At least one of the following holds, and possibly more than one: (a) The rider who finishes with a no-score is dearer than $6 in entry fee order. (b) The rider who finishes with a slap of the free hand pays $6.",
+      "Dalton Reese does not finish with a no-score.",
+      "The rider who finishes with a broken barrier is cheaper than the rider who draws Widowmaker in entry fee order.",
+      "Cody Vance and the rider who draws Tumbleweed are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "The rider who draws Tumbleweed falls somewhere between the rider who finishes with a blown stirrup and the rider who finishes with a clean ride in entry fee order.",
+      "The rider who finishes with a slap of the free hand falls somewhere between Cody Vance and Marla Hobbs in entry fee order.",
+      "The rider who enters bull riding and the rider who draws Brimstone are exactly one fee step apart in entry fee order, in one direction or the other.",
+      "The rider who enters team roping is cheaper than the rider who finishes with a blown stirrup in entry fee order."
+    ]
+  }
+}
