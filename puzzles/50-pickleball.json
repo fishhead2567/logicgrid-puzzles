@@ -332,7 +332,7 @@
   "text": {
     "intro": "The rec center runs a pickleball ladder on Tuesdays. Courts go by start time, and the sign-up sheet gets rewritten more than once.\nFive players are involved. Determine each player's start time, paddle, serve and gripe.\n- **Player**: Yolanda, Pete Ng, Ramesh, Arlene and Buzz Kovacs.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am, 11am and noon.\n- **Paddle**: an oversize paddle, a bright orange paddle, a carbon-fiber paddle, a graphite paddle and a wooden loaner.\n- **Serve**: a high lob, a lefty slice, the same serve every time, a flat drive and a spin serve.\n- **Gripe**: a bad knee, a late night, the noisy court next door, nobody at all and a dead ball.\nEvery player has a different start time, paddle, serve and gripe, so within each category every item is used exactly once.",
     "clues": [
-      "Buzz Kovacs falls somewhere between 11am and 8am in start time order.",
+      "Buzz Kovacs falls somewhere between 8am and 11am in start time order.",
       "The player who plays with an oversize paddle is earlier than 9am in start time order.",
       "The player who plays with a wooden loaner and 9am are exactly three hours apart in start time order.",
       "10am is exactly one hour earlier than the player who blames a dead ball, with no start time in between.",

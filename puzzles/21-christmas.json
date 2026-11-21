@@ -248,7 +248,7 @@
     "intro": "A pile of wish lists, and one set of parents trying very hard to remember who asked for what.\nFive kids are involved. Determine each kid's age, pajamas and snack.\n- **Kid**: Margo, Deshawn, Frankie, Rosalind and Yuki.\n- **Age** (listed from younger to older): 8 years old, 9 years old, 10 years old, 11 years old and 12 years old.\n- **Pajamas**: purple fleece pajamas, blue star pajamas, reindeer pajamas, snowflake pajamas and red flannel pajamas.\n- **Snack**: a slice of fruitcake, peanut butter crackers, carrot sticks, oatmeal cookies and gingerbread.\nEvery kid has a different age, pajamas and snack, so within each category every item is used exactly once.",
     "clues": [
       "The kid who wears snowflake pajamas is younger than 9 years old in age order. The kid who leaves out gingerbread is 9 years old.",
-      "The kid who wears red flannel pajamas falls somewhere between 12 years old and 9 years old in age order.",
+      "The kid who wears red flannel pajamas falls somewhere between 9 years old and 12 years old in age order.",
       "10 years old falls somewhere between Margo and Yuki in age order. The kid who leaves out a slice of fruitcake is younger than Margo in age order. Yuki does not wear red flannel pajamas.",
       "9 years old falls somewhere between Frankie and the kid who wears purple fleece pajamas in age order.",
       "The kid who wears blue star pajamas and the kid who leaves out gingerbread are exactly one year apart in age order, in one direction or the other.",
