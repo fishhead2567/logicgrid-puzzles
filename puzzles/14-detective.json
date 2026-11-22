@@ -210,10 +210,10 @@
     "intro": "The Marchmont Mutual Improvement Society has taken on the case of the missing trowel with a seriousness it has never shown a book.\nFour investigators are involved. Determine each investigator's start time, theory and alibi.\n- **Investigator**: Fergus, Ariadne, Hortensia and Leopold.\n- **Start time** (listed from earlier to later): 8am, 9am, 10am and 11am.\n- **Theory**: a conspiracy of two, a magpie, an inside job and the postman.\n- **Alibi**: no alibi whatsoever, the dentist, watching the snooker and a bus replacement service.\nEvery investigator has a different start time, theory and alibi, so within each category every item is used exactly once.",
     "clues": [
       "Ariadne claims a bus replacement service.",
-      "8am is exactly one hour earlier than Hortensia, with no start time in between. The investigator who claims watching the snooker falls somewhere between 8am and 11am in start time order.",
+      "8am is exactly one hour earlier than Hortensia, with no start time in between. The investigator who claims watching the snooker falls somewhere between 8am and 11am in start time order, and is neither of them.",
       "The investigator who claims a bus replacement service and 9am are exactly one hour apart in start time order, in one direction or the other.",
       "The investigator who favours the postman is earlier than 11am in start time order.",
-      "Fergus falls somewhere between the investigator who favours a magpie and the investigator who favours the postman in start time order.",
+      "Fergus falls somewhere between the investigator who favours a magpie and the investigator who favours the postman in start time order, and is neither of them.",
       "The investigator who claims a bus replacement service and the investigator who favours an inside job are exactly one hour apart in start time order, in one direction or the other.",
       "The investigator who claims the dentist is exactly one hour earlier than Fergus, with no start time in between."
     ]

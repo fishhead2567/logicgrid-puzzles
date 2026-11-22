@@ -241,7 +241,7 @@
   "text": {
     "intro": "The Rusty Anchor runs karaoke on Tuesdays. Attendance is loyal; talent is not.\nFive singers are involved. Determine each singer's slot, drink and reception.\n- **Singer**: Bogdan, Caitriona, Vikram, Mercy and Pernilla.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three, slot four and slot five.\n- **Drink**: a hard cider in a plastic cup; a double bourbon; a rum and coke; a pitcher of light beer; and tap water.\n- **Reception**: one heckler, a singalong, the manager cutting the power, a request for an encore nobody wanted and scattered applause.\nEvery singer has a different slot, drink and reception, so within each category every item is used exactly once.",
     "clues": [
-      "The singer who gets the manager cutting the power falls somewhere between slot two and slot four in slot order.",
+      "The singer who gets the manager cutting the power falls somewhere between slot two and slot four in slot order, and is neither of them.",
       "Slot one is exactly one slot earlier than the singer who orders a double bourbon, with no slot in between.",
       "Mercy and slot four are exactly one slot apart in slot order, in one direction or the other.",
       "The singer who orders a pitcher of light beer is earlier than the singer who gets the manager cutting the power in slot order.",

@@ -233,14 +233,14 @@
   "text": {
     "intro": "One food court, and a shared conviction that everybody else ordered wrong.\nFive friends are involved. Determine each friend's total, main and drink.\n- **Friend**: Hank, Dmitri, Noor, Aaliyah and Paloma.\n- **Total** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Main**: a bean burrito, a chicken sandwich, a personal pepperoni, a double cheeseburger and three crunchy tacos.\n- **Drink**: a blue slushie, a root beer, a lemonade, an orange soda and a chocolate shake.\nEvery friend has a different total, main and drink, so within each category every item is used exactly once.",
     "clues": [
-      "The friend who drinks a lemonade and $9 are exactly one price step apart in total order, in one direction or the other. Aaliyah falls somewhere between $3 and $9 in total order.",
+      "The friend who drinks a lemonade and $9 are exactly one price step apart in total order, in one direction or the other. Aaliyah falls somewhere between $3 and $9 in total order, and is neither of them.",
       "Dmitri and $9 are exactly one price step apart in total order, in one direction or the other.",
       "The friend who orders three crunchy tacos and $3 are exactly one price step apart in total order, in one direction or the other.",
       "The friend who drinks an orange soda is cheaper than Noor in total order.",
       "Hank is exactly one price step cheaper than the friend who drinks a blue slushie, with no total in between.",
       "The friend who orders a chicken sandwich is exactly one price step cheaper than the friend who drinks an orange soda, with no total in between.",
       "Paloma and the friend who orders a bean burrito are exactly one price step apart in total order, in one direction or the other.",
-      "The friend who orders a personal pepperoni falls somewhere between the friend who drinks a blue slushie and the friend who drinks a chocolate shake in total order."
+      "The friend who orders a personal pepperoni falls somewhere between the friend who drinks a blue slushie and the friend who drinks a chocolate shake in total order, and is neither of them."
     ]
   }
 }

@@ -262,9 +262,9 @@
       "The ringer who takes the fifth is exactly one round earlier than round two, with no round in between.",
       "Osbert is earlier than the ringer who takes the second in round order.",
       "The ringer who calls Kent Treble Bob and Lavinia both sit at odd-numbered rounds or both at even-numbered rounds.",
-      "The ringer who takes the second falls somewhere between the ringer who calls Grandsire Triples and the ringer who calls Plain Bob Minor in round order.",
+      "The ringer who takes the second falls somewhere between the ringer who calls Grandsire Triples and the ringer who calls Plain Bob Minor in round order, and is neither of them.",
       "The ringer who takes the third and the ringer who calls Grandsire Triples are exactly one round apart in round order, in one direction or the other.",
-      "The ringer who takes the sharp second falls somewhere between the ringer who calls Kent Treble Bob and the ringer who calls Plain Bob Minor in round order.",
+      "The ringer who takes the sharp second falls somewhere between the ringer who calls Kent Treble Bob and the ringer who calls Plain Bob Minor in round order, and is neither of them.",
       "The ringer who calls Plain Bob Major and Lavinia are exactly one round apart in round order, in one direction or the other."
     ]
   }

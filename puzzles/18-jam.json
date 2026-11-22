@@ -198,7 +198,7 @@
     "intro": "The preserves tent is the most competitive building at the show, and the only one with a locked door.\nFive entrants are involved. Determine each entrant's price and jar.\n- **Entrant**: Emeka, Drusilla, Stanislaw, Harriet and Ottilie.\n- **Price** (listed from cheaper to dearer): $3, $5, $7, $9 and $11.\n- **Jar**: a tall french jar, a jar with a cloth lid, a recycled honey jar, an unlabelled jar and a hexagonal jar.\nEvery entrant has a different price and jar, so within each category every item is used exactly once.",
     "clues": [
       "Harriet uses a jar with a cloth lid.",
-      "Stanislaw falls somewhere between $7 and $11 in price order.",
+      "Stanislaw falls somewhere between $7 and $11 in price order, and is neither of them.",
       "Ottilie is dearer than $3 in price order.",
       "The entrant who uses an unlabelled jar is exactly one price step cheaper than $5, with no price in between.",
       "The entrant who uses a tall french jar is exactly one price step cheaper than $11, with no price in between.",

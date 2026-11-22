@@ -194,7 +194,7 @@
     "intro": "A hillside, a flock with its own ideas, and a judge who deducts for a wide outrun with the enthusiasm of someone settling an old score.\nFive handlers are involved. Determine each handler's score and dog.\n- **Handler**: Constance, Eiddwen, Marged, Huw Pryce and Tarrant.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Dog**: Bute, Gyp, Fly, Nell and Craig.\nEvery handler has a different score and dog, so within each category every item is used exactly once.",
     "clues": [
       "The handler who runs Gyp scores 73 points.",
-      "The handler who runs Bute is lower than Constance in score order. The handler who runs Bute falls somewhere between 61 points and 67 points in score order.",
+      "The handler who runs Bute is lower than Constance in score order. The handler who runs Bute falls somewhere between 61 points and 67 points in score order, and is neither of them.",
       "Tarrant is higher than 70 points in score order.",
       "The handler who runs Fly and 67 points are exactly one score step apart in score order, in one direction or the other.",
       "Huw Pryce is exactly one score step lower than 70 points, with no score in between.",
