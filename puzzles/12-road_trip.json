@@ -228,8 +228,8 @@
       "The driver who drives a hybrid sedan covers 400 miles.",
       "The driver who is delayed by a long line at the gate covers 300 miles.",
       "Gil Ostrander and 500 miles are exactly one hundred miles apart in distance order, in one direction or the other.",
-      "The driver who is delayed by a thunderstorm falls somewhere between the driver who drives a minivan with a roof box and the driver who drives an old convertible in distance order, and is neither of them.",
-      "Hector Salas does not drive a minivan with a roof box. Hector Salas is not delayed by nothing at all.",
+      "The driver who is delayed by a thunderstorm falls somewhere between the driver who drives a minivan with a roof box and the driver who drives an old convertible in distance order, matching neither.",
+      "Hector Salas does not drive a minivan with a roof box, and is not delayed by nothing at all.",
       "Wendell is not delayed by a closed pass.",
       "Wendell is shorter than the driver who is delayed by nothing at all in distance order.",
       "The driver who drives a rented camper is not delayed by a closed pass."

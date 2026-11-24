@@ -363,8 +363,8 @@
   "text": {
     "intro": "A creative-mode server, one weekend, and a block limit everybody swore they would stay under.\nFive builders are involved. Determine each builder's score, build, biome and material.\n- **Builder**: Oscar Pell, Thandiwe, Milo, Rafferty and Keiko.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Build**: a clock tower, a desert bazaar, a floating island, a mountain railway and a treetop village.\n- **Biome**: a snowy tundra, a swamp, a cherry grove, a jungle and a mushroom field.\n- **Material**: dark oak, copper, packed ice, sea lantern and quartz.\nEvery builder has a different score, build, biome and material, so within each category every item is used exactly once.",
     "clues": [
-      "The builder who builds in a swamp falls somewhere between Keiko and Thandiwe in score order, and is neither of them. Thandiwe builds a desert bazaar. Keiko does not build it from dark oak.",
-      "The builder who builds it from sea lantern falls somewhere between 61 points and 73 points in score order, and is neither of them. The builder who builds it from copper is higher than 61 points in score order.",
+      "The builder who builds in a swamp falls somewhere between Keiko and Thandiwe in score order, matching neither. Thandiwe builds a desert bazaar. Keiko does not build it from dark oak.",
+      "The builder who builds it from sea lantern falls somewhere between 61 points and 73 points in score order, matching neither. The builder who builds it from copper is higher than 61 points in score order.",
       "The following two do NOT both hold; either one alone may hold, and so may neither: (a) The builder who builds in a cherry grove and 70 points are exactly one score step apart in score order, in one direction or the other. (b) Keiko does not score 64 points.",
       "The builder who builds in a swamp does not score 70 points. Oscar Pell and 70 points are exactly one score step apart in score order, in one direction or the other.",
       "The builder who builds in a mushroom field is lower than 73 points in score order.",
@@ -373,7 +373,7 @@
       "The builder who builds in a mushroom field and the builder who builds it from quartz are exactly one score step apart in score order, in one direction or the other.",
       "The builder who builds a clock tower and the builder who builds it from dark oak are exactly one score step apart in score order, in one direction or the other.",
       "The builder who builds in a jungle and the builder who builds a mountain railway are exactly one score step apart in score order, in one direction or the other.",
-      "The builder who builds in a snowy tundra falls somewhere between Milo and Thandiwe in score order, and is neither of them.",
+      "The builder who builds in a snowy tundra falls somewhere between Milo and Thandiwe in score order, matching neither.",
       "The builder who builds a clock tower and Rafferty are exactly one score step apart in score order, in one direction or the other.",
       "At least one of the following holds, and possibly more than one: (a) Rafferty does not build a floating island. (b) Milo does not build it from quartz.",
       "The builder who builds in a swamp and the builder who builds it from packed ice are exactly one score step apart in score order, in one direction or the other."

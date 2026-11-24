@@ -263,9 +263,9 @@
     "intro": "The Mudflat Regatta is rowed over a course that is only a course at high tide, which is where most of the trouble starts.\nFive crews are involved. Determine each crew's placing, boat and colours.\n- **Crew**: the Gasworks crew, the Creamery crew, the Seminary crew, the Customs crew and the Brickworks crew.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Boat**: the Gilded Eel, the Peregrine, the Wet Hen, the Last Resort and the Obstinate.\n- **Colours**: cherry and grey; mustard and black; scarlet; lilac and bronze; and navy with a white band.\nEvery crew has a different placing, boat and colours, so within each category every item is used exactly once.",
     "clues": [
       "The Customs crew finishes fifth.",
-      "The crew who rows the Obstinate falls somewhere between first and fourth in placing order, and is neither of them.",
+      "The crew who rows the Obstinate falls somewhere between first and fourth in placing order, matching neither.",
       "The crew who rows the Peregrine is worse than third in placing order.",
-      "The crew who rows the Gilded Eel does not wear lilac and bronze. The crew who rows the Gilded Eel and fourth are exactly one place apart in placing order, in one direction or the other.",
+      "The crew who rows the Gilded Eel does not wear lilac and bronze, and and fourth are exactly one place apart in placing order, in one direction or the other.",
       "The crew who wears mustard and black is exactly one place better than second, with no placing in between.",
       "The Gasworks crew and fifth are exactly one place apart in placing order, in one direction or the other.",
       "The Creamery crew does not row the Wet Hen.",

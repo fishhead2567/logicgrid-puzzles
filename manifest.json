@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated": "2026-11-22T00:12:37+00:00",
+  "generated": "2026-11-24T22:20:46+00:00",
   "generator": "logicgrid 0.1.0",
   "count": 50,
   "narrated": 0,
@@ -161,8 +161,8 @@
       "clues": 6,
       "puzzle": {
         "path": "puzzles/10-sheepdog.json",
-        "sha256": "c7b41be31268767344a7b91bf1b225e3bc90fb44ee73d5ddb370bc91de63566c",
-        "bytes": 4842
+        "sha256": "4b7a5d7d74e5b49c141f681616ad337b8272a7007fdf3cfc8c7469dbf5c22c59",
+        "bytes": 4814
       }
     },
     {
@@ -193,8 +193,8 @@
       "clues": 8,
       "puzzle": {
         "path": "puzzles/12-road_trip.json",
-        "sha256": "209fca32621b84f73617b14f2f941d8aa3ff2788aa09390ff68e45b716072cc6",
-        "bytes": 6084
+        "sha256": "f6afee03b247b87af07e1d1758f29a1f5f3fb16f374d648b4524f8671bc8f9b2",
+        "bytes": 6069
       }
     },
     {
@@ -209,8 +209,8 @@
       "clues": 12,
       "puzzle": {
         "path": "puzzles/13-esports.json",
-        "sha256": "ac5b74eb5503a71cbdaebced63f289f0a494de051ef7ee9b7be2b8a51356eea1",
-        "bytes": 7257
+        "sha256": "131f0308c1c924ecd6d9a948961f039dd3744854d0d1f66bcd5b3a49854df346",
+        "bytes": 7230
       }
     },
     {
@@ -225,8 +225,8 @@
       "clues": 7,
       "puzzle": {
         "path": "puzzles/14-detective.json",
-        "sha256": "99e453ec82b08719f23e5773451ac9e28e54b1705bfc11fa27e3ad133949df93",
-        "bytes": 5931
+        "sha256": "14070531b8f3286f604d5042e7c5e509528e78e66b29f92df2ca5d7bebc642b5",
+        "bytes": 5919
       }
     },
     {
@@ -241,8 +241,8 @@
       "clues": 5,
       "puzzle": {
         "path": "puzzles/15-bonsai.json",
-        "sha256": "e3bd1b3ee472c5202f39e5bc56be33748bc6742ca796682889442ba075d22196",
-        "bytes": 5199
+        "sha256": "3a927646492670aade38bdf73a3497816f162966e063ddca230739190292c2dc",
+        "bytes": 5158
       }
     },
     {
@@ -257,8 +257,8 @@
       "clues": 6,
       "puzzle": {
         "path": "puzzles/16-sandcastle.json",
-        "sha256": "efea0d4d98f199790289df83f4d3c2aec7628fdad575fb6d4ba6f66e9755a66a",
-        "bytes": 4898
+        "sha256": "551fdfdf4e1abdd20a17dc65368f4ba425e1bd1e9608d001649502146e6dc6e8",
+        "bytes": 4861
       }
     },
     {
@@ -289,8 +289,8 @@
       "clues": 7,
       "puzzle": {
         "path": "puzzles/18-jam.json",
-        "sha256": "ce061d6536eb874f9e572fc0f25484486d79cc09c838a298582fab08b1852776",
-        "bytes": 5008
+        "sha256": "787bb9a99364a488f64ceb46554c697535be72b658f14752425da192aaf63e43",
+        "bytes": 5002
       }
     },
     {
@@ -321,8 +321,8 @@
       "clues": 15,
       "puzzle": {
         "path": "puzzles/20-observatory.json",
-        "sha256": "039e0137512e0e717ccfced3f158a1c22152726c6ae722a8bed2ccf3c860ab99",
-        "bytes": 9705
+        "sha256": "6e1ad19c667dc676639cbe102c50f279c76c86536db5d4ff8b10a4b89a7e7533",
+        "bytes": 9677
       }
     },
     {
@@ -337,8 +337,8 @@
       "clues": 8,
       "puzzle": {
         "path": "puzzles/21-christmas.json",
-        "sha256": "ee4b6ea032cf47a131b716e5acbc836461b984c11bef04fd0d93086637f04442",
-        "bytes": 6994
+        "sha256": "e0b78df3225cbb6239a1433ee1cc30ea965b2f0ec03b7c6a997c231a92fb3651",
+        "bytes": 6964
       }
     },
     {
@@ -353,8 +353,8 @@
       "clues": 8,
       "puzzle": {
         "path": "puzzles/22-fast_food.json",
-        "sha256": "99424dd36b5a3bed72bb5bcd05308e0e48c08d50a41fc0fb60fb452c1b8a1ab4",
-        "bytes": 6319
+        "sha256": "3eb773d59c32ba26b276d7ab0830fe7559532f6a37697cc82b9348cc9b6f5d58",
+        "bytes": 6307
       }
     },
     {
@@ -385,8 +385,8 @@
       "clues": 10,
       "puzzle": {
         "path": "puzzles/24-karaoke.json",
-        "sha256": "45e96a358eaffe419ffaae51b5d65986beb34f2bdb9e0a88f91e2d84041f9c37",
-        "bytes": 7003
+        "sha256": "555004739908709e37d7e3fd9a0bac2f2e381e7acc0df104c88955e40d99d4f2",
+        "bytes": 6997
       }
     },
     {
@@ -401,8 +401,8 @@
       "clues": 11,
       "puzzle": {
         "path": "puzzles/25-clockmaker.json",
-        "sha256": "df6152f4eda57f033d165c1621cbacce539f41972e2b4abafedbc103de70ee86",
-        "bytes": 8394
+        "sha256": "120729a693008748288ea7a76d75b02ed91fe0fff04113e174e2d8c2622a0d93",
+        "bytes": 8382
       }
     },
     {
@@ -417,8 +417,8 @@
       "clues": 11,
       "puzzle": {
         "path": "puzzles/26-train.json",
-        "sha256": "c66df53aded804a21d0861595c21e8b9706197a0c5ae7c0425cf311296a3a2e5",
-        "bytes": 7872
+        "sha256": "af726c2a7fe478841d71732bef3b93ca93c9437167332bec190a829e3fc669f6",
+        "bytes": 7860
       }
     },
     {
@@ -433,8 +433,8 @@
       "clues": 11,
       "puzzle": {
         "path": "puzzles/27-bellringing.json",
-        "sha256": "a1c3abcefedda19492f1f91b2d9cb1a17ee959bc6ef4bc42bb9098194264c918",
-        "bytes": 7014
+        "sha256": "5dab0342d2719c3b77c6449c49036e0ddb81bd31af48d7a86f7c06e1396da3be",
+        "bytes": 7002
       }
     },
     {
@@ -449,8 +449,8 @@
       "clues": 9,
       "puzzle": {
         "path": "puzzles/28-trivia_night.json",
-        "sha256": "82c6ed681af69ad622cefab6971fe648a015f19eccf7b1c0d88d89bb9f134fe7",
-        "bytes": 6757
+        "sha256": "043345d17fffe782e7e734a17f8e2d30e724957c87cd64e967161f79f098f911",
+        "bytes": 6745
       }
     },
     {
@@ -465,8 +465,8 @@
       "clues": 8,
       "puzzle": {
         "path": "puzzles/29-kite.json",
-        "sha256": "aad43f3c1a13d47dd190847eee36daff35713d2f4f668fbf54c7685c59177b4c",
-        "bytes": 6452
+        "sha256": "67547d06d944ab5c78f6a8de754d3083f603cd8dacd92bc99daf06e86cd8ca36",
+        "bytes": 6446
       }
     },
     {
@@ -481,8 +481,8 @@
       "clues": 9,
       "puzzle": {
         "path": "puzzles/30-beekeeper.json",
-        "sha256": "b57218f29422dbfd8c7ef7dbec172458be6c51e248f4a2b5271bd616c869cd3f",
-        "bytes": 6866
+        "sha256": "2bddafba468f68879640c762ec3d046db0d4b76e59837ce38d4b75f8b8a48c31",
+        "bytes": 6848
       }
     },
     {
@@ -497,8 +497,8 @@
       "clues": 13,
       "puzzle": {
         "path": "puzzles/31-chess.json",
-        "sha256": "0a41e6ab3efb199bf76582c2088ab8768bf85fef34c039868dcb9f18b7c95ee9",
-        "bytes": 9549
+        "sha256": "2b0aeafe51d171892e45e7ff4b2c8f82b8e2373177cfe2a0c8f5e611b299d6c3",
+        "bytes": 9543
       }
     },
     {
@@ -513,8 +513,8 @@
       "clues": 8,
       "puzzle": {
         "path": "puzzles/32-pickleball.json",
-        "sha256": "6513da99eacc1b64d5f5b997f3f8cba002de5c019d94045d5e598dce839ac5f9",
-        "bytes": 7741
+        "sha256": "940ae5178a40b2cbe691f18303806eb1314a00645932c3509d8e4788eb5b0045",
+        "bytes": 7729
       }
     },
     {
@@ -529,8 +529,8 @@
       "clues": 10,
       "puzzle": {
         "path": "puzzles/33-regatta.json",
-        "sha256": "42abeac2520a71fc61971f366c1b840b1f2cf552b5ed944d01e1190e0609826c",
-        "bytes": 7396
+        "sha256": "e4d4b20f5c10083fdc530318c6a192932820502921025c6d51d2768522c54ddb",
+        "bytes": 7361
       }
     },
     {
@@ -545,8 +545,8 @@
       "clues": 11,
       "puzzle": {
         "path": "puzzles/34-aquarium.json",
-        "sha256": "acf130e4dde97cbdff9accfab78a8d98ae45753da94325b605b3d6ecd293b348",
-        "bytes": 8166
+        "sha256": "386a3786eb0f931a0f851b7d89ff366be7ad0ec969bc6d41b5aebdcb18f8e879",
+        "bytes": 8154
       }
     },
     {
@@ -561,8 +561,8 @@
       "clues": 10,
       "puzzle": {
         "path": "puzzles/35-drystone.json",
-        "sha256": "20792f7ed39179c1b4c92a00348bed0057043740bdc8b496556d99a5fb4d9b60",
-        "bytes": 7886
+        "sha256": "c8ee32ff4009c85aeb19e7285fb1df71964263d54567de8e640ff30756e7c7cf",
+        "bytes": 7880
       }
     },
     {
@@ -577,8 +577,8 @@
       "clues": 13,
       "puzzle": {
         "path": "puzzles/36-letterpress.json",
-        "sha256": "c0394489e993b24a22fa3ff66a0bc03553bb16e871fc19d100207e916def49ba",
-        "bytes": 8527
+        "sha256": "6c42f342f5239605989cb665de462d1a1fdb3bb5b01d77500fbcf7cbb7dc12a1",
+        "bytes": 8509
       }
     },
     {
@@ -593,8 +593,8 @@
       "clues": 12,
       "puzzle": {
         "path": "puzzles/37-chili_cookoff.json",
-        "sha256": "a4b7a9dbde026b6d062811a39a21aa895cfbefd3afd2b02558a76fe06779acaa",
-        "bytes": 8230
+        "sha256": "429dac9de109bdddb645f78fa3a30ed1553ac1272b797d7436448b0a2ed451e7",
+        "bytes": 8218
       }
     },
     {
@@ -609,8 +609,8 @@
       "clues": 13,
       "puzzle": {
         "path": "puzzles/38-allotment.json",
-        "sha256": "1300c3ff8ab3887043c6cd455a05eb5fec955d0be42716796b1f42d0123ec799",
-        "bytes": 9597
+        "sha256": "cfce8ee0d28a1b2868d71ac2029a118376a2efa6caee9c496edbf56f50c7d5a7",
+        "bytes": 9585
       }
     },
     {
@@ -625,8 +625,8 @@
       "clues": 13,
       "puzzle": {
         "path": "puzzles/39-radio.json",
-        "sha256": "ed8e5226600982ca1e80d7cef6a2b4a5f8d14c3ed6374a402546b3c42145bf0e",
-        "bytes": 10029
+        "sha256": "130ef884d0ea312c97ec3b7dbcda57922039eb740d1c97d3bf1593f3a4af6264",
+        "bytes": 10011
       }
     },
     {
@@ -641,8 +641,8 @@
       "clues": 14,
       "puzzle": {
         "path": "puzzles/40-hamradio.json",
-        "sha256": "9ef066b9c325c64277a0a62fe38540f62013cca4c0f670f7dce52f8a5de83c42",
-        "bytes": 10467
+        "sha256": "80570a2a86272210becd4fc4f47497682d61ffe1d295322b21f2c02c95d63278",
+        "bytes": 10455
       }
     },
     {
@@ -673,8 +673,8 @@
       "clues": 14,
       "puzzle": {
         "path": "puzzles/42-build_server.json",
-        "sha256": "9e5fbd7c115e94efff7851af489a5398bc9454ae9d4423891bc37ab1a0778198",
-        "bytes": 10412
+        "sha256": "e185d6404f60c62dd5a107fdcc1c612864e8a0642b81402479936b8e85a13c67",
+        "bytes": 10394
       }
     },
     {
@@ -689,8 +689,8 @@
       "clues": 13,
       "puzzle": {
         "path": "puzzles/43-shearing.json",
-        "sha256": "fbecf1def68cb7a9bc39bd95ff017499e0c43c780d2dd5bea07ae17d7d2891ac",
-        "bytes": 9953
+        "sha256": "44808c69f5699fb1f052f5c6f11980623a8a69d73308897cc28a4079282a0af2",
+        "bytes": 9947
       }
     },
     {
@@ -705,8 +705,8 @@
       "clues": 15,
       "puzzle": {
         "path": "puzzles/44-pigeon.json",
-        "sha256": "219908d9b766a5e8a77f6a7561af413c6e7188d58313cbc483e8ddbc034a6529",
-        "bytes": 11057
+        "sha256": "13a2260542cf95657beeaa5f4eaf725fb533498e9f793916811af440a20c7254",
+        "bytes": 11045
       }
     },
     {
@@ -721,8 +721,8 @@
       "clues": 17,
       "puzzle": {
         "path": "puzzles/45-mushroom.json",
-        "sha256": "ef26e745f577a94bcb53b99b4929e452d49bd8edc5811481273fb9b4f3aed443",
-        "bytes": 11387
+        "sha256": "085e15533a2fbf9083ea5b89f23588f101f5a1260e9b9efe760f3481c5551c0a",
+        "bytes": 11381
       }
     },
     {
@@ -737,8 +737,8 @@
       "clues": 17,
       "puzzle": {
         "path": "puzzles/46-highland.json",
-        "sha256": "0e361531d42418c54934fa6ee28c443f017a466a1990b4cbfdd0711e2748c6ea",
-        "bytes": 12362
+        "sha256": "2396813d3105c4497afee9344e16276b1a9bd35cfb5a92d411ebf7479f38266f",
+        "bytes": 12344
       }
     },
     {
@@ -753,8 +753,8 @@
       "clues": 19,
       "puzzle": {
         "path": "puzzles/47-orchid.json",
-        "sha256": "9f91fa68a40c37ed54f5018ed2685ba0bf7fe30b3e2ba74c2ee2a5c9e553520b",
-        "bytes": 12508
+        "sha256": "fbebe7cdf2b483a5afd2f280703747c08807ea1e091b4f251eb5138b7629aac5",
+        "bytes": 12490
       }
     },
     {
@@ -769,8 +769,8 @@
       "clues": 15,
       "puzzle": {
         "path": "puzzles/48-tea.json",
-        "sha256": "1a687fb66818f179aa1830fdccc41e0290b925351e913aa3d65a780316b952d5",
-        "bytes": 11179
+        "sha256": "d664ccc7806a18e1ee7140610c29e0386a419a76f44431ca094540cdbad5e1ac",
+        "bytes": 11161
       }
     },
     {
@@ -785,8 +785,8 @@
       "clues": 15,
       "puzzle": {
         "path": "puzzles/49-medals.json",
-        "sha256": "89f36a9c77b13419ef88fa989353b21f22b96baa90d16cb850a3abca6815a7c1",
-        "bytes": 10910
+        "sha256": "0f30367597e8ecb43fee5a1aef8ae610045315101ce9c4099ffd05fedd086da1",
+        "bytes": 10882
       }
     },
     {
@@ -801,8 +801,8 @@
       "clues": 13,
       "puzzle": {
         "path": "puzzles/50-pickleball.json",
-        "sha256": "5af6bfcb83aa8c4d175b2db1524bcbdaa8e907e23125967db52fa479299d3ea5",
-        "bytes": 10078
+        "sha256": "d45700311086a61cb8e2d9259d54c8e0698104d285dfa429c4ef0e609254ebcc",
+        "bytes": 10060
       }
     }
   ]

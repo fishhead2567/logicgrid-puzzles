@@ -182,11 +182,11 @@
   "text": {
     "intro": "Trees on stands, judged on a hundred-point sheet, and the wiring marks are what everybody is looking for.\nFive exhibitors are involved. Determine each exhibitor's judged score and flaw.\n- **Exhibitor**: Noriko Hase, Keiko Tanabe, Takumi Ishii, Jun Kawabe and Hiroshi Mita.\n- **Judged score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Flaw noted**: a weak nebari, a bar branch, reverse taper, visible wiring scars and an eye-poking branch.\nEvery exhibitor has a different judged score and flaw, so within each category every item is used exactly once.",
     "clues": [
-      "The exhibitor who is marked down for reverse taper is awarded 64 points. Noriko Hase is awarded 64 points.",
+      "Noriko Hase is awarded 64 points, and is marked down for reverse taper.",
       "The exhibitor who is marked down for a weak nebari and 73 points are exactly one score step apart in judged score order, in one direction or the other.",
       "Takumi Ishii and the exhibitor who is marked down for a weak nebari are exactly one score step apart in judged score order, in one direction or the other.",
       "The exhibitor who is marked down for an eye-poking branch is exactly one score step lower than Hiroshi Mita, with no judged score in between.",
-      "Jun Kawabe falls somewhere between the exhibitor who is marked down for a weak nebari and the exhibitor who is marked down for visible wiring scars in judged score order, and is neither of them."
+      "Jun Kawabe falls somewhere between the exhibitor who is marked down for a weak nebari and the exhibitor who is marked down for visible wiring scars in judged score order, matching neither."
     ]
   }
 }

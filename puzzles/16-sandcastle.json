@@ -185,10 +185,10 @@
   "text": {
     "intro": "The Cannon Beach Open is judged at four o'clock, whatever the tide is doing.\nFive builders are involved. Determine each builder's placing and tool.\n- **Builder**: Hartley, Harper, Bridget, Khalid and Wes.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Chief tool**: a bucket with no handle, a paint scraper, a pastry brush, a soup spoon and a cake server.\nEvery builder has a different placing and tool, so within each category every item is used exactly once.",
     "clues": [
-      "Harper places fifth. The builder who works with a soup spoon places fifth.",
-      "Hartley falls somewhere between first and fourth in placing order, and is neither of them.",
+      "Harper places fifth, and works with a soup spoon.",
+      "Hartley falls somewhere between first and fourth in placing order, matching neither.",
       "The builder who works with a paint scraper is exactly one place better than second, with no placing in between.",
-      "Khalid falls somewhere between the builder who works with a cake server and the builder who works with a paint scraper in placing order, and is neither of them.",
+      "Khalid falls somewhere between the builder who works with a cake server and the builder who works with a paint scraper in placing order, matching neither.",
       "The builder who works with a bucket with no handle is exactly one place better than Wes, with no placing in between.",
       "Khalid is better than the builder who works with a bucket with no handle in placing order."
     ]

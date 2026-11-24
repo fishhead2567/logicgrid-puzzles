@@ -286,10 +286,10 @@
       "One of Everett and slot two sits at an odd-numbered slot and the other at an even-numbered slot.",
       "The keeper who tends the estuary tank and slot one are exactly two slots apart in slot order.",
       "The keeper who logs an escapee and Oskar are exactly one slot apart in slot order, in one direction or the other.",
-      "The keeper who tends the touch pool falls somewhere between Marisol and Oskar in slot order, and is neither of them.",
+      "The keeper who tends the touch pool falls somewhere between Marisol and Oskar in slot order, matching neither.",
       "Chiamaka and the keeper who tends the jellyfish column are exactly one slot apart in slot order, in one direction or the other.",
       "At least one of the following holds, and possibly more than one: (a) The keeper who tends the octopus enclosure is exactly one slot earlier than the keeper who logs a visitor's dropped phone, with no slot in between. (b) The keeper who logs a visitor's dropped phone tends the deep reef.",
-      "Oskar falls somewhere between the keeper who logs an algal bloom and the keeper who logs an escapee in slot order, and is neither of them.",
+      "Oskar falls somewhere between the keeper who logs an algal bloom and the keeper who logs an escapee in slot order, matching neither.",
       "The keeper who logs an algal bloom and the keeper who tends the touch pool are exactly two slots apart in slot order."
     ]
   }

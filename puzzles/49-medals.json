@@ -371,8 +371,8 @@
   "text": {
     "intro": "A volunteer handed out the medal boxes in the wrong order, and the scoreboard went dark an hour ago.\nFive athletes are involved. Determine each athlete's placing, event, jersey and hometown.\n- **Athlete**: Diego Vasquez, Camille Boyd, Ingrid Solheim, Tobias Pike and Rashad Ellery.\n- **Placing** (listed from better to worse): first, second, third, fourth and fifth.\n- **Event**: the 400 meter hurdles, the 100 meter dash, the pole vault, the triple jump and the high jump.\n- **Jersey**: a coral jersey, a navy jersey, a silver jersey, a teal jersey and a maroon jersey.\n- **Hometown**: Walla Walla, Fargo, Boca Raton, Flagstaff and Shreveport.\nEvery athlete has a different placing, event, jersey and hometown, so within each category every item is used exactly once.",
     "clues": [
-      "The athlete who wears a teal jersey falls somewhere between second and fifth in placing order, and is neither of them.",
-      "The athlete who competes in the pole vault falls somewhere between first and fifth in placing order, and is neither of them.",
+      "The athlete who wears a teal jersey falls somewhere between second and fifth in placing order, matching neither.",
+      "The athlete who competes in the pole vault falls somewhere between first and fifth in placing order, matching neither.",
       "At least one of the following holds, and possibly more than one: (a) The athlete who trains in Boca Raton is exactly one place better than fifth, with no placing in between. (b) The athlete who trains in Flagstaff finishes second.",
       "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The athlete who wears a teal jersey and first are exactly three places apart in placing order. (b) The athlete who wears a maroon jersey is better than fifth in placing order.",
       "The athlete who trains in Shreveport and first are exactly one place apart in placing order, in one direction or the other.",
@@ -380,10 +380,10 @@
       "Tobias Pike is better than third in placing order.",
       "Second is exactly one place better than the athlete who wears a silver jersey, with no placing in between.",
       "If (a) holds then (b) also holds, but not necessarily the reverse: (a) The athlete who wears a silver jersey and first are exactly two places apart in placing order. (b) The athlete who competes in the high jump and the athlete who wears a teal jersey are exactly three places apart in placing order.",
-      "Diego Vasquez does not wear a maroon jersey. Diego Vasquez is exactly one place better than the athlete who trains in Fargo, with no placing in between.",
+      "Diego Vasquez does not wear a maroon jersey, and is exactly one place better than the athlete who trains in Fargo, with no placing in between.",
       "The athlete who trains in Fargo and the athlete who wears a coral jersey are exactly two places apart in placing order.",
       "At least one of the following holds, and possibly more than one: (a) Rashad Ellery is better than the athlete who trains in Shreveport in placing order. (b) The athlete who competes in the 400 meter hurdles and the athlete who trains in Boca Raton are exactly two places apart in placing order.",
-      "The athlete who wears a teal jersey falls somewhere between the athlete who trains in Fargo and the athlete who trains in Walla Walla in placing order, and is neither of them.",
+      "The athlete who wears a teal jersey falls somewhere between the athlete who trains in Fargo and the athlete who trains in Walla Walla in placing order, matching neither.",
       "The athlete who competes in the 100 meter dash and the athlete who trains in Shreveport both sit at odd-numbered places or both at even-numbered places.",
       "Rashad Ellery does not compete in the triple jump."
     ]
