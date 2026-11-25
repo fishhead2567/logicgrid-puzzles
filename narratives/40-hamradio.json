@@ -1,0 +1,23 @@
+{
+  "pid": "ef46a88409d6",
+  "title": "Field Day on Cedar Butte",
+  "introduction": "The club has hauled its antennas, its folding chairs and an alarming quantity of potato salad up Cedar Butte for the annual field day. The generator has been running since dawn and has already declined to cooperate with at least two people. Nobody has yet agreed on whose fault the smell is.",
+  "preamble": "Five operators are involved. Determine each operator's night, band, mode and trouble.\n- **Operator**: Marcus, Ingrid, Lorna, Hank and Trish.\n- **Night** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday and Friday.\n- **Band**: 15 meters, 6 meters, 80 meters, 10 meters and 20 meters.\n- **Mode**: RTTY, CW, AM, slow-scan television and SSB.\n- **Trouble**: a snapped dipole leg, a dead battery, sixty-cycle hum, a static crash and a drifting VFO.\nEvery operator has a different night, band, mode and trouble, so within each category every item is used exactly once.",
+  "clues": [
+    "The operator defeated by a snapped dipole leg operates on Monday. The operator who operates AM is not defeated by a snapped dipole leg.",
+    "The operator who operates CW operates on Thursday.",
+    "At most one of these two things is true, and possibly neither: Lorna and Thursday are exactly one day apart in night order; the operator who operates CW operates on Thursday.",
+    "The operator defeated by a static crash falls somewhere between Tuesday and Thursday in night order, matching neither. Trish and the operator defeated by a static crash are exactly two days apart in night order.",
+    "Marcus and Monday are exactly three days apart in night order.",
+    "At least one of these is true, and possibly both: the operator who works 15 meters and Monday are exactly one day apart in night order; the operator who works 10 meters is exactly one day earlier than the operator who operates slow-scan television, with no night in between.",
+    "The operator defeated by a drifting VFO and Wednesday are exactly one day apart in night order.",
+    "The operator who works 10 meters and Ingrid are exactly three days apart in night order. The operator who operates SSB and Ingrid are exactly three days apart in night order.",
+    "At most one of these two things is true, and possibly neither: the operator who works 80 meters is earlier than the operator who operates SSB in night order; the operator who works 20 meters does not operate RTTY.",
+    "The operator who operates SSB falls somewhere between the operator who works 20 meters and the operator who works 80 meters in night order, matching neither.",
+    "The operator who works 6 meters and the operator defeated by sixty-cycle hum are exactly one day apart in night order. Trish and the operator defeated by sixty-cycle hum are exactly one day apart in night order.",
+    "At most one of these two things is true, and possibly neither: the operator who works 15 meters and Ingrid are exactly one day apart in night order; the operator who operates RTTY and Hank are exactly two days apart in night order."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

@@ -1,0 +1,17 @@
+{
+  "pid": "18d702673a4e",
+  "title": "The Clun Forest Trials",
+  "introduction": "The judge on this hillside deducts for a wide outrun with the enthusiasm of someone settling an old score, and the sheep have opinions of their own about where they ought to be going. Sheepdog trials are contests in which a handler and one dog drive a small flock around a course by whistle and command, and the scores are awarded by a person who has seen it all before. Nobody left the field entirely satisfied, least of all the sheep.",
+  "preamble": "Five handlers are involved. Determine each handler's score and dog.\n- **Handler**: Constance, Eiddwen, Marged, Huw Pryce and Tarrant.\n- **Score** (listed from lower to higher): 61 points, 64 points, 67 points, 70 points and 73 points.\n- **Dog**: Bute, Gyp, Fly, Nell and Craig.\nEvery handler has a different score and dog, so within each category every item is used exactly once.",
+  "clues": [
+    "The handler who runs Gyp scores 73 points.",
+    "Huw Pryce scores 67 points.",
+    "The handler who runs Bute scores lower than Constance. The handler who runs Bute also scores strictly between 61 points and 67 points, matching neither of those two scores.",
+    "Tarrant scores higher than 70 points.",
+    "The handler who runs Fly and the handler who scored 67 points are exactly one score step apart, in one direction or the other.",
+    "The handler who runs Craig scores lower than Marged."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

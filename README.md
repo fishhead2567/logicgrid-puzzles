@@ -6,8 +6,8 @@ here are lost on the next rebuild; change the generator instead.
 
 [gen]: https://github.com/fishhead2567/logicgrid-generator
 
-50 puzzles, ratings 1-7, 6 with a verified narrative.
-Generated 2026-11-25T08:35:47+00:00 by logicgrid 0.1.0.
+50 puzzles, ratings 1-7, 10 with a verified narrative.
+Generated 2026-11-25T14:56:23+00:00 by logicgrid 0.1.0.
 
 ## Fetch contract
 

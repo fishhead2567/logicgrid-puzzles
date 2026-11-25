@@ -1,0 +1,15 @@
+{
+  "pid": "8cdc3efb624d",
+  "title": "The Mislabelled Drawers",
+  "introduction": "In 1974 somebody reorganised the Vance Municipal Archive with great confidence and no written explanation, then left without a forwarding address. The staff have since reconstructed the system the way one reconstructs a dinosaur: from fragments, arguments and one suspiciously large bone. Today's job is to work out who files where, and the labels on the drawers are, as ever, no help.",
+  "preamble": "Four archivists are involved. Determine each archivist's shelf and decade.\n- **Archivist**: Dr Mwangi, Mr Pelletier, Ms Castellano and Mr Ravensworth.\n- **Shelf** (listed from lower to higher): the bottom shelf, the second shelf, the third shelf and the fourth shelf.\n- **Decade**: the 1890s, the 1950s, the 1830s and the 1910s.\nEvery archivist has a different shelf and decade, so within each category every item is used exactly once.",
+  "clues": [
+    "Ms Castellano, who covers the 1950s, files on the third shelf.",
+    "Mr Pelletier files on the second shelf, and he is lower than the archivist who covers the 1830s in shelf order.",
+    "The archivist who covers the 1890s and the second shelf are exactly one shelf apart, in one direction or the other.",
+    "Mr Ravensworth and the archivist who covers the 1950s are exactly one shelf apart, in one direction or the other."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

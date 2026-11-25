@@ -1,0 +1,16 @@
+{
+  "pid": "390c14c57960",
+  "title": "The Pomace and the Prize",
+  "introduction": "The village cider contest has been running for two hundred years, and for at least a hundred and ninety of them the judges have been accused of tasting with their eyes shut. Every maker arrives certain that the rest have let their barrels go to vinegar, and the whispering at the tasting table is worse than the cider. Pomace, for the uninitiated, is the pulpy mash of crushed apples left behind once the juice has been pressed out.",
+  "preamble": "Five makers are involved. Determine each maker's pressing month and fault.\n- **Maker**: Jethro, Araminta, Haskell, Morwenna and Petroc.\n- **Pressing month** (listed from earlier to later): January, February, March, April and May.\n- **Fault**: a stuck ferment, mousiness, sulphur, acetification and ropiness.\nEvery maker has a different pressing month and fault, so within each category every item is used exactly once.",
+  "clues": [
+    "Haskell, who stands accused of acetification, presses in January.",
+    "Araminta, who stands accused of ropiness, presses in April.",
+    "The maker accused of mousiness presses in May.",
+    "Jethro presses exactly one month earlier than the maker accused of a stuck ferment.",
+    "The maker accused of a stuck ferment presses earlier than Petroc does, by any number of months."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

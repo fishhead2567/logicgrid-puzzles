@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "generated": "2026-11-25T08:35:47+00:00",
+  "generated": "2026-11-25T14:56:23+00:00",
   "generator": "logicgrid 0.1.0",
   "count": 50,
-  "narrated": 6,
+  "narrated": 10,
   "puzzles": [
     {
       "pid": "8cdc3efb624d",
@@ -19,6 +19,11 @@
         "path": "puzzles/01-archive.json",
         "sha256": "d726141a23f30694398f6a93376f0676380d6d82f6451cda403d39b504ccfb36",
         "bytes": 4601
+      },
+      "narrative": {
+        "path": "narratives/01-archive.json",
+        "sha256": "fbfc98a8971eba659d18489258aa85ae172ceaf39c149ddf271911c28b0c7509",
+        "bytes": 1455
       }
     },
     {
@@ -152,6 +157,11 @@
         "path": "puzzles/09-cider.json",
         "sha256": "a6047af5a875660563c2a8edd29d9d28fc4f4dd7ef011be04ce083bc7a1191e0",
         "bytes": 4689
+      },
+      "narrative": {
+        "path": "narratives/09-cider.json",
+        "sha256": "d2a375d284cfcd9c47c4fbc57fbdc8d142f2ad3469762ff37e9fe2130aae6dd4",
+        "bytes": 1442
       }
     },
     {
@@ -168,6 +178,11 @@
         "path": "puzzles/10-sheepdog.json",
         "sha256": "90ed5211d7082290dab06009e44eafcd89aa68ee57fda94fa0c054f9e9ed113c",
         "bytes": 4758
+      },
+      "narrative": {
+        "path": "narratives/10-sheepdog.json",
+        "sha256": "3fe3f46e2983e2f75e56cadc2cb3746d7c59a4a619b560ff026d36a44cb0a448",
+        "bytes": 1522
       }
     },
     {
@@ -663,6 +678,11 @@
         "path": "puzzles/40-hamradio.json",
         "sha256": "974271d041e6df0e387da8e0ab0deb30a730f6a8c66881173d2611c4b3a84337",
         "bytes": 10317
+      },
+      "narrative": {
+        "path": "narratives/40-hamradio.json",
+        "sha256": "7707f3d690339c76f74894078c58e8531eba11c4ce4790331029158a197318e7",
+        "bytes": 3169
       }
     },
     {
