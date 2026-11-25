@@ -183,8 +183,8 @@
   "text": {
     "intro": "A gym full of sign-up tables, a line out the door, and a counselor who gave up on alphabetical order an hour ago.\nFive students are involved. Determine each student's birthday month and elective.\n- **Student**: Darnell, Linnea, Omar, Mateo and Trey.\n- **Birthday month** (listed from earlier to later): January, February, March, April and May.\n- **Elective**: Spanish, digital art, robotics, wood shop and theater tech.\nEvery student has a different birthday month and elective, so within each category every item is used exactly once.",
     "clues": [
-      "The student who signs up for Spanish was not born in February. Trey is exactly one month earlier than February, with no birthday month in between.",
-      "Mateo is exactly one month earlier than April, with no birthday month in between. Omar was not born in April.",
+      "The student who signs up for Spanish was not born in February. Trey was born in January.",
+      "Mateo was born in March. Omar was not born in April.",
       "The student who signs up for Spanish and Mateo are exactly one month apart in birthday month order, in one direction or the other.",
       "The student who signs up for robotics is earlier than Omar in birthday month order. Omar is earlier than the student who signs up for wood shop in birthday month order.",
       "The student who signs up for digital art is exactly one month earlier than Linnea, with no birthday month in between."

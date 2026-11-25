@@ -256,9 +256,9 @@
   "text": {
     "intro": "The annual honey show has been judged, and at least two people are writing letters about it.\nFive beekeepers are involved. Determine each beekeeper's entry fee, honey and hive.\n- **Beekeeper**: Wilhelmina, Breda, Mungo, Priya and Fausto.\n- **Entry fee** (listed from cheaper to dearer): $2, $4, $6, $8 and $10.\n- **Honey**: borage honey, ivy honey, lime blossom honey, sea lavender honey and chestnut honey.\n- **Hive type**: a long deep hive, a Langstroth hive, a national hive, a Warre hive and a WBC hive.\nEvery beekeeper has a different entry fee, honey and hive, so within each category every item is used exactly once.",
     "clues": [
-      "$2 is exactly one fee step cheaper than Wilhelmina, with no entry fee in between. Fausto falls somewhere between $2 and $10 in entry fee order, matching neither. The beekeeper who keeps a WBC hive pays $2.",
+      "Wilhelmina pays $4. Fausto falls somewhere between $2 and $10 in entry fee order, matching neither. The beekeeper who keeps a WBC hive pays $2.",
       "The beekeeper who keeps a Warre hive falls somewhere between $2 and $6 in entry fee order, matching neither. The beekeeper who enters chestnut honey does not pay $6.",
-      "$8 is exactly one fee step cheaper than the beekeeper who keeps a long deep hive, with no entry fee in between.",
+      "The beekeeper who keeps a long deep hive pays $10.",
       "The beekeeper who enters ivy honey does not pay $6.",
       "The beekeeper who enters sea lavender honey and Priya are exactly one fee step apart in entry fee order, in one direction or the other.",
       "The beekeeper who keeps a WBC hive and the beekeeper who enters lime blossom honey are exactly one fee step apart in entry fee order, in one direction or the other.",
