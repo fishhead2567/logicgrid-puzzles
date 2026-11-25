@@ -1,0 +1,24 @@
+{
+  "pid": "5b4662f6245d",
+  "title": "The Foragers of Thorn Bottom",
+  "introduction": "The Thorn Bottom foraging club keeps meticulous records, chiefly so that blame can be apportioned later. This week's blame concerns six members, six baskets, and one very smug penny bun that refuses to say where it was found. The treasurer has asked that all arguments be settled by the evidence below, and not by volume.",
+  "preamble": "Six foragers are involved. Determine each forager's day, find, wood and basket.\n- **Forager**: Ramiro, Tobias, Ottokar, Solomon, Eilish and Guinevere.\n- **Day** (listed from earlier to later): Monday, Tuesday, Wednesday, Thursday, Friday and Saturday.\n- **Find**: a cauliflower fungus, a chicken of the woods, a saffron milk cap, a hen of the woods, a horn of plenty and a penny bun.\n- **Wood**: Nettlebed, the Old Deer Park, Hangman's Copse, the Larches, Scrag End and Bell Wood.\n- **Basket**: a wooden box, a string bag, a wicker trug, an upturned hat, a willow creel and a tin pail.\nEvery forager has a different day, find, wood and basket, so within each category every item is used exactly once.",
+  "clues": [
+    "The forager who finds a cauliflower fungus and Saturday are exactly three days apart. The forager who finds a saffron milk cap and Saturday are exactly two days apart.",
+    "The forager who finds a saffron milk cap and the forager who searches Scrag End are exactly one day apart.",
+    "Solomon and Monday are exactly one day apart.",
+    "If Guinevere and Wednesday are exactly one day apart, then the forager who carries an upturned hat and Eilish are exactly one day apart.",
+    "The forager who searches the Larches falls somewhere between Friday and Tobias, matching neither.",
+    "Counting Monday as day 1, Friday and the forager who searches Nettlebed both sit at odd-numbered days or both at even-numbered days.",
+    "The forager who carries a wicker trug and the forager who finds a horn of plenty are exactly one day apart.",
+    "Ottokar and the forager who searches the Old Deer Park are exactly one day apart, and the forager who searches the Old Deer Park is earlier than the forager who carries a willow creel.",
+    "The forager who finds a chicken of the woods is earlier than Ottokar. If Ottokar does not search Nettlebed, then Ramiro does.",
+    "If the forager who carries a wicker trug searches Hangman's Copse, then the forager who searches Scrag End is earlier than the forager who carries a string bag. The forager who carries a string bag does not search Bell Wood.",
+    "The forager who finds a penny bun is exactly one day earlier than the forager who searches Bell Wood. Eilish and the forager who searches Bell Wood are exactly one day apart.",
+    "The forager who carries a string bag and Eilish are exactly one day apart.",
+    "At least one of these holds, and possibly both: Eilish and the forager who searches Scrag End are exactly one day apart; Guinevere is earlier than the forager who carries a tin pail."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

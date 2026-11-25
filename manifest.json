@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "generated": "2026-11-25T03:14:55+00:00",
+  "generated": "2026-11-25T03:30:29+00:00",
   "generator": "logicgrid 0.1.0",
   "count": 50,
-  "narrated": 0,
+  "narrated": 9,
   "puzzles": [
     {
       "pid": "8cdc3efb624d",
@@ -19,6 +19,11 @@
         "path": "puzzles/01-archive.json",
         "sha256": "d726141a23f30694398f6a93376f0676380d6d82f6451cda403d39b504ccfb36",
         "bytes": 4601
+      },
+      "narrative": {
+        "path": "narratives/01-archive.json",
+        "sha256": "4932d12d6dd1b6d5b5eb39b9805ada77fc1c43cd236dedf334a2838630d4bfe5",
+        "bytes": 1365
       }
     },
     {
@@ -83,6 +88,11 @@
         "path": "puzzles/05-puppet.json",
         "sha256": "dca65c41c51ca54d6388072858ce0f60d34b46563d2dec1b28a7ba236277b88a",
         "bytes": 4404
+      },
+      "narrative": {
+        "path": "narratives/05-puppet.json",
+        "sha256": "abf4cbf930b6eca36fa3e8059efdfe2f60dd38255fd52a77f10b1cb60837c843",
+        "bytes": 1265
       }
     },
     {
@@ -147,6 +157,11 @@
         "path": "puzzles/09-cider.json",
         "sha256": "a6047af5a875660563c2a8edd29d9d28fc4f4dd7ef011be04ce083bc7a1191e0",
         "bytes": 4689
+      },
+      "narrative": {
+        "path": "narratives/09-cider.json",
+        "sha256": "f50663035a3b427c20328081d42b8eb3c471862104b94100e491aae1295dd798",
+        "bytes": 1432
       }
     },
     {
@@ -179,6 +194,11 @@
         "path": "puzzles/11-electives.json",
         "sha256": "9bb6f0ba78ddafbd7095068108cf6d371c17f3b921ff37526db3f7c3404d9637",
         "bytes": 4816
+      },
+      "narrative": {
+        "path": "narratives/11-electives.json",
+        "sha256": "4c1333597cad9a5060138e93e13d5008ff130c4855ffdc4d83e16cdb504fa246",
+        "bytes": 1508
       }
     },
     {
@@ -339,6 +359,11 @@
         "path": "puzzles/21-christmas.json",
         "sha256": "e0b78df3225cbb6239a1433ee1cc30ea965b2f0ec03b7c6a997c231a92fb3651",
         "bytes": 6964
+      },
+      "narrative": {
+        "path": "narratives/21-christmas.json",
+        "sha256": "4fc036367efad08797a97d66df05b4ba3b876e67d773f1ada2faa9578299c060",
+        "bytes": 2135
       }
     },
     {
@@ -483,6 +508,11 @@
         "path": "puzzles/30-beekeeper.json",
         "sha256": "e5096c89e02c01c93a5210afa172043ea09402396860e5efa2760829ab0219d6",
         "bytes": 6725
+      },
+      "narrative": {
+        "path": "narratives/30-beekeeper.json",
+        "sha256": "f76edc8bacc17a34eb291f1d8473a257154e1c02b22953e91d2a1079bc868b0c",
+        "bytes": 2297
       }
     },
     {
@@ -643,6 +673,11 @@
         "path": "puzzles/40-hamradio.json",
         "sha256": "974271d041e6df0e387da8e0ab0deb30a730f6a8c66881173d2611c4b3a84337",
         "bytes": 10317
+      },
+      "narrative": {
+        "path": "narratives/40-hamradio.json",
+        "sha256": "9ae1c8e061ee2e708038917269201643a5f32187af92ed8e3922284ef8820a74",
+        "bytes": 3243
       }
     },
     {
@@ -723,6 +758,11 @@
         "path": "puzzles/45-mushroom.json",
         "sha256": "085e15533a2fbf9083ea5b89f23588f101f5a1260e9b9efe760f3481c5551c0a",
         "bytes": 11381
+      },
+      "narrative": {
+        "path": "narratives/45-mushroom.json",
+        "sha256": "2aee05d7f63c55d48daf0cc06eb767ba49d78a0a47605d05e994dd4416189434",
+        "bytes": 3094
       }
     },
     {
@@ -739,6 +779,11 @@
         "path": "puzzles/46-highland.json",
         "sha256": "398e4a4e21c68fd173debdde6909e02020a4e419fcf557cff563bc5e747daeac",
         "bytes": 12281
+      },
+      "narrative": {
+        "path": "narratives/46-highland.json",
+        "sha256": "aa1b21091e15af1f82ff13d52534e6e32ca4d686c04a91750f48e8d6ebc7ef50",
+        "bytes": 4046
       }
     },
     {

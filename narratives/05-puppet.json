@@ -1,0 +1,16 @@
+{
+  "pid": "2ed0b598015f",
+  "title": "Strings, Drums and Grievances",
+  "introduction": "The Little Vesper Theatre has forty seats, one curtain and a long-running policy that no two puppeteers may share a dressing room. Tonight's bill has been fought over in the corridor, mostly by people holding someone else's hand puppet. The musicians, who were never consulted, are tuning up anyway.",
+  "preamble": "Four puppeteers are involved. Determine each puppeteer's slot and accompaniment.\n- **Puppeteer**: Stellan, Halima, Bowen and Mirabel.\n- **Running order** (listed from earlier to later): slot one, slot two, slot three and slot four.\n- **Accompaniment**: a hurdy-gurdy, a bowed psaltery, two kettle drums and a prepared piano.\nEvery puppeteer has a different slot and accompaniment, so within each category every item is used exactly once.",
+  "clues": [
+    "Bowen performs in slot one.",
+    "The puppeteer accompanied by a bowed psaltery performs later than slot one, but not in slot two.",
+    "Halima is accompanied by a hurdy-gurdy.",
+    "The puppeteer accompanied by two kettle drums performs in slot three.",
+    "Mirabel performs earlier than slot four."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass_equivalent"
+}

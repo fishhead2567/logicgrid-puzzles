@@ -1,0 +1,16 @@
+{
+  "pid": "12ace8926ec0",
+  "title": "Elective Sign-Up at Ridgeline High",
+  "introduction": "The gym at Ridgeline High has been turned into a maze of folding tables, and the line for the popular electives now reaches the parking lot. The counselor abandoned alphabetical order an hour ago and is running the whole operation on birthdays, a clipboard, and a whistle she keeps blowing at nothing in particular. Everyone has finally signed up for something, and the whistle has gone quiet.",
+  "preamble": "Five students are involved. Determine each student's birthday month and elective.\n- **Student**: Darnell, Linnea, Omar, Mateo and Trey.\n- **Birthday month** (listed from earlier to later): January, February, March, April and May.\n- **Elective**: Spanish, digital art, robotics, wood shop and theater tech.\nEvery student has a different birthday month and elective, so within each category every item is used exactly once.",
+  "clues": [
+    "Trey was born in January, and Mateo was born in March.",
+    "Omar was not born in April.",
+    "The student who signs up for Spanish was not born in February, but was born exactly one month before or after Mateo.",
+    "The student who signs up for robotics was born in an earlier month than Omar, who in turn was born in an earlier month than the student who signs up for wood shop.",
+    "The student who signs up for digital art was born exactly one month before Linnea."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}

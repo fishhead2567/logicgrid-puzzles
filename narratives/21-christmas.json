@@ -1,0 +1,19 @@
+{
+  "pid": "0b9bf4b7efb5",
+  "title": "Christmas Morning on Lark Street",
+  "introduction": "By 6:40 a.m. the living room on Lark Street looked like a wrapping-paper avalanche, and two sleepy parents were squinting at a heap of crumpled wish lists. Nobody could say who had asked for what, or who had been bribed with which snack to stay in bed until sunrise. Somewhere under the tinsel, a very small dog was eating a bow.",
+  "preamble": "Five kids are involved. Determine each kid's age, pajamas and snack.\n- **Kid**: Margo, Deshawn, Frankie, Rosalind and Yuki.\n- **Age** (listed from younger to older): 8 years old, 9 years old, 10 years old, 11 years old and 12 years old.\n- **Pajamas**: purple fleece pajamas, blue star pajamas, reindeer pajamas, snowflake pajamas and red flannel pajamas.\n- **Snack**: a slice of fruitcake, peanut butter crackers, carrot sticks, oatmeal cookies and gingerbread.\nEvery kid has a different age, pajamas and snack, so within each category every item is used exactly once.",
+  "clues": [
+    "The kid who wears snowflake pajamas is younger than 9 years old, and the kid who leaves out gingerbread is 9 years old.",
+    "The kid who wears blue star pajamas is exactly one year apart in age from the kid who leaves out gingerbread, and also exactly one year apart from the kid who leaves out oatmeal cookies.",
+    "Deshawn is strictly between the kid who leaves out gingerbread and the kid who leaves out oatmeal cookies in age, matching neither.",
+    "The kid who wears red flannel pajamas is strictly between 9 years old and 12 years old in age, matching neither, and that kid is not Yuki.",
+    "The kid who is 10 years old is strictly between Margo and Yuki in age, matching neither.",
+    "The kid who leaves out a slice of fruitcake is younger than Margo.",
+    "The kid who is 9 years old is strictly between Frankie and the kid who wears purple fleece pajamas in age, matching neither.",
+    "The kid who leaves out peanut butter crackers is strictly between Frankie and Yuki in age, matching neither."
+  ],
+  "model": "subagent",
+  "attempt": 1,
+  "verdict": "pass"
+}
